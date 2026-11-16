@@ -1,0 +1,80 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-03-11 09:07:02.51 to 15:07:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   11:39:27.50  earthquake detected by AMT, DRO
+PDMAG    #1   11:40:19.50  Pd magnitude M2.4 ± 0.3 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   11:40:19.50  located at 37.147N 21.789E, origin 11:39:10.86, rms 0.64 s from 2 stations
+ALARM    #2   15:02:35.50  earthquake detected by AMT, DRO
+LOCATE   #2   15:03:27.50  located at 37.547N 21.419E, origin 15:02:25.90, rms 0.09 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-03-11 09:35:50.00 to 15:07:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M2.4 earthquake at 37.147N 21.789E, origin 11:39:10.86 UTC
+  alarm      11:39:27.50 UTC by AMT, DRO
+  Pd magn.   M2.4 52.0 s after the alarm, M2.4 ± 0.3 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 8 stations (1 above noise)
+  location   rms 0.64 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 57 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMT           43 km   11:39:23.14 UTC (picked)      -4.4 s  after S
+             DRO           90 km   11:39:37.14 UTC (picked)      +9.6 s  before S
+             LTHK         105 km   11:39:40.95 UTC (predicted)   +13.5 s  before S
+             RLS          105 km   11:39:41.00 UTC (predicted)   +13.5 s  before S
+             AXS          122 km   11:39:45.89 UTC (predicted)   +18.4 s  before S
+             ORTH         124 km   11:39:46.46 UTC (predicted)   +19.0 s  before S
+             PLEV         145 km   11:39:52.29 UTC (predicted)   +24.8 s  before S
+             VLS          156 km   11:39:55.47 UTC (predicted)   +28.0 s  before S
+
+Event #2: detected earthquake (no magnitude) at 37.547N 21.419E, origin 15:02:25.90 UTC
+  alarm      15:02:35.50 UTC by AMT, DRO
+  location   rms 0.09 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 32 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMT           26 km   15:02:33.68 UTC (picked)      -1.8 s  after S
+             DRO           52 km   15:02:41.06 UTC (picked)      +5.6 s  before S
+             LTHK          54 km   15:02:41.70 UTC (predicted)    +6.2 s  before S
+             RLS           57 km   15:02:42.35 UTC (predicted)    +6.9 s  before S
+             ORTH          72 km   15:02:46.68 UTC (predicted)   +11.2 s  before S
+             AXS           72 km   15:02:46.74 UTC (predicted)   +11.2 s  before S
+             PLEV          96 km   15:02:53.54 UTC (predicted)   +18.0 s  before S
+             VLS          101 km   15:02:54.93 UTC (predicted)   +19.4 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    86
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    11:39:27.50 UTC  #1  M2.4, located 37.15N 21.79E
+    15:02:35.50 UTC  #2  no magnitude, located 37.55N 21.42E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_causal_eqfa/greece_strat_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0       20     19       140      0.001 (0.001)        12
+  AXS      43189         0        0      0         0      0.000 (0.001)         0
+  DRO      43189         0        2      2        14      0.001 (0.001)        14
+  LTHK     43189         0        6      6        42      0.000 (0.001)        14
+  ORTH     43189         0        5      5        35      0.001 (0.001)        12
+  PLEV     43189         0        0      0         0      0.001 (0.001)         0
+  RLS      43189         0       56     56       392      0.000 (0.001)        11
+  VLS      43189         0        1      1         7      0.000 (0.001)        14
+  Pd: 630 values sent
+  P time from an STA/LTA onset for 45 of 90 triggers (45 from the window start)
+  onset from a FilterPicker pick for 24 of 90 triggers (P-time location and Pd)
+  345512 windows in 1.3 s: 15715x real time per station

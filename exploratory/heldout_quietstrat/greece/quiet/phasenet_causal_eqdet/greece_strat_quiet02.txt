@@ -1,0 +1,136 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-05-11 01:36:04.14 to 07:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   02:20:31.50  earthquake detected by AMPL, NYDR
+PLOC     #1   02:20:32.00  P times locate it at 39.210N 20.162E +-335 km, origin 02:20:11.37, rms 0.00 s from 3 stations
+PLOC     #1   02:20:34.50  P times locate it at 40.808N 18.126E +-286 km, origin 02:19:30.37, rms 0.59 s from 4 stations
+ALARM    #2   02:20:36.50  earthquake detected by LKD2, TSLK
+PLOC     #1   02:20:37.50  P times locate it at 40.778N 18.186E +-280 km, origin 02:19:31.26, rms 0.57 s from 5 stations
+LOCATE   #2   02:21:27.00  located at 38.557N 20.357E, origin 02:20:27.97, rms 0.02 s from 2 stations
+ALARM    #3   02:49:57.00  earthquake detected by PDO, PVO
+LOCATE   #3   02:50:47.50  located at 38.702N 21.159E, origin 02:49:49.39, rms 0.09 s from 2 stations
+ALARM    #4   03:27:11.50  earthquake detected by LKD2, NYDR
+LOCATE   #4   03:28:02.00  located at 38.706N 20.573E, origin 03:27:07.28, rms 0.04 s from 2 stations
+ALARM    #5   03:51:43.50  earthquake detected by LKD2, NYDR
+PLOC     #5   03:51:50.00  P times locate it at 38.171N 20.585E +-397 km, origin 03:51:29.96, rms 0.00 s from 3 stations
+ALARM    #6   04:44:58.50  earthquake detected by AMPL, EVR
+PLOC     #6   04:45:02.50  P times locate it at 38.781N 21.388E +-388 km, origin 04:44:50.02, rms 0.02 s from 3 stations
+ALARM    #7   05:12:57.00  earthquake detected by PDO, TETR
+ALARM    #8   05:40:12.50  earthquake detected by AMPL, TSLK
+ALARM    #9   06:36:56.50  earthquake detected by PDO, PVO
+ALARM    #10  07:23:09.50  earthquake detected by PDO, TSLK
+LOCATE   #10  07:24:00.00  located at 39.812N 21.964E, origin 07:22:40.58, rms 0.39 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-11 02:04:50.00 to 07:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:20:31.50 UTC by AMPL, NYDR; later EVR, PDO, PVO
+  P loc.     40.778N 18.186E +-280 km from 5 stations, first 0.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 38.557N 20.357E, origin 02:20:27.97 UTC
+  alarm      02:20:36.50 UTC by LKD2, TSLK
+  location   rms 0.02 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 28 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             NYDR          34 km   02:20:38.21 UTC (predicted)    +1.7 s  before S
+             LKD2          37 km   02:20:38.86 UTC (picked)      +2.4 s  before S
+             TSLK          40 km   02:20:39.60 UTC (picked)      +3.1 s  before S
+             PDO           72 km   02:20:48.74 UTC (predicted)   +12.2 s  before S
+             AMPL          85 km   02:20:52.34 UTC (predicted)   +15.8 s  before S
+             PVO          102 km   02:20:57.19 UTC (predicted)   +20.7 s  before S
+             TETR         118 km   02:21:01.86 UTC (predicted)   +25.4 s  before S
+             EVR          132 km   02:21:05.88 UTC (predicted)   +29.4 s  before S
+
+Event #3: detected earthquake (no magnitude) at 38.702N 21.159E, origin 02:49:49.39 UTC
+  alarm      02:49:57.00 UTC by PDO, PVO
+  location   rms 0.09 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 25 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             PDO           12 km   02:49:53.74 UTC (picked)      -3.3 s  after S
+             AMPL          25 km   02:49:57.07 UTC (predicted)    +0.1 s  before S
+             PVO           33 km   02:49:59.38 UTC (picked)      +2.4 s  before S
+             NYDR          40 km   02:50:01.18 UTC (predicted)    +4.2 s  before S
+             LKD2          45 km   02:50:02.43 UTC (predicted)    +5.4 s  before S
+             TSLK          46 km   02:50:02.77 UTC (predicted)    +5.8 s  before S
+             EVR           61 km   02:50:07.13 UTC (predicted)   +10.1 s  before S
+             TETR          72 km   02:50:10.19 UTC (predicted)   +13.2 s  before S
+
+Event #4: detected earthquake (no magnitude) at 38.706N 20.573E, origin 03:27:07.28 UTC
+  alarm      03:27:11.50 UTC by LKD2, NYDR
+  location   rms 0.04 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 11 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             NYDR          11 km   03:27:11.48 UTC (picked)      -0.0 s  after S
+             LKD2          12 km   03:27:11.72 UTC (picked)      +0.2 s  before S
+             TSLK          15 km   03:27:12.43 UTC (predicted)    +0.9 s  before S
+             PDO           54 km   03:27:23.06 UTC (predicted)   +11.6 s  before S
+             AMPL          60 km   03:27:24.79 UTC (predicted)   +13.3 s  before S
+             PVO           83 km   03:27:31.24 UTC (predicted)   +19.7 s  before S
+             TETR          93 km   03:27:34.09 UTC (predicted)   +22.6 s  before S
+             EVR          110 km   03:27:38.76 UTC (predicted)   +27.3 s  before S
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      03:51:43.50 UTC by LKD2, NYDR; later PVO
+  P loc.     38.171N 20.585E +-397 km from 3 stations, first 6.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      04:44:58.50 UTC by AMPL, EVR; later TETR
+  P loc.     38.781N 21.388E +-388 km from 3 stations, first 4.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      05:12:57.00 UTC by PDO, TETR
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      05:40:12.50 UTC by AMPL, TSLK
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      06:36:56.50 UTC by PDO, PVO
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude) at 39.812N 21.964E, origin 07:22:40.58 UTC
+  alarm      07:23:09.50 UTC by PDO, TSLK
+  location   rms 0.39 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 101 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             TETR          79 km   07:23:03.25 UTC (predicted)    -6.2 s  after S
+             EVR          100 km   07:23:09.41 UTC (predicted)    -0.1 s  after S
+             AMPL         118 km   07:23:14.44 UTC (predicted)    +4.9 s  before S
+             PVO          138 km   07:23:20.18 UTC (predicted)   +10.7 s  before S
+             PDO          151 km   07:23:24.02 UTC (picked)     +14.5 s  before S
+             TSLK         157 km   07:23:25.32 UTC (picked)     +15.8 s  before S
+             LKD2         160 km   07:23:26.36 UTC (predicted)   +16.9 s  before S
+             NYDR         164 km   07:23:27.44 UTC (predicted)   +17.9 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          10
+  single-station detections, no alarm    50
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_causal_eqdet/greece_strat_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0        9      9        63      0.000 (0.001)        14
+  EVR      43189         0        2      2        14      0.000 (0.001)        12
+  LKD2     43189         0       14     14        98      0.000 (0.001)        14
+  NYDR     43189         0        7      7         0      0.000 (0.000)        11
+  PDO      43189         0       14     14        98      0.001 (0.001)        15
+  PVO      43189         0       12     12        84      0.001 (0.001)        13
+  TETR     43189         0        8      8        56      0.000 (0.001)        13
+  TSLK     43189         0       10     10         0      0.000 (0.000)        11
+  Pd: 413 values sent
+  P time from an STA/LTA onset for 50 of 76 triggers (26 from the window start)
+  onset from a FilterPicker pick for 41 of 76 triggers (P-time location and Pd)
+  345512 windows in 0.8 s: 25154x real time per station

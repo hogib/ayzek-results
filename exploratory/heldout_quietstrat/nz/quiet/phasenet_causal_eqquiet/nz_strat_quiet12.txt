@@ -1,0 +1,37 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-10-13 04:59:02.76 to 10:59:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:57:35.00  earthquake detected by KUZ, MKAZ
+PLOC     #1   08:57:46.00  P times locate it at -37.098N 176.073E +-48 km, origin 08:57:20.64, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-10-13 05:27:50.00 to 10:59:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:57:35.00 UTC by KUZ, MKAZ; later TLZ
+  P loc.     -37.098N 176.073E +-48 km from 3 stations, first 11.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    36
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/phasenet_causal_eqquiet/nz_strat_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        3      3        21      0.001 (0.001)        38
+  KPRZ     43189         0        9      9        63      0.001 (0.001)        33
+  KUZ      43189         0        3      3        21      0.001 (0.001)        38
+  MKAZ     43189         0        1      1         7      0.001 (0.001)        33
+  MWZ      43189         0        2      2        14      0.002 (0.001)        41
+  RATZ     43189         0        1      1         7      0.001 (0.001)        50
+  TLZ      43189         0       16     16       112      0.001 (0.002)        33
+  URZ      43189         0        4      4        28      0.001 (0.001)        37
+  Pd: 273 values sent
+  P time from an STA/LTA onset for 28 of 39 triggers (11 from the window start)
+  onset from a FilterPicker pick for 23 of 39 triggers (P-time location and Pd)
+  345512 windows in 1.4 s: 13715x real time per station

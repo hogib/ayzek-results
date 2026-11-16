@@ -1,0 +1,45 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-24 00:32:02.46 to 06:32:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:51:06.00  earthquake detected by AKDG, NURH
+LOCATE   #1   01:51:56.50  located at 38.036N 37.933E, origin 01:50:55.88, rms 0.08 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 01:00:50.00 to 06:32:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.036N 37.933E, origin 01:50:55.88 UTC
+  alarm      01:51:06.00 UTC by AKDG, NURH
+  location   rms 0.08 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 34 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          36 km   01:51:06.62 UTC (picked)      +0.6 s  before S
+             NURH          44 km   01:51:08.86 UTC (picked)      +2.9 s  before S
+             MLTY          55 km   01:51:11.75 UTC (predicted)    +5.8 s  before S
+             GAZ          115 km   01:51:28.93 UTC (predicted)   +22.9 s  before S
+             SVRC         126 km   01:51:31.94 UTC (predicted)   +25.9 s  before S
+             DYBB         194 km   01:51:51.25 UTC (predicted)   +45.3 s  before S
+             MAZI         230 km   01:52:01.68 UTC (predicted)   +55.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    10
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_lookahead_eqfa/ko_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0        1      1         0      0.004 (0.002)       115
+  DYBB     43189         0        0      0         0      0.004 (0.002)         0
+  GAZ      43189         0        0      0         0      0.004 (0.002)         0
+  MAZI     43189         0        0      0         0      0.002 (0.001)         0
+  MLTY     43189         0        1      1         7      0.004 (0.002)       127
+  NURH     43189         0        8      8         0      0.003 (0.002)       118
+  SVRC     43189         0        2      2        14      0.004 (0.002)       118
+  Pd: 21 values sent
+  P time from an STA/LTA onset for 5 of 12 triggers (7 from the window start)
+  onset from a FilterPicker pick for 4 of 12 triggers (P-time location and Pd)
+  302323 windows in 4.6 s: 4335x real time per station

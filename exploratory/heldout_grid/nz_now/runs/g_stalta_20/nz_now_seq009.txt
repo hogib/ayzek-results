@@ -1,0 +1,42 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 20 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-10-23 08:59:08.42 to 11:59:04.20 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-10-23 08:59:08.42 to 11:59:04.20 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm     0
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                3
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                3  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   2          0        2
+    M 5+                    1          0        1
+
+  Missed AFAD events
+    09:09:04.00 UTC  M 5.1    26 km from the network centre
+    10:29:55.00 UTC  MLv 1.7   125 km from the network centre
+    11:22:53.00 UTC  MLv 1.6   100 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_stalta_20/nz_now_seq009.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DSZ      21588         0        0      0         0      0.001 (0.000)         0
+  KHZ      21588         0        0      0         0      0.001 (0.000)         0
+  RPZ      21588         0        0      0         0      0.001 (0.000)         0
+  WHSZ     21588         0        0      0         0      0.001 (0.000)         0
+  WVZ      21588         0        0      0         0      0.001 (0.000)         0
+  Pd: 0 values sent
+  107940 windows in 0.2 s: 57140x real time per station

@@ -1,0 +1,103 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 5 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2024-01-16 01:09:03.13 to 07:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   02:10:11.28  earthquake detected by CVZ, WHSZ
+ALARM    #2   02:36:00.48  earthquake detected by CVZ, WVZ
+ALARM    #3   02:37:29.86  earthquake detected by CVZ, WHSZ
+ALARM    #4   02:53:36.86  earthquake detected by CVZ, WVZ
+ALARM    #5   03:09:31.61  earthquake detected by CVZ, FOZ
+ALARM    #6   03:45:49.39  earthquake detected by FOZ, WVZ
+ALARM    #7   04:03:42.41  earthquake detected by WHSZ, WVZ
+ALARM    #8   04:11:40.37  earthquake detected by FOZ, WHSZ
+ALARM    #9   04:29:45.83  earthquake detected by CVZ, WHSZ
+ALARM    #10  05:39:07.25  earthquake detected by CVZ, WVZ
+ALARM    #11  06:24:34.21  earthquake detected by CVZ, WHSZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-01-16 01:37:50.00 to 07:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:10:11.28 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:36:00.48 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      02:37:29.86 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      02:53:36.86 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      03:09:31.61 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      03:45:49.39 UTC by FOZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      04:03:42.41 UTC by WHSZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      04:11:40.37 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      04:29:45.83 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      05:39:07.25 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      06:24:34.21 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          11
+  single-station detections, no alarm    89
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             11  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    02:10:11.28 UTC  #1  no magnitude, not located
+    02:36:00.48 UTC  #2  no magnitude, not located
+    02:37:29.86 UTC  #3  no magnitude, not located
+    02:53:36.86 UTC  #4  no magnitude, not located
+    03:09:31.61 UTC  #5  no magnitude, not located
+    03:45:49.39 UTC  #6  no magnitude, not located
+    04:03:42.41 UTC  #7  no magnitude, not located
+    04:11:40.37 UTC  #8  no magnitude, not located
+    04:29:45.83 UTC  #9  no magnitude, not located
+    05:39:07.25 UTC  #10  no magnitude, not located
+    06:24:34.21 UTC  #11  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_5/nz_now_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       31     31       217      0.001 (0.001)        44
+  FOZ      43189         0       19     19       133      0.001 (0.000)        46
+  RPZ      43189         0       11     11        77      0.001 (0.001)        44
+  WHSZ     43189         0       38     38       266      0.001 (0.000)        33
+  WVZ      43055        12       13     13        91      0.001 (0.001)        36
+  Pd: 784 values sent
+  215811 windows in 1.6 s: 12517x real time per station

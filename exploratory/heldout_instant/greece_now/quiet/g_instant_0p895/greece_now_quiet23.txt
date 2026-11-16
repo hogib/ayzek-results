@@ -1,0 +1,37 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-04-02 15:17:02.09 to 21:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   19:36:25.00  earthquake detected by KNSS, THERA
+PLOC     #1   19:36:26.00  P times locate it at 35.756N 26.001E +-97 km, origin 19:36:05.95, rms 0.00 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-04-02 15:45:50.00 to 21:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:36:25.00 UTC by KNSS, THERA; later PFKS
+  P loc.     35.756N 26.001E +-97 km from 3 stations, first 1.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    30
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/greece_now/quiet/g_instant_0p895/greece_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       21     21       147      0.001 (0.001)        27
+  IPPL     43189         0        0      0         0      0.001 (0.001)         0
+  KNSS     43189         0        2      2        14      0.001 (0.001)        44
+  PFKS     43142         7        4      4        28      0.001 (0.001)        44
+  SIVA     43189         0        1      1         7      0.002 (0.001)        45
+  STIA     43189         0        2      2        14      0.001 (0.001)        47
+  THERA    43189         0        2      2        14      0.001 (0.001)        43
+  ZKR      43189         0        1      1         7      0.001 (0.001)        46
+  Pd: 231 values sent
+  P time from an STA/LTA onset for 13 of 33 triggers (20 from the window start)
+  onset from a FilterPicker pick for 7 of 33 triggers (P-time location and Pd)
+  345465 windows in 1.8 s: 11139x real time per station

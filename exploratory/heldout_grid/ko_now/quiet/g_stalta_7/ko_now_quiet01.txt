@@ -1,0 +1,91 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 7 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-15 19:31:03.13 to 01:31:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   20:46:46.74  earthquake detected by BNN, GAZ
+ALARM    #2   21:39:02.79  earthquake detected by NURH, SARI
+ALARM    #3   22:18:52.07  earthquake detected by NURH, SARI
+LOCATE   #3   22:19:46.56  located at 38.188N 36.922E, origin 22:18:38.33, rms 1.27 s from 2 stations
+ALARM    #4   23:39:08.84  earthquake detected by NURH, SARI
+ALARM    #5   00:03:00.54  earthquake detected by NURH, SARI
+PLOC     #5   00:03:05.66  P times locate it at 38.265N 36.732E +-81 km, origin 00:02:48.76, rms 0.02 s from 3 stations
+LOCATE   #5   00:03:55.03  located at 38.803N 37.062E, origin 00:02:42.27, rms 1.01 s from 2 stations
+LOCATE   #5   00:04:00.15  located at 37.755N 36.382E, origin 00:02:42.64, rms 1.08 s from 3 stations
+ALARM    #6   01:00:04.30  earthquake detected by BNN, SARI
+PLOC     #6   01:00:12.25  P times locate it at 41.510N 36.732E +-207 km, origin 00:59:06.07, rms 0.37 s from 3 stations
+LOCATE   #6   01:01:06.74  located at 39.173N 36.907E, origin 00:59:47.89, rms 0.30 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-15 19:59:50.00 to 01:31:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:46:46.74 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      21:39:02.79 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at 38.188N 36.922E, origin 22:18:38.33 UTC
+  alarm      22:18:52.07 UTC by NURH, SARI
+  location   rms 1.27 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 47 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          50 km   22:18:52.17 UTC (picked)      +0.1 s  before S
+             NURH          51 km   22:18:51.72 UTC (picked)      -0.3 s  after S
+             GAZ          116 km   22:19:11.53 UTC (predicted)   +19.5 s  before S
+             BNN          119 km   22:19:12.49 UTC (predicted)   +20.4 s  before S
+             CEYT         167 km   22:19:26.10 UTC (predicted)   +34.0 s  before S
+             KARA         194 km   22:19:33.81 UTC (predicted)   +41.7 s  before S
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      23:39:08.84 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude) at 37.755N 36.382E, origin 00:02:42.64 UTC
+  alarm      00:03:00.54 UTC by NURH, SARI; later BNN
+  location   rms 1.08 s from 3 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     38.265N 36.732E +-81 km from 3 stations, first 5.1 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 62 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          73 km   00:03:03.57 UTC (picked)      +3.0 s  before S
+             NURH          96 km   00:03:09.79 UTC (picked)      +9.2 s  before S
+             GAZ           98 km   00:03:10.68 UTC (predicted)   +10.1 s  before S
+             CEYT         100 km   00:03:11.34 UTC (predicted)   +10.8 s  before S
+             KARA         129 km   00:03:19.71 UTC (predicted)   +19.2 s  before S
+             BNN          131 km   00:03:21.39 UTC (picked)     +20.9 s  before S
+
+Event #6: detected earthquake (no magnitude) at 39.173N 36.907E, origin 00:59:47.89 UTC
+  alarm      01:00:04.30 UTC by BNN, SARI; later NURH
+  location   rms 0.30 s from 2 stations, first 62.4 s after the alarm (P and S picks)
+  P loc.     41.510N 36.732E +-207 km from 3 stations, first 8.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 57 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          95 km   01:00:15.47 UTC (picked)     +11.2 s  before S
+             BNN           98 km   01:00:16.12 UTC (predicted)   +11.8 s  before S
+             NURH         142 km   01:00:28.22 UTC (picked)     +23.9 s  before S
+             GAZ          224 km   01:00:51.98 UTC (predicted)   +47.7 s  before S
+             CEYT         261 km   01:01:02.52 UTC (predicted)   +58.2 s  before S
+             KARA         267 km   01:01:04.30 UTC (predicted)   +60.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    49
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_7/ko_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        3      3        21      0.001 (0.000)        33
+  CEYT     43145         4        0      0         0      0.001 (0.001)         0
+  GAZ      43189         0       29     29       203      0.001 (0.001)        30
+  KARA     43189         0        3      3        21      0.001 (0.000)        35
+  NURH     43189         0       21     21         0      0.001 (0.001)        30
+  SARI     43189         0        9      9        63      0.001 (0.000)        36
+  Pd: 308 values sent
+  259090 windows in 1.0 s: 19083x real time per station

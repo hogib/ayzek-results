@@ -1,0 +1,62 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 10 off 1.5, 1-10 Hz, Z+N+E + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:58:16.69  earthquake detected by LKD2, NYDR, TETR
+PLOC     #1   10:58:16.69  P times locate it at 39.159N 21.022E +-408 km, origin 10:58:07.04, rms 0.01 s from 3 stations
+PLOC     #1   10:58:16.73  P times locate it at 39.687N 20.421E +-325 km, origin 10:57:58.45, rms 0.23 s from 4 stations
+PLOC     #1   10:58:20.99  P times locate it at 39.512N 20.651E +-343 km, origin 10:58:02.15, rms 0.74 s from 5 stations
+LOCATE   #1   10:59:11.18  located at 38.259N 23.581E, origin 10:57:33.32, rms 0.26 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.259N 23.581E, origin 10:57:33.32 UTC
+  alarm      10:58:16.69 UTC by LKD2, NYDR, TETR; later AMPL, EVR
+  location   rms 0.26 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     39.512N 20.651E +-343 km from 5 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 151 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             EVR          170 km   10:58:22.09 UTC (predicted)    +5.4 s  before S
+             PVO          183 km   10:58:25.82 UTC (predicted)    +9.1 s  before S
+             PDO          212 km   10:58:34.04 UTC (predicted)   +17.4 s  before S
+             AMPL         219 km   10:58:35.85 UTC (predicted)   +19.2 s  before S
+             TETR         234 km   10:58:40.28 UTC (picked)     +23.6 s  before S
+             NYDR         256 km   10:58:46.34 UTC (picked)     +29.7 s  before S
+             LKD2         261 km   10:58:47.97 UTC (predicted)   +31.3 s  before S
+             TSLK         262 km   10:58:48.27 UTC (predicted)   +31.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    75
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:58:16.69 UTC  #1  no magnitude, located 38.26N 23.58E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqquiet/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0       70     70       490      0.006 (0.001)        84
+  EVR      43189         0        1      1         7      0.003 (0.001)        99
+  LKD2     43171         2        1      1         7      0.003 (0.001)        82
+  NYDR     43189         0        2      2         0      0.004 (0.001)        93
+  PDO      43189         0        0      0         0      0.003 (0.001)         0
+  PVO      43189         0        3      3        21      0.003 (0.001)        71
+  TETR     43189         0        2      2        14      0.003 (0.001)        97
+  TSLK     43189         0        1      1         0      0.004 (0.001)        91
+  Pd: 539 values sent
+  345494 windows in 6.5 s: 3060x real time per station

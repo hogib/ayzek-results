@@ -1,0 +1,53 @@
+ayzek    7 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-10-16 05:21:02.80 to 11:21:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:21:28.60  earthquake detected by MAZI, NURH, SVRC
+PLOC     #1   07:21:28.60  P times locate it at 39.615N 38.083E +-157 km, origin 07:20:35.59, rms 0.00 s from 3 stations
+ALARM    #2   10:24:56.84  earthquake detected by AKDG, MLTY, NURH
+PLOC     #2   10:24:56.84  P times locate it at 38.828N 37.224E +-329 km, origin 10:24:36.53, rms 0.00 s from 3 stations
+LOCATE   #2   10:25:47.32  located at 38.056N 37.973E, origin 10:24:44.50, rms 0.04 s from 2 stations
+LOCATE   #2   10:25:51.07  located at 38.353N 37.629E, origin 10:24:44.96, rms 0.43 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-16 05:49:50.00 to 11:21:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:21:28.60 UTC by MAZI, NURH, SVRC
+  P loc.     39.615N 38.083E +-157 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 38.353N 37.629E, origin 10:24:44.96 UTC
+  alarm      10:24:56.84 UTC by AKDG, MLTY, NURH
+  location   rms 0.43 s from 3 stations, first 50.5 s after the alarm (P and S picks)
+  P loc.     38.828N 37.224E +-329 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 40 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          30 km   10:24:54.69 UTC (picked)      -2.1 s  after S
+             NURH          46 km   10:24:58.48 UTC (picked)      +1.6 s  before S
+             MLTY          71 km   10:25:04.87 UTC (picked)      +8.0 s  before S
+             GAZ          136 km   10:25:24.03 UTC (predicted)   +27.2 s  before S
+             SVRC         146 km   10:25:26.84 UTC (predicted)   +30.0 s  before S
+             DYBB         224 km   10:25:49.01 UTC (predicted)   +52.2 s  before S
+             MAZI         266 km   10:26:01.12 UTC (predicted)   +64.3 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    57
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/fp_eqfa/ko_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43101         9        2      2         0      0.026 (0.267)        74
+  DYBB     43122         7        5      5        35      0.017 (0.048)        61
+  GAZ      43189         0       13     13        91      0.019 (0.018)        49
+  MAZI     42145        88       11     11         0      0.021 (0.029)        47
+  MLTY     43189         0        6      6        42      0.018 (0.039)        58
+  NURH     43189         0        4      4         0      0.021 (0.041)        62
+  SVRC     43189         0       24     24       168      0.018 (0.010)        55
+  Pd: 336 values sent
+  301124 windows in 2.4 s: 8160x real time per station

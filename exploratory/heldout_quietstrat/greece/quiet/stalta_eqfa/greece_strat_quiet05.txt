@@ -1,0 +1,46 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2024-12-22 03:10:03.10 to 09:10:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   03:53:59.84  earthquake detected by THERA, ZKR
+LOCATE   #1   03:54:54.33  located at 35.786N 26.631E, origin 03:53:39.19, rms 0.12 s from 2 stations
+ALARM    #2   08:41:49.41  earthquake detected by STIA, ZKR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-12-22 03:38:50.00 to 09:10:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 35.786N 26.631E, origin 03:53:39.19 UTC
+  alarm      03:53:59.84 UTC by THERA, ZKR
+  location   rms 0.12 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 72 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             STIA          81 km   03:54:02.59 UTC (predicted)    +2.8 s  before S
+             ZKR           84 km   03:54:03.18 UTC (picked)      +3.3 s  before S
+             NISR2        100 km   03:54:08.03 UTC (predicted)    +8.2 s  before S
+             NISR         102 km   03:54:08.50 UTC (predicted)    +8.7 s  before S
+             THERA        122 km   03:54:14.37 UTC (picked)     +14.5 s  before S
+             APE          174 km   03:54:29.01 UTC (predicted)   +29.2 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:41:49.41 UTC by STIA, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    43
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqfa/greece_strat_quiet05.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        2      2        14      0.001 (0.001)        44
+  NISR     43189         0       31     31         0      0.001 (0.000)        28
+  NISR2    43189         0        0      0         0      0.001 (0.001)         0
+  STIA     43189         0        7      7        49      0.001 (0.001)        34
+  THERA    43189         0        2      2        14      0.001 (0.000)        27
+  ZKR      43189         0        5      5        35      0.001 (0.000)        35
+  Pd: 112 values sent
+  259134 windows in 1.0 s: 20029x real time per station

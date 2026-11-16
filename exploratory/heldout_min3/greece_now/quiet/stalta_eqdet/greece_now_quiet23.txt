@@ -1,0 +1,46 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-04-02 15:17:02.09 to 21:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   18:24:04.68  earthquake detected by STIA, THERA, ZKR
+PLOC     #1   18:24:04.68  P times locate it at 36.786N 27.638E +-470 km, origin 18:23:27.03, rms 0.00 s from 3 stations
+PLOC     #1   18:24:09.65  P times locate it at 36.082N 26.259E +-78 km, origin 18:23:47.18, rms 0.46 s from 4 stations
+ALARM    #2   19:36:20.28  earthquake detected by STIA, THERA, ZKR
+PLOC     #2   19:36:20.28  P times locate it at 35.916N 27.498E +-515 km, origin 19:35:48.82, rms 0.00 s from 3 stations
+PLOC     #2   19:36:21.54  P times locate it at 35.772N 26.599E +-202 km, origin 19:36:00.05, rms 0.41 s from 4 stations
+PLOC     #2   19:36:23.78  P times locate it at 35.786N 26.692E +-91 km, origin 19:35:59.03, rms 0.40 s from 5 stations
+PLOC     #2   19:36:30.10  P times locate it at 35.771N 26.616E +-58 km, origin 19:35:59.89, rms 0.44 s from 6 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-04-02 15:45:50.00 to 21:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      18:24:04.68 UTC by STIA, THERA, ZKR; later PFKS
+  P loc.     36.082N 26.259E +-78 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      19:36:20.28 UTC by STIA, THERA, ZKR; later KNSS, PFKS, SIVA
+  P loc.     35.771N 26.616E +-58 km from 6 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    83
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqdet/greece_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       10     10        70      0.001 (0.000)        64
+  IPPL     43189         0        3      3        21      0.002 (0.000)        78
+  KNSS     43189         0        4      4        28      0.001 (0.000)        75
+  PFKS     43142         7       16     16       112      0.001 (0.000)        67
+  SIVA     43189         0        2      2        14      0.002 (0.000)        88
+  STIA     43189         0       44     44       308      0.001 (0.000)        66
+  THERA    43189         0        4      4        28      0.002 (0.000)        85
+  ZKR      43189         0       14     14        98      0.001 (0.000)        64
+  Pd: 679 values sent
+  345465 windows in 3.3 s: 5945x real time per station

@@ -1,0 +1,206 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-03-17 15:21:10.13 to 18:21:06.28 UTC at full speed
+ayzek    catalogue: 89 events in the replay span
+ALARM    #1   15:31:25.00  earthquake detected by MWZ, URZ  (AFAD MLv 4.7 at 15:31:06.00, 19.0 s ago)
+PLOC     #1   15:31:36.50  P times locate it at -38.127N 175.632E +-248 km, origin 15:30:51.89, rms 0.02 s from 3 stations
+ALARM    #2   15:46:20.50  earthquake detected by MWZ, URZ  (AFAD MLv 4.9 at 15:46:02.00, 18.5 s ago)
+PLOC     #2   15:46:25.00  P times locate it at -38.183N 176.671E +-104 km, origin 15:46:02.25, rms 0.05 s from 3 stations
+PLOC     #2   15:46:28.00  P times locate it at -38.092N 176.677E +-24 km, origin 15:46:01.82, rms 0.07 s from 4 stations
+PLOC     #2   15:46:29.00  P times locate it at -38.076N 176.683E +-21 km, origin 15:46:01.79, rms 0.24 s from 5 stations
+PDMAG    #2   15:46:31.50  Pd magnitude M5.2 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 6 stations (6 above noise), windows up to 10 s, distances from the P-time location
+PLOC     #2   15:46:31.50  P times locate it at -38.099N 176.678E +-17 km, origin 15:46:02.10, rms 0.30 s from 6 stations
+PDMAG    #2   15:46:31.50  Pd magnitude M5.2 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (6 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #2   15:47:16.50  Pd magnitude M5.3 ± 0.1 (M<4 0%, 4-5.5 98%, M>=5.5 2%) from 7 stations (7 above noise), windows up to 10 s, distances from the location
+LOCATE   #2   15:47:16.50  located at -37.945N 176.560E, origin 15:45:59.43, rms 0.20 s from 2 stations
+ALARM    #3   17:47:49.00  earthquake detected by MWZ, URZ  (AFAD MLv 2.7 at 17:47:30.00, 19.0 s ago)
+LOCATE   #3   17:48:37.50  located at -38.167N 176.584E, origin 17:47:30.70, rms 0.11 s from 2 stations
+ALARM    #4   17:59:49.50  earthquake detected by MWZ, URZ
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2023-03-17 15:21:10.13 to 18:21:06.28 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:31:25.00 UTC by MWZ, URZ; later PUZ
+  P loc.     -38.127N 175.632E +-248 km from 3 stations, first 11.5 s after the alarm, epicentre 93.4 km off
+  AFAD       MLv 4.7 at 15:31:06.00 UTC: alarm 19.0 s after origin
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 66 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             URZ           42 km   15:31:18.00 UTC (predicted)    -7.0 s  after S
+             MWZ           78 km   15:31:30.90 UTC (picked)      +5.9 s  before S
+             TLZ          105 km   15:31:36.09 UTC (predicted)   +11.1 s  before S
+             KPRZ         113 km   15:31:38.37 UTC (predicted)   +13.4 s  before S
+             RATZ         120 km   15:31:40.21 UTC (predicted)   +15.2 s  before S
+             BKZ          123 km   15:31:41.20 UTC (predicted)   +16.2 s  before S
+             PUZ          137 km   15:31:45.03 UTC (predicted)   +20.0 s  before S
+
+Event #2: detected M5.3 earthquake at -37.945N 176.560E, origin 15:45:59.43 UTC
+  alarm      15:46:20.50 UTC by MWZ, URZ; later BKZ, PUZ, RATZ, TLZ
+  Pd magn.   M5.2 11.0 s after the alarm, M5.3 ± 0.1 (M<4 0%, 4-5.5 98%, M>=5.5 2%) final from 7 stations (7 above noise)
+  location   rms 0.20 s from 2 stations, first 56.0 s after the alarm (P and S picks)
+  P loc.     -38.099N 176.678E +-17 km from 6 stations, first 4.5 s after the alarm, epicentre 4.1 km off
+  AFAD       MLv 4.9 at 15:46:02.00 UTC: alarm 18.5 s after origin, Pd magnitude +0.4, epicentre 17.7 km off, origin -2.6 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 65 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             URZ           42 km   15:46:14.20 UTC (predicted)    -6.3 s  after S
+             MWZ           79 km   15:46:26.88 UTC (picked)      +6.4 s  before S
+             TLZ          105 km   15:46:32.08 UTC (predicted)   +11.6 s  before S
+             KPRZ         113 km   15:46:34.45 UTC (predicted)   +14.0 s  before S
+             RATZ         120 km   15:46:36.29 UTC (predicted)   +15.8 s  before S
+             BKZ          124 km   15:46:38.22 UTC (picked)     +17.7 s  before S
+             PUZ          137 km   15:46:41.13 UTC (predicted)   +20.6 s  before S
+
+Event #3: detected earthquake (no magnitude) at -38.167N 176.584E, origin 17:47:30.70 UTC
+  alarm      17:47:49.00 UTC by MWZ, URZ
+  location   rms 0.11 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       MLv 2.7 at 17:47:30.00 UTC: alarm 19.0 s after origin, epicentre 10.5 km off, origin +0.7 s
+  pre-S      1 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 66 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             URZ           46 km   17:47:44.32 UTC (picked)      -4.7 s  after S
+             MWZ           83 km   17:47:55.14 UTC (picked)      +6.1 s  before S
+             TLZ          100 km   17:47:58.59 UTC (predicted)    +9.6 s  before S
+             KPRZ         109 km   17:48:01.09 UTC (predicted)   +12.1 s  before S
+             RATZ         115 km   17:48:02.96 UTC (predicted)   +14.0 s  before S
+             BKZ          121 km   17:48:04.63 UTC (predicted)   +15.6 s  before S
+             PUZ          142 km   17:48:10.52 UTC (predicted)   +21.5 s  before S
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      17:59:49.50 UTC by MWZ, URZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    34
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        3   75%
+    false    (no AFAD event)              1   25%
+
+  AFAD events within 250 km               89
+    detected                              3    3%
+    detected before S                     2    2%
+    missed                               86   97%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                  11          0       11
+    M 2-3                  62          1       61
+    M 3-4                  14          0       14
+    M 4-5                   2          2        0
+
+  Correct alarms
+    alarm after origin time             median 19.0 s
+    Pd magnitude error                  mean 0.38 units, bias +0.38, 1 events
+    located                             2 of 3
+    P-time located                      2 of 3, median epicentre error 48.8 km, median 8.0 s after the alarm
+    alarm before the S wave             at 18 of 21 station arrivals, median warning 14.0 s, max 21.5 s
+
+  Missed AFAD events
+    15:28:38.00 UTC  MLv 2.5    53 km from the network centre
+    15:34:17.00 UTC  MLv 2.9    53 km from the network centre
+    15:34:57.00 UTC  MLv 3.4    52 km from the network centre
+    15:37:25.00 UTC  MLv 2.5    53 km from the network centre
+    15:38:46.00 UTC  MLv 3.6    55 km from the network centre
+    15:40:48.00 UTC  MLv 3.1    53 km from the network centre
+    15:42:51.00 UTC  MLv 2.6    53 km from the network centre
+    15:49:51.00 UTC  MLv 3.5    55 km from the network centre
+    15:51:25.00 UTC  MLv 3.5    49 km from the network centre
+    15:53:37.00 UTC  MLv 3.5    55 km from the network centre
+    15:57:07.00 UTC  MLv 3.0    55 km from the network centre
+    15:58:36.00 UTC  MLv 2.6    53 km from the network centre
+    16:00:55.00 UTC  MLv 2.2    52 km from the network centre
+    16:01:48.00 UTC  MLv 3.2    54 km from the network centre
+    16:04:32.00 UTC  MLv 2.1    53 km from the network centre
+    16:06:30.00 UTC  MLv 2.5    53 km from the network centre
+    16:07:19.00 UTC  MLv 3.1    55 km from the network centre
+    16:08:36.00 UTC  MLv 3.0    49 km from the network centre
+    16:10:10.00 UTC  MLv 2.3    56 km from the network centre
+    16:10:31.00 UTC  MLv 3.0    53 km from the network centre
+    16:11:38.00 UTC  MLv 2.9    54 km from the network centre
+    16:13:38.00 UTC  MLv 2.5    53 km from the network centre
+    16:16:40.00 UTC  MLv 2.4    53 km from the network centre
+    16:18:16.00 UTC  MLv 2.3    55 km from the network centre
+    16:19:07.00 UTC  MLv 3.2    55 km from the network centre
+    16:23:22.00 UTC  MLv 2.1    51 km from the network centre
+    16:24:11.00 UTC  MLv 1.8    54 km from the network centre
+    16:24:37.00 UTC  MLv 2.4    52 km from the network centre
+    16:28:25.00 UTC  MLv 2.3    55 km from the network centre
+    16:29:09.00 UTC  MLv 2.8    51 km from the network centre
+    16:30:31.00 UTC  MLv 2.5    51 km from the network centre
+    16:33:16.00 UTC  MLv 2.1    55 km from the network centre
+    16:34:00.00 UTC  MLv 2.2    51 km from the network centre
+    16:34:20.00 UTC  MLv 2.4    54 km from the network centre
+    16:35:41.00 UTC  MLv 2.0    52 km from the network centre
+    16:37:02.00 UTC  MLv 2.2    54 km from the network centre
+    16:37:34.00 UTC  MLv 3.4    51 km from the network centre
+    16:43:28.00 UTC  MLv 1.9    50 km from the network centre
+    16:44:45.00 UTC  MLv 2.1    55 km from the network centre
+    16:47:43.00 UTC  MLv 2.4    54 km from the network centre
+    16:48:20.00 UTC  MLv 3.1    55 km from the network centre
+    16:49:25.00 UTC  MLv 3.0    54 km from the network centre
+    16:52:00.00 UTC  MLv 2.1    53 km from the network centre
+    16:55:53.00 UTC  MLv 2.6    55 km from the network centre
+    16:57:45.00 UTC  MLv 2.4    52 km from the network centre
+    16:59:29.00 UTC  MLv 2.7    55 km from the network centre
+    17:05:17.00 UTC  MLv 2.0    54 km from the network centre
+    17:06:30.00 UTC  MLv 2.2    52 km from the network centre
+    17:07:48.00 UTC  MLv 2.2    51 km from the network centre
+    17:11:34.00 UTC  MLv 2.0    54 km from the network centre
+    17:12:30.00 UTC  MLv 2.3    54 km from the network centre
+    17:16:43.00 UTC  MLv 3.0    51 km from the network centre
+    17:19:03.00 UTC  MLv 2.3    52 km from the network centre
+    17:22:07.00 UTC  MLv 1.7    54 km from the network centre
+    17:23:43.00 UTC  MLv 1.8    53 km from the network centre
+    17:24:58.00 UTC  MLv 1.4   146 km from the network centre
+    17:27:49.00 UTC  MLv 2.3    55 km from the network centre
+    17:29:47.00 UTC  MLv 2.4    51 km from the network centre
+    17:32:01.00 UTC  MLv 2.3    56 km from the network centre
+    17:32:58.00 UTC  MLv 2.4    54 km from the network centre
+    17:36:42.00 UTC  MLv 2.4    52 km from the network centre
+    17:38:26.00 UTC  MLv 2.0    52 km from the network centre
+    17:40:08.00 UTC  MLv 2.0    52 km from the network centre
+    17:43:09.00 UTC  MLv 2.0    52 km from the network centre
+    17:43:44.00 UTC  MLv 2.3    56 km from the network centre
+    17:44:06.00 UTC  MLv 2.5    52 km from the network centre
+    17:45:48.00 UTC  MLv 2.3    53 km from the network centre
+    17:49:43.00 UTC  MLv 1.9    54 km from the network centre
+    17:50:44.00 UTC  MLv 2.0    56 km from the network centre
+    17:51:26.00 UTC  MLv 2.5    56 km from the network centre
+    17:54:59.00 UTC  MLv 2.1    51 km from the network centre
+    17:56:23.00 UTC  MLv 2.1    57 km from the network centre
+    17:57:40.00 UTC  MLv 2.3    55 km from the network centre
+    17:58:40.00 UTC  MLv 2.4    56 km from the network centre
+    18:01:04.00 UTC  MLv 2.3    54 km from the network centre
+    18:02:16.00 UTC  MLv 2.7    54 km from the network centre
+    18:04:10.00 UTC  MLv 2.0    55 km from the network centre
+    18:05:34.00 UTC  MLv 2.4    54 km from the network centre
+    18:06:47.00 UTC  MLv 2.6    56 km from the network centre
+    18:08:05.00 UTC  MLv 2.2    57 km from the network centre
+    18:11:19.00 UTC  MLv 1.9    57 km from the network centre
+    18:13:20.00 UTC  MLv 1.9    54 km from the network centre
+    18:13:51.00 UTC  MLv 2.6    52 km from the network centre
+    18:15:37.00 UTC  MLv 3.4    52 km from the network centre
+    18:18:50.00 UTC  MLv 2.2    54 km from the network centre
+    18:19:24.00 UTC  MLv 2.3    56 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    17:59:49.50 UTC  #4  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_eqt_0p9/nz_now_seq004.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      21588         0        1      1         7      0.002 (0.001)        52
+  KPRZ     21588         0        0      0         0      0.001 (0.001)         0
+  MWZ      21588         0        7      7        49      0.001 (0.001)        39
+  PUZ      21588         0        2      2        14      0.001 (0.001)        46
+  RATZ     21588         0        1      1         7      0.001 (0.001)        54
+  TLZ      21588         0        1      1         7      0.001 (0.001)        58
+  URZ      21588         0       35     35       245      0.002 (0.001)        30
+  Pd: 329 values sent
+  P time from an STA/LTA onset for 29 of 47 triggers (18 from the window start)
+  onset from a FilterPicker pick for 27 of 47 triggers (P-time location and Pd)
+  151116 windows in 1.6 s: 6590x real time per station

@@ -1,0 +1,46 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-09 03:25:03.66 to 09:25:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   08:42:25.61  earthquake detected by KARY, MRTH
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 03:53:50.00 to 09:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:42:25.61 UTC by KARY, MRTH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     7
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    08:42:25.61 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_station/greece_strat_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.001 (0.000)         0
+  EPID     43189         0        0      0         0      0.001 (0.000)         0
+  KARY     43189         0        1      1         7      0.001 (0.000)        48
+  MDRA     43189         0        1      1         7      0.001 (0.000)        40
+  MRTH     43189         0        1      1         0      0.001 (0.000)        33
+  PTL      42746        60        3      3        21      0.001 (0.000)        47
+  VILL     43189         0        0      0         0      0.001 (0.000)         0
+  VLI      43114         7        3      3        21      0.001 (0.000)        39
+  Pd: 56 values sent
+  344994 windows in 0.5 s: 41548x real time per station

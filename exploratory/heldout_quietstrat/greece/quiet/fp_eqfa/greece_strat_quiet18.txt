@@ -1,0 +1,52 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2025-03-11 09:07:02.51 to 15:07:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   09:52:56.65  earthquake detected by LTHK, VLS
+ALARM    #2   11:19:37.50  earthquake detected by AMT, ORTH
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-03-11 09:35:50.00 to 15:07:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:52:56.65 UTC by LTHK, VLS
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:19:37.50 UTC by AMT, ORTH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm   108
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    09:52:56.65 UTC  #1  no magnitude, not located
+    11:19:37.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqfa/greece_strat_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0       15     15       105      0.015 (0.036)        48
+  AXS      43189         0       11     11        77      0.016 (0.040)        44
+  DRO      43189         0        2      2        14      0.016 (0.037)        44
+  LTHK     43189         0       52     52       364      0.018 (0.010)        55
+  ORTH     43189         0        1      1         7      0.015 (0.203)        49
+  PLEV     43189         0        0      0         0      0.018 (0.020)         0
+  RLS      43189         0       17     17       119      0.016 (0.025)        57
+  VLS      43189         0       14     14        98      0.016 (0.025)        54
+  Pd: 784 values sent
+  345512 windows in 4.0 s: 5001x real time per station

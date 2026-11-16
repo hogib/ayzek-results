@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-11-19 03:20:02.43 to 09:20:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:03:15.50  earthquake detected by KNSS, PFKS, SIVA
+PLOC     #1   04:03:15.50  P times locate it at 34.692N 25.030E +-321 km, origin 04:02:57.80, rms 0.01 s from 3 stations
+PLOC     #1   04:03:28.50  P times locate it at 34.826N 25.112E +-48 km, origin 04:03:00.32, rms 0.98 s from 4 stations
+LOCATE   #1   04:03:59.50  located at 34.810N 25.043E, origin 04:02:59.34, rms 0.05 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-19 03:48:50.00 to 09:20:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 34.810N 25.043E, origin 04:02:59.34 UTC
+  alarm      04:03:15.50 UTC by KNSS, PFKS, SIVA; later IMMV
+  location   rms 0.05 s from 2 stations, first 44.0 s after the alarm (P and S picks)
+  P loc.     34.826N 25.112E +-48 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 56 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          31 km   04:03:08.72 UTC (picked)      -6.8 s  after S
+             PFKS          47 km   04:03:13.06 UTC (picked)      -2.4 s  after S
+             KNSS          56 km   04:03:15.69 UTC (predicted)    +0.2 s  before S
+             IPPL          80 km   04:03:22.31 UTC (predicted)    +6.8 s  before S
+             STIA         105 km   04:03:29.46 UTC (predicted)   +14.0 s  before S
+             CHAN         120 km   04:03:33.84 UTC (predicted)   +18.3 s  before S
+             IMMV         121 km   04:03:33.92 UTC (predicted)   +18.4 s  before S
+             KNDR         137 km   04:03:38.72 UTC (predicted)   +23.2 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     3
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:03:15.50 UTC  #1  no magnitude, located 34.81N 25.04E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/eqt_lookahead_eqdet/greece_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43162         3        0      0         0      0.004 (0.001)         0
+  IMMV     43189         0        1      1         7      0.002 (0.001)        79
+  IPPL     43189         0        0      0         0      0.003 (0.001)         0
+  KNDR     43189         0        0      0         0      0.003 (0.001)         0
+  KNSS     43189         0        1      1         7      0.003 (0.001)        81
+  PFKS     43150         5        4      4        28      0.003 (0.001)        63
+  SIVA     43189         0        2      2        14      0.002 (0.001)        76
+  STIA     43189         0        1      1         7      0.003 (0.001)        67
+  Pd: 63 values sent
+  P time from an STA/LTA onset for 3 of 9 triggers (6 from the window start)
+  onset from a FilterPicker pick for 4 of 9 triggers (P-time location and Pd)
+  345446 windows in 2.0 s: 9710x real time per station

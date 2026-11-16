@@ -1,0 +1,54 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-09-28 02:35:02.35 to 08:35:00.01 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+pick     PFKS  picker window at 04:59:21.70 crosses a gap, skipped
+ALARM    #1   03:52:41.06  earthquake detected by IPPL, STIA
+ALARM    #2   04:59:27.21  earthquake detected by PFKS, SIVA
+pick     STIA  picker window at 07:52:05.51 crosses a gap, skipped
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-28 03:03:50.00 to 08:35:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      03:52:41.06 UTC by IPPL, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      04:59:27.21 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    36
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:52:41.06 UTC  #1  no magnitude, not located
+    04:59:27.21 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/stalta_station/greece_now_quiet19.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.004 (0.001)         0
+  IMMV     43189         0        1      1         7      0.004 (0.001)       225
+  IPPL     43189         0       15     15       105      0.004 (0.001)       138
+  KNDR     43166         2        2      2        14      0.003 (0.001)       229
+  KNSS     43189         0        2      2        14      0.004 (0.001)       223
+  PFKS     43176         2        4      3        28      0.004 (0.001)       181
+  SIVA     43189         0        9      9        63      0.005 (0.001)       192
+  STIA     43059        13        7      6        42      0.004 (0.001)       171
+  Pd: 273 values sent
+  345346 windows in 3.2 s: 6255x real time per station

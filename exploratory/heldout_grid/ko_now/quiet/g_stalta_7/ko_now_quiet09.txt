@@ -1,0 +1,159 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 7 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   01:33:50.93  earthquake detected by GAZ, SVRC
+ALARM    #2   02:01:31.38  earthquake detected by NURH, SVRC
+ALARM    #3   02:13:23.92  earthquake detected by GAZ, SVRC
+ALARM    #4   02:16:12.67  earthquake detected by GAZ, SVRC
+ALARM    #5   02:18:53.82  earthquake detected by MLTY, SVRC
+ALARM    #6   02:46:55.40  earthquake detected by AKDG, GAZ
+ALARM    #7   02:49:00.91  earthquake detected by GAZ, MLTY
+ALARM    #8   03:02:09.34  earthquake detected by GAZ, SVRC
+ALARM    #9   03:05:29.92  earthquake detected by GAZ, MAZI
+ALARM    #10  03:10:03.50  earthquake detected by GAZ, MAZI
+ALARM    #11  03:25:17.53  earthquake detected by GAZ, MLTY
+PLOC     #11  03:25:46.79  P times locate it at 37.986N 37.394E +-63 km, origin 03:25:00.95, rms 0.01 s from 3 stations
+ALARM    #12  03:30:12.77  earthquake detected by MAZI, NURH
+ALARM    #13  03:55:15.29  earthquake detected by DYBB, SVRC
+ALARM    #14  04:05:28.15  earthquake detected by GAZ, SVRC
+ALARM    #15  04:12:18.40  earthquake detected by GAZ, SVRC
+ALARM    #16  04:15:10.70  earthquake detected by GAZ, SVRC
+ALARM    #17  04:39:02.51  earthquake detected by AKDG, SVRC
+ALARM    #18  05:53:12.11  earthquake detected by DYBB, GAZ
+ALARM    #19  05:57:28.09  earthquake detected by GAZ, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:33:50.93 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:01:31.38 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      02:13:23.92 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      02:16:12.67 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      02:18:53.82 UTC by MLTY, SVRC; later GAZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      02:46:55.40 UTC by AKDG, GAZ
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      02:49:00.91 UTC by GAZ, MLTY
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      03:02:09.34 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      03:05:29.92 UTC by GAZ, MAZI
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      03:10:03.50 UTC by GAZ, MAZI
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      03:25:17.53 UTC by GAZ, MLTY; later MAZI
+  P loc.     37.986N 37.394E +-63 km from 3 stations, first 29.3 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      03:30:12.77 UTC by MAZI, NURH
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      03:55:15.29 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude), not located
+  alarm      04:05:28.15 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #15: detected earthquake (no magnitude), not located
+  alarm      04:12:18.40 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #16: detected earthquake (no magnitude), not located
+  alarm      04:15:10.70 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #17: detected earthquake (no magnitude), not located
+  alarm      04:39:02.51 UTC by AKDG, SVRC
+  AFAD       no matching catalogue event
+
+Event #18: detected earthquake (no magnitude), not located
+  alarm      05:53:12.11 UTC by DYBB, GAZ
+  AFAD       no matching catalogue event
+
+Event #19: detected earthquake (no magnitude), not located
+  alarm      05:57:28.09 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          19
+  single-station detections, no alarm   120
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             19  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    01:33:50.93 UTC  #1  no magnitude, not located
+    02:01:31.38 UTC  #2  no magnitude, not located
+    02:13:23.92 UTC  #3  no magnitude, not located
+    02:16:12.67 UTC  #4  no magnitude, not located
+    02:18:53.82 UTC  #5  no magnitude, not located
+    02:46:55.40 UTC  #6  no magnitude, not located
+    02:49:00.91 UTC  #7  no magnitude, not located
+    03:02:09.34 UTC  #8  no magnitude, not located
+    03:05:29.92 UTC  #9  no magnitude, not located
+    03:10:03.50 UTC  #10  no magnitude, not located
+    03:25:17.53 UTC  #11  no magnitude, not located
+    03:30:12.77 UTC  #12  no magnitude, not located
+    03:55:15.29 UTC  #13  no magnitude, not located
+    04:05:28.15 UTC  #14  no magnitude, not located
+    04:12:18.40 UTC  #15  no magnitude, not located
+    04:15:10.70 UTC  #16  no magnitude, not located
+    04:39:02.51 UTC  #17  no magnitude, not located
+    05:53:12.11 UTC  #18  no magnitude, not located
+    05:57:28.09 UTC  #19  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_7/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0        6      6         0      0.001 (0.000)        36
+  DYBB     43189         0        2      2        14      0.001 (0.001)        35
+  GAZ      43189         0       84     84       588      0.001 (0.001)        19
+  MAZI     43189         0        6      6         0      0.001 (0.001)        41
+  MLTY     43189         0        7      7        49      0.001 (0.001)        32
+  NURH     43189         0        7      7         0      0.001 (0.001)        31
+  SVRC     43091         9       51     51       357      0.000 (0.001)        23
+  Pd: 1008 values sent
+  302225 windows in 1.7 s: 11567x real time per station

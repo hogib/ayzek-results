@@ -1,0 +1,48 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-12-31 15:05:02.06 to 21:05:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   17:46:37.52  earthquake detected by DOMV, NEO
+ALARM    #2   20:11:13.22  earthquake detected by MRTH, NEO
+ALARM    #3   20:22:02.13  earthquake detected by LKR, NEO
+ALARM    #4   20:54:49.46  earthquake detected by NEO, THIV
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-12-31 15:33:50.00 to 21:05:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:46:37.52 UTC by DOMV, NEO
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      20:11:13.22 UTC by MRTH, NEO
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      20:22:02.13 UTC by LKR, NEO
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      20:54:49.46 UTC by NEO, THIV
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm   106
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DOMV     43189         0        9      9        63      0.001 (0.000)        29
+  LKR      43189         0        3      3        21      0.001 (0.000)        33
+  MDRA     43189         0        0      0         0      0.001 (0.000)         0
+  MRTH     43189         0        4      4         0      0.001 (0.000)        27
+  NEO      43189         0       84     84       588      0.001 (0.001)        24
+  THIV     43189         0        7      7        49      0.001 (0.001)        33
+  VILL     43189         0        7      7        49      0.001 (0.000)        28
+  XOR      43189         0        0      0         0      0.001 (0.000)         0
+  Pd: 770 values sent
+  345512 windows in 2.2 s: 8944x real time per station

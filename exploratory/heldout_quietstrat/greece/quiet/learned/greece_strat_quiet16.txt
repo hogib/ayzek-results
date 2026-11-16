@@ -1,0 +1,60 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-10-26 12:02:02.39 to 18:02:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   14:24:35.50  earthquake detected by KNSS, STIA
+ALARM    #2   15:39:52.50  earthquake detected by KNDR, STIA
+ALARM    #3   17:12:28.00  earthquake detected by PFKS, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-10-26 12:30:50.00 to 18:02:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      14:24:35.50 UTC by KNSS, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:39:52.50 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      17:12:28.00 UTC by PFKS, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm   138
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    14:24:35.50 UTC  #1  no magnitude, not located
+    15:39:52.50 UTC  #2  no magnitude, not located
+    17:12:28.00 UTC  #3  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/learned/greece_strat_quiet16.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43188         0        0      0         0     42.500 (70.402)         0
+  IMMV     43189         0        0      0         0     41.992 (71.751)         0
+  IPPL     43189         0        0      0         0     36.527 (63.549)         0
+  KNDR     43189         0        1      1         7     41.869 (70.158)        99
+  KNSS     43189         0        1      1         7     41.641 (69.530)        92
+  PFKS     43176         2        1      1         7     41.634 (69.902)        98
+  SIVA     43189         0        0      0         0     42.107 (70.235)         0
+  STIA     43189         0      142    141       994     41.568 (72.576)        86
+  Pd: 1015 values sent
+  P time from an STA/LTA onset for 8 of 145 triggers (137 from the window start)
+  onset from a FilterPicker pick for 4 of 145 triggers (P-time location and Pd)
+  345498 windows in 1862.5 s: 11x real time per station

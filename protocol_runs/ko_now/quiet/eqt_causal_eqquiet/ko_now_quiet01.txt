@@ -1,0 +1,53 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-15 19:31:03.13 to 01:31:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   21:22:49.00  earthquake detected by CEYT, KARA
+ALARM    #2   21:30:19.00  earthquake detected by NURH, SARI
+ALARM    #3   22:18:53.00  earthquake detected by NURH, SARI
+LOCATE   #3   22:19:44.50  located at 38.193N 36.922E, origin 22:18:38.24, rms 1.20 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-15 19:59:50.00 to 01:31:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:22:49.00 UTC by CEYT, KARA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      21:30:19.00 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at 38.193N 36.922E, origin 22:18:38.24 UTC
+  alarm      22:18:53.00 UTC by NURH, SARI
+  location   rms 1.20 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 51 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          50 km   22:18:52.06 UTC (picked)      -0.9 s  after S
+             NURH          51 km   22:18:51.78 UTC (picked)      -1.2 s  after S
+             GAZ          116 km   22:19:11.60 UTC (predicted)   +18.6 s  before S
+             BNN          119 km   22:19:12.30 UTC (predicted)   +19.3 s  before S
+             CEYT         167 km   22:19:26.14 UTC (predicted)   +33.1 s  before S
+             KARA         194 km   22:19:33.81 UTC (predicted)   +40.8 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    22
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_causal_eqquiet/ko_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.004 (0.002)         0
+  CEYT     43145         4        2      2        14      0.006 (0.002)       157
+  GAZ      43189         0        1      1         7      0.005 (0.002)       202
+  KARA     43189         0        2      2        14      0.005 (0.002)       184
+  NURH     43189         0       18     18         0      0.004 (0.001)       133
+  SARI     43189         0        7      7        49      0.004 (0.006)       106
+  Pd: 84 values sent
+  P time from an STA/LTA onset for 14 of 30 triggers (16 from the window start)
+  onset from a FilterPicker pick for 11 of 30 triggers (P-time location and Pd)
+  259090 windows in 5.1 s: 3889x real time per station

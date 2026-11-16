@@ -1,0 +1,79 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-09-04 09:14:02.59 to 15:14:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   11:20:10.66  earthquake detected by IPPL, PFKS
+PLOC     #1   11:20:13.34  P times locate it at 38.269N 23.884E +-228 km, origin 11:19:05.73, rms 0.44 s from 3 stations
+pick     PFKS  picker window at 11:59:39.48 crosses a gap, skipped
+ALARM    #2   11:26:19.48  earthquake detected by KNSS, SIVA
+ALARM    #3   11:58:53.88  earthquake detected by SIVA, ZKR
+ALARM    #4   12:22:15.76  earthquake detected by CHAN, ZKR
+ALARM    #5   12:51:30.92  earthquake detected by IPPL, ZKR
+ALARM    #6   13:49:18.66  earthquake detected by KNSS, PFKS
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-09-04 09:42:50.00 to 15:14:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      11:20:10.66 UTC by IPPL, PFKS; later ZKR
+  P loc.     38.269N 23.884E +-228 km from 3 stations, first 2.7 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:26:19.48 UTC by KNSS, SIVA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      11:58:53.88 UTC by SIVA, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      12:22:15.76 UTC by CHAN, ZKR
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      12:51:30.92 UTC by IPPL, ZKR
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      13:49:18.66 UTC by KNSS, PFKS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    61
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              6  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    11:20:10.66 UTC  #1  no magnitude, not located
+    11:26:19.48 UTC  #2  no magnitude, not located
+    11:58:53.88 UTC  #3  no magnitude, not located
+    12:22:15.76 UTC  #4  no magnitude, not located
+    12:51:30.92 UTC  #5  no magnitude, not located
+    13:49:18.66 UTC  #6  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/stalta_eqfa/greece_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        3      3        21      0.004 (0.001)       155
+  IPPL     43189         0       12     12        84      0.004 (0.001)       170
+  KNSS     43189         0        7      7        49      0.004 (0.001)       178
+  PFKS     43175         2       14     13        98      0.004 (0.001)       168
+  SIVA     43189         0        5      5        35      0.004 (0.001)       182
+  STIA     43189         0        0      0         0      0.006 (0.001)         0
+  THERA    43189         0        2      2        14      0.005 (0.001)       176
+  ZKR      43189         0       31     31       217      0.005 (0.001)       176
+  Pd: 518 values sent
+  345498 windows in 6.5 s: 3034x real time per station

@@ -1,0 +1,48 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2025-01-06 09:56:02.62 to 15:56:00.01 UTC at full speed
+ayzek    catalogue: 44 events in the replay span
+ALARM    #1   15:24:22.44  earthquake detected by KNSS, THERA
+PLOC     #1   15:24:29.56  P times locate it at 35.743N 25.620E +-242 km, origin 15:24:10.19, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-01-06 10:24:50.00 to 15:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:24:22.44 UTC by KNSS, THERA; later IPPL
+  P loc.     35.743N 25.620E +-242 km from 3 stations, first 7.1 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     8
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    15:24:22.44 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqquiet/greece_strat_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43162         5        0      0         0      0.014 (0.008)         0
+  IPPL     43189         0        1      1         7      0.014 (0.009)        11
+  KNSS     43189         0        2      2        14      0.013 (0.016)        20
+  PFKS     43114        11        5      5        35      0.012 (0.014)        28
+  SIVA     43189         0        0      0         0      0.015 (0.025)         0
+  STIA     43189         0        2      2        14      0.012 (0.014)        28
+  THERA    43189         0        1      1         7      0.012 (0.019)        14
+  ZKR      43189         0        0      0         0      0.012 (0.007)         0
+  Pd: 77 values sent
+  345410 windows in 1.0 s: 20303x real time per station

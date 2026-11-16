@@ -1,0 +1,76 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 12/10, Z + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:03:30.83  earthquake detected by GAZ, KARA
+ALARM    #2   01:51:39.48  earthquake detected by GAZ, SARI
+ALARM    #3   02:11:16.65  earthquake detected by NURH, SARI
+ALARM    #4   03:17:52.77  earthquake detected by BNN, GAZ
+ALARM    #5   03:38:20.22  earthquake detected by GAZ, SARI
+ALARM    #6   04:23:44.79  earthquake detected by BNN, NURH
+ALARM    #7   05:11:56.94  earthquake detected by GAZ, NURH
+PDMAG    #7   05:11:58.32  Pd magnitude M3.8 ± 0.4 (M<4 68%, 4-5.5 32%, M>=5.5 0%) from 1 station (1 above noise), windows up to 1 s, distances from the P-time location
+PLOC     #7   05:11:58.32  P times locate it at 37.775N 36.881E +-14 km, origin 05:11:44.21, rms 0.02 s from 3 stations
+PLOC     #7   05:11:58.66  P times locate it at 37.913N 36.446E +-19 km, origin 05:11:38.66, rms 0.01 s from 3 stations, left out SARI
+PDMAG    #7   05:11:59.00  Pd magnitude M3.8 ± 0.3 (M<4 79%, 4-5.5 21%, M>=5.5 0%) from 2 stations (2 above noise), windows up to 2 s, distances from the P-time location
+PDMAG    #7   05:11:59.50  Pd magnitude M3.8 ± 0.2 (M<4 81%, 4-5.5 19%, M>=5.5 0%) from 3 stations (3 above noise), windows up to 2 s, distances from the P-time location
+PDMAG    #7   05:11:59.50  Pd magnitude M3.8 ± 0.2 (M<4 87%, 4-5.5 13%, M>=5.5 0%) from 4 stations (3 above noise), windows up to 2 s, distances from the P-time location
+PDMAG    #7   05:12:02.50  Pd magnitude M3.6 ± 0.2 (M<4 98%, 4-5.5 2%, M>=5.5 0%) from 4 stations (3 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #7   05:12:03.50  Pd magnitude M3.6 ± 0.2 (M<4 99%, 4-5.5 1%, M>=5.5 0%) from 5 stations (3 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #7   05:12:05.50  Pd magnitude M3.7 ± 0.2 (M<4 97%, 4-5.5 3%, M>=5.5 0%) from 5 stations (4 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #7   05:12:05.95  Pd magnitude M3.7 ± 0.2 (M<4 96%, 4-5.5 4%, M>=5.5 0%) from 4 stations (4 above noise), windows up to 7 s, distances from the P-time location
+PLOC     #7   05:12:05.95  P times locate it at 37.974N 36.542E +-8 km, origin 05:11:39.39, rms 0.64 s from 4 stations, left out SARI
+PDMAG    #7   05:12:06.50  Pd magnitude M3.8 ± 0.1 (M<4 87%, 4-5.5 13%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #7   05:12:15.50  Pd magnitude M3.7 ± 0.1 (M<4 97%, 4-5.5 3%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 10 s, distances from the P-time location
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:03:30.83 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      01:51:39.48 UTC by GAZ, SARI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      02:11:16.65 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      03:17:52.77 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      03:38:20.22 UTC by GAZ, SARI
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      04:23:44.79 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #7: detected M3.7 earthquake, not located
+  alarm      05:11:56.94 UTC by GAZ, NURH; later BNN, KARA, SARI
+  Pd magn.   M3.8 1.4 s after the alarm, M3.7 ± 0.1 (M<4 97%, 4-5.5 3%, M>=5.5 0%) final from 5 stations (5 above noise)
+  P loc.     37.974N 36.542E +-8 km from 4 stations, first 1.4 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm    90
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_fp_12/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       15     15       105      0.017 (0.007)        57
+  CEYT     43189         0        0      0         0      0.019 (0.038)         0
+  GAZ      43189         0       47     47       329      0.014 (0.015)        41
+  KARA     43189         0        5      5        35      0.017 (0.023)        55
+  NURH     43189         0       21     21         0      0.020 (0.035)        57
+  SARI     43189         0       19     18       133      0.014 (0.025)        54
+  Pd: 602 values sent
+  259134 windows in 2.9 s: 6818x real time per station

@@ -1,0 +1,37 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2024-06-03 03:08:04.44 to 09:08:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   06:27:43.55  earthquake detected by FOZ, RPZ
+ALARM    #2   08:36:50.49  earthquake detected by RPZ, WVZ
+PLOC     #2   08:36:55.60  P times locate it at -43.529N 169.747E +-364 km, origin 08:36:32.15, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-06-03 03:36:50.00 to 09:08:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      06:27:43.55 UTC by FOZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:36:50.49 UTC by RPZ, WVZ; later CVZ
+  P loc.     -43.529N 169.747E +-364 km from 3 stations, first 5.1 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    63
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/quiet/fp_eqdet/nz_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       10     10        70      0.029 (0.508)       121
+  FOZ      43189         0       17     17       119      0.037 (0.634)       132
+  RPZ      43189         0       35     35       245      0.031 (0.580)       122
+  WHSZ     43189         0        2      2        14      0.037 (0.899)       102
+  WVZ      43189         0        4      4        28      0.026 (0.632)        99
+  Pd: 476 values sent
+  215945 windows in 6.4 s: 3095x real time per station

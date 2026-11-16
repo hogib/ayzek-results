@@ -1,0 +1,56 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-02-13 06:01:02.17 to 12:01:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   10:19:51.65  earthquake detected by IMMV, KNDR, KNSS
+PLOC     #1   10:19:51.65  P times locate it at 35.503N 23.817E +-65 km, origin 10:19:29.89, rms 0.69 s from 3 stations
+ALARM    #2   10:27:41.76  earthquake detected by IMMV, KNDR, KNSS
+PLOC     #2   10:27:41.76  P times locate it at 35.498N 23.822E +-65 km, origin 10:27:20.11, rms 0.64 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-02-13 06:29:50.00 to 12:01:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:19:51.65 UTC by IMMV, KNDR, KNSS
+  P loc.     35.503N 23.817E +-65 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      10:27:41.76 UTC by IMMV, KNDR, KNSS
+  P loc.     35.498N 23.822E +-65 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    29
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:19:51.65 UTC  #1  no magnitude, not located
+    10:27:41.76 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqfa/greece_now_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43174         2        0      0         0      0.002 (0.000)         0
+  IMMV     43189         0        2      2        14      0.002 (0.000)        70
+  IPPL     43189         0        8      8        56      0.001 (0.000)        61
+  KNDR     43189         0        8      8        56      0.001 (0.000)        63
+  KNSS     43189         0        9      9        63      0.001 (0.000)        55
+  PFKS     43176         2        4      4        28      0.001 (0.000)        66
+  SIVA     43189         0        2      2        14      0.001 (0.000)        65
+  STIA     43189         0        4      4        28      0.002 (0.000)        68
+  Pd: 259 values sent
+  345484 windows in 0.9 s: 21360x real time per station

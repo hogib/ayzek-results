@@ -1,0 +1,227 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-10-15 03:05:22.45 to 06:05:20.45 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   03:11:48.00  earthquake detected by BKZ, KPRZ
+ALARM    #2   03:15:48.00  earthquake detected by HIZ, VRZ
+PLOC     #2   03:15:49.00  P times locate it at -38.875N 175.154E +-12 km, origin 03:15:39.70, rms 0.00 s from 3 stations
+PLOC     #2   03:15:49.50  P times locate it at -38.876N 175.160E +-12 km, origin 03:15:39.67, rms 0.06 s from 4 stations
+PLOC     #2   03:15:49.50  P times locate it at -38.772N 175.183E +-8 km, origin 03:15:39.23, rms 1.37 s from 5 stations
+PDMAG    #2   03:15:50.50  Pd magnitude M3.5 ± 0.3 (M<4 98%, 4-5.5 2%, M>=5.5 0%) from 5 stations (1 above noise), windows up to 3 s, distances from the P-time location
+PDMAG    #2   03:15:53.50  Pd magnitude M3.7 ± 0.2 (M<4 96%, 4-5.5 4%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #2   03:15:57.00  Pd magnitude M3.6 ± 0.2 (M<4 99%, 4-5.5 1%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #2   03:16:40.00  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 10 s, distances from the location
+LOCATE   #2   03:16:40.00  located at -38.674N 172.667E, origin 03:15:15.68, rms 0.03 s from 2 stations
+PDMAG    #2   03:16:41.00  Pd magnitude M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 10 s, distances from the location
+LOCATE   #2   03:16:41.00  located at -40.600N 175.765E, origin 03:15:16.27, rms 0.11 s from 2 stations, left out HIZ
+LOCATE   #2   03:16:41.50  located at -40.556N 175.821E, origin 03:15:16.79, rms 0.56 s from 3 stations, left out HIZ
+LOCATE   #2   03:16:44.50  located at -40.172N 174.408E, origin 03:15:16.74, rms 0.68 s from 4 stations, left out VRZ
+ALARM    #3   03:21:33.00  earthquake detected by KPRZ, TLZ
+ALARM    #4   03:25:34.50  earthquake detected by KPRZ, TLZ
+ALARM    #5   03:26:53.00  earthquake detected by KPRZ, TLZ
+ALARM    #6   03:31:08.50  earthquake detected by BKZ, KPRZ
+ALARM    #7   03:39:45.50  earthquake detected by TLZ, VRZ
+ALARM    #8   03:48:43.50  earthquake detected by KPRZ, TLZ
+ALARM    #9   03:53:12.00  earthquake detected by KPRZ, VRZ
+ALARM    #10  04:06:49.50  earthquake detected by KPRZ, TLZ
+ALARM    #11  04:08:37.00  earthquake detected by KPRZ, TLZ
+ALARM    #12  04:19:35.50  earthquake detected by HIZ, TLZ
+PLOC     #12  04:19:47.50  P times locate it at -35.556N 176.336E +-290 km, origin 04:18:35.22, rms 1.28 s from 3 stations
+ALARM    #13  04:22:11.50  earthquake detected by BKZ, KPRZ
+ALARM    #14  04:25:26.50  earthquake detected by HIZ, KPRZ  (AFAD MLv 2.4 at 04:24:31.00, 55.5 s ago)
+ALARM    #15  04:34:41.00  earthquake detected by KPRZ, TLZ
+ALARM    #16  04:38:19.00  earthquake detected by HIZ, TLZ
+ALARM    #17  04:40:17.00  earthquake detected by BKZ, TLZ
+ALARM    #18  04:51:14.50  earthquake detected by HIZ, KPRZ
+ALARM    #19  05:02:53.00  earthquake detected by BKZ, TLZ
+ALARM    #20  05:20:38.00  earthquake detected by HIZ, KPRZ
+ALARM    #21  05:23:38.50  earthquake detected by BKZ, KPRZ
+ALARM    #22  05:33:24.50  earthquake detected by KPRZ, TLZ
+ALARM    #23  05:37:07.00  earthquake detected by HIZ, KPRZ
+ALARM    #24  05:44:07.00  earthquake detected by HIZ, TLZ
+ALARM    #25  05:46:38.00  earthquake detected by RATZ, TLZ
+ALARM    #26  05:55:41.00  earthquake detected by KPRZ, TLZ
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-10-15 03:05:22.45 to 06:05:20.45 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      03:11:48.00 UTC by BKZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #2: detected M4.3 earthquake at -40.172N 174.408E, origin 03:15:16.74 UTC
+  alarm      03:15:48.00 UTC by HIZ, VRZ; later BKZ, KPRZ, RATZ, TLZ
+  Pd magn.   M3.5 2.5 s after the alarm, M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) final from 6 stations (2 above noise)
+  location   rms 0.68 s from 4 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     -38.772N 175.183E +-8 km from 5 stations, first 1.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 109 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             VRZ          120 km   03:16:09.38 UTC (picked)     +21.4 s  before S
+             RATZ         186 km   03:16:11.36 UTC (picked)     +23.4 s  before S
+             HIZ          188 km   03:16:10.36 UTC (picked)     +22.4 s  before S
+             KPRZ         193 km   03:16:11.62 UTC (picked)     +23.6 s  before S
+             BKZ          211 km   03:16:16.06 UTC (picked)     +28.1 s  before S
+             TLZ          227 km   03:16:21.60 UTC (predicted)   +33.6 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      03:21:33.00 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      03:25:34.50 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      03:26:53.00 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      03:31:08.50 UTC by BKZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      03:39:45.50 UTC by TLZ, VRZ
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      03:48:43.50 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      03:53:12.00 UTC by KPRZ, VRZ
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      04:06:49.50 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      04:08:37.00 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      04:19:35.50 UTC by HIZ, TLZ; later VRZ
+  P loc.     -35.556N 176.336E +-290 km from 3 stations, first 12.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      04:22:11.50 UTC by BKZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude), not located
+  alarm      04:25:26.50 UTC by HIZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #15: detected earthquake (no magnitude), not located
+  alarm      04:34:41.00 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #16: detected earthquake (no magnitude), not located
+  alarm      04:38:19.00 UTC by HIZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #17: detected earthquake (no magnitude), not located
+  alarm      04:40:17.00 UTC by BKZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #18: detected earthquake (no magnitude), not located
+  alarm      04:51:14.50 UTC by HIZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #19: detected earthquake (no magnitude), not located
+  alarm      05:02:53.00 UTC by BKZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #20: detected earthquake (no magnitude), not located
+  alarm      05:20:38.00 UTC by HIZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #21: detected earthquake (no magnitude), not located
+  alarm      05:23:38.50 UTC by BKZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #22: detected earthquake (no magnitude), not located
+  alarm      05:33:24.50 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #23: detected earthquake (no magnitude), not located
+  alarm      05:37:07.00 UTC by HIZ, KPRZ
+  AFAD       no matching catalogue event
+
+Event #24: detected earthquake (no magnitude), not located
+  alarm      05:44:07.00 UTC by HIZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #25: detected earthquake (no magnitude), not located
+  alarm      05:46:38.00 UTC by RATZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #26: detected earthquake (no magnitude), not located
+  alarm      05:55:41.00 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          26
+  single-station detections, no alarm   113
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             26  100%
+
+  AFAD events within 250 km                2
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                2  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+    M 4-5                   1          0        1
+
+  Missed AFAD events
+    03:15:20.00 UTC  MLv 4.6    49 km from the network centre
+    04:48:42.00 UTC  MLv 1.7    83 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:11:48.00 UTC  #1  no magnitude, not located
+    03:15:48.00 UTC  #2  M4.3, located -40.17N 174.41E
+    03:21:33.00 UTC  #3  no magnitude, not located
+    03:25:34.50 UTC  #4  no magnitude, not located
+    03:26:53.00 UTC  #5  no magnitude, not located
+    03:31:08.50 UTC  #6  no magnitude, not located
+    03:39:45.50 UTC  #7  no magnitude, not located
+    03:48:43.50 UTC  #8  no magnitude, not located
+    03:53:12.00 UTC  #9  no magnitude, not located
+    04:06:49.50 UTC  #10  no magnitude, not located
+    04:08:37.00 UTC  #11  no magnitude, not located
+    04:19:35.50 UTC  #12  no magnitude, not located
+    04:22:11.50 UTC  #13  no magnitude, not located
+    04:25:26.50 UTC  #14  no magnitude, not located
+    04:34:41.00 UTC  #15  no magnitude, not located
+    04:38:19.00 UTC  #16  no magnitude, not located
+    04:40:17.00 UTC  #17  no magnitude, not located
+    04:51:14.50 UTC  #18  no magnitude, not located
+    05:02:53.00 UTC  #19  no magnitude, not located
+    05:20:38.00 UTC  #20  no magnitude, not located
+    05:23:38.50 UTC  #21  no magnitude, not located
+    05:33:24.50 UTC  #22  no magnitude, not located
+    05:37:07.00 UTC  #23  no magnitude, not located
+    05:44:07.00 UTC  #24  no magnitude, not located
+    05:46:38.00 UTC  #25  no magnitude, not located
+    05:55:41.00 UTC  #26  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_phasenet_0p4/nz_now_seq008.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      21588         0       17     17       119      0.001 (0.001)        75
+  HIZ      21588         0       13     13        91      0.002 (0.001)        77
+  KPRZ     21588         0       58     58       406      0.002 (0.001)        48
+  RATZ     21588         0        4      4        28      0.002 (0.001)        91
+  TLZ      21588         0       78     77       546      0.002 (0.001)        42
+  VRZ      21588         0        8      8        56      0.002 (0.001)        74
+  Pd: 1246 values sent
+  P time from an STA/LTA onset for 47 of 178 triggers (131 from the window start)
+  onset from a FilterPicker pick for 23 of 178 triggers (P-time location and Pd)
+  129528 windows in 4.2 s: 2551x real time per station

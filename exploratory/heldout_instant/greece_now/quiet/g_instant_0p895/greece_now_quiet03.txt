@@ -1,0 +1,90 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-08 19:18:02.66 to 01:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   19:53:52.50  earthquake detected by KNSS, STIA
+ALARM    #2   21:42:32.50  earthquake detected by CHAN, STIA
+ALARM    #3   22:16:20.50  earthquake detected by KNSS, PFKS
+ALARM    #4   22:34:06.50  earthquake detected by IPPL, PFKS
+ALARM    #5   23:31:55.50  earthquake detected by KNSS, PFKS
+LOCATE   #5   23:32:46.50  located at 35.389N 25.312E, origin 23:31:46.43, rms 0.13 s from 2 stations
+ALARM    #6   23:54:48.00  earthquake detected by SIVA, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-08 19:46:50.00 to 01:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:53:52.50 UTC by KNSS, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      21:42:32.50 UTC by CHAN, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      22:16:20.50 UTC by KNSS, PFKS
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      22:34:06.50 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude) at 35.389N 25.312E, origin 23:31:46.43 UTC
+  alarm      23:31:55.50 UTC by KNSS, PFKS
+  location   rms 0.13 s from 2 stations, first 51.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 30 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KNSS          15 km   23:31:51.54 UTC (picked)      -4.0 s  after S
+             PFKS          41 km   23:31:58.62 UTC (picked)      +3.1 s  before S
+             SIVA          61 km   23:32:04.19 UTC (predicted)    +8.7 s  before S
+             STIA          74 km   23:32:07.68 UTC (predicted)   +12.2 s  before S
+             IPPL          77 km   23:32:08.64 UTC (predicted)   +13.1 s  before S
+             ZKR           88 km   23:32:11.64 UTC (predicted)   +16.1 s  before S
+             THERA        110 km   23:32:17.93 UTC (predicted)   +22.4 s  before S
+             CHAN         116 km   23:32:19.66 UTC (predicted)   +24.2 s  before S
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      23:54:48.00 UTC by SIVA, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    61
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              6  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    19:53:52.50 UTC  #1  no magnitude, not located
+    21:42:32.50 UTC  #2  no magnitude, not located
+    22:16:20.50 UTC  #3  no magnitude, not located
+    22:34:06.50 UTC  #4  no magnitude, not located
+    23:31:55.50 UTC  #5  no magnitude, located 35.39N 25.31E
+    23:54:48.00 UTC  #6  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/greece_now/quiet/g_instant_0p895/greece_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       17     17       119      0.001 (0.001)        36
+  IPPL     43189         0        3      3        21      0.001 (0.001)        26
+  KNSS     43189         0        3      3        21      0.002 (0.003)        40
+  PFKS     43189         0        6      6        42      0.001 (0.001)        33
+  SIVA     43189         0        2      2        14      0.001 (0.002)        40
+  STIA     43189         0       40     40       280      0.001 (0.001)        32
+  THERA    43189         0        0      0         0      0.001 (0.003)         0
+  ZKR      43189         0        2      2        14      0.001 (0.001)        38
+  Pd: 511 values sent
+  P time from an STA/LTA onset for 47 of 73 triggers (26 from the window start)
+  onset from a FilterPicker pick for 32 of 73 triggers (P-time location and Pd)
+  345512 windows in 3.0 s: 6701x real time per station

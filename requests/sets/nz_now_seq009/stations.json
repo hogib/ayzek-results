@@ -1,0 +1,435 @@
+{
+ "set": "nz_now_seq009",
+ "config": {
+  "name": "nz_now_seq009",
+  "networks": [
+   "NZ"
+  ],
+  "start": "2023-10-23T08:59:04.193071",
+  "end": "2023-10-23T11:59:04.193071",
+  "lat": -42.73765,
+  "lon": 171.78329,
+  "radius_km": 150.0,
+  "max_stations": 5,
+  "min_coverage": 0.0,
+  "max_azimuth_offset_deg": null,
+  "stations": [
+   "NZ.WVZ",
+   "NZ.DSZ",
+   "NZ.RPZ",
+   "NZ.WHSZ",
+   "NZ.KHZ"
+  ],
+  "catalog": {
+   "lead_days": 1.0,
+   "radius_km": 400.0,
+   "min_magnitude": null,
+   "start": null,
+   "end": null,
+   "limit": null
+  },
+  "source": "selections/nz_now/sets/nz_now_seq009.toml"
+ },
+ "span": [
+  "2023-10-23T08:59:04.193071",
+  "2023-10-23T11:59:04.193071"
+ ],
+ "services": {
+  "station": "https://service.geonet.org.nz/fdsnws/station/1/query",
+  "dataselect": "https://service.geonet.org.nz/fdsnws/dataselect/1/query",
+  "availability": "none; day listing of https://geonet-open-data.s3-ap-southeast-2.amazonaws.com",
+  "event": "https://service.geonet.org.nz/fdsnws/event/1/query"
+ },
+ "coverage_basis": "day files in the open-data bucket (upper bound)",
+ "probed_utc": "2026-10-31T00:41:44+00:00",
+ "tool": {
+  "name": "ayzek-heldout",
+  "git_commit": "6fda3e246e53"
+ },
+ "probed": [
+  {
+   "network": "NZ",
+   "station": "INZ",
+   "lat": -42.7245,
+   "lon": 171.4441,
+   "elevation_m": 165.0,
+   "distance_km": 27.7,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "NZ",
+   "station": "LTZ",
+   "lat": -42.781667157,
+   "lon": 172.27103538,
+   "elevation_m": 648.0,
+   "distance_km": 40.1,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "NZ",
+   "station": "OXZ",
+   "lat": -43.3259,
+   "lon": 172.0383,
+   "elevation_m": 360.0,
+   "distance_km": 68.6,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "NZ",
+   "station": "WVZ",
+   "lat": -43.074350291,
+   "lon": 170.73675416,
+   "elevation_m": 91.0,
+   "distance_km": 93.1,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "GVZ",
+   "lat": -42.967365,
+   "lon": 173.03475,
+   "elevation_m": 400.5,
+   "distance_km": 105.2,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "NZ",
+   "station": "DSZ",
+   "lat": -41.744960821,
+   "lon": 171.804614445,
+   "elevation_m": 650.0,
+   "distance_km": 110.4,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "RPZ",
+   "lat": -43.714607582,
+   "lon": 171.053864882,
+   "elevation_m": 453.0,
+   "distance_km": 123.7,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HH1",
+    "HH2"
+   ],
+   "azimuth_offset_deg": {
+    "HH1": 178.0,
+    "HH2": 178.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HH1": 1.0,
+    "HH2": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "WHSZ",
+   "lat": -43.29065,
+   "lon": 170.40645,
+   "elevation_m": 110.0,
+   "distance_km": 127.7,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "MQZ",
+   "lat": -43.706081677,
+   "lon": 172.653765807,
+   "elevation_m": 57.0,
+   "distance_km": 128.7,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "NZ",
+   "station": "THZ",
+   "lat": -41.762474128,
+   "lon": 172.905218304,
+   "elevation_m": 747.0,
+   "distance_km": 142.4,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "NZ",
+   "station": "KHZ",
+   "lat": -42.41598,
+   "lon": 173.53897,
+   "elevation_m": 64.0,
+   "distance_km": 148.1,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  }
+ ],
+ "chosen": [
+  {
+   "network": "NZ",
+   "station": "WVZ",
+   "lat": -43.074350291,
+   "lon": 170.73675416,
+   "elevation_m": 91.0,
+   "distance_km": 93.1,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "DSZ",
+   "lat": -41.744960821,
+   "lon": 171.804614445,
+   "elevation_m": 650.0,
+   "distance_km": 110.4,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "RPZ",
+   "lat": -43.714607582,
+   "lon": 171.053864882,
+   "elevation_m": 453.0,
+   "distance_km": 123.7,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HH1",
+    "HH2"
+   ],
+   "azimuth_offset_deg": {
+    "HH1": 178.0,
+    "HH2": 178.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HH1": 1.0,
+    "HH2": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "WHSZ",
+   "lat": -43.29065,
+   "lon": 170.40645,
+   "elevation_m": 110.0,
+   "distance_km": 127.7,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "KHZ",
+   "lat": -42.41598,
+   "lon": 173.53897,
+   "elevation_m": 64.0,
+   "distance_km": 148.1,
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  }
+ ],
+ "gains_refused": [],
+ "gains_missing": []
+}

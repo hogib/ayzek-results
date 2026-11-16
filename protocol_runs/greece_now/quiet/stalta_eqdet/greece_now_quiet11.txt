@@ -1,0 +1,151 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:48:28.54  earthquake detected by AMPL, PVO
+ALARM    #2   10:52:47.75  earthquake detected by AMPL, PVO
+ALARM    #3   10:58:15.62  earthquake detected by TETR, TSLK
+PLOC     #3   10:58:15.78  P times locate it at 38.931N 21.463E +-456 km, origin 10:58:03.72, rms 0.03 s from 3 stations
+PLOC     #3   10:58:16.48  P times locate it at 39.595N 20.580E +-345 km, origin 10:58:00.94, rms 0.18 s from 4 stations
+PLOC     #3   10:58:16.63  P times locate it at 39.614N 20.540E +-339 km, origin 10:58:00.28, rms 0.35 s from 5 stations
+PLOC     #3   10:58:19.81  P times locate it at 39.420N 20.717E +-191 km, origin 10:58:03.87, rms 0.55 s from 6 stations
+PLOC     #3   10:58:20.31  P times locate it at 39.378N 20.800E +-320 km, origin 10:58:04.61, rms 0.78 s from 7 stations
+PLOC     #3   10:58:21.65  P times locate it at 39.351N 20.827E +-74 km, origin 10:58:05.05, rms 0.75 s from 8 stations
+LOCATE   #3   10:59:10.11  located at 41.545N 20.135E, origin 10:57:26.17, rms 1.54 s from 2 stations
+LOCATE   #3   10:59:11.12  located at 38.259N 23.581E, origin 10:57:33.28, rms 0.25 s from 2 stations, left out TSLK
+LOCATE   #3   10:59:14.80  located at 40.832N 19.426E, origin 10:57:32.48, rms 1.67 s from 3 stations, left out TSLK
+ALARM    #4   11:14:29.87  earthquake detected by EVR, PVO
+ALARM    #5   11:29:41.42  earthquake detected by AMPL, EVR
+LOCATE   #5   11:30:35.91  located at 38.919N 21.307E, origin 11:29:29.98, rms 1.07 s from 2 stations
+ALARM    #6   11:34:29.02  earthquake detected by AMPL, NYDR
+ALARM    #7   11:40:14.93  earthquake detected by AMPL, PDO
+ALARM    #8   11:45:27.04  earthquake detected by AMPL, EVR
+ALARM    #9   12:44:45.16  earthquake detected by AMPL, TETR
+ALARM    #10  13:12:43.85  earthquake detected by AMPL, PVO
+ALARM    #11  14:20:20.58  earthquake detected by AMPL, NYDR
+ALARM    #12  14:33:46.53  earthquake detected by AMPL, PVO
+ALARM    #13  15:44:07.68  earthquake detected by AMPL, PVO
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:48:28.54 UTC by AMPL, PVO
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      10:52:47.75 UTC by AMPL, PVO
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at 40.832N 19.426E, origin 10:57:32.48 UTC
+  alarm      10:58:15.62 UTC by TETR, TSLK; later AMPL, EVR, LKD2, NYDR, PDO, PVO
+  location   rms 1.67 s from 3 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     39.351N 20.827E +-74 km from 8 stations, first 0.2 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 151 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             TETR         228 km   10:58:40.25 UTC (picked)     +24.6 s  before S
+             TSLK         247 km   10:58:54.63 UTC (picked)     +39.0 s  before S
+             LKD2         250 km   10:58:44.05 UTC (predicted)   +28.4 s  before S
+             NYDR         259 km   10:58:46.28 UTC (picked)     +30.7 s  before S
+             AMPL         261 km   10:58:47.22 UTC (predicted)   +31.6 s  before S
+             PDO          290 km   10:58:55.45 UTC (predicted)   +39.8 s  before S
+             EVR          294 km   10:58:54.52 UTC (picked)     +38.9 s  before S
+             PVO          305 km   10:58:59.61 UTC (predicted)   +44.0 s  before S
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      11:14:29.87 UTC by EVR, PVO
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude) at 38.919N 21.307E, origin 11:29:29.98 UTC
+  alarm      11:29:41.42 UTC by AMPL, EVR
+  location   rms 1.07 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 39 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMPL           8 km   11:29:33.47 UTC (picked)      -8.0 s  after S
+             PDO           37 km   11:29:41.00 UTC (predicted)    -0.4 s  after S
+             PVO           39 km   11:29:41.39 UTC (predicted)    -0.0 s  after S
+             EVR           44 km   11:29:41.55 UTC (picked)      +0.1 s  before S
+             TETR          47 km   11:29:43.80 UTC (predicted)    +2.4 s  before S
+             TSLK          57 km   11:29:46.62 UTC (predicted)    +5.2 s  before S
+             NYDR          57 km   11:29:46.65 UTC (predicted)    +5.2 s  before S
+             LKD2          58 km   11:29:46.81 UTC (predicted)    +5.4 s  before S
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      11:34:29.02 UTC by AMPL, NYDR
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      11:40:14.93 UTC by AMPL, PDO
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      11:45:27.04 UTC by AMPL, EVR
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      12:44:45.16 UTC by AMPL, TETR
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      13:12:43.85 UTC by AMPL, PVO
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      14:20:20.58 UTC by AMPL, NYDR
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      14:33:46.53 UTC by AMPL, PVO
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      15:44:07.68 UTC by AMPL, PVO
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          13
+  single-station detections, no alarm   213
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             13  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:48:28.54 UTC  #1  no magnitude, not located
+    10:52:47.75 UTC  #2  no magnitude, not located
+    10:58:15.62 UTC  #3  no magnitude, located 40.83N 19.43E
+    11:14:29.87 UTC  #4  no magnitude, not located
+    11:29:41.42 UTC  #5  no magnitude, located 38.92N 21.31E
+    11:34:29.02 UTC  #6  no magnitude, not located
+    11:40:14.93 UTC  #7  no magnitude, not located
+    11:45:27.04 UTC  #8  no magnitude, not located
+    12:44:45.16 UTC  #9  no magnitude, not located
+    13:12:43.85 UTC  #10  no magnitude, not located
+    14:20:20.58 UTC  #11  no magnitude, not located
+    14:33:46.53 UTC  #12  no magnitude, not located
+    15:44:07.68 UTC  #13  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/stalta_eqdet/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0      160    160      1120      0.003 (0.001)       144
+  EVR      43189         0       17     17       119      0.004 (0.001)       183
+  LKD2     43171         2        3      3        21      0.005 (0.001)       201
+  NYDR     43189         0        7      7         0      0.005 (0.001)       187
+  PDO      43189         0        4      4        28      0.005 (0.001)       174
+  PVO      43189         0       48     47       336      0.004 (0.001)       184
+  TETR     43189         0        5      5        35      0.004 (0.001)       181
+  TSLK     43189         0        4      4         0      0.003 (0.001)       202
+  Pd: 1659 values sent
+  345494 windows in 23.9 s: 832x real time per station

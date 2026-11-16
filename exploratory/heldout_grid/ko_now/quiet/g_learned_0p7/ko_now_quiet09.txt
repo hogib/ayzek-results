@@ -1,0 +1,108 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   05:22:43.50  earthquake detected by AKDG, DYBB
+PLOC     #1   05:22:50.50  P times locate it at 38.400N 39.160E +-314 km, origin 05:22:20.90, rms 0.02 s from 3 stations
+LOCATE   #1   05:23:39.00  located at 38.116N 37.923E, origin 05:22:33.46, rms 0.04 s from 2 stations
+ALARM    #2   05:54:59.50  earthquake detected by AKDG, DYBB
+ALARM    #3   05:56:44.50  earthquake detected by AKDG, DYBB
+PLOC     #3   05:56:48.00  P times locate it at 37.530N 39.230E +-60 km, origin 05:56:14.43, rms 0.01 s from 3 stations
+ALARM    #4   05:58:27.50  earthquake detected by AKDG, DYBB
+ALARM    #5   05:59:20.50  earthquake detected by AKDG, SVRC
+ALARM    #6   06:01:47.50  earthquake detected by AKDG, DYBB
+ALARM    #7   06:03:33.00  earthquake detected by DYBB, SVRC
+ALARM    #8   06:05:22.50  earthquake detected by DYBB, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.116N 37.923E, origin 05:22:33.46 UTC
+  alarm      05:22:43.50 UTC by AKDG, DYBB; later NURH
+  location   rms 0.04 s from 2 stations, first 55.5 s after the alarm (P and S picks)
+  P loc.     38.400N 39.160E +-314 km from 3 stations, first 7.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 34 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          28 km   05:22:41.92 UTC (picked)      -1.6 s  after S
+             NURH          46 km   05:22:46.80 UTC (picked)      +3.3 s  before S
+             MLTY          51 km   05:22:48.23 UTC (predicted)    +4.7 s  before S
+             GAZ          122 km   05:23:08.52 UTC (predicted)   +25.0 s  before S
+             SVRC         124 km   05:23:09.07 UTC (predicted)   +25.6 s  before S
+             DYBB         195 km   05:23:29.22 UTC (predicted)   +45.7 s  before S
+             MAZI         233 km   05:23:40.21 UTC (predicted)   +56.7 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      05:54:59.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      05:56:44.50 UTC by AKDG, DYBB; later NURH
+  P loc.     37.530N 39.230E +-60 km from 3 stations, first 3.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      05:58:27.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:59:20.50 UTC by AKDG, SVRC
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      06:01:47.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      06:03:33.00 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      06:05:22.50 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           8
+  single-station detections, no alarm    62
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              8  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    05:22:43.50 UTC  #1  no magnitude, located 38.12N 37.92E
+    05:54:59.50 UTC  #2  no magnitude, not located
+    05:56:44.50 UTC  #3  no magnitude, not located
+    05:58:27.50 UTC  #4  no magnitude, not located
+    05:59:20.50 UTC  #5  no magnitude, not located
+    06:01:47.50 UTC  #6  no magnitude, not located
+    06:03:33.00 UTC  #7  no magnitude, not located
+    06:05:22.50 UTC  #8  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_learned_0p7/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0       42     42         0      0.001 (0.001)        32
+  DYBB     43189         0       11     11        77      0.001 (0.001)        29
+  GAZ      43189         0        0      0         0      0.001 (0.003)         0
+  MAZI     43189         0        0      0         0      0.002 (0.001)         0
+  MLTY     43189         0        0      0         0      0.001 (0.001)         0
+  NURH     43189         0       14     13         0      0.001 (0.001)        36
+  SVRC     43091         9       15     15       105      0.001 (0.001)        25
+  Pd: 182 values sent
+  P time from an STA/LTA onset for 19 of 82 triggers (63 from the window start)
+  onset from a FilterPicker pick for 15 of 82 triggers (P-time location and Pd)
+  302225 windows in 2.6 s: 7568x real time per station

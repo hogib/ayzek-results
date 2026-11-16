@@ -1,0 +1,406 @@
+{
+ "selection": {
+  "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_heldout/selections/greece_now",
+  "sha256": "988e5847847ec6550a881ba032c398ee88b0fce224e2e99fa124f39e26d5a112",
+  "tool": {
+   "name": "ayzek-heldout",
+   "git_commit": "6fda3e246e53"
+  }
+ },
+ "binary": {
+  "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/build-linux/app/ayzek",
+  "sha256": "a40e7d23a1dfca7a4a2baf38b4b93c11056241d34d61aa046d703279a1da6899"
+ },
+ "network_subsets": {
+  "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/build-linux/tools/network_subsets",
+  "sha256": "84b4bbca143688af0b5292667d93149a050a245f004a80fee70d7ae23a7249ab"
+ },
+ "settings": {
+  "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/settings_min3.json",
+  "sha256": "120a9deaa949f042633a09ffb9ac6840f43b0814e40f8baeb7d1752237795af1",
+  "content": {
+   "learned": {
+    "detector": "learned",
+    "args": [
+     "--min-stations",
+     "3"
+    ]
+   },
+   "stalta_eqfa": {
+    "detector": "stalta",
+    "args": [
+     "--stalta-band",
+     "1,10",
+     "--sta",
+     "0.5",
+     "--lta",
+     "10",
+     "--stalta-on",
+     "8",
+     "--stalta-off",
+     "1.5",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "stalta_eqdet": {
+    "detector": "stalta",
+    "args": [
+     "--stalta-band",
+     "1,10",
+     "--sta",
+     "1",
+     "--lta",
+     "10",
+     "--stalta-on",
+     "4",
+     "--stalta-off",
+     "1.5",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "stalta_eqquiet": {
+    "detector": "stalta",
+    "args": [
+     "--stalta-band",
+     "1,10",
+     "--sta",
+     "0.5",
+     "--lta",
+     "10",
+     "--stalta-on",
+     "10",
+     "--stalta-off",
+     "1.5",
+     "--stalta-3c",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "stalta_station": {
+    "detector": "stalta",
+    "args": [
+     "--stalta-band",
+     "1,10",
+     "--sta",
+     "0.5",
+     "--lta",
+     "10",
+     "--stalta-off",
+     "1.5",
+     "--min-stations",
+     "3"
+    ],
+    "on": "8",
+    "ratios": {
+     "greece": "tools/stalta_stations/stalta_on_greece.csv",
+     "ko": "tools/stalta_stations/stalta_on_ko.csv",
+     "nz": "tools/stalta_stations/stalta_on_nz.csv"
+    }
+   },
+   "fp_eqfa": {
+    "detector": "filterpicker",
+    "args": [
+     "--fp-windows",
+     "6,10,0.4",
+     "--fp-thresholds",
+     "20,10",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "fp_eqdet": {
+    "detector": "filterpicker",
+    "args": [
+     "--fp-windows",
+     "6,10,0.4",
+     "--fp-thresholds",
+     "15,8",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "fp_eqquiet": {
+    "detector": "filterpicker",
+    "args": [
+     "--fp-windows",
+     "6,10,0.4",
+     "--fp-thresholds",
+     "6,15",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "phasenet_causal_eqfa": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.8",
+     "--trigger-windows",
+     "1",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "phasenet_causal_eqdet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.5",
+     "--trigger-windows",
+     "4",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "phasenet_causal_eqquiet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "2",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "eqt_causal_eqfa": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "eqt_causal_eqdet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.3",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "eqt_causal_eqquiet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "2",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "phasenet_lookahead_eqfa": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "4",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "phasenet_lookahead_eqdet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "phasenet_lookahead_eqquiet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "1",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "eqt_lookahead_eqfa": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "4",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "eqt_lookahead_eqdet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "original",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "eqt_lookahead_eqquiet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "original",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "2",
+     "--instant-threshold",
+     "2",
+     "--min-stations",
+     "3"
+    ]
+   },
+   "transformer": {
+    "detector": "transformer",
+    "args": [
+     "--min-stations",
+     "3"
+    ]
+   }
+  }
+ },
+ "ayzek_code": {
+  "commit": "",
+  "dirty": false
+ },
+ "sequences": [
+  "greece_now_seq002",
+  "greece_now_seq003",
+  "greece_now_seq004",
+  "greece_now_seq008",
+  "greece_now_seq009",
+  "greece_now_seq010",
+  "greece_now_seq011",
+  "greece_now_seq013",
+  "greece_now_seq014",
+  "greece_now_seq017",
+  "greece_now_seq020"
+ ],
+ "quiet_windows": [
+  "greece_now_quiet01",
+  "greece_now_quiet02",
+  "greece_now_quiet03",
+  "greece_now_quiet04",
+  "greece_now_quiet05",
+  "greece_now_quiet06",
+  "greece_now_quiet07",
+  "greece_now_quiet08",
+  "greece_now_quiet09",
+  "greece_now_quiet10",
+  "greece_now_quiet11",
+  "greece_now_quiet12",
+  "greece_now_quiet13",
+  "greece_now_quiet14",
+  "greece_now_quiet15",
+  "greece_now_quiet16",
+  "greece_now_quiet17",
+  "greece_now_quiet18",
+  "greece_now_quiet19",
+  "greece_now_quiet20",
+  "greece_now_quiet21",
+  "greece_now_quiet22",
+  "greece_now_quiet23",
+  "greece_now_quiet24"
+ ],
+ "endpoint_files": {
+  "all_events": [
+   "analysis/magnitude_latency.csv",
+   "analysis/magnitude_summary.txt",
+   "analysis/quiet.json",
+   "analysis/quiet.txt",
+   "analysis/quiet_without_stations.txt",
+   "analysis/significance.json",
+   "analysis/significance.txt",
+   "analysis/significance_pre_s.json",
+   "analysis/significance_pre_s.txt",
+   "analysis/warning_leads.csv",
+   "analysis/warning_summary.csv"
+  ],
+  "events_no_deeper_than_40_km": [
+   "analysis/significance_depth40.json",
+   "analysis/significance_depth40.txt",
+   "analysis/significance_pre_s_depth40.json",
+   "analysis/significance_pre_s_depth40.txt"
+  ]
+ },
+ "stages": [
+  "runs",
+  "outcomes",
+  "analysis"
+ ],
+ "run_utc": "2026-11-14T19:39:58+00:00"
+}

@@ -1,0 +1,83 @@
+
+== nz
+learned vs stalta_eqfa: 151 events
+  detected            87 vs 69  (95% CP 0.49-0.66 vs 0.38-0.54)
+  chance-corrected    84.2 vs 66.1, difference +18.1 (95% bootstrap +7.2 to +29.5, P(diff <= 0) = 0.0003)
+  discordant          learned only 25, stalta_eqfa only 7, exact McNemar p = 0.0021
+learned vs stalta_eqdet: 151 events
+  detected            87 vs 84  (95% CP 0.49-0.66 vs 0.47-0.64)
+  chance-corrected    84.2 vs 80.8, difference +3.4 (95% bootstrap -7.2 to +13.9, P(diff <= 0) = 0.2683)
+  discordant          learned only 15, stalta_eqdet only 12, exact McNemar p = 0.7
+learned vs stalta_eqquiet: 151 events
+  detected            87 vs 42  (95% CP 0.49-0.66 vs 0.21-0.36)
+  chance-corrected    84.2 vs 40.7, difference +43.5 (95% bootstrap +32.0 to +55.1, P(diff <= 0) = 0.0000)
+  discordant          learned only 47, stalta_eqquiet only 2, exact McNemar p = 4.4e-12
+learned vs stalta_station: 151 events
+  detected            87 vs 57  (95% CP 0.49-0.66 vs 0.30-0.46)
+  chance-corrected    84.2 vs 54.4, difference +29.8 (95% bootstrap +17.8 to +41.6, P(diff <= 0) = 0.0000)
+  discordant          learned only 35, stalta_station only 5, exact McNemar p = 1.4e-06
+learned vs fp_eqfa: 151 events
+  detected            87 vs 92  (95% CP 0.49-0.66 vs 0.53-0.69)
+  chance-corrected    84.2 vs 89.2, difference -5.0 (95% bootstrap -16.0 to +5.6, P(diff <= 0) = 0.8233)
+  discordant          learned only 11, fp_eqfa only 16, exact McNemar p = 0.44
+learned vs fp_eqdet: 151 events
+  detected            87 vs 109  (95% CP 0.49-0.66 vs 0.64-0.79)
+  chance-corrected    84.2 vs 105.0, difference -20.9 (95% bootstrap -32.6 to -9.5, P(diff <= 0) = 0.9998)
+  discordant          learned only 6, fp_eqdet only 28, exact McNemar p = 0.0002
+learned vs fp_eqquiet: 151 events
+  detected            87 vs 60  (95% CP 0.49-0.66 vs 0.32-0.48)
+  chance-corrected    84.2 vs 58.1, difference +26.1 (95% bootstrap +15.0 to +37.2, P(diff <= 0) = 0.0000)
+  discordant          learned only 31, fp_eqquiet only 4, exact McNemar p = 3.5e-06
+learned vs phasenet_causal_eqfa: 151 events
+  detected            87 vs 81  (95% CP 0.49-0.66 vs 0.45-0.62)
+  chance-corrected    84.2 vs 78.4, difference +5.8 (95% bootstrap -3.4 to +15.4, P(diff <= 0) = 0.1067)
+  discordant          learned only 14, phasenet_causal_eqfa only 8, exact McNemar p = 0.29
+  equivalence         margin +-15.1 events (10% of 151); 90% interval -1.8 to +13.9: equivalent (both one-sided tests p < 0.05)
+learned vs phasenet_causal_eqdet: 151 events
+  detected            87 vs 101  (95% CP 0.49-0.66 vs 0.59-0.74)
+  chance-corrected    84.2 vs 98.7, difference -14.5 (95% bootstrap -24.8 to -4.7, P(diff <= 0) = 0.9986)
+  discordant          learned only 6, phasenet_causal_eqdet only 20, exact McNemar p = 0.0094
+learned vs phasenet_causal_eqquiet: 151 events
+  detected            87 vs 90  (95% CP 0.49-0.66 vs 0.51-0.68)
+  chance-corrected    84.2 vs 87.5, difference -3.3 (95% bootstrap -12.5 to +5.9, P(diff <= 0) = 0.7605)
+  discordant          learned only 9, phasenet_causal_eqquiet only 12, exact McNemar p = 0.66
+learned vs eqt_causal_eqfa: 151 events
+  detected            87 vs 28  (95% CP 0.49-0.66 vs 0.13-0.26)
+  chance-corrected    84.2 vs 25.9, difference +58.3 (95% bootstrap +46.8 to +70.0, P(diff <= 0) = 0.0000)
+  discordant          learned only 59, eqt_causal_eqfa only 0, exact McNemar p = 3.5e-18
+learned vs eqt_causal_eqdet: 151 events
+  detected            87 vs 70  (95% CP 0.49-0.66 vs 0.38-0.55)
+  chance-corrected    84.2 vs 65.5, difference +18.6 (95% bootstrap +7.8 to +29.4, P(diff <= 0) = 0.0005)
+  discordant          learned only 23, eqt_causal_eqdet only 6, exact McNemar p = 0.0023
+learned vs eqt_causal_eqquiet: 151 events
+  detected            87 vs 48  (95% CP 0.49-0.66 vs 0.24-0.40)
+  chance-corrected    84.2 vs 44.4, difference +39.8 (95% bootstrap +28.3 to +51.1, P(diff <= 0) = 0.0000)
+  discordant          learned only 41, eqt_causal_eqquiet only 2, exact McNemar p = 2.2e-10
+learned vs phasenet_lookahead_eqfa: 151 events
+  detected            87 vs 88  (95% CP 0.49-0.66 vs 0.50-0.66)
+  chance-corrected    84.2 vs 85.6, difference -1.5 (95% bootstrap -11.9 to +9.1, P(diff <= 0) = 0.6087)
+  discordant          learned only 13, phasenet_lookahead_eqfa only 14, exact McNemar p = 1
+learned vs phasenet_lookahead_eqdet: 151 events
+  detected            87 vs 91  (95% CP 0.49-0.66 vs 0.52-0.68)
+  chance-corrected    84.2 vs 88.7, difference -4.5 (95% bootstrap -15.1 to +6.3, P(diff <= 0) = 0.7947)
+  discordant          learned only 12, phasenet_lookahead_eqdet only 16, exact McNemar p = 0.57
+learned vs phasenet_lookahead_eqquiet: 151 events
+  detected            87 vs 97  (95% CP 0.49-0.66 vs 0.56-0.72)
+  chance-corrected    84.2 vs 94.8, difference -10.6 (95% bootstrap -21.3 to -0.4, P(diff <= 0) = 0.9778)
+  discordant          learned only 9, phasenet_lookahead_eqquiet only 19, exact McNemar p = 0.087
+learned vs eqt_lookahead_eqfa: 151 events
+  detected            87 vs 32  (95% CP 0.49-0.66 vs 0.15-0.29)
+  chance-corrected    84.2 vs 30.5, difference +53.7 (95% bootstrap +40.9 to +66.3, P(diff <= 0) = 0.0000)
+  discordant          learned only 59, eqt_lookahead_eqfa only 4, exact McNemar p = 1.4e-13
+learned vs eqt_lookahead_eqdet: 151 events
+  detected            87 vs 101  (95% CP 0.49-0.66 vs 0.59-0.74)
+  chance-corrected    84.2 vs 97.4, difference -13.3 (95% bootstrap -24.8 to -1.9, P(diff <= 0) = 0.9903)
+  discordant          learned only 9, eqt_lookahead_eqdet only 23, exact McNemar p = 0.02
+learned vs eqt_lookahead_eqquiet: 151 events
+  detected            87 vs 107  (95% CP 0.49-0.66 vs 0.63-0.78)
+  chance-corrected    84.2 vs 104.0, difference -19.9 (95% bootstrap -30.9 to -8.9, P(diff <= 0) = 0.9997)
+  discordant          learned only 6, eqt_lookahead_eqquiet only 26, exact McNemar p = 0.00054
+learned vs transformer: 151 events
+  detected            87 vs 104  (95% CP 0.49-0.66 vs 0.61-0.76)
+  chance-corrected    84.2 vs 101.7, difference -17.5 (95% bootstrap -28.1 to -7.1, P(diff <= 0) = 0.9996)
+  discordant          learned only 8, transformer only 25, exact McNemar p = 0.0046

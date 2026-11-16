@@ -1,0 +1,61 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-28 14:30:02.75 to 20:30:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   19:48:00.00  earthquake detected by BNN, NURH, SARI  (AFAD ml 1.6 at 19:47:25.00, 35.0 s ago)
+PLOC     #1   19:48:00.00  P times locate it at 37.210N 36.487E +-213 km, origin 19:47:22.11, rms 0.00 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-28 14:58:50.00 to 20:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:48:00.00 UTC by BNN, NURH, SARI
+  P loc.     37.210N 36.487E +-213 km from 3 stations, first 0.0 s after the alarm, epicentre 210.3 km off
+  AFAD       ml 1.6 at 19:47:25.00 UTC: alarm 35.0 s after origin
+  pre-S      3 of 3 alarm detections declared before the predicted S
+  S wave     had travelled 122 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             SARI         102 km   19:47:54.30 UTC (predicted)    -5.7 s  after S
+             NURH         112 km   19:47:59.66 UTC (picked)      -0.3 s  after S
+             BNN          130 km   19:48:02.29 UTC (predicted)    +2.3 s  before S
+             GAZ          201 km   19:48:22.43 UTC (predicted)   +22.4 s  before S
+             CEYT         260 km   19:48:39.17 UTC (predicted)   +39.2 s  before S
+             KARA         277 km   19:48:44.05 UTC (predicted)   +44.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    25
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        1  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km                1
+    detected                              1  100%
+    detected before S                     1  100%
+    missed                                0    0%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          1        0
+
+  Correct alarms
+    alarm after origin time             median 35.0 s
+    located                             0 of 1
+    P-time located                      1 of 1, median epicentre error 210.3 km, median 0.0 s after the alarm
+    alarm before the S wave             at 4 of 6 station arrivals, median warning 30.8 s, max 44.1 s
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/eqt_lookahead_eqdet/ko_now_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        1      1         7      0.002 (0.001)        68
+  CEYT     43082        11        0      0         0      0.002 (0.001)         0
+  GAZ      43168         2        1      1         7      0.001 (0.002)        35
+  KARA     43189         0        6      6        42      0.001 (0.001)        51
+  NURH     43189         0       20     20         0      0.002 (0.003)        50
+  SARI     43189         0        1      1         7      0.002 (0.003)        59
+  Pd: 63 values sent
+  P time from an STA/LTA onset for 4 of 29 triggers (25 from the window start)
+  onset from a FilterPicker pick for 6 of 29 triggers (P-time location and Pd)
+  259006 windows in 2.4 s: 8441x real time per station

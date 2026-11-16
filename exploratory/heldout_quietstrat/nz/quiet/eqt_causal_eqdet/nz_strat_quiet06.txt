@@ -1,0 +1,50 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-03-16 21:18:03.76 to 03:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   02:41:49.00  earthquake detected by BKZ, URZ
+PLOC     #1   02:41:49.50  P times locate it at -37.361N 175.144E +-205 km, origin 02:41:04.19, rms 0.00 s from 3 stations
+PLOC     #1   02:41:58.00  P times locate it at -37.483N 175.297E +-136 km, origin 02:41:07.25, rms 0.01 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-03-16 21:46:50.00 to 03:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:41:49.00 UTC by BKZ, URZ; later MWZ, PUZ
+  P loc.     -37.483N 175.297E +-136 km from 4 stations, first 0.5 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     8
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    02:41:49.00 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/eqt_causal_eqdet/nz_strat_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        3      3        21      0.001 (0.001)        59
+  KPRZ     43189         0        1      1         7      0.001 (0.001)        54
+  MWZ      43189         0        1      1         7      0.002 (0.001)        60
+  PUZ      43189         0        4      4        28      0.001 (0.001)        47
+  RATZ     43189         0        0      0         0      0.002 (0.001)         0
+  TLZ      43189         0        2      2        14      0.002 (0.001)        54
+  URZ      43189         0        2      2        14      0.001 (0.001)        58
+  Pd: 91 values sent
+  P time from an STA/LTA onset for 2 of 13 triggers (11 from the window start)
+  onset from a FilterPicker pick for 2 of 13 triggers (P-time location and Pd)
+  302323 windows in 1.5 s: 13043x real time per station

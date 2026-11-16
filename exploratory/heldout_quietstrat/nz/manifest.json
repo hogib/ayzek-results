@@ -1,0 +1,222 @@
+{
+ "selection": {
+  "path": "/mnt/port/data/Codings/ayzek/ayzek_code/data/runs/heldout_quietstrat/nz_strat",
+  "sha256": "97853c87c215cf1d46724bf189c850efbab23bc5d7e111d2e7214aee461a8643",
+  "tool": null
+ },
+ "binary": {
+  "path": "/home/oguzb/Projects/Codings/ayzek/ayzek_code/build-linux/app/ayzek",
+  "sha256": "a40e7d23a1dfca7a4a2baf38b4b93c11056241d34d61aa046d703279a1da6899"
+ },
+ "network_subsets": {
+  "path": "/home/oguzb/Projects/Codings/ayzek/ayzek_code/build-linux/tools/network_subsets",
+  "sha256": "84b4bbca143688af0b5292667d93149a050a245f004a80fee70d7ae23a7249ab"
+ },
+ "settings": {
+  "path": "/mnt/port/data/Codings/ayzek/ayzek_code/data/runs/heldout_quietstrat/settings_published.json",
+  "sha256": "556f3b0c4cd83228077dc25cdbb1e7b4b7dcf376555765c35fa2bb9b8f897c14",
+  "content": {
+   "phasenet_causal_eqfa": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.8",
+     "--trigger-windows",
+     "1",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "phasenet_causal_eqdet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.5",
+     "--trigger-windows",
+     "4",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "phasenet_causal_eqquiet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "2",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "eqt_causal_eqfa": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "eqt_causal_eqdet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.3",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "eqt_causal_eqquiet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "causal",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "2",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "phasenet_lookahead_eqfa": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "4",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "phasenet_lookahead_eqdet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "phasenet_lookahead_eqquiet": {
+    "detector": "learned",
+    "model": "phasenet",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "1",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "eqt_lookahead_eqfa": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "instance",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "4",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "eqt_lookahead_eqdet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "original",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.7",
+     "--trigger-windows",
+     "8",
+     "--instant-threshold",
+     "2"
+    ]
+   },
+   "eqt_lookahead_eqquiet": {
+    "detector": "learned",
+    "model": "eqtransformer",
+    "weights": "original",
+    "mode": "lookahead",
+    "args": [
+     "--threshold",
+     "0.6",
+     "--trigger-windows",
+     "2",
+     "--instant-threshold",
+     "2"
+    ]
+   }
+  }
+ },
+ "ayzek_code": {
+  "commit": "4ab723b1fcd2a00e08ba79dbbee7f93c0a93e555",
+  "dirty": true
+ },
+ "sequences": [],
+ "quiet_windows": [
+  "nz_strat_quiet01",
+  "nz_strat_quiet02",
+  "nz_strat_quiet03",
+  "nz_strat_quiet04",
+  "nz_strat_quiet05",
+  "nz_strat_quiet06",
+  "nz_strat_quiet07",
+  "nz_strat_quiet08",
+  "nz_strat_quiet09",
+  "nz_strat_quiet10",
+  "nz_strat_quiet11",
+  "nz_strat_quiet12",
+  "nz_strat_quiet13",
+  "nz_strat_quiet14",
+  "nz_strat_quiet15",
+  "nz_strat_quiet16",
+  "nz_strat_quiet17",
+  "nz_strat_quiet18"
+ ],
+ "endpoint_files": {
+  "all_events": [],
+  "events_no_deeper_than_40_km": []
+ },
+ "stages": [
+  "scores"
+ ],
+ "run_utc": "2026-11-16T01:04:50+00:00"
+}

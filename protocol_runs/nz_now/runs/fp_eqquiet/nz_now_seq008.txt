@@ -1,0 +1,71 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2023-10-15 03:05:22.45 to 06:05:20.45 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   03:15:48.09  earthquake detected by HIZ, VRZ
+PLOC     #1   03:15:49.04  P times locate it at -38.875N 175.154E +-12 km, origin 03:15:39.71, rms 0.01 s from 3 stations
+PLOC     #1   03:15:49.35  P times locate it at -38.876N 175.160E +-12 km, origin 03:15:39.68, rms 0.06 s from 4 stations
+PDMAG    #1   03:15:50.50  Pd magnitude M3.7 ± 0.3 (M<4 88%, 4-5.5 12%, M>=5.5 0%) from 4 stations (1 above noise), windows up to 2 s, distances from the P-time location
+PLOC     #1   03:15:52.25  P times locate it at -39.505N 175.419E +-32 km, origin 03:15:35.31, rms 0.34 s from 4 stations, left out HIZ
+PDMAG    #1   03:16:42.36  Pd magnitude M3.6 ± 0.2 (M<4 96%, 4-5.5 4%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   03:16:42.36  located at -39.089N 176.922E, origin 03:15:15.87, rms 0.08 s from 2 stations
+PDMAG    #1   03:16:43.28  Pd magnitude M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   03:16:43.28  located at -40.595N 175.745E, origin 03:15:16.52, rms 0.07 s from 2 stations, left out HIZ
+LOCATE   #1   03:16:43.52  located at -37.511N 174.381E, origin 03:15:16.88, rms 0.56 s from 3 stations, left out HIZ
+LOCATE   #1   03:16:46.51  located at -40.172N 174.398E, origin 03:15:16.67, rms 0.70 s from 4 stations, left out VRZ
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-10-15 03:05:22.45 to 06:05:20.45 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.3 earthquake at -40.172N 174.398E, origin 03:15:16.67 UTC
+  alarm      03:15:48.09 UTC by HIZ, VRZ; later BKZ, KPRZ, RATZ
+  Pd magn.   M3.7 2.4 s after the alarm, M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) final from 6 stations (2 above noise)
+  location   rms 0.70 s from 4 stations, first 54.3 s after the alarm (P and S picks)
+  P loc.     -39.505N 175.419E +-32 km from 4 stations, first 1.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 110 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             VRZ          120 km   03:16:09.23 UTC (picked)     +21.1 s  before S
+             RATZ         187 km   03:16:11.48 UTC (picked)     +23.4 s  before S
+             HIZ          189 km   03:16:10.32 UTC (picked)     +22.2 s  before S
+             KPRZ         194 km   03:16:11.72 UTC (picked)     +23.6 s  before S
+             BKZ          211 km   03:16:16.15 UTC (picked)     +28.1 s  before S
+             TLZ          227 km   03:16:21.63 UTC (predicted)   +33.5 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     0
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                2
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                2  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+    M 4-5                   1          0        1
+
+  Missed AFAD events
+    03:15:20.00 UTC  MLv 4.6    49 km from the network centre
+    04:48:42.00 UTC  MLv 1.7    83 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:15:48.09 UTC  #1  M4.3, located -40.17N 174.40E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/runs/fp_eqquiet/nz_now_seq008.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      21588         0        1      1         7      0.045 (1.187)       193
+  HIZ      21588         0        1      1         7      0.041 (1.092)       228
+  KPRZ     21588         0        1      1         7      0.043 (1.098)       191
+  RATZ     21588         0        1      1         7      0.042 (1.035)       199
+  TLZ      21588         0        0      0         0      0.044 (1.085)         0
+  VRZ      21588         0        1      1         7      0.046 (1.437)       184
+  Pd: 35 values sent
+  129528 windows in 1.6 s: 6800x real time per station

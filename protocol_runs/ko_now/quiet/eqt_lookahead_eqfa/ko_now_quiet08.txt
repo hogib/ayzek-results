@@ -1,0 +1,43 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-16 17:18:02.11 to 23:18:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   20:50:53.00  earthquake detected by NURH, SARI
+LOCATE   #1   20:51:43.50  located at 38.013N 36.552E, origin 20:50:37.31, rms 0.02 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-16 17:46:50.00 to 23:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.013N 36.552E, origin 20:50:37.31 UTC
+  alarm      20:50:53.00 UTC by NURH, SARI
+  location   rms 0.02 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 54 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          45 km   20:50:50.58 UTC (picked)      -2.4 s  after S
+             NURH          78 km   20:50:59.70 UTC (picked)      +6.7 s  before S
+             GAZ          110 km   20:51:08.87 UTC (predicted)   +15.9 s  before S
+             BNN          112 km   20:51:09.35 UTC (predicted)   +16.4 s  before S
+             CEYT         132 km   20:51:15.18 UTC (predicted)   +22.2 s  before S
+             KARA         156 km   20:51:22.02 UTC (predicted)   +29.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    16
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_lookahead_eqfa/ko_now_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.003 (0.007)         0
+  CEYT     43168         2        1      1         7      0.003 (0.002)       114
+  GAZ      43189         0        1      1         7      0.003 (0.007)        80
+  KARA     43189         0        0      0         0      0.005 (0.002)         0
+  NURH     43189         0       13     13         0      0.004 (0.002)       118
+  SARI     43189         0        3      3        21      0.003 (0.002)        54
+  Pd: 35 values sent
+  P time from an STA/LTA onset for 8 of 18 triggers (10 from the window start)
+  onset from a FilterPicker pick for 6 of 18 triggers (P-time location and Pd)
+  259113 windows in 4.3 s: 4618x real time per station

@@ -1,0 +1,76 @@
+ayzek    7 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:15:12.85  earthquake detected by AKDG, MLTY, SVRC
+PLOC     #1   01:15:30.39  P times locate it at 38.375N 39.142E +-41 km, origin 01:14:54.32, rms 0.01 s from 3 stations, left out MLTY
+ALARM    #2   02:26:32.55  earthquake detected by AKDG, GAZ, NURH
+PLOC     #2   02:26:32.55  P times locate it at 37.894N 36.849E +-141 km, origin 02:26:13.96, rms 0.01 s from 3 stations
+ALARM    #3   02:44:49.88  earthquake detected by AKDG, GAZ, MLTY
+PLOC     #3   02:44:49.88  P times locate it at 37.762N 35.974E +-127 km, origin 02:44:12.31, rms 0.03 s from 3 stations
+PLOC     #3   02:45:02.06  P times locate it at 34.740N 37.459E +-174 km, origin 02:43:49.44, rms 1.03 s from 3 stations, left out AKDG MLTY
+LOCATE   #3   02:45:44.37  located at 38.457N 37.765E, origin 02:44:39.66, rms 0.07 s from 2 stations
+LOCATE   #3   02:45:45.18  located at 38.493N 37.779E, origin 02:44:39.53, rms 0.21 s from 3 stations
+LOCATE   #3   02:45:56.55  located at 38.518N 37.748E, origin 02:44:39.00, rms 0.75 s from 4 stations
+ALARM    #4   04:47:07.17  earthquake detected by AKDG, GAZ, SVRC
+PLOC     #4   04:47:07.17  P times locate it at 36.290N 39.232E +-174 km, origin 04:46:24.48, rms 0.01 s from 3 stations
+ALARM    #5   05:12:20.64  earthquake detected by DYBB, GAZ, SVRC
+PLOC     #5   05:12:20.64  P times locate it at 35.249N 38.555E +-116 km, origin 05:11:21.57, rms 0.00 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:15:12.85 UTC by AKDG, MLTY, SVRC; later GAZ
+  P loc.     38.375N 39.142E +-41 km from 3 stations, first 17.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:26:32.55 UTC by AKDG, GAZ, NURH
+  P loc.     37.894N 36.849E +-141 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at 38.518N 37.748E, origin 02:44:39.00 UTC
+  alarm      02:44:49.88 UTC by AKDG, GAZ, MLTY; later NURH, SVRC
+  location   rms 0.75 s from 4 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     34.740N 37.459E +-174 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 37 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          26 km   02:44:46.29 UTC (picked)      -3.6 s  after S
+             MLTY          64 km   02:44:57.21 UTC (picked)      +7.3 s  before S
+             NURH          67 km   02:44:58.74 UTC (picked)      +8.9 s  before S
+             SVRC         137 km   02:45:19.71 UTC (picked)     +29.8 s  before S
+             GAZ          157 km   02:45:23.93 UTC (predicted)   +34.1 s  before S
+             DYBB         218 km   02:45:41.37 UTC (predicted)   +51.5 s  before S
+             MAZI         264 km   02:45:54.51 UTC (predicted)   +64.6 s  before S
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      04:47:07.17 UTC by AKDG, GAZ, SVRC
+  P loc.     36.290N 39.232E +-174 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:12:20.64 UTC by DYBB, GAZ, SVRC; later MLTY
+  P loc.     35.249N 38.555E +-116 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm   199
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_eqdet/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7       18     18         0      0.001 (0.000)        45
+  DYBB     43042        14        3      3        21      0.001 (0.000)        40
+  GAZ      43189         0      129    129       903      0.001 (0.001)        45
+  MAZI     43189         0        1      1         0      0.001 (0.000)        54
+  MLTY     43189         0       17     17       119      0.001 (0.001)        41
+  NURH     43189         0       25     25         0      0.001 (0.000)        47
+  SVRC     43080        11       72     72       504      0.001 (0.000)        39
+  Pd: 1547 values sent
+  301992 windows in 6.1 s: 3237x real time per station

@@ -1,0 +1,32 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2024-06-03 03:08:04.44 to 09:08:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:36:50.74  earthquake detected by RPZ, WVZ
+PLOC     #1   08:36:55.65  P times locate it at -43.529N 169.677E +-367 km, origin 08:36:31.45, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-06-03 03:36:50.00 to 09:08:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:36:50.74 UTC by RPZ, WVZ; later CVZ
+  P loc.     -43.529N 169.677E +-367 km from 3 stations, first 4.9 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    21
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/quiet/fp_eqfa/nz_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        6      6        42      0.040 (0.771)       132
+  FOZ      43189         0        5      5        35      0.041 (1.034)       176
+  RPZ      43189         0       10     10        70      0.041 (0.930)       154
+  WHSZ     43189         0        0      0         0      0.047 (1.109)         0
+  WVZ      43189         0        3      3        21      0.043 (1.020)       161
+  Pd: 168 values sent
+  215945 windows in 4.3 s: 4636x real time per station

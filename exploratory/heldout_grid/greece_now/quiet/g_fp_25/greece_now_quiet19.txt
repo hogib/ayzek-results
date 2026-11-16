@@ -1,0 +1,84 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 25/10, Z + picker + Pd magnitude, replay 2023-09-28 02:35:02.35 to 08:35:00.01 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+ALARM    #1   04:13:00.72  earthquake detected by PFKS, SIVA
+ALARM    #2   04:53:40.26  earthquake detected by KNDR, SIVA
+pick     PFKS  picker window at 04:59:21.55 crosses a gap, skipped
+ALARM    #3   05:57:35.53  earthquake detected by KNDR, PFKS
+ALARM    #4   06:24:12.98  earthquake detected by KNDR, STIA
+ALARM    #5   06:56:07.26  earthquake detected by SIVA, STIA
+ALARM    #6   07:03:17.18  earthquake detected by KNDR, STIA
+pick     STIA  picker window at 07:52:05.48 crosses a gap, skipped
+ALARM    #7   07:52:29.14  earthquake detected by IMMV, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-28 03:03:50.00 to 08:35:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:13:00.72 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      04:53:40.26 UTC by KNDR, SIVA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      05:57:35.53 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      06:24:12.98 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      06:56:07.26 UTC by SIVA, STIA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      07:03:17.18 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      07:52:29.14 UTC by IMMV, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm    77
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              7  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:13:00.72 UTC  #1  no magnitude, not located
+    04:53:40.26 UTC  #2  no magnitude, not located
+    05:57:35.53 UTC  #3  no magnitude, not located
+    06:24:12.98 UTC  #4  no magnitude, not located
+    06:56:07.26 UTC  #5  no magnitude, not located
+    07:03:17.18 UTC  #6  no magnitude, not located
+    07:52:29.14 UTC  #7  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_25/greece_now_quiet19.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        4      4        28      0.019 (0.048)        54
+  IMMV     43189         0        2      2        14      0.019 (0.033)        59
+  IPPL     43189         0        3      3        21      0.023 (0.033)        64
+  KNDR     43166         2       17     17       119      0.015 (0.037)        50
+  KNSS     43189         0        6      6        42      0.018 (0.035)        60
+  PFKS     43176         2       26     25       182      0.016 (0.041)        49
+  SIVA     43189         0       11     11        77      0.018 (0.028)        53
+  STIA     43059        13       25     24       161      0.017 (0.042)        49
+  Pd: 644 values sent
+  345346 windows in 2.3 s: 8830x real time per station

@@ -1,0 +1,37 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-06-03 03:08:04.44 to 09:08:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:36:57.00  earthquake detected by CVZ, WVZ
+ALARM    #2   08:38:41.50  earthquake detected by FOZ, WHSZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-06-03 03:36:50.00 to 09:08:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:36:57.00 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:38:41.50 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    10
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/nz_now/quiet/g_instant_0p88/nz_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        3      3        21      0.001 (0.001)        27
+  FOZ      43189         0        2      2        14      0.001 (0.001)        33
+  RPZ      43189         0        2      2        14      0.001 (0.003)        16
+  WHSZ     43189         0        5      5        35      0.001 (0.002)        28
+  WVZ      43189         0        2      2        14      0.001 (0.001)        28
+  Pd: 98 values sent
+  P time from an STA/LTA onset for 10 of 14 triggers (4 from the window start)
+  onset from a FilterPicker pick for 4 of 14 triggers (P-time location and Pd)
+  215945 windows in 1.4 s: 13774x real time per station

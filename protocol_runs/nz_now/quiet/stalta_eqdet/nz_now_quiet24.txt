@@ -1,0 +1,51 @@
+ayzek    5 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2024-07-31 14:02:02.53 to 20:02:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   14:59:21.41  earthquake detected by RPZ, WHSZ
+ALARM    #2   15:22:59.93  earthquake detected by RPZ, WVZ
+PLOC     #2   15:23:00.36  P times locate it at -43.270N 170.555E +-13 km, origin 15:22:49.17, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-07-31 14:30:50.00 to 20:02:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      14:59:21.41 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:22:59.93 UTC by RPZ, WVZ; later CVZ, FOZ
+  P loc.     -43.270N 170.555E +-13 km from 3 stations, first 0.4 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    61
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    14:59:21.41 UTC  #1  no magnitude, not located
+    15:22:59.93 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/quiet/stalta_eqdet/nz_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        4      4        28      0.003 (0.001)       130
+  FOZ      43189         0        2      2        14      0.003 (0.001)       135
+  RPZ      43189         0        3      3        21      0.003 (0.001)       117
+  WHSZ     43189         0       54     54       378      0.003 (0.001)       116
+  WVZ      43189         0        4      4        28      0.003 (0.001)       118
+  Pd: 469 values sent
+  215945 windows in 6.9 s: 2869x real time per station

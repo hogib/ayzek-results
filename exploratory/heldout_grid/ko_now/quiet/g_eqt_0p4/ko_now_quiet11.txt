@@ -1,0 +1,50 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-16 05:21:02.80 to 11:21:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   06:12:39.00  earthquake detected by AKDG, NURH
+ALARM    #2   10:25:03.00  earthquake detected by AKDG, NURH
+LOCATE   #2   10:25:51.50  located at 38.376N 37.593E, origin 10:24:44.88, rms 0.11 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-16 05:49:50.00 to 11:21:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      06:12:39.00 UTC by AKDG, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 38.376N 37.593E, origin 10:24:44.88 UTC
+  alarm      10:25:03.00 UTC by AKDG, NURH
+  location   rms 0.11 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 63 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          33 km   10:24:54.80 UTC (picked)      -8.2 s  after S
+             NURH          47 km   10:24:58.58 UTC (picked)      -4.4 s  after S
+             MLTY          74 km   10:25:06.25 UTC (predicted)    +3.3 s  before S
+             GAZ          138 km   10:25:24.41 UTC (predicted)   +21.4 s  before S
+             SVRC         149 km   10:25:27.63 UTC (predicted)   +24.6 s  before S
+             DYBB         227 km   10:25:49.94 UTC (predicted)   +46.9 s  before S
+             MAZI         270 km   10:26:02.13 UTC (predicted)   +59.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    21
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_eqt_0p4/ko_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43101         9        3      3         0      0.002 (0.001)        38
+  DYBB     43122         7        0      0         0      0.001 (0.002)         0
+  GAZ      43189         0       10      9        70      0.001 (0.001)        46
+  MAZI     42145        88        0      0         0      0.001 (0.001)         0
+  MLTY     43189         0        6      6        42      0.001 (0.003)        41
+  NURH     43189         0        4      4         0      0.001 (0.001)        44
+  SVRC     43189         0        2      2        14      0.001 (0.001)        50
+  Pd: 126 values sent
+  P time from an STA/LTA onset for 11 of 25 triggers (14 from the window start)
+  onset from a FilterPicker pick for 10 of 25 triggers (P-time location and Pd)
+  301124 windows in 2.1 s: 9350x real time per station

@@ -1,0 +1,33 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:21:43.00  earthquake detected by KARA, NURH
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:21:43.00 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    14
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_learned_0p7/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.001 (0.003)         0
+  CEYT     43189         0        0      0         0      0.001 (0.001)         0
+  GAZ      43189         0        0      0         0      0.001 (0.001)         0
+  KARA     43189         0        8      8        56      0.001 (0.001)        26
+  NURH     43189         0        8      8         0      0.001 (0.001)        25
+  SARI     43189         0        0      0         0      0.001 (0.001)         0
+  Pd: 56 values sent
+  P time from an STA/LTA onset for 10 of 16 triggers (6 from the window start)
+  onset from a FilterPicker pick for 7 of 16 triggers (P-time location and Pd)
+  259134 windows in 1.2 s: 16891x real time per station

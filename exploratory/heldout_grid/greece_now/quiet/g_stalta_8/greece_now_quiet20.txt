@@ -1,0 +1,66 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:07:54.91  earthquake detected by MRTH, PTL
+ALARM    #2   09:59:16.60  earthquake detected by MDRA, VILL
+ALARM    #3   11:34:29.57  earthquake detected by KARY, PTL
+PLOC     #3   11:34:30.01  P times locate it at 37.768N 24.156E +-397 km, origin 11:34:22.58, rms 0.04 s from 3 stations
+PLOC     #3   11:34:30.45  P times locate it at 39.278N 24.475E +-279 km, origin 11:34:06.10, rms 0.74 s from 4 stations
+PLOC     #3   11:34:31.77  P times locate it at 39.108N 24.316E +-136 km, origin 11:34:09.41, rms 0.79 s from 5 stations
+PLOC     #3   11:34:31.84  P times locate it at 39.207N 24.443E +-178 km, origin 11:34:07.36, rms 0.91 s from 6 stations
+PLOC     #3   11:34:31.99  P times locate it at 39.162N 24.392E +-135 km, origin 11:34:08.29, rms 0.88 s from 7 stations
+ALARM    #4   11:56:07.90  earthquake detected by MDRA, MRTH
+LOCATE   #4   11:57:02.39  located at 37.562N 23.444E, origin 11:55:54.58, rms 0.13 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:07:54.91 UTC by MRTH, PTL
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      09:59:16.60 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      11:34:29.57 UTC by KARY, PTL; later LKR, MDRA, MRTH, THIV, VILL
+  P loc.     39.162N 24.392E +-135 km from 7 stations, first 0.4 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at 37.562N 23.444E, origin 11:55:54.58 UTC
+  alarm      11:56:07.90 UTC by MDRA, MRTH
+  location   rms 0.13 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 46 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             ATH           52 km   11:56:09.65 UTC (predicted)    +1.8 s  before S
+             MDRA          56 km   11:56:10.80 UTC (picked)      +2.9 s  before S
+             PTL           66 km   11:56:13.56 UTC (predicted)    +5.7 s  before S
+             VILL          68 km   11:56:14.22 UTC (predicted)    +6.3 s  before S
+             MRTH          76 km   11:56:16.43 UTC (picked)      +8.5 s  before S
+             THIV          83 km   11:56:18.35 UTC (predicted)   +10.5 s  before S
+             KARY         102 km   11:56:23.80 UTC (predicted)   +15.9 s  before S
+             LKR          127 km   11:56:31.01 UTC (predicted)   +23.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    53
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_8/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        2      2        14      0.001 (0.000)        50
+  KARY     43189         0        3      3        21      0.001 (0.001)        37
+  LKR      43189         0        5      5        35      0.001 (0.000)        38
+  MDRA     43189         0        4      4        28      0.001 (0.000)        39
+  MRTH     43189         0        4      4         0      0.001 (0.001)        49
+  PTL      43189         0        2      2        14      0.001 (0.000)        41
+  THIV     43189         0       43     43       301      0.001 (0.000)        26
+  VILL     43189         0        4      4        28      0.001 (0.001)        33
+  Pd: 441 values sent
+  345512 windows in 1.4 s: 14715x real time per station

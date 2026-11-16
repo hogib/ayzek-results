@@ -1,0 +1,50 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 25/10, Z + picker + Pd magnitude, replay 2024-04-30 21:17:02.62 to 03:17:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   23:19:05.28  earthquake detected by NISR, THERA
+ALARM    #2   23:39:46.34  earthquake detected by APE, NISR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-04-30 21:45:50.00 to 03:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:19:05.28 UTC by NISR, THERA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      23:39:46.34 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    62
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    23:19:05.28 UTC  #1  no magnitude, not located
+    23:39:46.34 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_25/greece_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       22     22       154      0.013 (0.036)        44
+  NISR     43189         0       27     27         0      0.016 (0.028)        48
+  NISR2    43189         0        0      0         0      0.020 (0.029)         0
+  STIA     43189         0        7      7        49      0.021 (0.178)        53
+  THERA    43189         0        6      6        42      0.016 (0.029)        50
+  ZKR      43189         0        4      4        28      0.017 (0.032)        56
+  Pd: 273 values sent
+  259134 windows in 2.2 s: 9104x real time per station

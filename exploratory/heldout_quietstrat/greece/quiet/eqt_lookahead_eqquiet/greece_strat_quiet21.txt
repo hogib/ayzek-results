@@ -1,0 +1,85 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-11-12 04:56:03.35 to 10:56:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:17:44.00  earthquake detected by KOKK, OUR
+PLOC     #1   07:17:49.00  P times locate it at 40.331N 24.024E +-382 km, origin 07:17:34.21, rms 0.01 s from 3 stations
+PLOC     #1   07:17:49.00  P times locate it at 40.320N 24.064E +-61 km, origin 07:17:34.14, rms 0.18 s from 4 stations
+PLOC     #1   07:17:49.50  P times locate it at 40.319N 24.067E +-57 km, origin 07:17:34.11, rms 0.16 s from 5 stations
+PLOC     #1   07:17:51.00  P times locate it at 40.341N 24.034E +-20 km, origin 07:17:34.54, rms 0.24 s from 6 stations
+LOCATE   #1   07:18:40.50  located at 40.385N 23.966E, origin 07:17:34.31, rms 0.15 s from 2 stations
+LOCATE   #1   07:18:40.50  located at 40.317N 24.084E, origin 07:17:33.98, rms 0.16 s from 3 stations
+LOCATE   #1   07:18:41.00  located at 40.290N 24.114E, origin 07:17:33.52, rms 0.28 s from 4 stations
+LOCATE   #1   07:18:42.50  located at 40.301N 24.106E, origin 07:17:33.77, rms 0.47 s from 5 stations
+ALARM    #2   08:42:49.50  earthquake detected by HORT, SOH
+pick     PAIG  picker window at 10:54:24.50 crosses a gap, skipped
+ALARM    #3   10:13:01.00  earthquake detected by HORT, OUR
+ALARM    #4   10:19:04.00  earthquake detected by OUR, PLG
+PLOC     #4   10:19:09.50  P times locate it at 41.000N 26.608E +-237 km, origin 10:18:16.90, rms 0.38 s from 3 stations
+LOCATE   #4   10:19:55.50  located at 40.318N 24.152E, origin 10:18:52.54, rms 0.24 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-12 05:24:50.00 to 10:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 40.301N 24.106E, origin 07:17:33.77 UTC
+  alarm      07:17:44.00 UTC by KOKK, OUR; later HORT, KAVA, PLG, THAS
+  location   rms 0.47 s from 5 stations, first 56.5 s after the alarm (P and S picks)
+  P loc.     40.341N 24.034E +-20 km from 6 stations, first 5.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 34 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             OUR           11 km   07:17:37.74 UTC (picked)      -6.3 s  after S
+             PAIG          55 km   07:17:49.63 UTC (predicted)    +5.6 s  before S
+             PLG           57 km   07:17:49.98 UTC (picked)      +6.0 s  before S
+             KOKK          58 km   07:17:50.62 UTC (predicted)    +6.6 s  before S
+             THAS          62 km   07:17:51.02 UTC (picked)      +7.0 s  before S
+             KAVA          85 km   07:17:57.90 UTC (picked)     +13.9 s  before S
+             SOH           86 km   07:17:58.44 UTC (predicted)   +14.4 s  before S
+             HORT          91 km   07:18:00.56 UTC (picked)     +16.6 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:42:49.50 UTC by HORT, SOH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      10:13:01.00 UTC by HORT, OUR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at 40.318N 24.152E, origin 10:18:52.54 UTC
+  alarm      10:19:04.00 UTC by OUR, PLG; later HORT
+  location   rms 0.24 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  P loc.     41.000N 26.608E +-237 km from 3 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 39 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             OUR           15 km   10:18:57.24 UTC (picked)      -6.8 s  after S
+             KOKK          57 km   10:19:09.10 UTC (predicted)    +5.1 s  before S
+             THAS          58 km   10:19:09.29 UTC (predicted)    +5.3 s  before S
+             PAIG          59 km   10:19:09.52 UTC (predicted)    +5.5 s  before S
+             PLG           60 km   10:19:10.26 UTC (picked)      +6.3 s  before S
+             KAVA          81 km   10:19:15.98 UTC (predicted)   +12.0 s  before S
+             SOH           87 km   10:19:17.69 UTC (predicted)   +13.7 s  before S
+             HORT          94 km   10:19:19.64 UTC (predicted)   +15.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    10
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_lookahead_eqquiet/greece_strat_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0        6      6        42      0.001 (0.001)        14
+  KAVA     43189         0        1      1         0      0.000 (0.001)        13
+  KOKK     43189         0        1      1         7      0.001 (0.001)        21
+  OUR      43189         0        8      8        56      0.001 (0.001)        13
+  PAIG     43161         3        1      0         0      0.001 (0.001)         0
+  PLG      43189         0        5      5        35      0.001 (0.001)        15
+  SOH      43189         0        1      1         7      0.000 (0.001)        16
+  THAS     43165         2        2      2        14      0.000 (0.001)        13
+  Pd: 161 values sent
+  P time from an STA/LTA onset for 14 of 25 triggers (11 from the window start)
+  onset from a FilterPicker pick for 13 of 25 triggers (P-time location and Pd)
+  345460 windows in 0.6 s: 32948x real time per station

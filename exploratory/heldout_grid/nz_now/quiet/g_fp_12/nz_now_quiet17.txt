@@ -1,0 +1,68 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 12/10, Z + picker + Pd magnitude, replay 2023-01-15 18:52:03.87 to 00:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   20:35:57.41  earthquake detected by FOZ, WHSZ
+ALARM    #2   21:00:06.72  earthquake detected by CVZ, FOZ
+ALARM    #3   21:47:17.89  earthquake detected by CVZ, FOZ
+ALARM    #4   22:06:59.99  earthquake detected by RPZ, WHSZ
+PLOC     #4   22:07:10.73  P times locate it at -43.341N 170.622E +-326 km, origin 22:06:50.37, rms 0.02 s from 3 stations
+LOCATE   #4   22:08:04.94  located at -43.559N 170.785E, origin 22:06:54.61, rms 0.06 s from 2 stations
+ALARM    #5   22:42:00.98  earthquake detected by FOZ, WVZ
+PLOC     #5   22:42:03.30  P times locate it at -43.445N 170.250E +-13 km, origin 22:41:50.88, rms 0.03 s from 3 stations
+ALARM    #6   00:44:44.41  earthquake detected by CVZ, RPZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-15 19:20:50.00 to 00:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:35:57.41 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      21:00:06.72 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      21:47:17.89 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at -43.559N 170.785E, origin 22:06:54.61 UTC
+  alarm      22:06:59.99 UTC by RPZ, WHSZ; later CVZ
+  location   rms 0.06 s from 2 stations, first 65.0 s after the alarm (P and S picks)
+  P loc.     -43.341N 170.622E +-326 km from 3 stations, first 10.7 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 16 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             RPZ           28 km   22:07:03.07 UTC (picked)      +3.1 s  before S
+             WHSZ          43 km   22:07:07.14 UTC (predicted)    +7.2 s  before S
+             WVZ           54 km   22:07:10.31 UTC (predicted)   +10.3 s  before S
+             FOZ           78 km   22:07:17.14 UTC (predicted)   +17.1 s  before S
+             CVZ           93 km   22:07:21.38 UTC (picked)     +21.4 s  before S
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      22:42:00.98 UTC by FOZ, WVZ; later RPZ
+  P loc.     -43.445N 170.250E +-13 km from 3 stations, first 2.3 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      00:44:44.41 UTC by CVZ, RPZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    60
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_fp_12/nz_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       15     15       105      0.013 (0.033)        41
+  FOZ      43189         0       15     15       105      0.014 (0.008)        57
+  RPZ      43189         0        9      9        63      0.012 (0.038)        40
+  WHSZ     43189         0       32     32       224      0.013 (0.012)        45
+  WVZ      43189         0        3      3        21      0.010 (0.028)        25
+  Pd: 518 values sent
+  215945 windows in 2.3 s: 8677x real time per station

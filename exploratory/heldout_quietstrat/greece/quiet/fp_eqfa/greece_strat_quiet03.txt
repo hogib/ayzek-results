@@ -1,0 +1,82 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2023-02-09 03:25:03.66 to 09:25:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   04:03:22.65  earthquake detected by ATH, EPID
+ALARM    #2   04:18:09.05  earthquake detected by KARY, VILL
+LOCATE   #2   04:19:03.44  located at 38.108N 23.810E, origin 04:17:57.96, rms 0.99 s from 2 stations
+ALARM    #3   08:42:21.18  earthquake detected by KARY, MRTH
+LOCATE   #3   08:43:15.54  located at 37.892N 24.149E, origin 08:42:15.54, rms 0.07 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 03:53:50.00 to 09:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:03:22.65 UTC by ATH, EPID
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 38.108N 23.810E, origin 04:17:57.96 UTC
+  alarm      04:18:09.05 UTC by KARY, VILL
+  location   rms 0.99 s from 2 stations, first 54.4 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 37 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             PTL            8 km   04:18:01.64 UTC (predicted)    -7.4 s  after S
+             MRTH          12 km   04:18:02.34 UTC (predicted)    -6.7 s  after S
+             ATH           17 km   04:18:03.59 UTC (predicted)    -5.5 s  after S
+             MDRA          31 km   04:18:07.14 UTC (predicted)    -1.9 s  after S
+             VILL          44 km   04:18:10.30 UTC (picked)      +1.2 s  before S
+             KARY          56 km   04:18:12.92 UTC (picked)      +3.9 s  before S
+             EPID          82 km   04:18:21.51 UTC (predicted)   +12.5 s  before S
+             VLI          172 km   04:18:47.28 UTC (predicted)   +38.2 s  before S
+
+Event #3: detected earthquake (no magnitude) at 37.892N 24.149E, origin 08:42:15.54 UTC
+  alarm      08:42:21.18 UTC by KARY, MRTH
+  location   rms 0.07 s from 2 stations, first 54.4 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 17 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KARY          30 km   08:42:24.44 UTC (picked)      +3.3 s  before S
+             PTL           30 km   08:42:24.69 UTC (predicted)    +3.5 s  before S
+             MRTH          31 km   08:42:25.02 UTC (picked)      +3.8 s  before S
+             ATH           39 km   08:42:27.01 UTC (predicted)    +5.8 s  before S
+             MDRA          63 km   08:42:33.68 UTC (predicted)   +12.5 s  before S
+             VILL          79 km   08:42:38.37 UTC (predicted)   +17.2 s  before S
+             EPID          96 km   08:42:43.02 UTC (predicted)   +21.8 s  before S
+             VLI          168 km   08:43:03.73 UTC (predicted)   +42.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    66
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:03:22.65 UTC  #1  no magnitude, not located
+    04:18:09.05 UTC  #2  no magnitude, located 38.11N 23.81E
+    08:42:21.18 UTC  #3  no magnitude, located 37.89N 24.15E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqfa/greece_strat_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0       15     15       105      0.021 (0.034)        62
+  EPID     43189         0       22     22       154      0.018 (0.059)        61
+  KARY     43189         0        6      6        42      0.025 (0.022)        69
+  MDRA     43189         0        1      1         7      0.023 (0.030)        81
+  MRTH     43189         0        5      5         0      0.025 (0.011)        73
+  PTL      42746        60        5      5        35      0.020 (0.053)        73
+  VILL     43189         0       13     13        91      0.019 (0.033)        62
+  VLI      43114         7        5      5        35      0.021 (0.048)        68
+  Pd: 469 values sent
+  344994 windows in 2.5 s: 7929x real time per station

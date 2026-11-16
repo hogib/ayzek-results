@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-08-01 01:34:02.39 to 07:34:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   02:05:53.50  earthquake detected by PFKS, SIVA
+PLOC     #1   02:06:05.00  P times locate it at 34.914N 25.060E +-156 km, origin 02:05:41.93, rms 0.01 s from 3 stations
+LOCATE   #1   02:06:45.00  located at 35.435N 24.943E, origin 02:05:38.20, rms 0.16 s from 2 stations
+LOCATE   #1   02:06:56.50  located at 34.619N 25.000E, origin 02:05:38.40, rms 0.17 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2024-08-01 02:02:50.00 to 07:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 34.619N 25.000E, origin 02:05:38.40 UTC
+  alarm      02:05:53.50 UTC by PFKS, SIVA; later IMMV
+  location   rms 0.17 s from 3 stations, first 51.5 s after the alarm (P and S picks)
+  P loc.     34.914N 25.060E +-156 km from 3 stations, first 11.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 52 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          48 km   02:05:52.08 UTC (picked)      -1.4 s  after S
+             PFKS          64 km   02:05:57.12 UTC (picked)      +3.6 s  before S
+             KNSS          78 km   02:06:00.85 UTC (predicted)    +7.4 s  before S
+             IPPL          95 km   02:06:05.63 UTC (predicted)   +12.1 s  before S
+             STIA         119 km   02:06:12.44 UTC (predicted)   +18.9 s  before S
+             IMMV         132 km   02:06:16.30 UTC (picked)     +22.8 s  before S
+             CHAN         133 km   02:06:16.43 UTC (predicted)   +22.9 s  before S
+             KNDR         143 km   02:06:19.33 UTC (predicted)   +25.8 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     5
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    02:05:53.50 UTC  #1  no magnitude, located 34.62N 25.00E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/eqt_lookahead_eqquiet/greece_now_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.006 (0.002)         0
+  IMMV     43189         0        1      1         7      0.004 (0.002)       151
+  IPPL     43189         0        0      0         0      0.007 (0.002)         0
+  KNDR     43189         0        0      0         0      0.006 (0.002)         0
+  KNSS     43189         0        1      1         7      0.006 (0.002)       146
+  PFKS     43189         0        3      3        21      0.005 (0.002)       168
+  SIVA     43189         0        3      3        21      0.006 (0.002)       163
+  STIA     43189         0        0      0         0      0.005 (0.002)         0
+  Pd: 56 values sent
+  P time from an STA/LTA onset for 6 of 8 triggers (2 from the window start)
+  onset from a FilterPicker pick for 4 of 8 triggers (P-time location and Pd)
+  345512 windows in 3.7 s: 5323x real time per station

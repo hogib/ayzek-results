@@ -1,0 +1,49 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-10-03 12:36:02.47 to 18:36:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   16:20:19.28  earthquake detected by STIA, ZKR
+PLOC     #1   16:20:21.61  P times locate it at 34.632N 25.662E +-390 km, origin 16:20:06.73, rms 0.00 s from 3 stations
+PLOC     #1   16:20:22.60  P times locate it at 38.194N 25.558E +-178 km, origin 16:19:22.56, rms 1.18 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-10-03 13:04:50.00 to 18:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      16:20:19.28 UTC by STIA, ZKR; later PFKS, SIVA
+  P loc.     38.194N 25.558E +-178 km from 4 stations, first 2.3 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    52
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    16:20:19.28 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_8/greece_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.000 (0.000)         0
+  IPPL     43189         0        6      6        42      0.001 (0.000)        28
+  KNSS     43189         0        0      0         0      0.000 (0.000)         0
+  PFKS     43188         0       43     43       301      0.001 (0.000)        30
+  SIVA     43189         0        1      1         7      0.000 (0.000)        42
+  STIA     43189         0        5      4        34      0.000 (0.000)        31
+  THERA    43189         0        0      0         0      0.000 (0.000)         0
+  ZKR      43189         0        1      1         7      0.001 (0.000)        42
+  Pd: 391 values sent
+  345511 windows in 1.6 s: 12491x real time per station

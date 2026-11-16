@@ -1,0 +1,111 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-24 00:32:02.46 to 06:32:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:51:11.00  earthquake detected by AKDG, NURH
+LOCATE   #1   01:52:02.50  located at 38.061N 37.898E, origin 01:50:56.51, rms 0.08 s from 2 stations
+ALARM    #2   02:07:37.50  earthquake detected by AKDG, NURH
+LOCATE   #2   02:08:29.00  located at 38.026N 37.888E, origin 02:07:24.58, rms 0.31 s from 2 stations
+ALARM    #3   02:13:48.50  earthquake detected by AKDG, SVRC
+ALARM    #4   03:16:14.00  earthquake detected by AKDG, SVRC
+ALARM    #5   03:30:18.00  earthquake detected by MAZI, NURH
+ALARM    #6   05:14:42.00  earthquake detected by AKDG, DYBB
+ALARM    #7   05:29:07.50  earthquake detected by DYBB, NURH
+ALARM    #8   05:44:16.00  earthquake detected by DYBB, NURH
+ALARM    #9   06:15:45.50  earthquake detected by AKDG, DYBB
+ALARM    #10  06:18:19.00  earthquake detected by DYBB, NURH
+ALARM    #11  06:18:41.00  earthquake detected by DYBB, SVRC
+ALARM    #12  06:25:17.50  earthquake detected by AKDG, DYBB
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 01:00:50.00 to 06:32:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.061N 37.898E, origin 01:50:56.51 UTC
+  alarm      01:51:11.00 UTC by AKDG, NURH
+  location   rms 0.08 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 50 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          34 km   01:51:06.58 UTC (picked)      -4.4 s  after S
+             NURH          42 km   01:51:08.86 UTC (picked)      -2.1 s  after S
+             MLTY          56 km   01:51:12.65 UTC (predicted)    +1.7 s  before S
+             GAZ          116 km   01:51:29.75 UTC (predicted)   +18.8 s  before S
+             SVRC         128 km   01:51:33.17 UTC (predicted)   +22.2 s  before S
+             DYBB         197 km   01:51:52.78 UTC (predicted)   +41.8 s  before S
+             MAZI         234 km   01:52:03.36 UTC (predicted)   +52.4 s  before S
+
+Event #2: detected earthquake (no magnitude) at 38.026N 37.888E, origin 02:07:24.58 UTC
+  alarm      02:07:37.50 UTC by AKDG, NURH
+  location   rms 0.31 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 44 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          38 km   02:07:35.60 UTC (picked)      -1.9 s  after S
+             NURH          40 km   02:07:36.62 UTC (picked)      -0.9 s  after S
+             MLTY          58 km   02:07:41.53 UTC (predicted)    +4.0 s  before S
+             GAZ          112 km   02:07:56.75 UTC (predicted)   +19.3 s  before S
+             SVRC         130 km   02:08:01.81 UTC (predicted)   +24.3 s  before S
+             DYBB         197 km   02:08:21.06 UTC (predicted)   +43.6 s  before S
+             MAZI         234 km   02:08:31.38 UTC (predicted)   +53.9 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      02:13:48.50 UTC by AKDG, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      03:16:14.00 UTC by AKDG, SVRC
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      03:30:18.00 UTC by MAZI, NURH
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      05:14:42.00 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      05:29:07.50 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      05:44:16.00 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      06:15:45.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      06:18:19.00 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      06:18:41.00 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      06:25:17.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          12
+  single-station detections, no alarm   143
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/ko_now/quiet/g_instant_0p88/ko_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0       30     30         0      0.001 (0.001)        34
+  DYBB     43189         0      100     99       700      0.001 (0.001)        25
+  GAZ      43189         0        6      6        42      0.002 (0.001)        56
+  MAZI     43189         0        1      1         0      0.002 (0.001)        59
+  MLTY     43189         0        0      0         0      0.002 (0.001)         0
+  NURH     43189         0       17     17         0      0.001 (0.001)        47
+  SVRC     43189         0       16     16       112      0.001 (0.002)        40
+  Pd: 854 values sent
+  P time from an STA/LTA onset for 37 of 170 triggers (133 from the window start)
+  onset from a FilterPicker pick for 23 of 170 triggers (P-time location and Pd)
+  302323 windows in 4.2 s: 4769x real time per station

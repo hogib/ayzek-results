@@ -1,0 +1,47 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2024-07-22 16:36:03.72 to 22:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   17:33:50.96  earthquake detected by FOZ, WVZ
+ALARM    #2   18:15:25.62  earthquake detected by CVZ, WVZ
+ALARM    #3   19:39:13.67  earthquake detected by FOZ, WHSZ
+ALARM    #4   22:05:36.77  earthquake detected by RPZ, WVZ
+PLOC     #4   22:05:48.83  P times locate it at -43.299N 170.897E +-381 km, origin 22:05:28.42, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-07-22 17:04:50.00 to 22:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:33:50.96 UTC by FOZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      18:15:25.62 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      19:39:13.67 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      22:05:36.77 UTC by RPZ, WVZ; later CVZ
+  P loc.     -43.299N 170.897E +-381 km from 3 stations, first 12.1 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    67
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/fp_eqfa/nz_strat_quiet15.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        8      8        56      0.020 (0.034)        74
+  FOZ      43189         0       26     25       182      0.019 (0.014)        70
+  RPZ      43189         0        6      6        42      0.021 (0.007)        75
+  WHSZ     43189         0       28     28       196      0.023 (0.009)        71
+  WVZ      43189         0        8      8        56      0.020 (0.024)        65
+  Pd: 532 values sent
+  215945 windows in 3.4 s: 5811x real time per station

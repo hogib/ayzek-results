@@ -1,0 +1,68 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-03-11 09:07:02.51 to 15:07:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   11:39:31.50  earthquake detected by AMT, DRO
+PDMAG    #1   11:40:20.00  Pd magnitude M2.4 ± 0.3 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   11:40:20.00  located at 37.142N 21.754E, origin 11:39:10.81, rms 0.63 s from 2 stations
+ALARM    #2   11:45:28.50  earthquake detected by AMT, RLS
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-03-11 09:35:50.00 to 15:07:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M2.4 earthquake at 37.142N 21.754E, origin 11:39:10.81 UTC
+  alarm      11:39:31.50 UTC by AMT, DRO
+  Pd magn.   M2.4 48.5 s after the alarm, M2.4 ± 0.3 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 8 stations (1 above noise)
+  location   rms 0.63 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 72 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMT           44 km   11:39:23.14 UTC (picked)      -8.4 s  after S
+             DRO           90 km   11:39:37.16 UTC (picked)      +5.7 s  before S
+             LTHK         103 km   11:39:40.29 UTC (predicted)    +8.8 s  before S
+             RLS          105 km   11:39:40.88 UTC (predicted)    +9.4 s  before S
+             AXS          122 km   11:39:45.74 UTC (predicted)   +14.2 s  before S
+             ORTH         122 km   11:39:45.84 UTC (predicted)   +14.3 s  before S
+             PLEV         144 km   11:39:52.20 UTC (predicted)   +20.7 s  before S
+             VLS          154 km   11:39:54.95 UTC (predicted)   +23.5 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:45:28.50 UTC by AMT, RLS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    92
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    11:39:31.50 UTC  #1  M2.4, located 37.14N 21.75E
+    11:45:28.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/learned/greece_strat_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0       14     14        98     42.443 (70.892)        83
+  AXS      43189         0        0      0         0     42.063 (69.270)         0
+  DRO      43189         0        1      1         7     41.895 (73.099)        91
+  LTHK     43189         0        0      0         0     41.637 (67.802)         0
+  ORTH     43189         0        0      0         0     41.283 (68.736)         0
+  PLEV     43189         0        0      0         0     42.425 (72.793)         0
+  RLS      43189         0       81     81       567     40.856 (70.874)        89
+  VLS      43189         0        0      0         0     41.988 (68.822)         0
+  Pd: 672 values sent
+  P time from an STA/LTA onset for 37 of 96 triggers (59 from the window start)
+  onset from a FilterPicker pick for 27 of 96 triggers (P-time location and Pd)
+  345512 windows in 1860.6 s: 11x real time per station

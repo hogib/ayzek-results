@@ -1,0 +1,86 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-05-28 06:48:02.18 to 12:48:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   08:44:22.50  earthquake detected by PFKS, SIVA
+ALARM    #2   09:00:21.00  earthquake detected by PFKS, THERA
+ALARM    #3   09:00:40.50  earthquake detected by SIVA, ZKR
+ALARM    #4   09:14:10.00  earthquake detected by PFKS, THERA
+ALARM    #5   12:00:56.00  earthquake detected by THERA, ZKR
+ALARM    #6   12:16:42.50  earthquake detected by PFKS, THERA
+PLOC     #6   12:16:45.50  P times locate it at 35.798N 25.467E +-27 km, origin 12:16:22.41, rms 0.01 s from 3 stations
+ALARM    #7   12:45:01.00  earthquake detected by THERA, ZKR
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2024-05-28 07:16:50.00 to 12:48:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:44:22.50 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      09:00:21.00 UTC by PFKS, THERA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      09:00:40.50 UTC by SIVA, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      09:14:10.00 UTC by PFKS, THERA
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      12:00:56.00 UTC by THERA, ZKR
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      12:16:42.50 UTC by PFKS, THERA; later ZKR
+  P loc.     35.798N 25.467E +-27 km from 3 stations, first 3.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      12:45:01.00 UTC by THERA, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm    29
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              7  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    08:44:22.50 UTC  #1  no magnitude, not located
+    09:00:21.00 UTC  #2  no magnitude, not located
+    09:00:40.50 UTC  #3  no magnitude, not located
+    09:14:10.00 UTC  #4  no magnitude, not located
+    12:00:56.00 UTC  #5  no magnitude, not located
+    12:16:42.50 UTC  #6  no magnitude, not located
+    12:45:01.00 UTC  #7  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_eqt_0p4/greece_now_quiet22.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.003 (0.001)         0
+  IPPL     43189         0        4      4        28      0.003 (0.001)        67
+  KNSS     43189         0        0      0         0      0.002 (0.001)         0
+  PFKS     43171         2       11     11        77      0.002 (0.001)        52
+  SIVA     43189         0        4      4        28      0.002 (0.001)        58
+  STIA     43189         0        1      1         7      0.003 (0.001)        72
+  THERA    43189         0        6      6        42      0.002 (0.001)        47
+  ZKR      43189         0       19     19       133      0.002 (0.001)        45
+  Pd: 315 values sent
+  P time from an STA/LTA onset for 15 of 45 triggers (30 from the window start)
+  onset from a FilterPicker pick for 9 of 45 triggers (P-time location and Pd)
+  345494 windows in 3.0 s: 6664x real time per station

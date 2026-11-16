@@ -1,0 +1,65 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 12 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:58:15.67  earthquake detected by TETR, TSLK
+PLOC     #1   10:58:15.81  P times locate it at 38.876N 21.563E +-466 km, origin 10:58:02.48, rms 0.04 s from 3 stations
+PLOC     #1   10:58:16.56  P times locate it at 39.580N 20.580E +-346 km, origin 10:58:01.26, rms 0.18 s from 4 stations
+PLOC     #1   10:58:16.65  P times locate it at 39.584N 20.550E +-342 km, origin 10:58:00.87, rms 0.36 s from 5 stations
+PLOC     #1   10:58:19.87  P times locate it at 39.410N 20.712E +-169 km, origin 10:58:04.07, rms 0.55 s from 6 stations
+PLOC     #1   10:58:20.36  P times locate it at 39.363N 20.805E +-254 km, origin 10:58:04.92, rms 0.80 s from 7 stations
+LOCATE   #1   10:59:10.16  located at 41.550N 20.115E, origin 10:57:26.02, rms 1.49 s from 2 stations
+LOCATE   #1   10:59:11.14  located at 38.244N 23.586E, origin 10:57:33.11, rms 0.30 s from 2 stations, left out TSLK
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.244N 23.586E, origin 10:57:33.11 UTC
+  alarm      10:58:15.67 UTC by TETR, TSLK; later AMPL, EVR, LKD2, NYDR, PDO
+  location   rms 0.30 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     39.363N 20.805E +-254 km from 7 stations, first 0.1 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 149 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             EVR          172 km   10:58:22.20 UTC (predicted)    +6.5 s  before S
+             PVO          184 km   10:58:25.83 UTC (predicted)   +10.2 s  before S
+             PDO          213 km   10:58:34.04 UTC (predicted)   +18.4 s  before S
+             AMPL         220 km   10:58:35.92 UTC (predicted)   +20.3 s  before S
+             TETR         235 km   10:58:40.47 UTC (picked)     +24.8 s  before S
+             NYDR         257 km   10:58:46.30 UTC (picked)     +30.6 s  before S
+             LKD2         262 km   10:58:47.99 UTC (predicted)   +32.3 s  before S
+             TSLK         263 km   10:58:54.68 UTC (picked)     +39.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    10
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:58:15.67 UTC  #1  no magnitude, located 38.24N 23.59E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_12/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0       10     10        70      0.001 (0.000)        33
+  EVR      43189         0        1      1         7      0.001 (0.000)        44
+  LKD2     43171         2        1      1         7      0.001 (0.000)        44
+  NYDR     43189         0        1      1         0      0.001 (0.000)        45
+  PDO      43189         0        1      1         7      0.001 (0.000)        43
+  PVO      43189         0        0      0         0      0.001 (0.000)         0
+  TETR     43189         0        1      1         7      0.001 (0.000)        49
+  TSLK     43189         0        2      2         0      0.001 (0.000)        42
+  Pd: 98 values sent
+  345494 windows in 0.6 s: 34152x real time per station

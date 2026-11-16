@@ -1,0 +1,54 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-09-19 08:09:02.11 to 14:09:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   11:49:09.50  earthquake detected by PFKS, STIA, ZKR
+PLOC     #1   11:49:09.50  P times locate it at 35.845N 29.027E +-266 km, origin 11:48:12.06, rms 0.82 s from 3 stations
+PLOC     #1   11:49:15.00  P times locate it at 35.351N 27.350E +-161 km, origin 11:48:38.82, rms 0.76 s from 4 stations
+PDMAG    #1   11:49:51.50  Pd magnitude M3.4 ± 0.3 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   11:49:51.50  located at 35.503N 26.559E, origin 11:48:50.18, rms 0.15 s from 2 stations
+LOCATE   #1   11:50:01.00  located at 35.520N 26.527E, origin 11:48:50.27, rms 0.16 s from 3 stations
+LOCATE   #1   11:50:06.50  located at 35.516N 26.490E, origin 11:48:50.87, rms 0.33 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-09-19 08:37:50.00 to 14:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M3.3 earthquake at 35.516N 26.490E, origin 11:48:50.87 UTC
+  alarm      11:49:09.50 UTC by PFKS, STIA, ZKR; later KNSS
+  Pd magn.   M3.4 42.0 s after the alarm, M3.3 ± 0.3 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 8 stations (1 above noise)
+  location   rms 0.33 s from 4 stations, first 42.0 s after the alarm (P and S picks)
+  P loc.     35.351N 27.350E +-161 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 64 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             STIA          50 km   11:49:05.78 UTC (picked)      -3.7 s  after S
+             ZKR           51 km   11:49:05.76 UTC (picked)      -3.7 s  after S
+             PFKS         106 km   11:49:21.52 UTC (picked)     +12.0 s  before S
+             KNSS         121 km   11:49:25.10 UTC (picked)     +15.6 s  before S
+             THERA        132 km   11:49:28.56 UTC (predicted)   +19.1 s  before S
+             SIVA         162 km   11:49:37.28 UTC (predicted)   +27.8 s  before S
+             IPPL         185 km   11:49:43.69 UTC (predicted)   +34.2 s  before S
+             CHAN         222 km   11:49:54.22 UTC (predicted)   +44.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     7
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/eqt_lookahead_eqquiet/greece_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.003 (0.002)         0
+  IPPL     43189         0        1      1         7      0.002 (0.001)        64
+  KNSS     43189         0        1      1         7      0.003 (0.003)        60
+  PFKS     43189         0        1      1         7      0.003 (0.001)        67
+  SIVA     43189         0        2      2        14      0.002 (0.001)        64
+  STIA     43189         0        1      1         7      0.002 (0.001)        64
+  THERA    43189         0        3      3        21      0.002 (0.001)        73
+  ZKR      43189         0        2      2        14      0.002 (0.001)        68
+  Pd: 77 values sent
+  P time from an STA/LTA onset for 4 of 11 triggers (7 from the window start)
+  onset from a FilterPicker pick for 3 of 11 triggers (P-time location and Pd)
+  345512 windows in 1.8 s: 10757x real time per station

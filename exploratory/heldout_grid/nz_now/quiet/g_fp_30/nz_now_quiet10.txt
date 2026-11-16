@@ -1,0 +1,42 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 30/10, Z + picker + Pd magnitude, replay 2025-11-16 13:24:04.33 to 19:24:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:04:26.96  earthquake detected by KHZ, RPZ
+ALARM    #2   15:09:50.06  earthquake detected by DSZ, KHZ
+PLOC     #2   15:10:14.02  P times locate it at -42.020N 172.977E +-21 km, origin 15:09:32.72, rms 0.02 s from 3 stations
+ALARM    #3   15:56:19.21  earthquake detected by KHZ, RPZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-11-16 13:52:50.00 to 19:24:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:04:26.96 UTC by KHZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:09:50.06 UTC by DSZ, KHZ; later RPZ
+  P loc.     -42.020N 172.977E +-21 km from 3 stations, first 24.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      15:56:19.21 UTC by KHZ, RPZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    39
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_fp_30/nz_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DSZ      43189         0       13     13        91      0.014 (0.023)        53
+  KHZ      43189         0       28     28       196      0.012 (0.005)        48
+  RPZ      43188         0        4      4        28      0.013 (0.034)        39
+  WHSZ     43189         0        0      0         0      0.016 (0.018)         0
+  WVZ      43189         0        1      1         7      0.014 (0.020)        58
+  Pd: 322 values sent
+  215944 windows in 2.1 s: 9476x real time per station

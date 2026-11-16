@@ -1,0 +1,52 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-05-15 08:30:04.11 to 14:30:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   10:35:22.00  earthquake detected by EPID, VLI
+ALARM    #2   11:56:08.00  earthquake detected by EPID, LTK
+LOCATE   #2   11:57:00.00  located at 37.334N 22.753E, origin 11:55:51.53, rms 0.29 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:58:50.00 to 14:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:35:22.00 UTC by EPID, VLI
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 37.334N 22.753E, origin 11:55:51.53 UTC
+  alarm      11:56:08.00 UTC by EPID, LTK
+  location   rms 0.29 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 57 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             VLX           33 km   11:56:01.46 UTC (predicted)    -6.5 s  after S
+             EPID          45 km   11:56:04.86 UTC (picked)      -3.1 s  after S
+             ACOR          63 km   11:56:09.67 UTC (predicted)    +1.7 s  before S
+             VLI           71 km   11:56:11.89 UTC (predicted)    +3.9 s  before S
+             LOUT          75 km   11:56:13.23 UTC (predicted)    +5.2 s  before S
+             GUR           76 km   11:56:13.47 UTC (predicted)    +5.5 s  before S
+             THAL          78 km   11:56:14.13 UTC (predicted)    +6.1 s  before S
+             LTK           79 km   11:56:14.04 UTC (picked)      +6.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    19
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_lookahead_eqquiet/greece_strat_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        0      0         0      0.000 (0.001)         0
+  EPID     43189         0        9      9        63      0.000 (0.001)        12
+  GUR      43189         0        0      0         0      0.001 (0.001)         0
+  LOUT     43189         0        8      8        56      0.000 (0.001)        14
+  LTK      43189         0        4      4        28      0.000 (0.001)        12
+  THAL     43189         0        0      0         0      0.000 (0.001)         0
+  VLI      43189         0        2      2        14      0.001 (0.001)        12
+  VLX      43189         0        0      0         0      0.000 (0.001)         0
+  Pd: 161 values sent
+  P time from an STA/LTA onset for 7 of 23 triggers (16 from the window start)
+  onset from a FilterPicker pick for 4 of 23 triggers (P-time location and Pd)
+  345512 windows in 0.6 s: 32978x real time per station

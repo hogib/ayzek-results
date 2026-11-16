@@ -1,0 +1,67 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-11-19 03:20:02.43 to 09:20:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:03:07.52  earthquake detected by PFKS, SIVA
+PLOC     #1   04:03:14.00  P times locate it at 32.022N 24.425E +-278 km, origin 04:02:10.11, rms 1.36 s from 3 stations
+LOCATE   #1   04:04:02.01  located at 34.825N 25.048E, origin 04:02:59.57, rms 0.02 s from 2 stations
+ALARM    #2   05:40:49.63  earthquake detected by KNDR, PFKS
+pick     PFKS  picker window at 08:27:44.36 crosses a gap, skipped
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-19 03:48:50.00 to 09:20:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 34.825N 25.048E, origin 04:02:59.57 UTC
+  alarm      04:03:07.52 UTC by PFKS, SIVA; later KNSS
+  location   rms 0.02 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     32.022N 24.425E +-278 km from 3 stations, first 6.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 26 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          30 km   04:03:08.71 UTC (picked)      +1.2 s  before S
+             PFKS          46 km   04:03:12.93 UTC (picked)      +5.4 s  before S
+             KNSS          55 km   04:03:15.43 UTC (predicted)    +7.9 s  before S
+             IPPL          79 km   04:03:22.27 UTC (predicted)   +14.8 s  before S
+             STIA         104 km   04:03:29.38 UTC (predicted)   +21.9 s  before S
+             CHAN         120 km   04:03:33.85 UTC (predicted)   +26.3 s  before S
+             IMMV         120 km   04:03:33.97 UTC (predicted)   +26.5 s  before S
+             KNDR         137 km   04:03:38.91 UTC (predicted)   +31.4 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      05:40:49.63 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    80
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:03:07.52 UTC  #1  no magnitude, located 34.83N 25.05E
+    05:40:49.63 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_8/greece_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43162         3       10     10        70      0.001 (0.000)        44
+  IMMV     43189         0        1      1         7      0.001 (0.000)        45
+  IPPL     43189         0       10     10        70      0.001 (0.000)        46
+  KNDR     43189         0       13     13        91      0.001 (0.000)        40
+  KNSS     43189         0       16     16       112      0.001 (0.000)        42
+  PFKS     43150         5       16     15       107      0.001 (0.000)        41
+  SIVA     43189         0        7      7        49      0.001 (0.000)        49
+  STIA     43189         0       12     12        84      0.001 (0.000)        38
+  Pd: 590 values sent
+  345446 windows in 1.0 s: 20298x real time per station

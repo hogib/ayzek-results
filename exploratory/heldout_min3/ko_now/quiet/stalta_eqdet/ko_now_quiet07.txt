@@ -1,0 +1,34 @@
+ayzek    7 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-24 00:32:02.46 to 06:32:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   03:05:14.41  earthquake detected by GAZ, NURH, SVRC
+PLOC     #1   03:05:14.41  P times locate it at 37.690N 37.509E +-270 km, origin 03:04:45.16, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 01:00:50.00 to 06:32:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      03:05:14.41 UTC by GAZ, NURH, SVRC
+  P loc.     37.690N 37.509E +-270 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm   169
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_eqdet/ko_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0       12     12         0      0.001 (0.001)        30
+  DYBB     43189         0       15     15       105      0.001 (0.001)        47
+  GAZ      43189         0      105    105       735      0.001 (0.001)        28
+  MAZI     43189         0        5      5         0      0.001 (0.001)        42
+  MLTY     43189         0        7      7        49      0.001 (0.001)        38
+  NURH     43189         0       16     16         0      0.001 (0.000)        35
+  SVRC     43189         0       48     48       336      0.001 (0.001)        36
+  Pd: 1225 values sent
+  302323 windows in 3.3 s: 6093x real time per station

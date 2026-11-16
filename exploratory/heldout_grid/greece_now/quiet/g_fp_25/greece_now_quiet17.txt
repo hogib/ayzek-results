@@ -1,0 +1,108 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 25/10, Z + picker + Pd magnitude, replay 2023-12-09 14:06:02.69 to 20:06:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   14:56:23.89  earthquake detected by NISR, ZKR
+ALARM    #2   15:01:31.61  earthquake detected by NISR, STIA
+ALARM    #3   15:23:14.73  earthquake detected by NISR, STIA
+ALARM    #4   15:24:53.93  earthquake detected by APE, NISR
+ALARM    #5   16:21:10.99  earthquake detected by APE, STIA
+ALARM    #6   16:25:42.42  earthquake detected by APE, STIA
+ALARM    #7   16:33:29.80  earthquake detected by APE, STIA
+ALARM    #8   16:34:20.78  earthquake detected by APE, NISR
+PLOC     #8   16:34:42.91  P times locate it at 39.395N 25.353E +-171 km, origin 16:33:22.97, rms 0.95 s from 3 stations
+LOCATE   #8   16:35:37.22  located at 37.167N 25.492E, origin 16:34:02.00, rms 1.84 s from 2 stations, left out NISR
+ALARM    #9   16:36:59.22  earthquake detected by NISR, STIA
+ALARM    #10  16:44:29.16  earthquake detected by STIA, ZKR
+ALARM    #11  16:48:05.71  earthquake detected by APE, STIA
+ALARM    #12  18:28:31.44  earthquake detected by NISR, ZKR
+LOCATE   #12  18:29:25.77  located at 33.268N 27.714E, origin 18:27:30.18, rms 1.33 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-12-09 14:34:50.00 to 20:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      14:56:23.89 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:01:31.61 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      15:23:14.73 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      15:24:53.93 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      16:21:10.99 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      16:25:42.42 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      16:33:29.80 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude) at 37.167N 25.492E, origin 16:34:02.00 UTC
+  alarm      16:34:20.78 UTC by APE, NISR; later STIA
+  location   rms 1.84 s from 2 stations, first 76.4 s after the alarm (P and S picks)
+  P loc.     39.395N 25.353E +-171 km from 3 stations, first 22.1 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 65 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             APE           11 km   16:34:05.01 UTC (picked)     -15.8 s  after S
+             THERA         89 km   16:34:27.60 UTC (predicted)    +6.8 s  before S
+             NISR         158 km   16:34:20.40 UTC (picked)      -0.4 s  after S
+             NISR2        164 km   16:34:48.87 UTC (predicted)   +28.1 s  before S
+             STIA         225 km   16:35:06.14 UTC (picked)     +45.4 s  before S
+             ZKR          237 km   16:35:09.88 UTC (predicted)   +49.1 s  before S
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      16:36:59.22 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      16:44:29.16 UTC by STIA, ZKR
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      16:48:05.71 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude) at 33.268N 27.714E, origin 18:27:30.18 UTC
+  alarm      18:28:31.44 UTC by NISR, ZKR
+  location   rms 1.33 s from 2 stations, first 54.3 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 214 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             ZKR          247 km   18:28:39.94 UTC (picked)      +8.5 s  before S
+             STIA         262 km   18:28:45.03 UTC (predicted)   +13.6 s  before S
+             NISR2        371 km   18:29:16.20 UTC (predicted)   +44.8 s  before S
+             NISR         375 km   18:29:18.45 UTC (picked)     +47.0 s  before S
+             THERA        401 km   18:29:24.68 UTC (predicted)   +53.2 s  before S
+             APE          468 km   18:29:43.81 UTC (predicted)   +72.4 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          12
+  single-station detections, no alarm    93
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_25/greece_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       31     30       217      0.017 (0.023)        44
+  NISR     43189         0       37     37         0      0.014 (0.118)        41
+  NISR2    43189         0        4      4        28      0.015 (0.147)        42
+  STIA     43189         0       25     25       175      0.016 (0.010)        54
+  THERA    43189         0        5      5        35      0.017 (0.113)        46
+  ZKR      43189         0       17     17       119      0.015 (0.048)        53
+  Pd: 574 values sent
+  259134 windows in 2.4 s: 8358x real time per station

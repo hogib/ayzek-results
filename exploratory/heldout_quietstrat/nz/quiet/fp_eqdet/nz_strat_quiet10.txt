@@ -1,0 +1,44 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2024-09-13 07:20:04.14 to 13:20:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:33:57.46  earthquake detected by KHZ, RPZ
+ALARM    #2   12:25:37.62  earthquake detected by WHSZ, WVZ
+LOCATE   #2   12:26:31.95  located at -43.223N 170.862E, origin 12:25:30.82, rms 0.03 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-09-13 07:48:50.00 to 13:20:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:33:57.46 UTC by KHZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at -43.223N 170.862E, origin 12:25:30.82 UTC
+  alarm      12:25:37.62 UTC by WHSZ, WVZ
+  location   rms 0.03 s from 2 stations, first 54.3 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 22 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             WVZ           19 km   12:25:37.07 UTC (picked)      -0.5 s  after S
+             WHSZ          38 km   12:25:41.91 UTC (picked)      +4.3 s  before S
+             RPZ           57 km   12:25:47.32 UTC (predicted)    +9.7 s  before S
+             DSZ          182 km   12:26:22.78 UTC (predicted)   +45.2 s  before S
+             KHZ          236 km   12:26:38.32 UTC (predicted)   +60.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    24
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/fp_eqdet/nz_strat_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DSZ      43189         0        4      4        28      0.023 (0.062)        85
+  KHZ      43189         0       11     11        77      0.023 (0.032)        81
+  RPZ      43189         0        3      3        21      0.025 (0.045)        83
+  WHSZ     43189         0        4      4        28      0.023 (0.178)        78
+  WVZ      43189         0        6      6        42      0.026 (0.006)        79
+  Pd: 196 values sent
+  215945 windows in 2.3 s: 8559x real time per station

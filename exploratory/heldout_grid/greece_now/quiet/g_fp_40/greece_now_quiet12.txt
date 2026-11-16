@@ -1,0 +1,52 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 40/10, Z + picker + Pd magnitude, replay 2024-05-03 13:26:02.13 to 19:26:00.01 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+ALARM    #1   15:30:53.78  earthquake detected by SIVA, STIA
+ALARM    #2   15:33:33.53  earthquake detected by SIVA, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2024-05-03 13:54:50.00 to 19:26:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:30:53.78 UTC by SIVA, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:33:33.53 UTC by SIVA, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    93
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    15:30:53.78 UTC  #1  no magnitude, not located
+    15:33:33.53 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_40/greece_now_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.018 (0.043)         0
+  IMMV     43189         0        1      1         7      0.019 (0.129)        55
+  IPPL     43189         0        0      0         0      0.019 (0.052)         0
+  KNDR     43189         0        3      3        21      0.017 (0.043)        51
+  KNSS     43189         0        2      2        14      0.020 (0.018)        58
+  PFKS     43175         2       31     31       217      0.014 (0.018)        44
+  SIVA     43189         0       23     23       161      0.014 (0.036)        52
+  STIA     43189         0       38     38       266      0.012 (0.035)        37
+  Pd: 686 values sent
+  345498 windows in 2.3 s: 8773x real time per station

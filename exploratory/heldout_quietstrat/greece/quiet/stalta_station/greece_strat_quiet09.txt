@@ -1,0 +1,45 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 08:30:04.11 to 14:30:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   09:45:01.93  earthquake detected by LOUT, VLI
+ALARM    #2   11:34:32.75  earthquake detected by LOUT, LTK
+PLOC     #2   11:34:33.86  P times locate it at 38.015N 22.868E +-428 km, origin 11:34:30.41, rms 0.02 s from 3 stations
+PLOC     #2   11:34:34.96  P times locate it at 37.546N 22.897E +-401 km, origin 11:34:23.95, rms 0.25 s from 4 stations
+PDMAG    #2   11:34:36.90  Pd magnitude M3.4 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 7 stations (5 above noise), windows up to 3 s, distances from the P-time location
+PLOC     #2   11:34:36.90  P times locate it at 37.475N 22.924E +-18 km, origin 11:34:22.71, rms 0.23 s from 5 stations
+PDMAG    #2   11:34:38.00  Pd magnitude M3.5 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (6 above noise), windows up to 5 s, distances from the P-time location
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:58:50.00 to 14:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:45:01.93 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #2: detected M3.5 earthquake, not located
+  alarm      11:34:32.75 UTC by LOUT, LTK; later GUR, THAL, VLI
+  Pd magn.   M3.4 4.2 s after the alarm, M3.5 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 8 stations (7 above noise)
+  P loc.     37.475N 22.924E +-18 km from 5 stations, first 1.1 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    20
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_station/greece_strat_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        5      5        35      0.001 (0.000)        50
+  EPID     43189         0        1      1         7      0.001 (0.000)        56
+  GUR      43189         0        3      3        21      0.001 (0.000)        48
+  LOUT     43189         0       10     10        70      0.001 (0.000)        48
+  LTK      43189         0        4      4        28      0.001 (0.000)        46
+  THAL     43189         0        1      1         7      0.001 (0.000)        43
+  VLI      43189         0        3      3        21      0.001 (0.000)        45
+  VLX      43189         0        0      0         0      0.001 (0.000)         0
+  Pd: 189 values sent
+  345512 windows in 0.8 s: 24955x real time per station

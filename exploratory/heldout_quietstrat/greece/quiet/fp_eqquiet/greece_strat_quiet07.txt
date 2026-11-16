@@ -1,0 +1,52 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2025-04-30 07:10:02.59 to 13:10:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:07:35.23  earthquake detected by MDRA, NEO
+ALARM    #2   12:22:35.26  earthquake detected by DOMV, THIV
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-04-30 07:38:50.00 to 13:10:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:07:35.23 UTC by MDRA, NEO
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      12:22:35.26 UTC by DOMV, THIV
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    23
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:07:35.23 UTC  #1  no magnitude, not located
+    12:22:35.26 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqquiet/greece_strat_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DOMV     43189         0        9      9        63      0.014 (0.022)        46
+  LKR      43189         0        0      0         0      0.015 (0.024)         0
+  MDRA     43189         0        6      6        42      0.015 (0.100)        38
+  MRTH     43189         0        0      0         0      0.011 (0.046)         0
+  NEO      43189         0        2      2        14      0.015 (0.027)        47
+  THIV     43189         0        9      9        63      0.013 (0.021)        41
+  VILL     43189         0        1      1         7      0.017 (0.120)        39
+  XOR      43189         0        0      0         0      0.014 (0.021)         0
+  Pd: 189 values sent
+  345512 windows in 1.4 s: 14591x real time per station

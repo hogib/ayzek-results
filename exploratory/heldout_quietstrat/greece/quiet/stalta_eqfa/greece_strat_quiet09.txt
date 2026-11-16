@@ -1,0 +1,46 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 08:30:04.11 to 14:30:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   10:37:14.78  earthquake detected by ACOR, EPID
+ALARM    #2   11:34:33.86  earthquake detected by LTK, THAL
+PLOC     #2   11:34:34.96  P times locate it at 37.418N 22.993E +-412 km, origin 11:34:21.31, rms 0.00 s from 3 stations
+PLOC     #2   11:34:36.97  P times locate it at 37.488N 22.960E +-24 km, origin 11:34:22.60, rms 0.05 s from 4 stations
+ALARM    #3   12:09:06.18  earthquake detected by ACOR, EPID
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:58:50.00 to 14:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:37:14.78 UTC by ACOR, EPID
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:34:33.86 UTC by LTK, THAL; later GUR, VLI
+  P loc.     37.488N 22.960E +-24 km from 4 stations, first 1.1 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      12:09:06.18 UTC by ACOR, EPID
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    38
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqfa/greece_strat_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0       13     13        91      0.001 (0.000)        33
+  EPID     43189         0       20     20       140      0.001 (0.001)        28
+  GUR      43189         0        3      3        21      0.000 (0.000)        35
+  LOUT     43189         0        2      2        14      0.001 (0.001)        38
+  LTK      43189         0        4      4        28      0.001 (0.000)        37
+  THAL     43189         0        1      1         7      0.001 (0.001)        43
+  VLI      43189         0        3      3        21      0.001 (0.000)        32
+  VLX      43189         0        0      0         0      0.001 (0.001)         0
+  Pd: 322 values sent
+  345512 windows in 0.7 s: 26508x real time per station

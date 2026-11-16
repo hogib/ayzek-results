@@ -1,0 +1,58 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-15 19:31:03.13 to 01:31:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   21:30:09.50  earthquake detected by NURH, SARI
+LOCATE   #1   21:31:01.50  located at 38.438N 36.927E, origin 21:29:57.54, rms 0.21 s from 2 stations
+ALARM    #2   22:18:50.00  earthquake detected by NURH, SARI
+LOCATE   #2   22:19:42.00  located at 38.193N 36.922E, origin 22:18:38.29, rms 1.28 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-15 19:59:50.00 to 01:31:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.438N 36.927E, origin 21:29:57.54 UTC
+  alarm      21:30:09.50 UTC by NURH, SARI
+  location   rms 0.21 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 41 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          44 km   21:30:10.44 UTC (picked)      +0.9 s  before S
+             NURH          69 km   21:30:17.46 UTC (picked)      +8.0 s  before S
+             BNN          104 km   21:30:27.52 UTC (predicted)   +18.0 s  before S
+             GAZ          143 km   21:30:38.48 UTC (predicted)   +29.0 s  before S
+             CEYT         190 km   21:30:51.79 UTC (predicted)   +42.3 s  before S
+             KARA         210 km   21:30:57.65 UTC (predicted)   +48.2 s  before S
+
+Event #2: detected earthquake (no magnitude) at 38.193N 36.922E, origin 22:18:38.29 UTC
+  alarm      22:18:50.00 UTC by NURH, SARI
+  location   rms 1.28 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 40 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          50 km   22:18:52.10 UTC (picked)      +2.1 s  before S
+             NURH          51 km   22:18:51.72 UTC (picked)      +1.7 s  before S
+             GAZ          116 km   22:19:11.65 UTC (predicted)   +21.7 s  before S
+             BNN          119 km   22:19:12.35 UTC (predicted)   +22.4 s  before S
+             CEYT         167 km   22:19:26.19 UTC (predicted)   +36.2 s  before S
+             KARA         194 km   22:19:33.86 UTC (predicted)   +43.9 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     8
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_phasenet_0p9/ko_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.001 (0.001)         0
+  CEYT     43145         4        0      0         0      0.001 (0.001)         0
+  GAZ      43189         0        0      0         0      0.001 (0.001)         0
+  KARA     43189         0        2      2        14      0.002 (0.001)        44
+  NURH     43189         0        6      6         0      0.001 (0.004)        30
+  SARI     43189         0        4      4        28      0.001 (0.006)        39
+  Pd: 42 values sent
+  P time from an STA/LTA onset for 12 of 12 triggers (0 from the window start)
+  onset from a FilterPicker pick for 11 of 12 triggers (P-time location and Pd)
+  259090 windows in 1.7 s: 11825x real time per station

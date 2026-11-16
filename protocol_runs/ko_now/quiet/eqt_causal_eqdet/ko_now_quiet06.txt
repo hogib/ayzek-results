@@ -1,0 +1,38 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-18 10:50:02.58 to 16:50:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:33:35.00  earthquake detected by NURH, SARI
+ALARM    #2   16:26:07.50  earthquake detected by NURH, SARI
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-18 11:18:50.00 to 16:50:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:33:35.00 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      16:26:07.50 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    18
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_causal_eqdet/ko_now_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.005 (0.002)         0
+  CEYT     43057        13        0      0         0      0.004 (0.002)         0
+  GAZ      43189         0       10     10        70      0.003 (0.002)       132
+  KARA     43189         0        0      0         0      0.004 (0.002)         0
+  NURH     43189         0       10     10         0      0.005 (0.002)       152
+  SARI     43189         0        3      3        21      0.005 (0.002)       154
+  Pd: 91 values sent
+  P time from an STA/LTA onset for 8 of 23 triggers (15 from the window start)
+  onset from a FilterPicker pick for 8 of 23 triggers (P-time location and Pd)
+  259002 windows in 4.3 s: 4582x real time per station

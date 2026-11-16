@@ -1,0 +1,48 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-12-22 03:10:03.10 to 09:10:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   03:53:54.50  earthquake detected by STIA, ZKR
+PLOC     #1   03:54:00.00  P times locate it at 35.461N 25.708E +-256 km, origin 03:53:42.31, rms 0.75 s from 3 stations
+PLOC     #1   03:54:08.50  P times locate it at 35.764N 26.627E +-417 km, origin 03:53:37.90, rms 1.53 s from 4 stations
+LOCATE   #1   03:54:46.50  located at 35.803N 26.454E, origin 03:53:40.14, rms 0.16 s from 2 stations
+LOCATE   #1   03:54:52.00  located at 35.766N 26.563E, origin 03:53:40.03, rms 0.27 s from 3 stations
+LOCATE   #1   03:55:00.50  located at 35.814N 26.667E, origin 03:53:37.96, rms 0.81 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-12-22 03:38:50.00 to 09:10:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 35.814N 26.667E, origin 03:53:37.96 UTC
+  alarm      03:53:54.50 UTC by STIA, ZKR; later APE, THERA
+  location   rms 0.81 s from 4 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     35.764N 26.627E +-417 km from 4 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 57 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             STIA          86 km   03:54:01.50 UTC (picked)      +7.0 s  before S
+             ZKR           88 km   03:54:03.16 UTC (picked)      +8.7 s  before S
+             NISR2         96 km   03:54:05.57 UTC (predicted)   +11.1 s  before S
+             NISR          98 km   03:54:06.07 UTC (predicted)   +11.6 s  before S
+             THERA        123 km   03:54:14.20 UTC (picked)     +19.7 s  before S
+             APE          173 km   03:54:26.54 UTC (picked)     +32.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    38
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_causal_eqfa/greece_strat_quiet05.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        4      4        28      0.001 (0.002)        17
+  NISR     43189         0        4      4         0      0.001 (0.003)        14
+  NISR2    43189         0        2      2        14      0.001 (0.003)        22
+  STIA     43189         0        5      5        35      0.001 (0.001)        17
+  THERA    43189         0       15     15       105      0.001 (0.001)        19
+  ZKR      43189         0       12     12        84      0.001 (0.002)        21
+  Pd: 266 values sent
+  P time from an STA/LTA onset for 38 of 42 triggers (4 from the window start)
+  onset from a FilterPicker pick for 30 of 42 triggers (P-time location and Pd)
+  259134 windows in 0.9 s: 22684x real time per station

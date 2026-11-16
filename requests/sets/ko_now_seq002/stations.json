@@ -1,0 +1,441 @@
+{
+ "set": "ko_now_seq002",
+ "config": {
+  "name": "ko_now_seq002",
+  "networks": [
+   "KO"
+  ],
+  "start": "2026-09-24T07:30:58.050000",
+  "end": "2026-09-24T10:30:58.050000",
+  "lat": 37.4205,
+  "lon": 38.8678,
+  "radius_km": 150.0,
+  "max_stations": 7,
+  "min_coverage": 0.0,
+  "max_azimuth_offset_deg": null,
+  "stations": [
+   "KO.MLTY",
+   "KO.SVRC",
+   "KO.DYBB",
+   "KO.AKDG",
+   "KO.MAZI",
+   "KO.NURH",
+   "KO.GAZ"
+  ],
+  "catalog": {
+   "lead_days": 1.0,
+   "radius_km": 400.0,
+   "min_magnitude": null,
+   "start": null,
+   "end": null,
+   "limit": null
+  },
+  "source": "selections/ko_now/sets/ko_now_seq002.toml"
+ },
+ "span": [
+  "2026-09-24T07:30:58.050000",
+  "2026-09-24T10:30:58.050000"
+ ],
+ "services": {
+  "station": "https://eida.koeri.boun.edu.tr/fdsnws/station/1/query",
+  "dataselect": "https://eida.koeri.boun.edu.tr/fdsnws/dataselect/1/query",
+  "availability": "https://eida.koeri.boun.edu.tr/fdsnws/availability/1/query",
+  "event": "https://www.seismicportal.eu/fdsnws/event/1/query"
+ },
+ "coverage_basis": "fdsnws/availability",
+ "probed_utc": "2026-10-30T14:29:46+00:00",
+ "tool": {
+  "name": "ayzek-heldout",
+  "git_commit": "440a2d946939"
+ },
+ "probed": [
+  {
+   "network": "KO",
+   "station": "URFA",
+   "lat": 37.4409,
+   "lon": 38.8213,
+   "elevation_m": 938.0,
+   "distance_km": 4.7,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "KO",
+   "station": "MLTY",
+   "lat": 38.3223,
+   "lon": 38.4407,
+   "elevation_m": 1018.0,
+   "distance_km": 107.1,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "SVRC",
+   "lat": 38.3775,
+   "lon": 39.306,
+   "elevation_m": 1680.0,
+   "distance_km": 113.1,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "DYBB",
+   "lat": 37.9532,
+   "lon": 40.1393,
+   "elevation_m": 657.0,
+   "distance_km": 126.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "AKDG",
+   "lat": 38.3618,
+   "lon": 37.9703,
+   "elevation_m": 1131.0,
+   "distance_km": 131.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "MAZI",
+   "lat": 37.4593,
+   "lon": 40.4465,
+   "elevation_m": 1204.0,
+   "distance_km": 139.4,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "NURH",
+   "lat": 37.9693,
+   "lon": 37.4363,
+   "elevation_m": 1563.0,
+   "distance_km": 140.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "GAZ",
+   "lat": 37.1721,
+   "lon": 37.2096,
+   "elevation_m": 992.0,
+   "distance_km": 149.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  }
+ ],
+ "chosen": [
+  {
+   "network": "KO",
+   "station": "MLTY",
+   "lat": 38.3223,
+   "lon": 38.4407,
+   "elevation_m": 1018.0,
+   "distance_km": 107.1,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "SVRC",
+   "lat": 38.3775,
+   "lon": 39.306,
+   "elevation_m": 1680.0,
+   "distance_km": 113.1,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "DYBB",
+   "lat": 37.9532,
+   "lon": 40.1393,
+   "elevation_m": 657.0,
+   "distance_km": 126.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "AKDG",
+   "lat": 38.3618,
+   "lon": 37.9703,
+   "elevation_m": 1131.0,
+   "distance_km": 131.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "MAZI",
+   "lat": 37.4593,
+   "lon": 40.4465,
+   "elevation_m": 1204.0,
+   "distance_km": 139.4,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "NURH",
+   "lat": 37.9693,
+   "lon": 37.4363,
+   "elevation_m": 1563.0,
+   "distance_km": 140.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "GAZ",
+   "lat": 37.1721,
+   "lon": 37.2096,
+   "elevation_m": 992.0,
+   "distance_km": 149.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  }
+ ],
+ "gains_refused": [],
+ "gains_missing": []
+}

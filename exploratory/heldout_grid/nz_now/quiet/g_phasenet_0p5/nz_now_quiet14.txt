@@ -1,0 +1,69 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-01-20 02:29:03.62 to 08:29:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   03:40:24.00  earthquake detected by CVZ, WHSZ
+ALARM    #2   05:29:50.00  earthquake detected by RPZ, WVZ
+PLOC     #2   05:29:55.50  P times locate it at -43.614N 170.132E +-334 km, origin 05:29:36.40, rms 0.02 s from 3 stations
+LOCATE   #2   05:30:42.00  located at -44.144N 168.110E, origin 05:29:08.78, rms 0.06 s from 2 stations
+LOCATE   #2   05:30:47.50  located at -42.809N 173.732E, origin 05:29:08.39, rms 0.53 s from 3 stations
+ALARM    #3   06:25:44.00  earthquake detected by CVZ, WHSZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-20 02:57:50.00 to 08:29:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      03:40:24.00 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at -42.809N 173.732E, origin 05:29:08.39 UTC
+  alarm      05:29:50.00 UTC by RPZ, WVZ; later CVZ
+  location   rms 0.53 s from 3 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     -43.614N 170.132E +-334 km from 3 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 145 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             RPZ          239 km   05:30:17.62 UTC (picked)     +27.6 s  before S
+             WVZ          246 km   05:30:18.12 UTC (picked)     +28.1 s  before S
+             WHSZ         275 km   05:30:27.15 UTC (predicted)   +37.2 s  before S
+             CVZ          281 km   05:30:28.18 UTC (picked)     +38.2 s  before S
+             FOZ          328 km   05:30:42.03 UTC (predicted)   +52.0 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      06:25:44.00 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    52
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:40:24.00 UTC  #1  no magnitude, not located
+    05:29:50.00 UTC  #2  no magnitude, located -42.81N 173.73E
+    06:25:44.00 UTC  #3  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_phasenet_0p5/nz_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       38     38       266      0.001 (0.002)        33
+  FOZ      43189         0        0      0         0      0.001 (0.001)         0
+  RPZ      43189         0        5      5        35      0.001 (0.001)        27
+  WHSZ     43189         0       14     14        98      0.001 (0.002)        27
+  WVZ      43189         0        2      2        14      0.001 (0.001)        32
+  Pd: 413 values sent
+  P time from an STA/LTA onset for 39 of 59 triggers (20 from the window start)
+  onset from a FilterPicker pick for 22 of 59 triggers (P-time location and Pd)
+  215945 windows in 2.3 s: 8708x real time per station

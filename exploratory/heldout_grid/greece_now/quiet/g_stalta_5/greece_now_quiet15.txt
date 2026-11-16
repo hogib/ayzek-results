@@ -1,0 +1,224 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 5 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-05 16:34:02.76 to 22:34:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   17:23:58.44  earthquake detected by GUR, LOUT
+ALARM    #2   17:29:45.50  earthquake detected by LOUT, VLI
+ALARM    #3   17:33:31.87  earthquake detected by EPID, LOUT
+ALARM    #4   17:49:52.09  earthquake detected by ACOR, EPID
+PLOC     #4   17:49:53.68  P times locate it at 34.714N 23.117E +-307 km, origin 17:48:52.87, rms 0.14 s from 3 stations
+ALARM    #5   17:50:50.38  earthquake detected by LOUT, VLI
+ALARM    #6   17:54:03.05  earthquake detected by EPID, LOUT
+PLOC     #6   17:54:04.83  P times locate it at 37.405N 23.208E +-71 km, origin 17:53:51.36, rms 0.20 s from 3 stations
+ALARM    #7   18:04:03.29  earthquake detected by EPID, LOUT
+ALARM    #8   18:09:46.05  earthquake detected by EPID, LOUT
+ALARM    #9   18:24:25.51  earthquake detected by LOUT, VLI
+ALARM    #10  18:38:01.70  earthquake detected by EPID, LOUT
+ALARM    #11  18:46:56.55  earthquake detected by EPID, LOUT
+ALARM    #12  18:51:16.21  earthquake detected by LOUT, VLI
+ALARM    #13  19:08:16.53  earthquake detected by GUR, THAL
+ALARM    #14  19:21:35.27  earthquake detected by GUR, LTK
+ALARM    #15  19:35:27.24  earthquake detected by EPID, LOUT
+LOCATE   #15  19:36:21.73  located at 37.966N 22.982E, origin 19:35:15.60, rms 0.70 s from 2 stations
+ALARM    #16  19:39:11.06  earthquake detected by LOUT, VLI
+ALARM    #17  19:58:54.24  earthquake detected by EPID, LOUT
+ALARM    #18  20:13:13.10  earthquake detected by EPID, GUR
+ALARM    #19  20:18:33.64  earthquake detected by EPID, LOUT
+ALARM    #20  20:36:27.24  earthquake detected by EPID, LOUT
+ALARM    #21  20:41:23.34  earthquake detected by EPID, THAL
+ALARM    #22  21:10:09.97  earthquake detected by ACOR, EPID
+ALARM    #23  21:26:29.18  earthquake detected by EPID, LOUT
+ALARM    #24  21:38:33.84  earthquake detected by EPID, LOUT
+ALARM    #25  21:44:13.47  earthquake detected by ACOR, LTK
+ALARM    #26  21:45:23.20  earthquake detected by ACOR, LOUT
+ALARM    #27  22:07:52.64  earthquake detected by EPID, GUR
+ALARM    #28  22:16:55.30  earthquake detected by LTK, VLI
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-05 17:02:50.00 to 22:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:23:58.44 UTC by GUR, LOUT
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      17:29:45.50 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      17:33:31.87 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      17:49:52.09 UTC by ACOR, EPID; later GUR
+  P loc.     34.714N 23.117E +-307 km from 3 stations, first 1.6 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      17:50:50.38 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      17:54:03.05 UTC by EPID, LOUT; later VLI
+  P loc.     37.405N 23.208E +-71 km from 3 stations, first 1.8 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      18:04:03.29 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      18:09:46.05 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      18:24:25.51 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      18:38:01.70 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      18:46:56.55 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      18:51:16.21 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      19:08:16.53 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude), not located
+  alarm      19:21:35.27 UTC by GUR, LTK
+  AFAD       no matching catalogue event
+
+Event #15: detected earthquake (no magnitude) at 37.966N 22.982E, origin 19:35:15.60 UTC
+  alarm      19:35:27.24 UTC by EPID, LOUT
+  location   rms 0.70 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 39 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             LOUT           3 km   19:35:18.47 UTC (picked)      -8.8 s  after S
+             LTK            6 km   19:35:19.00 UTC (predicted)    -8.2 s  after S
+             ACOR          13 km   19:35:20.29 UTC (predicted)    -6.9 s  after S
+             THAL          29 km   19:35:24.35 UTC (predicted)    -2.9 s  after S
+             EPID          41 km   19:35:26.89 UTC (picked)      -0.3 s  after S
+             GUR           56 km   19:35:31.90 UTC (predicted)    +4.7 s  before S
+             VLX           85 km   19:35:40.02 UTC (predicted)   +12.8 s  before S
+             VLI          139 km   19:35:55.37 UTC (predicted)   +28.1 s  before S
+
+Event #16: detected earthquake (no magnitude), not located
+  alarm      19:39:11.06 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #17: detected earthquake (no magnitude), not located
+  alarm      19:58:54.24 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #18: detected earthquake (no magnitude), not located
+  alarm      20:13:13.10 UTC by EPID, GUR
+  AFAD       no matching catalogue event
+
+Event #19: detected earthquake (no magnitude), not located
+  alarm      20:18:33.64 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #20: detected earthquake (no magnitude), not located
+  alarm      20:36:27.24 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #21: detected earthquake (no magnitude), not located
+  alarm      20:41:23.34 UTC by EPID, THAL
+  AFAD       no matching catalogue event
+
+Event #22: detected earthquake (no magnitude), not located
+  alarm      21:10:09.97 UTC by ACOR, EPID
+  AFAD       no matching catalogue event
+
+Event #23: detected earthquake (no magnitude), not located
+  alarm      21:26:29.18 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #24: detected earthquake (no magnitude), not located
+  alarm      21:38:33.84 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #25: detected earthquake (no magnitude), not located
+  alarm      21:44:13.47 UTC by ACOR, LTK
+  AFAD       no matching catalogue event
+
+Event #26: detected earthquake (no magnitude), not located
+  alarm      21:45:23.20 UTC by ACOR, LOUT
+  AFAD       no matching catalogue event
+
+Event #27: detected earthquake (no magnitude), not located
+  alarm      22:07:52.64 UTC by EPID, GUR
+  AFAD       no matching catalogue event
+
+Event #28: detected earthquake (no magnitude), not located
+  alarm      22:16:55.30 UTC by LTK, VLI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          28
+  single-station detections, no alarm   179
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             28  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    17:23:58.44 UTC  #1  no magnitude, not located
+    17:29:45.50 UTC  #2  no magnitude, not located
+    17:33:31.87 UTC  #3  no magnitude, not located
+    17:49:52.09 UTC  #4  no magnitude, not located
+    17:50:50.38 UTC  #5  no magnitude, not located
+    17:54:03.05 UTC  #6  no magnitude, not located
+    18:04:03.29 UTC  #7  no magnitude, not located
+    18:09:46.05 UTC  #8  no magnitude, not located
+    18:24:25.51 UTC  #9  no magnitude, not located
+    18:38:01.70 UTC  #10  no magnitude, not located
+    18:46:56.55 UTC  #11  no magnitude, not located
+    18:51:16.21 UTC  #12  no magnitude, not located
+    19:08:16.53 UTC  #13  no magnitude, not located
+    19:21:35.27 UTC  #14  no magnitude, not located
+    19:35:27.24 UTC  #15  no magnitude, located 37.97N 22.98E
+    19:39:11.06 UTC  #16  no magnitude, not located
+    19:58:54.24 UTC  #17  no magnitude, not located
+    20:13:13.10 UTC  #18  no magnitude, not located
+    20:18:33.64 UTC  #19  no magnitude, not located
+    20:36:27.24 UTC  #20  no magnitude, not located
+    20:41:23.34 UTC  #21  no magnitude, not located
+    21:10:09.97 UTC  #22  no magnitude, not located
+    21:26:29.18 UTC  #23  no magnitude, not located
+    21:38:33.84 UTC  #24  no magnitude, not located
+    21:44:13.47 UTC  #25  no magnitude, not located
+    21:45:23.20 UTC  #26  no magnitude, not located
+    22:07:52.64 UTC  #27  no magnitude, not located
+    22:16:55.30 UTC  #28  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_5/greece_now_quiet15.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0       17     17       119      0.001 (0.001)        42
+  EPID     43189         0       69     69       483      0.001 (0.001)        41
+  GUR      43189         0       17     17       119      0.001 (0.000)        41
+  LOUT     43173         2      103    103       721      0.001 (0.001)        31
+  LTK      43189         0       11     11        77      0.001 (0.000)        50
+  THAL     43189         0        4      4        28      0.001 (0.001)        43
+  VLI      43189         0       18     18       126      0.001 (0.001)        41
+  VLX      43189         0        1      1         7      0.001 (0.000)        59
+  Pd: 1680 values sent
+  345496 windows in 3.5 s: 5678x real time per station

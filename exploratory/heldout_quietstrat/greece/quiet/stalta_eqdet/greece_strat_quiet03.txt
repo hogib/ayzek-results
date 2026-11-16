@@ -1,0 +1,66 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-09 03:25:03.66 to 09:25:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   08:42:21.57  earthquake detected by EPID, MRTH
+PLOC     #1   08:42:24.49  P times locate it at 37.148N 23.332E +-280 km, origin 08:42:01.35, rms 0.01 s from 3 stations
+ALARM    #2   08:42:42.73  earthquake detected by MDRA, VILL
+LOCATE   #1   08:43:18.98  located at 38.247N 24.254E, origin 08:42:15.76, rms 0.13 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 03:53:50.00 to 09:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.247N 24.254E, origin 08:42:15.76 UTC
+  alarm      08:42:21.57 UTC by EPID, MRTH; later KARY
+  location   rms 0.13 s from 2 stations, first 57.4 s after the alarm (P and S picks)
+  P loc.     37.148N 23.332E +-280 km from 3 stations, first 2.9 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 18 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KARY          29 km   08:42:24.38 UTC (picked)      +2.8 s  before S
+             MRTH          31 km   08:42:25.06 UTC (picked)      +3.5 s  before S
+             PTL           41 km   08:42:27.69 UTC (predicted)    +6.1 s  before S
+             ATH           56 km   08:42:31.99 UTC (predicted)   +10.4 s  before S
+             MDRA          72 km   08:42:36.51 UTC (predicted)   +14.9 s  before S
+             VILL          83 km   08:42:39.59 UTC (predicted)   +18.0 s  before S
+             EPID         122 km   08:42:50.71 UTC (predicted)   +29.1 s  before S
+             VLI          205 km   08:43:14.53 UTC (predicted)   +53.0 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:42:42.73 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm   106
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    08:42:21.57 UTC  #1  no magnitude, located 38.25N 24.25E
+    08:42:42.73 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        5      5        35      0.000 (0.001)        41
+  EPID     43189         0       95     95       665      0.001 (0.001)        29
+  KARY     43189         0        2      2        14      0.001 (0.001)        37
+  MDRA     43189         0        1      1         7      0.001 (0.001)        46
+  MRTH     43189         0        1      1         0      0.001 (0.001)        21
+  PTL      42746        60        1      1         7      0.001 (0.001)        45
+  VILL     43189         0        3      3        21      0.000 (0.001)        33
+  VLI      43114         7        4      4        28      0.001 (0.000)        38
+  Pd: 777 values sent
+  344994 windows in 3.0 s: 6610x real time per station

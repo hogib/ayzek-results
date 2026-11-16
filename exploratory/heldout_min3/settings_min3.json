@@ -1,0 +1,317 @@
+{
+ "_comment": [
+  "Exploratory copy of /home/server/Projeler/oguz/ayzek_runs/ayzek_code/tools/heldout_settings.json (sha256 79d243646cd4bd141d26199a17bc4f02d83b8cfab8e30806f7d766cf4501c7d6): every detector's args end with --min-stations 3; learned_neighbours left out. Not a frozen setting; written by logs/heldout_min3.py."
+ ],
+ "learned": {
+  "detector": "learned",
+  "args": [
+   "--min-stations",
+   "3"
+  ]
+ },
+ "stalta_eqfa": {
+  "detector": "stalta",
+  "args": [
+   "--stalta-band",
+   "1,10",
+   "--sta",
+   "0.5",
+   "--lta",
+   "10",
+   "--stalta-on",
+   "8",
+   "--stalta-off",
+   "1.5",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "stalta_eqdet": {
+  "detector": "stalta",
+  "args": [
+   "--stalta-band",
+   "1,10",
+   "--sta",
+   "1",
+   "--lta",
+   "10",
+   "--stalta-on",
+   "4",
+   "--stalta-off",
+   "1.5",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "stalta_eqquiet": {
+  "detector": "stalta",
+  "args": [
+   "--stalta-band",
+   "1,10",
+   "--sta",
+   "0.5",
+   "--lta",
+   "10",
+   "--stalta-on",
+   "10",
+   "--stalta-off",
+   "1.5",
+   "--stalta-3c",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "stalta_station": {
+  "detector": "stalta",
+  "args": [
+   "--stalta-band",
+   "1,10",
+   "--sta",
+   "0.5",
+   "--lta",
+   "10",
+   "--stalta-off",
+   "1.5",
+   "--min-stations",
+   "3"
+  ],
+  "on": "8",
+  "ratios": {
+   "greece": "tools/stalta_stations/stalta_on_greece.csv",
+   "ko": "tools/stalta_stations/stalta_on_ko.csv",
+   "nz": "tools/stalta_stations/stalta_on_nz.csv"
+  }
+ },
+ "fp_eqfa": {
+  "detector": "filterpicker",
+  "args": [
+   "--fp-windows",
+   "6,10,0.4",
+   "--fp-thresholds",
+   "20,10",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "fp_eqdet": {
+  "detector": "filterpicker",
+  "args": [
+   "--fp-windows",
+   "6,10,0.4",
+   "--fp-thresholds",
+   "15,8",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "fp_eqquiet": {
+  "detector": "filterpicker",
+  "args": [
+   "--fp-windows",
+   "6,10,0.4",
+   "--fp-thresholds",
+   "6,15",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "phasenet_causal_eqfa": {
+  "detector": "learned",
+  "model": "phasenet",
+  "weights": "instance",
+  "mode": "causal",
+  "args": [
+   "--threshold",
+   "0.8",
+   "--trigger-windows",
+   "1",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "phasenet_causal_eqdet": {
+  "detector": "learned",
+  "model": "phasenet",
+  "weights": "instance",
+  "mode": "causal",
+  "args": [
+   "--threshold",
+   "0.5",
+   "--trigger-windows",
+   "4",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "phasenet_causal_eqquiet": {
+  "detector": "learned",
+  "model": "phasenet",
+  "weights": "instance",
+  "mode": "causal",
+  "args": [
+   "--threshold",
+   "0.7",
+   "--trigger-windows",
+   "2",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "eqt_causal_eqfa": {
+  "detector": "learned",
+  "model": "eqtransformer",
+  "weights": "instance",
+  "mode": "causal",
+  "args": [
+   "--threshold",
+   "0.7",
+   "--trigger-windows",
+   "8",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "eqt_causal_eqdet": {
+  "detector": "learned",
+  "model": "eqtransformer",
+  "weights": "instance",
+  "mode": "causal",
+  "args": [
+   "--threshold",
+   "0.3",
+   "--trigger-windows",
+   "8",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "eqt_causal_eqquiet": {
+  "detector": "learned",
+  "model": "eqtransformer",
+  "weights": "instance",
+  "mode": "causal",
+  "args": [
+   "--threshold",
+   "0.6",
+   "--trigger-windows",
+   "2",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "phasenet_lookahead_eqfa": {
+  "detector": "learned",
+  "model": "phasenet",
+  "weights": "instance",
+  "mode": "lookahead",
+  "args": [
+   "--threshold",
+   "0.7",
+   "--trigger-windows",
+   "4",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "phasenet_lookahead_eqdet": {
+  "detector": "learned",
+  "model": "phasenet",
+  "weights": "instance",
+  "mode": "lookahead",
+  "args": [
+   "--threshold",
+   "0.6",
+   "--trigger-windows",
+   "8",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "phasenet_lookahead_eqquiet": {
+  "detector": "learned",
+  "model": "phasenet",
+  "weights": "instance",
+  "mode": "lookahead",
+  "args": [
+   "--threshold",
+   "0.7",
+   "--trigger-windows",
+   "1",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "eqt_lookahead_eqfa": {
+  "detector": "learned",
+  "model": "eqtransformer",
+  "weights": "instance",
+  "mode": "lookahead",
+  "args": [
+   "--threshold",
+   "0.6",
+   "--trigger-windows",
+   "4",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "eqt_lookahead_eqdet": {
+  "detector": "learned",
+  "model": "eqtransformer",
+  "weights": "original",
+  "mode": "lookahead",
+  "args": [
+   "--threshold",
+   "0.7",
+   "--trigger-windows",
+   "8",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "eqt_lookahead_eqquiet": {
+  "detector": "learned",
+  "model": "eqtransformer",
+  "weights": "original",
+  "mode": "lookahead",
+  "args": [
+   "--threshold",
+   "0.6",
+   "--trigger-windows",
+   "2",
+   "--instant-threshold",
+   "2",
+   "--min-stations",
+   "3"
+  ]
+ },
+ "transformer": {
+  "detector": "transformer",
+  "args": [
+   "--min-stations",
+   "3"
+  ]
+ }
+}

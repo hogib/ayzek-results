@@ -1,0 +1,41 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-04-01 10:39:02.26 to 16:39:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   13:17:18.06  earthquake detected by APE, STIA
+ALARM    #2   13:52:53.02  earthquake detected by STIA, THERA
+ALARM    #3   14:49:54.08  earthquake detected by STIA, THERA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-04-01 11:07:50.00 to 16:39:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      13:17:18.06 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      13:52:53.02 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      14:49:54.08 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    46
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_20/greece_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        9      9        63      0.017 (0.024)        54
+  NISR     43189         0        4      4         0      0.019 (0.071)        60
+  NISR2    43189         0        0      0         0      0.016 (0.024)         0
+  STIA     43189         0       15     15       105      0.013 (0.026)        44
+  THERA    43189         0       23     23       161      0.014 (0.112)        43
+  ZKR      43189         0        1      1         7      0.015 (0.033)        53
+  Pd: 336 values sent
+  259134 windows in 1.9 s: 10369x real time per station

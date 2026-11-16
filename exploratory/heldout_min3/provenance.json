@@ -1,0 +1,269 @@
+{
+ "script": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/logs/heldout_min3.py",
+ "script_sha256": "9691f5786d43d47cfe5c512b74ebfd64b132c60826d810d1e06a4659f62e5028",
+ "common_sha256": "404844124066c379a7596c615b819da8813a6883ac8013985e9e6780cf160aa1",
+ "argv": [
+  "logs/heldout_min3.py",
+  "--jobs",
+  "20"
+ ],
+ "parameters": {
+  "min_stations": "3",
+  "shifts": [
+   0,
+   127,
+   -127,
+   263,
+   -263,
+   391,
+   -391
+  ],
+  "stages": [
+   "counts",
+   "full"
+  ],
+  "nets": [
+   "greece_now",
+   "nz_now",
+   "ko_now"
+  ],
+  "jobs": 20,
+  "detectors": [
+   "learned",
+   "stalta_eqfa",
+   "stalta_eqdet",
+   "stalta_eqquiet",
+   "stalta_station",
+   "fp_eqfa",
+   "fp_eqdet",
+   "fp_eqquiet",
+   "phasenet_causal_eqfa",
+   "phasenet_causal_eqdet",
+   "phasenet_causal_eqquiet",
+   "eqt_causal_eqfa",
+   "eqt_causal_eqdet",
+   "eqt_causal_eqquiet",
+   "phasenet_lookahead_eqfa",
+   "phasenet_lookahead_eqdet",
+   "phasenet_lookahead_eqquiet",
+   "eqt_lookahead_eqfa",
+   "eqt_lookahead_eqdet",
+   "eqt_lookahead_eqquiet",
+   "transformer"
+  ],
+  "run_heldout_stages": "runs,outcomes,analysis",
+  "paths": {
+   "selections": "/home/server/Projeler/oguz/ayzek_runs/ayzek_heldout/selections",
+   "data": "/home/server/Projeler/oguz/ayzek_runs/ayzek_heldout/data",
+   "binary": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/build-linux/app/ayzek",
+   "network_subsets": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/build-linux/tools/network_subsets",
+   "settings": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/tools/heldout_settings.json",
+   "release": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout",
+   "quiet_scores": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quiet_scores",
+   "model_scores": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_scores"
+  },
+  "finished": true
+ },
+ "ayzek_code": {
+  "commit": "f05436a",
+  "dirty": null,
+  "from": "COMMIT file"
+ },
+ "versions": {
+  "python": "3.14.9 (main, Nov  7 2026, 10:30:28) [GCC 16.2.1 20260810]",
+  "platform": "Linux-7.3.3-1-cachyos-x86_64-with-glibc2.44"
+ },
+ "inputs": {
+  "settings": {
+   "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/tools/heldout_settings.json",
+   "sha256": "79d243646cd4bd141d26199a17bc4f02d83b8cfab8e30806f7d766cf4501c7d6"
+  },
+  "settings_min3": {
+   "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/settings_min3.json",
+   "sha256": "120a9deaa949f042633a09ffb9ac6840f43b0814e40f8baeb7d1752237795af1"
+  },
+  "binary": {
+   "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/build-linux/app/ayzek",
+   "sha256": "a40e7d23a1dfca7a4a2baf38b4b93c11056241d34d61aa046d703279a1da6899"
+  },
+  "network_subsets": {
+   "path": "/home/server/Projeler/oguz/ayzek_runs/ayzek_code/build-linux/tools/network_subsets",
+   "sha256": "84b4bbca143688af0b5292667d93149a050a245f004a80fee70d7ae23a7249ab"
+  },
+  "tools": {
+   "run_heldout.py": "4d1bc26e324b77df2defcb02cf1ea9a360489e2d5aaca432bd1bda6bd9faa37a",
+   "event_outcomes.py": "8b66df1156656dba418b51538f57fae833ee891cfada468788c3a39803083b11",
+   "sweep_trigger.py": "aba86abaf7dd6a8c2fea6f0d1091946810c29978d6a4f7d5fdc3015e09703113",
+   "significance.py": "be5a27bb4c4760d1b8f96b18940fa82b4def0d909b09df2616c66ccf4cb123df",
+   "quiet_without_stations.py": "341c00f920ed21e8064e3cc8aa076f6f8931cbc2c307b13dbf9e10f5616c2db5",
+   "detector_station_split.csv": "4ca7c237992aafface5bb4c3a61e33f7194677bce9c3e5a9547155e3ffe781ab"
+  },
+  "selections": {
+   "greece_now": "988e5847847ec6550a881ba032c398ee88b0fce224e2e99fa124f39e26d5a112",
+   "nz_now": "0b6c280d41eb3db270ebe9d4a58299f4535940897cd92550ad6b82dc10efea56",
+   "ko_now": "418664fa2eb5fa2cde65a0faab197a6e0f6e684026b0ff8389d17e24506554fa"
+  },
+  "datasets": {
+   "greece_now_seq002": "bdff7d851c59afc6c7d73f7ce9d4bd90f22535330c58ead5165b75110bc8984c",
+   "greece_now_seq003": "3b727a48898b424bb718d23c50068a47567697e3448a5baf6001cd5cf38fd5a4",
+   "greece_now_seq004": "02e6557f01f931bf2a120a85b207be0989e6889c5ef1de56a3ed2080b2775d51",
+   "greece_now_seq008": "2e9c1ec8fb428cdfeab30dd029de3bd761ab97d3478b3f27513802d437cddf2f",
+   "greece_now_seq009": "c7326f7084307d69d2f7454357dd1ef4ecda933aa3cfd1fe48acdbe100d7262b",
+   "greece_now_seq010": "dd55f6fa07de330fec385a4ca2f5781682198a37116b5acf48bc6a0b928a8f9b",
+   "greece_now_seq011": "8c5e7ada8e03ac544ad5ffc790867fceb8bb850d30c5a6c2bc904f1cfb7dd72c",
+   "greece_now_seq013": "7f09de8701db9e52e8f64937f1de021bdde47e93de3500a4ac580333f6ab5eb9",
+   "greece_now_seq014": "ace526950ef1ee62fa80ae81680352fdda5d56420c7858551398eab5047617b0",
+   "greece_now_seq017": "2903a9170b9b3c830b7106f8d52be541e6973e52529d356fd198d403c1db6ee9",
+   "greece_now_seq020": "b9c9139810930aa57b5a6bcd43b627068e60a2348a853790c351d15609d980b8",
+   "greece_now_quiet01": "50a23888ee6ebe78bd021295e63f19a53c167f19480b68f40cf6c1b1c1850b77",
+   "greece_now_quiet02": "bd4d7df75925f268f507f5a16cdb84519100a0b10047c2a6febf1960ae0fc440",
+   "greece_now_quiet03": "2333b0e14ac922c5ad7a247b6b07e9d7b407ab7a6217827c3c23f54293056cbe",
+   "greece_now_quiet04": "aa31f6b87043a5a51159aa668daad4af04ec69a472cc8d5d7665c092c1dfa446",
+   "greece_now_quiet05": "20b873e011fe7889bf80b677482b7aac4ea111d67c58f642996412d1ae97018e",
+   "greece_now_quiet06": "301a82a3d6ff3af67f6a22153e93158d8855b2ba68bb2a104e1fcb7cffe85f8e",
+   "greece_now_quiet07": "d2358d6a933ab41132a01743ab308750fa388888735b9d34e77fa57ed39b6218",
+   "greece_now_quiet08": "7cb7c7e0981f717327a68e48c5b15c394ef1502a24a700dddd7e591ddda0f3d9",
+   "greece_now_quiet09": "1dd017bea0fb46907baaf0d1765d5b29a542246ce751c961346063dc05d3d300",
+   "greece_now_quiet10": "4c214222cfad083663159c836e808d938d60ac6af27143b022e84f97f9e2a1d0",
+   "greece_now_quiet11": "a061bf90c825afc4cf6dbc48f2c9bfd914d7b251e116d560ee8afe24046c0a37",
+   "greece_now_quiet12": "fdfedf32648e9a904b385add77883ccb49796aed77b1df479802da9585e4a04b",
+   "greece_now_quiet13": "bf647d8c9e3f9321c83e666f417261488156613ab78fcdee0981fe472c1b6bcf",
+   "greece_now_quiet14": "3a5edaad8c3640781bd2e5956429029d2f07eba1eb4716bfe5a628a324462a4f",
+   "greece_now_quiet15": "d8c8b8fd1430d4eb7124d42884a2618f0e05c7d57f8038516e6ef80c7424c69d",
+   "greece_now_quiet16": "aba0e9b51f19f787022c823b0b0c240ae7bd20296906d7507ee1f7d069c9b559",
+   "greece_now_quiet17": "a17dda046d0a20024ca41e83d1507b81f66bf5d1d3df77d537c8e5c7c46c960b",
+   "greece_now_quiet18": "7b719e6ca1c4f6aff4e845210d546c9c8ddb9cc0364967605dde8d11f2e52e9f",
+   "greece_now_quiet19": "2e57614174315b87a92e72045535a802e6b9395225a4b16cb7d552b62fa25e37",
+   "greece_now_quiet20": "77588320066024a7f4cad94ee9edbe3a5c0e7755cde07e75e04020472a7b2096",
+   "greece_now_quiet21": "ac7fe6fb3096739ef804a2a406f2048cdf6ad577423a16f9db90d33fce80c31e",
+   "greece_now_quiet22": "c0c52cdb2a3a74cc3089b901e0845ea501e06cc1f3688030226ebed5cc4e022c",
+   "greece_now_quiet23": "324e1a1ae9b7897376932e9eb1ecb241238775544caa545360674ae00fcd08fd",
+   "greece_now_quiet24": "4f8a19f4228ecb7f6bf46d109ee96049843b9b1b21742fd0789d03d9c0d0c3d2",
+   "nz_now_seq002": "65c540a946c7bbca35bfbd4e108d4322e022f9a187e9c24dd3e3763c27bea55c",
+   "nz_now_seq003": "031dc4cf7a722201b1443743e76a070a49e9a9887c628b7449cf3c41c6b09033",
+   "nz_now_seq004": "fdd3d511b24a67998617da112bb05e850c62f2668be38ed1daf446820ee2b337",
+   "nz_now_seq008": "0a6d60cb6f389cfe0ab9bca0a8993ea8cf6ef61a13b3cb6370b202cf7516a744",
+   "nz_now_seq009": "7ea91da2616050d8f61c11514e673559fef4b7faba1dce992ace74ffef1a4b0e",
+   "nz_now_seq010": "ba839e33a5c5cd91d2e35b64fbfc8e876d837ee589f101bce74b89960597fc02",
+   "nz_now_seq011": "62a91903d079959b6c0522bf6ef205229dccfa1ed4eb1e0b71c8906cbd364e8d",
+   "nz_now_seq013": "44e0da502222f54150a1528c956addfdd4b9d3f488515ddb217d223b247fa0e0",
+   "nz_now_seq014": "3c4c3faeea56e0d765ed615750864b8256a6851751e3c592d033afaac5230d06",
+   "nz_now_seq017": "a29c517d773da41ad24f660e6f1a84d5f87e14822d4143959b03da2cc18c7f54",
+   "nz_now_seq020": "c67b188acb947d9cd1b1831e59964d63a429ae4ea264735bce8b48a27cd908fa",
+   "nz_now_seq023": "5fea579d6cc76f9ad43a13e1ff9400f4f561355563010334fe10b2b1eb028a75",
+   "nz_now_seq024": "8863ad3defea98cc1e4cf9721bcf83baa707ee4417a8ca52034cf3d65bb1dcdd",
+   "nz_now_quiet01": "8a1ba26bb0037efad196c0eaa4054d2f784ef91d1202d3cfe02ee18a00c50164",
+   "nz_now_quiet02": "499d9b6cdd06df5aa950aa8f76a27b88681c16ba8fa6fa09caa96b1e746e637c",
+   "nz_now_quiet03": "07dc163463ac742bb16c6a265fd9e60a892d7cdeea80899950301d1a208b1dfa",
+   "nz_now_quiet04": "687163a46d8dd48ef79bb1bac552c9f2dbdc8da96be9f2916d9b3d2615279750",
+   "nz_now_quiet05": "e8ce6175adf6da78932164901a72e8d90c083908d8c0bcd63c268b12a23af373",
+   "nz_now_quiet06": "48751b37f38b2e06bd367be1333bc2d5e1e2f81c1c322b16573c9fb6a3ba382b",
+   "nz_now_quiet07": "73369844bc3809fd34828308e2962512f0cc1e8a6197391a408ada44ba4d1172",
+   "nz_now_quiet08": "6fc1071022d216a9a085482b728d7b8d7dc752279022ebe3cb955a2bd0f34129",
+   "nz_now_quiet09": "37a540335e352a0271b151c407b5e87a1d50dec166801960baafa715e87a173d",
+   "nz_now_quiet10": "8972bba6cdc563cf50d37665415b09eecd380736c834e6091db81666eca099c2",
+   "nz_now_quiet11": "d0b65aa7709f01de023b8a0de317e1d175167c7d99822565de074860147e05cc",
+   "nz_now_quiet12": "b1ac5099f0df5003438bc03f82f94efb51844a64e7035bab10fe5d34739e7c92",
+   "nz_now_quiet13": "54afbcf318d6bdf3ec2f132aa8e121c49e4f5275407c17d36c50940c38de14bf",
+   "nz_now_quiet14": "25e6b45d7507efb8b1f26e24bb3759672bf32f218906865f07d10a4a66bc0055",
+   "nz_now_quiet15": "6505875b7bdafa5d15ea228e5a4eedf257591ed7ff3a873a3cbee0ad825b5446",
+   "nz_now_quiet16": "4ae71614715de5e7c55c631b6d3e93b5e91ea0fb9620c9c581022727d07e363c",
+   "nz_now_quiet17": "c08633a312caf7c9b9dbb6f0148a44795f812d457de252455164cb7f8c85ad4b",
+   "nz_now_quiet18": "1ef8c7a69a2ba662c7a94e6fea00693294ce63a5f206118e5ff92cbe7e1fd825",
+   "nz_now_quiet19": "6178473c46812a7d02090cb97797b307d41dbde2199ba6599a5183aecd21d0c0",
+   "nz_now_quiet20": "68bb39fae34fc177dcdd8bcdce52a8b34cfb6196c06bc6dc3b902e573c03c466",
+   "nz_now_quiet21": "c3aa3bf9200a7994b15fea72de6d66aaba567939485018893b825344a325aef7",
+   "nz_now_quiet22": "d4f86122c0ce85c09ab005830828f2d022a28efd32d9edd6f18a28ec9a9fbe03",
+   "nz_now_quiet23": "9851c0615df0221b351746211aa8c8136986f89ff3ff9b34cfef12393da11d4b",
+   "nz_now_quiet24": "094ca5bc6cecf123830101a211d9e31b110f393edf9fe2b2b4ed04d99b7e181f",
+   "ko_now_seq002": "ed490899b16447b7e2dabef1c828c1fabc333fb19f6f93365066c1bda6073134",
+   "ko_now_seq003": "25bc0f22444f3c39b833454cc50cc3f970690efe19c5ba2ba5759f7f4c688593",
+   "ko_now_quiet01": "8e3781cf5f159ca2cf9cfb62f62373a03a826e3d930cfcfee1c022e9f351890a",
+   "ko_now_quiet02": "563a18ae02b9ead996f2df72b3b0b682c20b0cef39e52643acec8cb5538fcc75",
+   "ko_now_quiet03": "cbd167e2ee14777b517b787ff0d98f50d466aef469aa548897d58227791d61d3",
+   "ko_now_quiet04": "e25057997fd1b2d0606a5f2dd68bdb31b7a80c6b62c7b301d0c5c00c95c9df0e",
+   "ko_now_quiet05": "3c5245ecf6a998e2097590547d0a767bdb349386be7b380f9604df826a28fdf8",
+   "ko_now_quiet06": "52606272d8f0c460a346b27665a37d67c9fe819c590f42b1113a01e2043ed716",
+   "ko_now_quiet07": "9ffd1a9fa7357cf1e9a1ab967d17c2f9e263a993fd32d407bf32ac5af6526dd5",
+   "ko_now_quiet08": "f3dace893d3859cb53dbe18486f41defd4901da2771ce8cd6abee49af490a2e4",
+   "ko_now_quiet09": "a279871a2b844d0ae426dfe191a34ea58c0f716f49bc43891be7c09106ab9897",
+   "ko_now_quiet10": "9b1a6a8c64fc5bcfc1edc87bc5f03a13e3c3bdd43ccd05490e4290aebd41863b",
+   "ko_now_quiet11": "bdf1867bf7a195e5e96877c0b4351ce2ff5c98c0a6bdd6ace07e943d9d731022",
+   "ko_now_quiet12": "ec5961f3f15264421835674fc8210e5c6e5cf4fb1d6ba8ff895084dc1d26dd68",
+   "ko_now_quiet13": "19ef09f2b815fb4ec7d9b988ec489849cc49483262cdfdec2c1fc5e467a1689a",
+   "ko_now_quiet14": "2be7b0387e854c062e2b3fc2109b8b066e76ba98c91941ad9f0589847687019c"
+  },
+  "model_scores": {
+   "files": 3780,
+   "sha256": "6332bc386220c9d7bf4bcb908a0f42593cee0b2224fdce9152657f22ce030a10"
+  },
+  "learned_scores": {
+   "greece_now": {
+    "files": 95,
+    "sha256": "8c356cc85b0065f8a345cd67c65a9b60e3a6ee07aa06e7f3fae20dbe28ffafc9"
+   },
+   "nz_now": {
+    "files": 97,
+    "sha256": "32ea880202b3dcee442c9babed46682f45bd5620498d63f89735b570ba6b9876"
+   },
+   "ko_now": {
+    "files": 15,
+    "sha256": "6ce85d9a02e1d581f89bc3ab90bd9f29d5f2743b5cf0954f15834ae122d811ef"
+   }
+  },
+  "quiet_scores": {
+   "greece_now": {
+    "files": 210,
+    "sha256": "f0748fc90d48cb09a8456da6eeee1643d82988248781b0ccc05aa66b33ba309c"
+   },
+   "nz_now": {
+    "files": 146,
+    "sha256": "46bc307969be0f57e2a05955ef198a72d25db407b7d80ea22e135ae506816ba3"
+   },
+   "ko_now": {
+    "files": 105,
+    "sha256": "d3bf38f01c81e9df7b8faa51345505dc313de8de98c7cb5282ff99f928f7c8da"
+   }
+  },
+  "recordings": {
+   "heldout/greece_now/runs": {
+    "files": 462,
+    "sha256": "e780ceb2da4d1a7a6fb67a9fbd35bd29016abc79dd652954229c727db41fd405"
+   },
+   "heldout/nz_now/runs": {
+    "files": 546,
+    "sha256": "b3cfee984827142c5ba69b4587b1e76aca8eed550de9f58b915be5265a941968"
+   },
+   "heldout/ko_now/runs": {
+    "files": 84,
+    "sha256": "d1e5de1ff0a4372925dbd753809d4b1637648cc6b85e717528c4a99e9cfb4ce5"
+   },
+   "heldout_f05436a/greece_now/runs": {
+    "files": 462,
+    "sha256": "e780ceb2da4d1a7a6fb67a9fbd35bd29016abc79dd652954229c727db41fd405"
+   },
+   "heldout_f05436a/greece_now/quiet": {
+    "files": 1009,
+    "sha256": "ec962030fd3fb252b0e4750d426b345b96e42accf78a31a0a931e79c86eed90f"
+   },
+   "heldout_f05436a/nz_now/runs": {
+    "files": 546,
+    "sha256": "b3cfee984827142c5ba69b4587b1e76aca8eed550de9f58b915be5265a941968"
+   },
+   "heldout_f05436a/nz_now/quiet": {
+    "files": 1009,
+    "sha256": "4cd48ecfa8d219447fb3367834a216711bd861f00edd386ebc91d1e1abacc339"
+   },
+   "heldout_f05436a/ko_now/runs": {
+    "files": 84,
+    "sha256": "d1e5de1ff0a4372925dbd753809d4b1637648cc6b85e717528c4a99e9cfb4ce5"
+   },
+   "heldout_f05436a/ko_now/quiet": {
+    "files": 589,
+    "sha256": "ba65529d7fa58d2fddb8b3d568f6e076d9bc1f35ae3d544845fcf858e4258877"
+   }
+  }
+ },
+ "written_utc": "2026-11-14T20:12:02Z",
+ "note": "exploratory, outside the held-out protocol; no frozen setting or release output changed"
+}

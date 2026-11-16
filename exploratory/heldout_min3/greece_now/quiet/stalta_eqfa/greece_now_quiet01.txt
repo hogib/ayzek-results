@@ -1,0 +1,51 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-08-25 04:50:02.35 to 10:50:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   07:01:19.19  earthquake detected by KNSS, PFKS, STIA
+PLOC     #1   07:01:19.19  P times locate it at 35.568N 25.696E +-225 km, origin 07:01:08.73, rms 0.01 s from 3 stations
+PLOC     #1   07:01:20.19  P times locate it at 38.257N 25.951E +-179 km, origin 07:00:20.79, rms 1.08 s from 4 stations
+PLOC     #1   07:01:20.62  P times locate it at 37.266N 25.588E +-116 km, origin 07:00:38.86, rms 1.32 s from 5 stations
+PLOC     #1   07:01:22.07  P times locate it at 38.310N 25.610E +-136 km, origin 07:00:19.79, rms 1.69 s from 6 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-08-25 05:18:50.00 to 10:50:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:01:19.19 UTC by KNSS, PFKS, STIA; later IMMV, KNDR, SIVA
+  P loc.     38.310N 25.610E +-136 km from 6 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    48
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    07:01:19.19 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqfa/greece_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        1      1         7      0.002 (0.000)        97
+  IMMV     43189         0        1      1         7      0.002 (0.000)        97
+  IPPL     43189         0        4      4        28      0.002 (0.000)        96
+  KNDR     43189         0       27     27       189      0.002 (0.000)        79
+  KNSS     43189         0        4      4        28      0.002 (0.000)        89
+  PFKS     43189         0       12     12        84      0.002 (0.000)        93
+  SIVA     43189         0        7      7        49      0.002 (0.000)        97
+  STIA     43189         0        3      3        21      0.003 (0.000)        92
+  Pd: 413 values sent
+  345512 windows in 2.7 s: 7479x real time per station

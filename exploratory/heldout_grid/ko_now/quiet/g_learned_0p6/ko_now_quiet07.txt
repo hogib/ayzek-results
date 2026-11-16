@@ -1,0 +1,79 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-24 00:32:02.46 to 06:32:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   02:07:39.50  earthquake detected by AKDG, NURH
+ALARM    #2   03:30:41.00  earthquake detected by NURH, SVRC
+ALARM    #3   05:05:40.50  earthquake detected by AKDG, SVRC
+ALARM    #4   05:15:28.50  earthquake detected by DYBB, NURH
+ALARM    #5   05:23:12.50  earthquake detected by DYBB, NURH
+ALARM    #6   05:29:45.00  earthquake detected by DYBB, NURH
+ALARM    #7   05:38:48.00  earthquake detected by AKDG, DYBB
+ALARM    #8   06:15:46.50  earthquake detected by AKDG, DYBB
+ALARM    #9   06:18:27.50  earthquake detected by DYBB, SVRC
+ALARM    #10  06:24:43.50  earthquake detected by AKDG, DYBB
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 01:00:50.00 to 06:32:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:07:39.50 UTC by AKDG, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      03:30:41.00 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      05:05:40.50 UTC by AKDG, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      05:15:28.50 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:23:12.50 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      05:29:45.00 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      05:38:48.00 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      06:15:46.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      06:18:27.50 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      06:24:43.50 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          10
+  single-station detections, no alarm   125
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_learned_0p6/ko_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0       24     24         0      0.001 (0.001)        31
+  DYBB     43189         0       86     85       602      0.001 (0.001)        25
+  GAZ      43189         0        3      3        21      0.001 (0.001)        44
+  MAZI     43189         0        0      0         0      0.001 (0.001)         0
+  MLTY     43189         0        0      0         0      0.001 (0.005)         0
+  NURH     43189         0       16     16         0      0.002 (0.001)        41
+  SVRC     43189         0       20     20       140      0.001 (0.001)        38
+  Pd: 763 values sent
+  P time from an STA/LTA onset for 34 of 149 triggers (115 from the window start)
+  onset from a FilterPicker pick for 25 of 149 triggers (P-time location and Pd)
+  302323 windows in 3.1 s: 6342x real time per station

@@ -1,0 +1,62 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2024-04-30 21:17:02.62 to 03:17:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   23:19:05.29  earthquake detected by NISR, THERA
+ALARM    #2   23:39:46.34  earthquake detected by APE, NISR
+ALARM    #3   23:51:57.07  earthquake detected by APE, ZKR
+ALARM    #4   03:14:14.57  earthquake detected by APE, STIA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-04-30 21:45:50.00 to 03:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:19:05.29 UTC by NISR, THERA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      23:39:46.34 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      23:51:57.07 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      03:14:14.57 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    69
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    23:19:05.29 UTC  #1  no magnitude, not located
+    23:39:46.34 UTC  #2  no magnitude, not located
+    23:51:57.07 UTC  #3  no magnitude, not located
+    03:14:14.57 UTC  #4  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/fp_eqfa/greece_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       25     25       175      0.052 (1.044)       225
+  NISR     43189         0       29     29         0      0.062 (1.584)       235
+  NISR2    43189         0        0      0         0      0.044 (0.984)         0
+  STIA     43189         0        8      8        56      0.035 (0.719)       153
+  THERA    43189         0        8      8        56      0.034 (0.565)       140
+  ZKR      43189         0        7      7        49      0.031 (0.287)       124
+  Pd: 336 values sent
+  259134 windows in 10.2 s: 1952x real time per station

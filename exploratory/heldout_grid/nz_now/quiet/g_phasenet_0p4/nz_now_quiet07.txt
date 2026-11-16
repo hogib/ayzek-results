@@ -1,0 +1,88 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-04-23 19:27:03.49 to 01:27:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   20:10:34.00  earthquake detected by RPZ, WHSZ
+LOCATE   #1   20:11:26.00  located at -42.558N 171.325E, origin 20:10:10.47, rms 1.00 s from 2 stations
+ALARM    #2   22:26:37.00  earthquake detected by RPZ, WHSZ
+ALARM    #3   22:42:02.50  earthquake detected by CVZ, RPZ
+ALARM    #4   23:10:36.00  earthquake detected by CVZ, WHSZ
+ALARM    #5   23:21:04.50  earthquake detected by FOZ, RPZ
+ALARM    #6   23:58:31.50  earthquake detected by CVZ, WHSZ
+ALARM    #7   00:45:40.00  earthquake detected by RPZ, WVZ
+PLOC     #7   00:45:45.50  P times locate it at -43.290N 170.830E +-20 km, origin 00:45:28.50, rms 0.02 s from 3 stations
+ALARM    #8   00:52:57.00  earthquake detected by CVZ, RPZ
+ALARM    #9   00:54:10.00  earthquake detected by CVZ, WVZ
+ALARM    #10  00:56:42.00  earthquake detected by CVZ, FOZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-04-23 19:55:50.00 to 01:27:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at -42.558N 171.325E, origin 20:10:10.47 UTC
+  alarm      20:10:34.00 UTC by RPZ, WHSZ
+  location   rms 1.00 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 82 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             WVZ           75 km   20:10:32.05 UTC (predicted)    -1.9 s  after S
+             WHSZ         111 km   20:10:41.48 UTC (picked)      +7.5 s  before S
+             RPZ          131 km   20:10:48.60 UTC (picked)     +14.6 s  before S
+             FOZ          164 km   20:10:57.32 UTC (predicted)   +23.3 s  before S
+             CVZ          205 km   20:11:09.00 UTC (predicted)   +35.0 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:26:37.00 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      22:42:02.50 UTC by CVZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      23:10:36.00 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      23:21:04.50 UTC by FOZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      23:58:31.50 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      00:45:40.00 UTC by RPZ, WVZ; later FOZ
+  P loc.     -43.290N 170.830E +-20 km from 3 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      00:52:57.00 UTC by CVZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      00:54:10.00 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      00:56:42.00 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          10
+  single-station detections, no alarm    62
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_phasenet_0p4/nz_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       17     17       119      0.001 (0.001)        25
+  FOZ      43189         0        6      6        42      0.002 (0.001)        31
+  RPZ      43189         0       19     19       133      0.001 (0.003)        26
+  WHSZ     43189         0       33     33       231      0.001 (0.001)        22
+  WVZ      43189         0        8      8        56      0.002 (0.003)        24
+  Pd: 581 values sent
+  P time from an STA/LTA onset for 35 of 83 triggers (48 from the window start)
+  onset from a FilterPicker pick for 11 of 83 triggers (P-time location and Pd)
+  215945 windows in 1.7 s: 11492x real time per station

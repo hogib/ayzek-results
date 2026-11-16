@@ -1,0 +1,65 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 5 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-01-19 06:22:03.46 to 12:22:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   06:53:54.89  earthquake detected by FOZ, RPZ
+ALARM    #2   07:28:18.26  earthquake detected by FOZ, WVZ
+ALARM    #3   09:04:07.93  earthquake detected by CVZ, FOZ
+ALARM    #4   09:23:09.90  earthquake detected by FOZ, WVZ
+ALARM    #5   10:12:30.28  earthquake detected by RPZ, WVZ
+ALARM    #6   10:24:12.17  earthquake detected by CVZ, FOZ
+ALARM    #7   11:43:51.57  earthquake detected by RPZ, WVZ
+ALARM    #8   12:05:30.69  earthquake detected by RPZ, WVZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-19 06:50:50.00 to 12:22:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      06:53:54.89 UTC by FOZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      07:28:18.26 UTC by FOZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      09:04:07.93 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      09:23:09.90 UTC by FOZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      10:12:30.28 UTC by RPZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      10:24:12.17 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      11:43:51.57 UTC by RPZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      12:05:30.69 UTC by RPZ, WVZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           8
+  single-station detections, no alarm    51
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_5/nz_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       26     26       182      0.001 (0.001)        43
+  FOZ      43189         0       14     14        98      0.001 (0.001)        49
+  RPZ      43189         0       10     10        70      0.001 (0.001)        53
+  WHSZ     43189         0        1      1         7      0.001 (0.001)        67
+  WVZ      43189         0       16     16       112      0.001 (0.001)        51
+  Pd: 469 values sent
+  215945 windows in 1.4 s: 14298x real time per station

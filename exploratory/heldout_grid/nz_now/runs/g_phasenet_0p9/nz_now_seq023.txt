@@ -1,0 +1,108 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-11-01 00:37:41.30 to 03:37:37.29 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+ALARM    #1   00:47:56.50  earthquake detected by DSZ, WVZ  (AFAD MLv 4.8 at 00:47:37.00, 19.5 s ago)
+PLOC     #1   00:48:01.00  P times locate it at -42.650N 171.958E +-41 km, origin 00:47:37.58, rms 0.03 s from 3 stations
+PLOC     #1   00:48:02.00  P times locate it at -42.651N 171.955E +-34 km, origin 00:47:37.58, rms 0.04 s from 4 stations
+PDMAG    #1   00:48:48.50  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   00:48:48.50  located at -42.670N 172.196E, origin 00:47:35.91, rms 0.71 s from 2 stations
+LOCATE   #1   00:48:53.00  located at -42.675N 172.198E, origin 00:47:35.79, rms 0.61 s from 3 stations
+LOCATE   #1   00:48:54.00  located at -42.676N 172.175E, origin 00:47:35.93, rms 0.59 s from 4 stations
+ALARM    #2   00:56:09.00  earthquake detected by DSZ, KHZ  (AFAD MLv 1.9 at 00:55:42.00, 27.0 s ago)
+ALARM    #3   01:10:04.50  earthquake detected by DSZ, WVZ  (AFAD MLv 3.4 at 01:09:45.00, 19.5 s ago)
+PLOC     #3   01:10:08.50  P times locate it at -42.647N 171.942E +-13 km, origin 01:09:45.84, rms 0.01 s from 3 stations
+PLOC     #3   01:10:09.50  P times locate it at -42.647N 171.944E +-11 km, origin 01:09:45.81, rms 0.04 s from 4 stations
+PDMAG    #3   01:10:18.50  Pd magnitude M3.6 ± 0.2 (M<4 96%, 4-5.5 4%, M>=5.5 0%) from 5 stations (1 above noise), windows up to 10 s, distances from the P-time location
+LOCATE   #3   01:11:00.50  located at -42.645N 171.907E, origin 01:09:45.65, rms 0.27 s from 2 stations
+LOCATE   #3   01:11:01.50  located at -42.635N 171.917E, origin 01:09:45.90, rms 0.24 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-11-01 00:37:41.30 to 03:37:37.29 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.6 earthquake at -42.676N 172.175E, origin 00:47:35.93 UTC
+  alarm      00:47:56.50 UTC by DSZ, WVZ; later RPZ, WHSZ
+  Pd magn.   M4.6 52.0 s after the alarm, M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 5 stations (5 above noise)
+  location   rms 0.59 s from 4 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     -42.651N 171.955E +-34 km from 4 stations, first 4.5 s after the alarm, epicentre 4.5 km off
+  AFAD       MLv 4.8 at 00:47:37.00 UTC: alarm 19.5 s after origin, Pd magnitude -0.3, epicentre 19.7 km off, origin -1.1 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 68 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             DSZ           97 km   00:48:06.32 UTC (picked)      +9.8 s  before S
+             WVZ          112 km   00:48:12.86 UTC (picked)     +16.4 s  before S
+             KHZ          132 km   00:48:14.72 UTC (predicted)   +18.2 s  before S
+             RPZ          143 km   00:48:17.84 UTC (picked)     +21.3 s  before S
+             WHSZ         147 km   00:48:21.00 UTC (picked)     +24.5 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      00:56:09.00 UTC by DSZ, KHZ
+  AFAD       MLv 1.9 at 00:55:42.00 UTC: alarm 27.0 s after origin
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 94 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             DSZ           97 km   00:56:10.38 UTC (picked)      +1.4 s  before S
+             WVZ          114 km   00:56:14.65 UTC (predicted)    +5.6 s  before S
+             KHZ          129 km   00:56:07.84 UTC (picked)      -1.2 s  after S
+             RPZ          144 km   00:56:23.20 UTC (predicted)   +14.2 s  before S
+             WHSZ         149 km   00:56:24.63 UTC (predicted)   +15.6 s  before S
+
+Event #3: detected M3.6 earthquake at -42.635N 171.917E, origin 01:09:45.90 UTC
+  alarm      01:10:04.50 UTC by DSZ, WVZ; later KHZ, RPZ
+  Pd magn.   M3.6 14.0 s after the alarm, M3.6 ± 0.2 (M<4 96%, 4-5.5 4%, M>=5.5 0%) final from 5 stations (1 above noise)
+  location   rms 0.24 s from 3 stations, first 56.0 s after the alarm (P and S picks)
+  P loc.     -42.647N 171.944E +-11 km from 4 stations, first 4.0 s after the alarm, epicentre 2.7 km off
+  AFAD       MLv 3.4 at 01:09:45.00 UTC: alarm 19.5 s after origin, Pd magnitude +0.2, epicentre 3.2 km off, origin +0.9 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 68 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             DSZ           99 km   01:10:14.32 UTC (picked)      +9.8 s  before S
+             WVZ          111 km   01:10:16.78 UTC (predicted)   +12.3 s  before S
+             KHZ          132 km   01:10:24.86 UTC (picked)     +20.4 s  before S
+             RPZ          142 km   01:10:25.86 UTC (picked)     +21.4 s  before S
+             WHSZ         146 km   01:10:26.77 UTC (predicted)   +22.3 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm     4
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        3  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km                5
+    detected                              3   60%
+    detected before S                     3   60%
+    missed                                2   40%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   2          1        1
+    M 2-3                   1          0        1
+    M 3-4                   1          1        0
+    M 4-5                   1          1        0
+
+  Correct alarms
+    alarm after origin time             median 19.5 s
+    Pd magnitude error                  mean 0.25 units, bias -0.02, 2 events
+    located                             2 of 3
+    P-time located                      2 of 3, median epicentre error 3.6 km, median 4.2 s after the alarm
+    alarm before the S wave             at 14 of 15 station arrivals, median warning 16.0 s, max 24.5 s
+
+  Missed AFAD events
+    00:51:54.00 UTC  MLv 2.8    45 km from the network centre
+    02:26:09.00 UTC  MLv 1.7    45 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_phasenet_0p9/nz_now_seq023.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DSZ      21588         0        6      6        42      0.001 (0.002)        31
+  KHZ      21588         0        2      2        14      0.001 (0.001)        28
+  RPZ      21588         0        2      2        14      0.001 (0.001)        22
+  WHSZ     21588         0        1      1         7      0.001 (0.001)        27
+  WVZ      21588         0        3      3        21      0.001 (0.001)        24
+  Pd: 98 values sent
+  P time from an STA/LTA onset for 12 of 14 triggers (2 from the window start)
+  onset from a FilterPicker pick for 12 of 14 triggers (P-time location and Pd)
+  107940 windows in 0.6 s: 17121x real time per station

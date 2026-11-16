@@ -1,0 +1,60 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-16 17:18:02.11 to 23:18:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   18:54:39.50  earthquake detected by GAZ, NURH
+PLOC     #1   18:54:44.00  P times locate it at 34.750N 35.351E +-263 km, origin 18:53:28.46, rms 0.32 s from 3 stations
+LOCATE   #1   18:55:28.00  located at 36.981N 36.663E, origin 18:54:14.35, rms 0.04 s from 2 stations
+ALARM    #2   20:50:54.00  earthquake detected by NURH, SARI
+LOCATE   #2   20:51:42.50  located at 38.023N 36.562E, origin 20:50:37.52, rms 0.07 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-16 17:46:50.00 to 23:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 36.981N 36.663E, origin 18:54:14.35 UTC
+  alarm      18:54:39.50 UTC by GAZ, NURH; later SARI
+  location   rms 0.04 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     34.750N 35.351E +-263 km from 3 stations, first 4.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 87 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             GAZ           53 km   18:54:29.78 UTC (picked)      -9.7 s  after S
+             CEYT          81 km   18:54:37.77 UTC (predicted)    -1.7 s  after S
+             NURH         129 km   18:54:51.40 UTC (picked)     +11.9 s  before S
+             KARA         146 km   18:54:56.15 UTC (predicted)   +16.7 s  before S
+             SARI         160 km   18:55:00.18 UTC (predicted)   +20.7 s  before S
+             BNN          220 km   18:55:17.29 UTC (predicted)   +37.8 s  before S
+
+Event #2: detected earthquake (no magnitude) at 38.023N 36.562E, origin 20:50:37.52 UTC
+  alarm      20:50:54.00 UTC by NURH, SARI
+  location   rms 0.07 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 57 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          45 km   20:50:50.56 UTC (picked)      -3.4 s  after S
+             NURH          77 km   20:50:59.66 UTC (picked)      +5.7 s  before S
+             GAZ          111 km   20:51:09.22 UTC (predicted)   +15.2 s  before S
+             BNN          111 km   20:51:09.43 UTC (predicted)   +15.4 s  before S
+             CEYT         134 km   20:51:15.79 UTC (predicted)   +21.8 s  before S
+             KARA         158 km   20:51:22.61 UTC (predicted)   +28.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    17
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/phasenet_lookahead_eqdet/ko_now_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.004 (0.002)         0
+  CEYT     43168         2        3      3        21      0.005 (0.002)       114
+  GAZ      43189         0        1      1         7      0.003 (0.002)       104
+  KARA     43189         0        4      4        28      0.004 (0.002)       134
+  NURH     43189         0        9      9         0      0.003 (0.002)       118
+  SARI     43189         0        5      5        35      0.004 (0.002)       122
+  Pd: 91 values sent
+  P time from an STA/LTA onset for 5 of 22 triggers (17 from the window start)
+  onset from a FilterPicker pick for 11 of 22 triggers (P-time location and Pd)
+  259113 windows in 3.4 s: 5821x real time per station

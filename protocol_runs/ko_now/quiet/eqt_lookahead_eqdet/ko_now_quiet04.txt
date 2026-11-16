@@ -1,0 +1,66 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   00:40:12.00  earthquake detected by AKDG, NURH
+LOCATE   #1   00:41:00.50  located at 38.526N 38.028E, origin 00:39:54.63, rms 0.08 s from 2 stations
+ALARM    #2   02:26:24.50  earthquake detected by AKDG, NURH
+ALARM    #3   02:44:54.00  earthquake detected by MLTY, NURH
+LOCATE   #3   02:45:42.50  located at 37.791N 38.178E, origin 02:44:38.96, rms 0.11 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.526N 38.028E, origin 00:39:54.63 UTC
+  alarm      00:40:12.00 UTC by AKDG, NURH
+  location   rms 0.08 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 60 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          19 km   00:40:00.70 UTC (picked)     -11.3 s  after S
+             MLTY          42 km   00:40:07.09 UTC (predicted)    -4.9 s  after S
+             NURH          81 km   00:40:17.90 UTC (picked)      +5.9 s  before S
+             SVRC         112 km   00:40:26.89 UTC (predicted)   +14.9 s  before S
+             GAZ          167 km   00:40:42.37 UTC (predicted)   +30.4 s  before S
+             DYBB         195 km   00:40:50.43 UTC (predicted)   +38.4 s  before S
+             MAZI         243 km   00:41:04.06 UTC (predicted)   +52.1 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:26:24.50 UTC by AKDG, NURH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at 37.791N 38.178E, origin 02:44:38.96 UTC
+  alarm      02:44:54.00 UTC by MLTY, NURH
+  location   rms 0.11 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 52 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             MLTY          63 km   02:44:57.24 UTC (picked)      +3.2 s  before S
+             AKDG          66 km   02:44:58.05 UTC (predicted)    +4.1 s  before S
+             NURH          68 km   02:44:58.70 UTC (picked)      +4.7 s  before S
+             GAZ          110 km   02:45:10.45 UTC (predicted)   +16.4 s  before S
+             SVRC         118 km   02:45:12.88 UTC (predicted)   +18.9 s  before S
+             DYBB         173 km   02:45:28.49 UTC (predicted)   +34.5 s  before S
+             MAZI         203 km   02:45:37.06 UTC (predicted)   +43.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    19
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_lookahead_eqdet/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7        6      6         0      0.004 (0.002)       188
+  DYBB     43042        14        0      0         0      0.005 (0.002)         0
+  GAZ      43189         0        1      1         7      0.005 (0.002)        61
+  MAZI     43189         0        0      0         0      0.003 (0.002)         0
+  MLTY     43189         0        2      2        14      0.006 (0.002)       194
+  NURH     43189         0       17     17         0      0.006 (0.001)       177
+  SVRC     43080        11        0      0         0      0.005 (0.002)         0
+  Pd: 21 values sent
+  P time from an STA/LTA onset for 15 of 26 triggers (11 from the window start)
+  onset from a FilterPicker pick for 10 of 26 triggers (P-time location and Pd)
+  301992 windows in 5.9 s: 3381x real time per station

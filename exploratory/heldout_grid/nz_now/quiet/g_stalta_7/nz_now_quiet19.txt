@@ -1,0 +1,39 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 7 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-12-22 05:52:04.20 to 11:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   10:39:21.35  earthquake detected by FOZ, WVZ
+PLOC     #1   10:39:21.66  P times locate it at -40.199N 167.660E +-818 km, origin 10:38:12.79, rms 0.07 s from 3 stations
+PDMAG    #1   10:39:25.99  Pd magnitude M4.3 ± 0.2 (M<4 4%, 4-5.5 96%, M>=5.5 0%) from 3 stations (3 above noise), windows up to 4 s, distances from the P-time location
+PLOC     #1   10:39:25.99  P times locate it at -43.622N 170.255E +-17 km, origin 10:39:14.98, rms 0.02 s from 3 stations, left out WVZ
+PDMAG    #1   10:39:27.00  Pd magnitude M4.3 ± 0.1 (M<4 2%, 4-5.5 98%, M>=5.5 0%) from 4 stations (4 above noise), windows up to 5 s, distances from the P-time location
+PLOC     #1   10:39:29.28  P times locate it at -43.725N 170.240E +-13 km, origin 10:39:13.94, rms 0.76 s from 4 stations, left out WVZ
+PDMAG    #1   10:39:30.50  Pd magnitude M4.4 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   10:39:36.00  Pd magnitude M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 10 s, distances from the P-time location
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-12-22 06:20:50.00 to 11:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.2 earthquake, not located
+  alarm      10:39:21.35 UTC by FOZ, WVZ; later CVZ, RPZ, WHSZ
+  Pd magn.   M4.3 4.6 s after the alarm, M4.2 ± 0.1 (M<4 2%, 4-5.5 98%, M>=5.5 0%) final from 5 stations (5 above noise)
+  P loc.     -43.725N 170.240E +-13 km from 4 stations, first 0.3 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     3
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_7/nz_now_quiet19.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        1      1         7      0.001 (0.000)        40
+  FOZ      43189         0        2      2        14      0.001 (0.000)        36
+  RPZ      43189         0        1      1         7      0.001 (0.000)        58
+  WHSZ     43189         0        2      2        14      0.001 (0.000)        29
+  WVZ      43189         0        2      2        14      0.001 (0.000)        35
+  Pd: 56 values sent
+  215945 windows in 0.4 s: 55606x real time per station

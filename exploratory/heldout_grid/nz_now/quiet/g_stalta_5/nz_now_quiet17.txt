@@ -1,0 +1,83 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 5 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-01-15 18:52:03.87 to 00:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   20:41:10.87  earthquake detected by FOZ, RPZ
+ALARM    #2   20:46:30.62  earthquake detected by RPZ, WHSZ
+ALARM    #3   21:19:01.05  earthquake detected by FOZ, WHSZ
+ALARM    #4   21:47:16.33  earthquake detected by CVZ, WHSZ
+ALARM    #5   21:50:18.17  earthquake detected by CVZ, WHSZ
+ALARM    #6   22:42:00.48  earthquake detected by FOZ, WVZ
+PLOC     #6   22:42:02.71  P times locate it at -43.445N 170.290E +-14 km, origin 22:41:51.16, rms 0.02 s from 3 stations
+PLOC     #6   22:42:03.97  P times locate it at -43.668N 170.459E +-11 km, origin 22:41:48.75, rms 0.02 s from 3 stations, left out RPZ
+ALARM    #7   22:52:12.10  earthquake detected by RPZ, WHSZ
+ALARM    #8   23:15:25.27  earthquake detected by RPZ, WHSZ
+ALARM    #9   23:20:35.50  earthquake detected by FOZ, WHSZ
+ALARM    #10  00:06:13.78  earthquake detected by RPZ, WHSZ
+ALARM    #11  00:37:15.14  earthquake detected by CVZ, WVZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-15 19:20:50.00 to 00:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:41:10.87 UTC by FOZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      20:46:30.62 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      21:19:01.05 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      21:47:16.33 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      21:50:18.17 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      22:42:00.48 UTC by FOZ, WVZ; later CVZ, RPZ
+  P loc.     -43.668N 170.459E +-11 km from 3 stations, first 2.2 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      22:52:12.10 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      23:15:25.27 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      23:20:35.50 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      00:06:13.78 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      00:37:15.14 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          11
+  single-station detections, no alarm   143
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_5/nz_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        9      9        63      0.001 (0.001)        33
+  FOZ      43189         0       20     20       140      0.001 (0.001)        49
+  RPZ      43189         0       30     30       210      0.001 (0.001)        32
+  WHSZ     43189         0      106    106       742      0.001 (0.001)        32
+  WVZ      43189         0        4      4        28      0.001 (0.001)        50
+  Pd: 1183 values sent
+  215945 windows in 3.6 s: 5515x real time per station

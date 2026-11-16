@@ -1,0 +1,32 @@
+ayzek    5 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-11-16 13:24:04.33 to 19:24:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:10:14.21  earthquake detected by DSZ, KHZ, RPZ
+PLOC     #1   15:10:14.21  P times locate it at -42.105N 172.902E +-18 km, origin 15:09:35.16, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-11-16 13:52:50.00 to 19:24:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:10:14.21 UTC by DSZ, KHZ, RPZ
+  P loc.     -42.105N 172.902E +-18 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    34
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/nz_now.partial/quiet/stalta_eqdet/nz_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DSZ      43189         0        9      9        63      0.002 (0.000)        64
+  KHZ      43189         0       14     14        98      0.001 (0.000)        60
+  RPZ      43188         0        3      3        21      0.002 (0.000)        70
+  WHSZ     43189         0       11     11        77      0.002 (0.000)        65
+  WVZ      43189         0        4      4        28      0.001 (0.000)        69
+  Pd: 287 values sent
+  215944 windows in 1.2 s: 16676x real time per station

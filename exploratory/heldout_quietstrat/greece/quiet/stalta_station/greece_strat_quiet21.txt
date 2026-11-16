@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-11-12 04:56:03.35 to 10:56:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   06:10:11.48  earthquake detected by HORT, KAVA
+PLOC     #1   06:10:13.70  P times locate it at 41.286N 23.651E +-285 km, origin 06:09:56.46, rms 0.01 s from 3 stations
+PLOC     #1   06:10:18.10  P times locate it at 40.981N 23.809E +-31 km, origin 06:09:59.66, rms 0.98 s from 4 stations
+ALARM    #2   07:17:43.46  earthquake detected by OUR, PLG
+LOCATE   #2   07:18:37.95  located at 40.323N 24.127E, origin 07:17:33.34, rms 0.17 s from 2 stations
+ALARM    #3   08:42:51.88  earthquake detected by HORT, SOH
+ALARM    #4   09:33:44.83  earthquake detected by HORT, KAVA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-12 05:24:50.00 to 10:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      06:10:11.48 UTC by HORT, KAVA; later PAIG, PLG
+  P loc.     40.981N 23.809E +-31 km from 4 stations, first 2.2 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 40.323N 24.127E, origin 07:17:33.34 UTC
+  alarm      07:17:43.46 UTC by OUR, PLG
+  location   rms 0.17 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 34 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             OUR           13 km   07:17:37.67 UTC (picked)      -5.8 s  after S
+             KOKK          56 km   07:17:49.62 UTC (predicted)    +6.2 s  before S
+             PAIG          58 km   07:17:50.03 UTC (predicted)    +6.6 s  before S
+             PLG           58 km   07:17:50.31 UTC (picked)      +6.8 s  before S
+             THAS          59 km   07:17:50.50 UTC (predicted)    +7.0 s  before S
+             KAVA          82 km   07:17:56.87 UTC (predicted)   +13.4 s  before S
+             SOH           85 km   07:17:57.93 UTC (predicted)   +14.5 s  before S
+             HORT          92 km   07:17:59.82 UTC (predicted)   +16.4 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      08:42:51.88 UTC by HORT, SOH
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      09:33:44.83 UTC by HORT, KAVA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    18
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_station/greece_strat_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0        6      6        42      0.001 (0.001)        47
+  KAVA     43189         0        4      4         0      0.001 (0.001)        37
+  KOKK     43189         0        0      0         0      0.002 (0.000)         0
+  OUR      43189         0        6      6        42      0.001 (0.001)        37
+  PAIG     43161         3        1      1         7      0.001 (0.000)        74
+  PLG      43189         0        6      6        42      0.001 (0.001)        47
+  SOH      43189         0        4      4        28      0.001 (0.000)        47
+  THAS     43165         2        1      1         7      0.001 (0.001)        60
+  Pd: 168 values sent
+  345460 windows in 0.6 s: 33626x real time per station

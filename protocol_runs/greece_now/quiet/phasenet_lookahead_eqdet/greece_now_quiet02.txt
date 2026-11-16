@@ -1,0 +1,48 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-09-04 09:14:02.59 to 15:14:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   13:49:17.00  earthquake detected by KNSS, PFKS
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-09-04 09:42:50.00 to 15:14:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      13:49:17.00 UTC by KNSS, PFKS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    29
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    13:49:17.00 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/phasenet_lookahead_eqdet/greece_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        3      3        21      0.010 (0.002)       156
+  IPPL     43189         0        1      1         7      0.009 (0.002)       130
+  KNSS     43189         0        6      6        42      0.010 (0.006)       185
+  PFKS     43175         2        3      3        21      0.010 (0.002)       173
+  SIVA     43189         0        7      7        49      0.007 (0.002)       182
+  STIA     43189         0        1      1         7      0.010 (0.002)       200
+  THERA    43189         0        3      3        21      0.005 (0.002)       138
+  ZKR      43189         0        7      7        49      0.006 (0.007)       174
+  Pd: 217 values sent
+  P time from an STA/LTA onset for 2 of 31 triggers (29 from the window start)
+  onset from a FilterPicker pick for 4 of 31 triggers (P-time location and Pd)
+  345498 windows in 6.0 s: 3330x real time per station

@@ -1,0 +1,94 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-04-30 21:17:02.62 to 03:17:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   21:56:22.50  earthquake detected by NISR, STIA
+ALARM    #2   22:26:38.00  earthquake detected by NISR, STIA
+ALARM    #3   23:15:45.00  earthquake detected by NISR, STIA
+ALARM    #4   23:18:51.50  earthquake detected by NISR, THERA
+ALARM    #5   23:45:25.00  earthquake detected by NISR, STIA
+ALARM    #6   00:22:55.00  earthquake detected by NISR, STIA
+ALARM    #7   00:27:59.00  earthquake detected by NISR, STIA
+ALARM    #8   01:48:41.00  earthquake detected by STIA, THERA
+ALARM    #9   01:49:58.00  earthquake detected by NISR, STIA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-04-30 21:45:50.00 to 03:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:56:22.50 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:26:38.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      23:15:45.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      23:18:51.50 UTC by NISR, THERA
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      23:45:25.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      00:22:55.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      00:27:59.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      01:48:41.00 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      01:49:58.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           9
+  single-station detections, no alarm    73
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              9  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    21:56:22.50 UTC  #1  no magnitude, not located
+    22:26:38.00 UTC  #2  no magnitude, not located
+    23:15:45.00 UTC  #3  no magnitude, not located
+    23:18:51.50 UTC  #4  no magnitude, not located
+    23:45:25.00 UTC  #5  no magnitude, not located
+    00:22:55.00 UTC  #6  no magnitude, not located
+    00:27:59.00 UTC  #7  no magnitude, not located
+    01:48:41.00 UTC  #8  no magnitude, not located
+    01:49:58.00 UTC  #9  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_learned_0p85/greece_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        0      0         0      0.001 (0.004)         0
+  NISR     43189         0       46     46         0      0.001 (0.001)        42
+  NISR2    43189         0        0      0         0      0.001 (0.001)         0
+  STIA     43189         0       40     40       280      0.001 (0.001)        37
+  THERA    43189         0        8      8        56      0.001 (0.002)        37
+  ZKR      43189         0        0      0         0      0.001 (0.003)         0
+  Pd: 336 values sent
+  P time from an STA/LTA onset for 15 of 94 triggers (79 from the window start)
+  onset from a FilterPicker pick for 12 of 94 triggers (P-time location and Pd)
+  259134 windows in 3.2 s: 6135x real time per station

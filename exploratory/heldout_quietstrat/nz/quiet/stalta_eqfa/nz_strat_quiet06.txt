@@ -1,0 +1,71 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-03-16 21:18:03.76 to 03:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   23:35:39.73  earthquake detected by PUZ, URZ
+PLOC     #1   23:35:40.78  P times locate it at -35.122N 177.567E +-284 km, origin 23:34:41.17, rms 0.03 s from 3 stations
+PLOC     #1   23:35:48.98  P times locate it at -35.574N 177.593E +-121 km, origin 23:34:49.48, rms 0.06 s from 4 stations
+ALARM    #2   01:43:38.30  earthquake detected by PUZ, TLZ
+ALARM    #3   02:41:11.95  earthquake detected by BKZ, MWZ
+LOCATE   #3   02:42:06.44  located at -37.295N 175.100E, origin 02:40:31.31, rms 0.05 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-03-16 21:46:50.00 to 03:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:35:39.73 UTC by PUZ, URZ; later BKZ, MWZ, TLZ
+  P loc.     -35.574N 177.593E +-121 km from 4 stations, first 1.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      01:43:38.30 UTC by PUZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at -37.295N 175.100E, origin 02:40:31.31 UTC
+  alarm      02:41:11.95 UTC by BKZ, MWZ
+  location   rms 0.05 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 142 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             TLZ          121 km   02:41:06.08 UTC (predicted)    -5.9 s  after S
+             KPRZ         178 km   02:41:22.31 UTC (predicted)   +10.4 s  before S
+             RATZ         184 km   02:41:24.07 UTC (predicted)   +12.1 s  before S
+             URZ          207 km   02:41:30.44 UTC (predicted)   +18.5 s  before S
+             BKZ          241 km   02:41:40.24 UTC (picked)     +28.3 s  before S
+             MWZ          243 km   02:41:40.64 UTC (picked)     +28.7 s  before S
+             PUZ          291 km   02:41:54.48 UTC (predicted)   +42.5 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    16
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    23:35:39.73 UTC  #1  no magnitude, not located
+    01:43:38.30 UTC  #2  no magnitude, not located
+    02:41:11.95 UTC  #3  no magnitude, located -37.29N 175.10E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/stalta_eqfa/nz_strat_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        3      3        21      0.001 (0.001)        86
+  KPRZ     43189         0        0      0         0      0.002 (0.001)         0
+  MWZ      43189         0        4      4        28      0.003 (0.001)        77
+  PUZ      43189         0        5      5        35      0.002 (0.001)        80
+  RATZ     43189         0        0      0         0      0.002 (0.001)         0
+  TLZ      43189         0        7      7        49      0.002 (0.001)        74
+  URZ      43189         0        6      6        42      0.002 (0.001)        82
+  Pd: 175 values sent
+  302323 windows in 1.1 s: 17966x real time per station

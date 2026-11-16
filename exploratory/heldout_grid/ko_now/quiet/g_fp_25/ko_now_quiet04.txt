@@ -1,0 +1,73 @@
+ayzek    7 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 25/10, Z + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   00:35:19.58  earthquake detected by MAZI, SVRC
+ALARM    #2   00:59:22.32  earthquake detected by AKDG, GAZ
+ALARM    #3   01:30:48.03  earthquake detected by GAZ, SVRC
+ALARM    #4   02:00:38.98  earthquake detected by MAZI, SVRC
+ALARM    #5   02:44:50.81  earthquake detected by MLTY, NURH
+LOCATE   #5   02:45:44.99  located at 38.526N 37.758E, origin 02:44:38.96, rms 0.23 s from 2 stations
+ALARM    #6   02:51:07.33  earthquake detected by NURH, SVRC
+ALARM    #7   04:02:13.34  earthquake detected by GAZ, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      00:35:19.58 UTC by MAZI, SVRC
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      00:59:22.32 UTC by AKDG, GAZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      01:30:48.03 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      02:00:38.98 UTC by MAZI, SVRC
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude) at 38.526N 37.758E, origin 02:44:38.96 UTC
+  alarm      02:44:50.81 UTC by MLTY, NURH
+  location   rms 0.23 s from 2 stations, first 54.2 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 40 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          26 km   02:44:46.91 UTC (predicted)    -3.9 s  after S
+             MLTY          64 km   02:44:57.17 UTC (picked)      +6.4 s  before S
+             NURH          68 km   02:44:58.79 UTC (picked)      +8.0 s  before S
+             SVRC         136 km   02:45:17.86 UTC (predicted)   +27.1 s  before S
+             GAZ          158 km   02:45:24.21 UTC (predicted)   +33.4 s  before S
+             DYBB         217 km   02:45:41.16 UTC (predicted)   +50.4 s  before S
+             MAZI         264 km   02:45:54.36 UTC (predicted)   +63.6 s  before S
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      02:51:07.33 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      04:02:13.34 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm    58
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_fp_25/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7        8      8         0      0.013 (0.141)        34
+  DYBB     43042        14        4      4        28      0.017 (0.018)        48
+  GAZ      43189         0        7      7        49      0.015 (0.025)        54
+  MAZI     43189         0        8      8         0      0.018 (0.181)        38
+  MLTY     43189         0        2      2        14      0.016 (0.019)        54
+  NURH     43189         0        9      9         0      0.016 (0.033)        51
+  SVRC     43080        11       34     34       238      0.013 (0.018)        38
+  Pd: 329 values sent
+  301992 windows in 2.2 s: 9107x real time per station

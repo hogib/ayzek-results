@@ -1,0 +1,69 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:07:57.00  earthquake detected by MRTH, VILL
+PLOC     #1   08:07:57.00  P times locate it at 38.182N 23.546E +-425 km, origin 08:07:48.70, rms 0.01 s from 3 stations
+LOCATE   #1   08:08:48.50  located at 38.076N 23.898E, origin 08:07:52.47, rms 0.26 s from 2 stations
+ALARM    #2   08:49:31.00  earthquake detected by MDRA, MRTH
+ALARM    #3   09:59:18.50  earthquake detected by MDRA, VILL
+ALARM    #4   11:56:14.50  earthquake detected by MDRA, PTL
+ALARM    #5   12:36:12.50  earthquake detected by THIV, VILL
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.076N 23.898E, origin 08:07:52.47 UTC
+  alarm      08:07:57.00 UTC by MRTH, PTL, VILL
+  location   rms 0.26 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  P loc.     38.182N 23.546E +-425 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 12 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             PTL            4 km   08:07:55.58 UTC (picked)      -1.4 s  after S
+             MRTH           6 km   08:07:55.58 UTC (picked)      -1.4 s  after S
+             ATH           19 km   08:07:58.71 UTC (predicted)    +1.7 s  before S
+             MDRA          38 km   08:08:03.64 UTC (predicted)    +6.6 s  before S
+             KARY          47 km   08:08:06.33 UTC (predicted)    +9.3 s  before S
+             VILL          52 km   08:08:07.64 UTC (predicted)   +10.6 s  before S
+             THIV          55 km   08:08:08.53 UTC (predicted)   +11.5 s  before S
+             LKR          101 km   08:08:21.48 UTC (predicted)   +24.5 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:49:31.00 UTC by MDRA, MRTH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      09:59:18.50 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      11:56:14.50 UTC by MDRA, PTL
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      12:36:12.50 UTC by THIV, VILL
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    71
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/eqt_causal_eqquiet/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.005 (0.002)         0
+  KARY     43189         0        0      0         0      0.005 (0.006)         0
+  LKR      43189         0        2      2        14      0.007 (0.002)       178
+  MDRA     43189         0        3      3        21      0.005 (0.006)       142
+  MRTH     43189         0        3      3         0      0.003 (0.007)        49
+  PTL      43189         0        2      2        14      0.005 (0.007)       161
+  THIV     43189         0        1      1         7      0.004 (0.002)       147
+  VILL     43189         0       71     71       497      0.003 (0.002)       114
+  Pd: 553 values sent
+  P time from an STA/LTA onset for 25 of 82 triggers (57 from the window start)
+  onset from a FilterPicker pick for 16 of 82 triggers (P-time location and Pd)
+  345512 windows in 10.9 s: 1820x real time per station

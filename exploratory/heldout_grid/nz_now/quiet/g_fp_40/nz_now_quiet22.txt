@@ -1,0 +1,39 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 40/10, Z + picker + Pd magnitude, replay 2024-08-01 01:34:02.97 to 07:34:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   06:50:31.15  earthquake detected by CVZ, RPZ
+LOCATE   #1   06:51:25.28  located at -43.624N 171.060E, origin 06:50:15.62, rms 0.58 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-08-01 02:02:50.00 to 07:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at -43.624N 171.060E, origin 06:50:15.62 UTC
+  alarm      06:50:31.15 UTC by CVZ, RPZ
+  location   rms 0.58 s from 2 stations, first 54.1 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 53 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             RPZ           10 km   06:50:18.96 UTC (picked)     -12.2 s  after S
+             WHSZ          64 km   06:50:34.26 UTC (predicted)    +3.1 s  before S
+             WVZ           66 km   06:50:34.82 UTC (predicted)    +3.7 s  before S
+             CVZ           85 km   06:50:40.04 UTC (picked)      +8.9 s  before S
+             FOZ          101 km   06:50:44.55 UTC (predicted)   +13.4 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    33
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_fp_40/nz_now_quiet22.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        1      1         7      0.011 (0.026)        11
+  FOZ      43189         0       10     10        70      0.009 (0.021)        16
+  RPZ      43189         0       11     11        77      0.009 (0.015)        22
+  WHSZ     43189         0        8      7        56      0.009 (0.024)        27
+  WVZ      43189         0        5      5        35      0.010 (0.020)        22
+  Pd: 245 values sent
+  215945 windows in 0.9 s: 23084x real time per station

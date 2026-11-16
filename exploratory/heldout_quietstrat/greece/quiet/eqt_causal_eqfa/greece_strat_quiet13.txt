@@ -1,0 +1,35 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 10:10:02.41 to 16:10:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:18:08.00  earthquake detected by LTHK, ORTH
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:38:50.00 to 16:10:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:18:08.00 UTC by LTHK, ORTH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     7
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_causal_eqfa/greece_strat_quiet13.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0        0      0         0      0.001 (0.001)         0
+  AXS      43189         0        0      0         0      0.000 (0.001)         0
+  DRO      43189         0        3      3        21      0.000 (0.001)        14
+  ITM      43189         0        1      1         7      0.001 (0.001)        14
+  LTHK     43189         0        4      4        28      0.001 (0.001)        14
+  ORTH     43189         0        1      1         7      0.001 (0.001)        14
+  RLS      43189         0        0      0         0      0.001 (0.001)         0
+  VLX      43189         0        0      0         0      0.001 (0.001)         0
+  Pd: 63 values sent
+  P time from an STA/LTA onset for 7 of 9 triggers (2 from the window start)
+  onset from a FilterPicker pick for 5 of 9 triggers (P-time location and Pd)
+  345512 windows in 0.7 s: 27942x real time per station

@@ -1,0 +1,534 @@
+{
+ "schema": 1,
+ "set": "ko_now_quiet13",
+ "config": {
+  "name": "ko_now_quiet13",
+  "networks": [
+   "KO"
+  ],
+  "start": "2026-10-12T10:23:00",
+  "end": "2026-10-12T16:23:00",
+  "lat": 37.94507,
+  "lon": 38.70696,
+  "radius_km": 172.3,
+  "max_stations": 7,
+  "min_coverage": 0.0,
+  "max_azimuth_offset_deg": null,
+  "stations": [
+   "KO.MLTY",
+   "KO.SVRC",
+   "KO.DYBB",
+   "KO.AKDG",
+   "KO.MAZI",
+   "KO.NURH",
+   "KO.GAZ"
+  ],
+  "catalog": {
+   "lead_days": 1.0,
+   "radius_km": 400.0,
+   "min_magnitude": null,
+   "start": null,
+   "end": null,
+   "limit": null
+  },
+  "source": "selections/ko_now/sets/ko_now_quiet13.toml"
+ },
+ "networks": [
+  "KO"
+ ],
+ "services": {
+  "station": "https://eida.koeri.boun.edu.tr/fdsnws/station/1/query",
+  "dataselect": "https://eida.koeri.boun.edu.tr/fdsnws/dataselect/1/query",
+  "availability": "https://eida.koeri.boun.edu.tr/fdsnws/availability/1/query",
+  "event": "https://www.seismicportal.eu/fdsnws/event/1/query"
+ },
+ "span": [
+  "2026-10-12T10:23:00",
+  "2026-10-12T16:23:00"
+ ],
+ "centre": [
+  37.94507,
+  38.70696
+ ],
+ "radius_km": 172.3,
+ "max_stations": 7,
+ "coverage_basis": "fdsnws/availability",
+ "stations_requested": [
+  {
+   "network": "KO",
+   "station": "MLTY",
+   "distance_km": 48.0,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "URFA",
+   "distance_km": 57.0,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "KO",
+   "station": "SVRC",
+   "distance_km": 71.1,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9981
+  },
+  {
+   "network": "KO",
+   "station": "AKDG",
+   "distance_km": 79.3,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "KBAN",
+   "distance_km": 94.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "KO",
+   "station": "ARGN",
+   "distance_km": 100.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "KO",
+   "station": "NURH",
+   "distance_km": 111.4,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "DYBB",
+   "distance_km": 125.6,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "DARE",
+   "distance_km": 127.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "KO",
+   "station": "SINE",
+   "distance_km": 147.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "KO",
+   "station": "GAZ",
+   "distance_km": 157.5,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "MAZI",
+   "distance_km": 162.3,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "KO",
+   "station": "DIVR",
+   "distance_km": 164.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "KO",
+   "station": "KMRS",
+   "distance_km": 166.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  }
+ ],
+ "pd_gains_refused": [],
+ "pd_gains_missing": [],
+ "stations_chosen": [
+  "KO.MLTY",
+  "KO.SVRC",
+  "KO.AKDG",
+  "KO.NURH",
+  "KO.DYBB",
+  "KO.GAZ",
+  "KO.MAZI"
+ ],
+ "stations": [
+  {
+   "network": "KO",
+   "station": "MLTY",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 38.3223,
+   "lon": 38.4407,
+   "elevation_m": 1018.0,
+   "distance_km": 48.0,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "MLTY.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 11859968,
+   "megabytes": 11.86,
+   "missing_components": []
+  },
+  {
+   "network": "KO",
+   "station": "SVRC",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 38.3775,
+   "lon": 39.306,
+   "elevation_m": 1680.0,
+   "distance_km": 71.1,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "SVRC.mseed",
+   "seconds_per_component": {
+    "HHZ": 21412.0,
+    "HHN": 21393.0,
+    "HHE": 21402.0
+   },
+   "bytes": 9093632,
+   "megabytes": 9.09,
+   "missing_components": []
+  },
+  {
+   "network": "KO",
+   "station": "AKDG",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 38.3618,
+   "lon": 37.9703,
+   "elevation_m": 1131.0,
+   "distance_km": 79.3,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "AKDG.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 9824256,
+   "megabytes": 9.82,
+   "missing_components": []
+  },
+  {
+   "network": "KO",
+   "station": "NURH",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.9693,
+   "lon": 37.4363,
+   "elevation_m": 1563.0,
+   "distance_km": 111.4,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "NURH.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 9204224,
+   "megabytes": 9.2,
+   "missing_components": []
+  },
+  {
+   "network": "KO",
+   "station": "DYBB",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.9532,
+   "lon": 40.1393,
+   "elevation_m": 657.0,
+   "distance_km": 125.6,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "DYBB.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 10599424,
+   "megabytes": 10.6,
+   "missing_components": []
+  },
+  {
+   "network": "KO",
+   "station": "GAZ",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.1721,
+   "lon": 37.2096,
+   "elevation_m": 992.0,
+   "distance_km": 157.5,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "GAZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 11282432,
+   "megabytes": 11.28,
+   "missing_components": []
+  },
+  {
+   "network": "KO",
+   "station": "MAZI",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.4593,
+   "lon": 40.4465,
+   "elevation_m": 1204.0,
+   "distance_km": 162.3,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "MAZI.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 4985856,
+   "megabytes": 4.99,
+   "missing_components": []
+  }
+ ],
+ "request_failures": [],
+ "retrieved_utc": "2026-10-30T14:26:15+00:00",
+ "tool": {
+  "name": "ayzek-heldout",
+  "git_commit": "440a2d946939"
+ },
+ "citation": [
+  "Kandilli Observatory and Earthquake Research Institute (KOERI), Bogazici University. International Federation of Digital Seismograph Networks. doi:10.7914/SN/KO"
+ ],
+ "licence": [
+  "open under citation (doi:10.7914/SN/KO)"
+ ],
+ "files": {
+  "MLTY.mseed": {
+   "sha256": "af24c35614730385ea2d3ad82d23cafc280f332759d5c9b2f0c4bb44000329ab",
+   "bytes": 11859968
+  },
+  "SVRC.mseed": {
+   "sha256": "3e7a504b70ff4b5d6fe1b06a8a7824d441e03c2c6ebd06217c4419d3d2067293",
+   "bytes": 9093632
+  },
+  "AKDG.mseed": {
+   "sha256": "8366563e77662ef05895248c54b53fdca9b4eeebe6320b34ed0533d7cdab120a",
+   "bytes": 9824256
+  },
+  "NURH.mseed": {
+   "sha256": "a3352c4bc3aab172eef952fc89439859f663a567f483cadc26455d274ae7c323",
+   "bytes": 9204224
+  },
+  "DYBB.mseed": {
+   "sha256": "259a727e53fd8aa4921d655c1df25814e5e416e59e21aba23cd505d873a3aaa2",
+   "bytes": 10599424
+  },
+  "GAZ.mseed": {
+   "sha256": "c8cc305e6e0c4f7fe3e3506e8d1610450ea20c3400cb0de7b3e5721eef06b43e",
+   "bytes": 11282432
+  },
+  "MAZI.mseed": {
+   "sha256": "4c9a3e3306c3f243b978acfb730a4b10c2e7adb98a26833639cb71ee94264f74",
+   "bytes": 4985856
+  },
+  "stationxml/KO.AKDG.xml": {
+   "sha256": "051bf8615e25ccc61f501f23258d76dd5eda097ecd266c7a025fb7c2466074a8",
+   "bytes": 263571
+  },
+  "stationxml/KO.DYBB.xml": {
+   "sha256": "7535a53db855ad1edf821ed157f325878c2339f6925a30750d7e470b7839f4c4",
+   "bytes": 215730
+  },
+  "stationxml/KO.GAZ.xml": {
+   "sha256": "b6844c1b57125b8691701af3227b18b51dce521da1872dac21897e6342227936",
+   "bytes": 215738
+  },
+  "stationxml/KO.MAZI.xml": {
+   "sha256": "20a8cc2b396cfe602ee0c00483b1b5f50139d07c6fd06adb571119dc7c3ba3cb",
+   "bytes": 215735
+  },
+  "stationxml/KO.MLTY.xml": {
+   "sha256": "630cc9a3044cd917c91fa2b6b2e14f03f0e9f79d27bffc9a813b73069b646151",
+   "bytes": 263556
+  },
+  "stationxml/KO.NURH.xml": {
+   "sha256": "78e98ee2400380d8e05a7d8340e2bb16d1ce1e542e3f855e412ac73f26ee661c",
+   "bytes": 263572
+  },
+  "stationxml/KO.SVRC.xml": {
+   "sha256": "0ec5b18ab290f90a9d4e4f898f467ab91c7ebe7cf46a05bb50b500a162b84167",
+   "bytes": 215730
+  },
+  "stations.csv": {
+   "sha256": "1fb4caaec4e6696ec5c96067a3e2573cb574ac26cf7227ca504cba866363696d",
+   "bytes": 198
+  },
+  "pd_gain.csv": {
+   "sha256": "8e3de89dd3957f3af5896332064bb8ddaf2fb47325b2b7a77bb51decc3bea3d9",
+   "bytes": 288
+  },
+  "catalog.csv": {
+   "sha256": "65f6178b56bba2212143bd43a95d07072e6ff68ea59126e766e1cfe0fac5da5c",
+   "bytes": 2705
+  }
+ },
+ "catalog": {
+  "file": "catalog.csv",
+  "agency": "EMSC (European-Mediterranean Seismological Centre)",
+  "service": "https://www.seismicportal.eu/fdsnws/event/1/query",
+  "request": "https://www.seismicportal.eu/fdsnws/event/1/query?starttime=2026-10-11T10%3A23%3A00&endtime=2026-10-12T16%3A23%3A00&latitude=37.9451&longitude=38.707&maxradius=3.5973&orderby=time-asc",
+  "window": [
+   "2026-10-11T10:23:00",
+   "2026-10-12T16:23:00"
+  ],
+  "centre": [
+   37.94507,
+   38.70696
+  ],
+  "radius_km": 400.0,
+  "min_magnitude": null,
+  "limit": null,
+  "events": 32,
+  "skipped": [],
+  "magnitude_types": [
+   "ml"
+  ],
+  "retrieved_utc": "2026-10-30T14:26:17+00:00",
+  "citation": "EMSC, FDSNWS-event at www.seismicportal.eu",
+  "canary": {
+   "window": [
+    "2025-08-10T16:00:00",
+    "2025-08-10T19:00:00"
+   ],
+   "centre": [
+    39.2,
+    28.2
+   ],
+   "radius_km": 150.0,
+   "min_events": 30,
+   "events": 69,
+   "request": "https://www.seismicportal.eu/fdsnws/event/1/query?starttime=2025-08-10T16%3A00%3A00&endtime=2025-08-10T19%3A00%3A00&latitude=39.2&longitude=28.2&maxradius=1.3490&orderby=time-asc"
+  }
+ }
+}

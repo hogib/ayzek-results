@@ -1,0 +1,120 @@
+== ko_now: exploratory, outside the frozen protocol
+
+1. Paired latency, learned minus stalta_eqfa: 13 events both detected
+   median +1.60 s (interquartile range +0.80 to +2.40); stalta_eqfa first 11, learned first 2, ties 0
+
+2. Per sequence: detected / chance level c / corrected / unmatched alarms
+   set      scored                       learned                   stalta_eqfa                       fp_eqfa          phasenet_causal_eqfa               eqt_causal_eqfa
+   seq002        7      3  0.000     3.0      1      3  0.000     3.0      5      3  0.000     3.0      5      3  0.000     3.0      0      2  0.000     2.0      0
+   seq003       29     13  0.029    12.5      8     10  0.000    10.0      3      8  0.000     8.0      4      7  0.000     7.0      3      3  0.000     3.0      1
+   sequences where learned detected more / the same / fewer events than stalta_eqfa: 1 / 1 / 0
+
+3. Network: detected, corrected (sum over sequences), effective c = (raw - corr) / (n - corr)
+   learned                  16 of 36  corrected   15.5  effective c 0.023
+   stalta_eqfa              13 of 36  corrected   13.0  effective c 0.000
+   fp_eqfa                  11 of 36  corrected   11.0  effective c 0.000
+   phasenet_causal_eqfa     10 of 36  corrected   10.0  effective c 0.000
+   eqt_causal_eqfa           5 of 36  corrected    5.0  effective c 0.000
+
+4. Quiet windows by station set: windows, scored hours; alarms (per day) of learned, stalta_eqfa, fp_eqfa, phasenet_causal_eqfa, eqt_causal_eqfa
+   set 002            7   38.5 h    16 ( 10.0)    44 ( 27.4)    78 ( 48.6)    15 (  9.4)     2 (  1.2)
+   set 003            7   38.5 h    15 (  9.4)    23 ( 14.3)    22 ( 13.7)     8 (  5.0)     3 (  1.9)
+   per window (station set): alarms of learned, stalta_eqfa, fp_eqfa, phasenet_causal_eqfa, eqt_causal_eqfa
+   quiet01  (003)    10     3     7     3     2
+   quiet02  (003)     0     1     3     0     0
+   quiet03  (003)     1     6     2     1     0
+   quiet04  (002)     3    14    14     2     0
+   quiet05  (002)     8     5    17     5     1
+   quiet06  (003)     1     2     2     2     1
+   quiet07  (002)     0     7     9     1     0
+   quiet08  (003)     2     5     4     1     0
+   quiet09  (002)     2    11     7     2     0
+   quiet10  (002)     0     1    14     4     0
+   quiet11  (002)     2     2     4     1     1
+   quiet12  (003)     1     3     1     1     0
+   quiet13  (002)     1     4    13     0     0
+   quiet14  (003)     0     3     3     0     0
+
+5. Closest station pair per set, and the alarms declared by exactly that pair
+   seq002   AKDG-MLTY 41.3 km
+   seq003   CEYT-KARA 67.4 km
+   quiet01  CEYT-KARA 67.4 km
+   quiet02  CEYT-KARA 67.4 km
+   quiet03  CEYT-KARA 67.4 km
+   quiet04  AKDG-MLTY 41.3 km
+   quiet05  AKDG-MLTY 41.3 km
+   quiet06  CEYT-KARA 67.4 km
+   quiet07  AKDG-MLTY 41.3 km
+   quiet08  CEYT-KARA 67.4 km
+   quiet09  AKDG-MLTY 41.3 km
+   quiet10  AKDG-MLTY 41.3 km
+   quiet11  AKDG-MLTY 41.3 km
+   quiet12  CEYT-KARA 67.4 km
+   quiet13  AKDG-MLTY 41.3 km
+   quiet14  CEYT-KARA 67.4 km
+   sequence sets per pair: AKDG-MLTY 1, CEYT-KARA 1
+   learned                matched 0 of 16, unmatched 2 of 9, quiet 1 of 31
+   stalta_eqfa            matched 0 of 13, unmatched 0 of 8, quiet 0 of 67
+   fp_eqfa                matched 1 of 11, unmatched 1 of 9, quiet 2 of 100
+   phasenet_causal_eqfa   matched 0 of 10, unmatched 0 of 3, quiet 4 of 23
+   eqt_causal_eqfa        matched 0 of 5, unmatched 0 of 1, quiet 1 of 5
+
+6. Detection by catalogue-magnitude band (the outcome tables' one-decimal magnitudes): scored, learned vs stalta_eqfa
+   <2     21     4 vs 2
+   2-3    10     7 vs 6
+   3-4     1     1 vs 1
+   >=4     4     4 vs 4
+
+7. Pd estimates of unmatched and quiet alarms: alarms / with an estimate / final >= 4
+   learned                unmatched    9 / 1 / 1
+      ko_now_seq003 11:43:45.00 M5.2
+   learned                quiet       31 / 0 / 0
+   stalta_eqfa            unmatched    8 / 1 / 1
+      ko_now_seq002 07:41:20.09 M4.9
+   stalta_eqfa            quiet       67 / 2 / 0
+   fp_eqfa                unmatched    9 / 0 / 0
+   fp_eqfa                quiet      100 / 0 / 0
+   phasenet_causal_eqfa   unmatched    3 / 1 / 1
+      ko_now_seq003 11:43:42.50 M5.2
+   phasenet_causal_eqfa   quiet       23 / 0 / 0
+   eqt_causal_eqfa        unmatched    1 / 0 / 0
+   eqt_causal_eqfa        quiet        5 / 0 / 0
+
+9. Sequence-initiating events (the selection's first event of each sequence): origin, magnitude, depth, epicentre, the two nearest stations (epicentral km, selection coordinates); per detector the outcome table's status and the report's block; notes on other alarms from 30 s before to 60 s after the origin
+   seq002  2026-09-24 07:40:58.050  mw 5.30  7.0 km  37.420 38.868  MLTY 107.1, SVRC 113.1  scored as 07:40:58.00 mw 5.3
+      learned                detected   alarm 21.5 s after origin by MLTY, SVRC; pre-S 2 of 2 (outcome table 1); Pd M5.7 2.5 s after, final M5.6; before S 7 of 7 stations, nearest MLTY 107 km +10.2 s (picked)
+      stalta_eqfa            detected   alarm 18.9 s after origin by MLTY, SVRC; pre-S 2 of 2 (outcome table 1); Pd M5.6 54.5 s after, final M5.6; before S 7 of 7 stations, nearest MLTY 107 km +12.9 s (picked)
+         alarm #2 at 07:41:20.09 (+22.0 s) by NURH, SVRC credited to no catalogue event, Pd final M4.9
+      fp_eqfa                detected   alarm 18.9 s after origin by MLTY, SVRC; pre-S 2 of 2 (outcome table 1); Pd M5.4 4.2 s after, final M5.6; before S 7 of 7 stations, nearest MLTY 107 km +12.8 s (picked)
+      phasenet_causal_eqfa   detected   alarm 19.0 s after origin by MLTY, SVRC; pre-S 2 of 2 (outcome table 1); Pd M5.7 4.5 s after, final M5.6; before S 7 of 7 stations, nearest MLTY 107 km +12.7 s (picked)
+      eqt_causal_eqfa        detected   alarm 23.5 s after origin by MLTY, SVRC; pre-S 2 of 2 (outcome table 1); Pd M5.6 4 s after, final M5.6; before S 7 of 7 stations, nearest MLTY 107 km +8.2 s (picked)
+   seq003  2026-10-04 11:19:25.790  mb 4.70  8.0 km  37.749 36.091  SARI 78.6, CEYT 87.5  scored as 11:19:26.00 mb 4.7
+      learned                detected   alarm 17.5 s after origin by KARA, SARI; pre-S 2 of 2 (outcome table 1); Pd M4.7 3 s after, final M4.8; before S 6 of 6 stations, nearest SARI 79 km +5.8 s (picked)
+      stalta_eqfa            detected   alarm 13.1 s after origin by CEYT, SARI; pre-S 2 of 2 (outcome table 1); Pd M4.8 4.9 s after, final M4.8; before S 6 of 6 stations, nearest SARI 79 km +10.3 s (picked)
+      fp_eqfa                detected   alarm 13.0 s after origin by CEYT, SARI; pre-S 2 of 2 (outcome table 1); Pd M4.8 5.1 s after, final M4.8; before S 6 of 6 stations, nearest SARI 79 km +9.6 s (predicted)
+      phasenet_causal_eqfa   detected   alarm 14.5 s after origin by CEYT, SARI; pre-S 2 of 2 (outcome table 1); Pd M4.7 3.5 s after, final M4.8; before S 6 of 6 stations, nearest SARI 79 km +8.1 s (predicted)
+      eqt_causal_eqfa        detected   alarm 19.0 s after origin by CEYT, SARI; pre-S 2 of 2 (outcome table 1); Pd M4.8 4.5 s after, final M4.8; before S 6 of 6 stations, nearest SARI 79 km +4.3 s (picked)
+      note: the selection joined 2 later events: mb 4.6 at 11:36:26.58, mb 5.0 at 11:43:23.39
+   network: mainshocks / scored / detected / detected before S / Pd at the alarm (any Pd) / a station before S; median alarm delay; median warning at the nearest station before S
+   learned                2 / 2 / 2 / 2 / 0 (2) / 2; 19.50 s; 8.00 s
+   stalta_eqfa            2 / 2 / 2 / 2 / 0 (2) / 2; 16.00 s; 11.60 s
+   fp_eqfa                2 / 2 / 2 / 2 / 0 (2) / 2; 15.95 s; 11.20 s
+   phasenet_causal_eqfa   2 / 2 / 2 / 2 / 0 (2) / 2; 16.75 s; 10.40 s
+   eqt_causal_eqfa        2 / 2 / 2 / 2 / 0 (2) / 2; 21.25 s; 6.25 s
+
+10. Detection by epicentral distance (catalogue epicentres, the stations that ran): scored, detected by learned, stalta_eqfa, fp_eqfa, phasenet_causal_eqfa, eqt_causal_eqfa
+   by the distance of the second-nearest station, km
+   <25        0     0     0     0     0     0
+   25-50      2     1     1     1     1     1
+   50-100    30    13    10     8     7     3
+   >=100      4     2     2     2     2     1
+   by the distance of the nearest station, km
+   <25        4     1     1     1     1     1
+   25-50      0     0     0     0     0     0
+   50-100    30    13    10     8     7     3
+   >=100      2     2     2     2     2     1
+
+11. Station geometry of the 36 scored events: epicentral km, median (interquartile range), minimum to maximum
+   nearest         78.4 (77.0 to 79.5), 16.8 to 107.1
+   second-nearest  87.8 (86.6 to 89.2), 33.6 to 130.9
+   stations that ran per set: seq002 7, seq003 6

@@ -1,0 +1,63 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-12-09 14:06:02.69 to 20:06:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:01:31.50  earthquake detected by NISR, STIA
+ALARM    #2   16:36:00.50  earthquake detected by APE, STIA
+ALARM    #3   17:06:08.00  earthquake detected by NISR, STIA
+ALARM    #4   17:54:46.00  earthquake detected by APE, NISR
+ALARM    #5   18:47:16.50  earthquake detected by NISR, ZKR
+ALARM    #6   19:12:14.00  earthquake detected by NISR, STIA
+ALARM    #7   19:53:16.50  earthquake detected by APE, ZKR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-12-09 14:34:50.00 to 20:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:01:31.50 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      16:36:00.50 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      17:06:08.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      17:54:46.00 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      18:47:16.50 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      19:12:14.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      19:53:16.50 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm   101
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p6/greece_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       17     17       119      0.001 (0.001)        44
+  NISR     43189         0       37     37         0      0.001 (0.001)        44
+  NISR2    43189         0        5      5        35      0.002 (0.001)        43
+  STIA     43189         0       23     23       161      0.002 (0.001)        43
+  THERA    43189         0        7      7        49      0.001 (0.003)        32
+  ZKR      43189         0       26     26       182      0.001 (0.003)        38
+  Pd: 546 values sent
+  P time from an STA/LTA onset for 64 of 115 triggers (51 from the window start)
+  onset from a FilterPicker pick for 44 of 115 triggers (P-time location and Pd)
+  259134 windows in 2.6 s: 7609x real time per station

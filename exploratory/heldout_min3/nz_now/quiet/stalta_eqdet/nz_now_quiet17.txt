@@ -1,0 +1,32 @@
+ayzek    5 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-01-15 18:52:03.87 to 00:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   22:42:12.22  earthquake detected by CVZ, RPZ, WVZ
+PLOC     #1   22:42:12.22  P times locate it at -42.589N 172.832E +-259 km, origin 22:41:30.84, rms 0.00 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-15 19:20:50.00 to 00:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      22:42:12.22 UTC by CVZ, RPZ, WVZ
+  P loc.     -42.589N 172.832E +-259 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    95
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/nz_now.partial/quiet/stalta_eqdet/nz_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        3      3        21      0.002 (0.000)        58
+  FOZ      43189         0        3      3        21      0.001 (0.000)        57
+  RPZ      43189         0       15     15       105      0.002 (0.000)        74
+  WHSZ     43189         0       76     76       532      0.001 (0.000)        56
+  WVZ      43189         0        1      1         7      0.002 (0.000)        56
+  Pd: 686 values sent
+  215945 windows in 4.6 s: 4279x real time per station

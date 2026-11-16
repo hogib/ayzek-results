@@ -1,0 +1,66 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-08 19:18:02.66 to 01:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   19:53:33.50  earthquake detected by THERA, ZKR
+ALARM    #2   22:16:17.00  earthquake detected by KNSS, PFKS
+ALARM    #3   22:24:39.50  earthquake detected by CHAN, STIA
+ALARM    #4   01:11:43.00  earthquake detected by SIVA, ZKR
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-08 19:46:50.00 to 01:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:53:33.50 UTC by THERA, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:16:17.00 UTC by KNSS, PFKS
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      22:24:39.50 UTC by CHAN, STIA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      01:11:43.00 UTC by SIVA, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    37
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    19:53:33.50 UTC  #1  no magnitude, not located
+    22:16:17.00 UTC  #2  no magnitude, not located
+    22:24:39.50 UTC  #3  no magnitude, not located
+    01:11:43.00 UTC  #4  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p8/greece_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        8      8        56      0.003 (0.001)        47
+  IPPL     43189         0        1      1         7      0.002 (0.001)        55
+  KNSS     43189         0        2      2        14      0.002 (0.001)        46
+  PFKS     43189         0        6      6        42      0.002 (0.001)        54
+  SIVA     43189         0        9      9        63      0.001 (0.001)        40
+  STIA     43189         0       11     11        77      0.001 (0.001)        47
+  THERA    43189         0        1      1         7      0.001 (0.001)        59
+  ZKR      43189         0        8      8        56      0.001 (0.004)        49
+  Pd: 322 values sent
+  P time from an STA/LTA onset for 26 of 46 triggers (20 from the window start)
+  onset from a FilterPicker pick for 23 of 46 triggers (P-time location and Pd)
+  345512 windows in 2.2 s: 9170x real time per station

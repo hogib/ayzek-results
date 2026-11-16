@@ -1,0 +1,109 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2024-07-02 19:24:35.21 to 22:24:32.63 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+ALARM    #1   19:34:46.53  earthquake detected by KNSS, SIVA  (AFAD MLh 4.6 at 19:34:33.00, 13.5 s ago)
+PLOC     #1   19:34:46.57  P times locate it at 34.837N 24.865E +-393 km, origin 19:34:36.19, rms 0.00 s from 3 stations
+PLOC     #1   19:34:46.95  P times locate it at 34.708N 24.757E +-223 km, origin 19:34:33.63, rms 0.25 s from 4 stations
+PLOC     #1   19:34:52.46  P times locate it at 34.725N 24.767E +-55 km, origin 19:34:33.92, rms 0.22 s from 5 stations
+PLOC     #1   19:34:52.91  P times locate it at 34.727N 24.769E +-50 km, origin 19:34:33.97, rms 0.21 s from 6 stations
+PLOC     #1   19:34:54.65  P times locate it at 34.745N 24.776E +-25 km, origin 19:34:34.25, rms 0.21 s from 7 stations
+PLOC     #1   19:34:55.92  P times locate it at 34.726N 24.779E +-23 km, origin 19:34:33.95, rms 0.22 s from 8 stations
+PDMAG    #1   19:35:40.83  Pd magnitude M4.7 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 8 stations (8 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   19:35:40.83  located at 35.325N 24.738E, origin 19:34:34.20, rms 0.13 s from 2 stations
+PDMAG    #1   19:35:46.63  Pd magnitude M4.9 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 8 stations (8 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   19:35:46.63  located at 34.694N 24.820E, origin 19:34:34.52, rms 0.70 s from 3 stations
+LOCATE   #1   19:35:46.97  located at 34.685N 24.817E, origin 19:34:34.32, rms 0.61 s from 4 stations
+LOCATE   #1   19:35:48.62  located at 34.700N 24.837E, origin 19:34:34.67, rms 0.81 s from 5 stations
+ALARM    #2   20:43:41.32  earthquake detected by PFKS, SIVA  (AFAD MLh 2.9 at 20:43:29.00, 12.3 s ago)
+PLOC     #2   20:43:41.88  P times locate it at 34.631N 24.741E +-309 km, origin 20:43:27.48, rms 0.00 s from 3 stations
+PLOC     #2   20:43:48.14  P times locate it at 34.737N 24.797E +-64 km, origin 20:43:29.28, rms 0.18 s from 4 stations
+PDMAG    #2   20:44:35.59  Pd magnitude M2.3 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #2   20:44:35.59  located at 35.320N 24.733E, origin 20:43:28.81, rms 0.23 s from 2 stations
+PDMAG    #2   20:44:42.24  Pd magnitude M2.7 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #2   20:44:42.24  located at 34.704N 24.820E, origin 20:43:29.27, rms 0.70 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2024-07-02 19:24:35.21 to 22:24:32.63 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.9 earthquake at 34.700N 24.837E, origin 19:34:34.67 UTC
+  alarm      19:34:46.53 UTC by KNSS, SIVA; later CHAN, IMMV, IPPL, KNDR, PFKS, STIA
+  Pd magn.   M4.7 54.3 s after the alarm, M4.9 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 8 stations (8 above noise)
+  location   rms 0.81 s from 5 stations, first 54.3 s after the alarm (P and S picks)
+  P loc.     34.726N 24.779E +-23 km from 8 stations, first 0.0 s after the alarm, epicentre 7.1 km off
+  AFAD       MLh 4.6 at 19:34:33.00 UTC: alarm 13.5 s after origin, Pd magnitude +0.3, epicentre 6.1 km off, origin +1.7 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 47 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             SIVA          40 km   19:34:44.49 UTC (picked)      -2.0 s  after S
+             PFKS          75 km   19:34:55.59 UTC (picked)      +9.1 s  before S
+             KNSS          80 km   19:34:55.84 UTC (predicted)    +9.3 s  before S
+             IPPL          82 km   19:34:56.42 UTC (predicted)    +9.9 s  before S
+             IMMV         115 km   19:35:08.59 UTC (picked)     +22.1 s  before S
+             CHAN         117 km   19:35:07.73 UTC (picked)     +21.2 s  before S
+             KNDR         124 km   19:35:12.26 UTC (picked)     +25.7 s  before S
+             STIA         133 km   19:35:11.05 UTC (predicted)   +24.5 s  before S
+
+Event #2: detected M2.7 earthquake at 34.704N 24.820E, origin 20:43:29.27 UTC
+  alarm      20:43:41.32 UTC by PFKS, SIVA; later IMMV, IPPL
+  Pd magn.   M2.3 54.3 s after the alarm, M2.7 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 8 stations (1 above noise)
+  location   rms 0.70 s from 3 stations, first 54.3 s after the alarm (P and S picks)
+  P loc.     34.737N 24.797E +-64 km from 4 stations, first 0.6 s after the alarm, epicentre 3.5 km off
+  AFAD       MLh 2.9 at 20:43:29.00 UTC: alarm 12.3 s after origin, Pd magnitude -0.3, epicentre 2.1 km off, origin +0.3 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 41 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             SIVA          33 km   20:43:38.89 UTC (picked)      -2.4 s  after S
+             PFKS          69 km   20:43:50.35 UTC (picked)      +9.0 s  before S
+             KNSS          72 km   20:43:49.91 UTC (predicted)    +8.6 s  before S
+             IPPL          77 km   20:43:51.35 UTC (predicted)   +10.0 s  before S
+             IMMV         113 km   20:44:03.00 UTC (picked)     +21.7 s  before S
+             CHAN         114 km   20:44:01.75 UTC (predicted)   +20.4 s  before S
+             KNDR         124 km   20:44:04.52 UTC (predicted)   +23.2 s  before S
+             STIA         127 km   20:44:05.36 UTC (predicted)   +24.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     6
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        2  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km                5
+    detected                              2   40%
+    detected before S                     2   40%
+    missed                                3   60%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+    M 2-3                   3          1        2
+    M 4-5                   1          1        0
+
+  Correct alarms
+    alarm after origin time             median 12.9 s
+    Pd magnitude error                  mean 0.27 units, bias +0.01, 2 events
+    located                             2 of 2
+    P-time located                      2 of 2, median epicentre error 5.3 km, median 0.3 s after the alarm
+    alarm before the S wave             at 14 of 16 station arrivals, median warning 20.8 s, max 25.7 s
+
+  Missed AFAD events
+    19:47:47.00 UTC  MLh 2.3    63 km from the network centre
+    20:17:01.00 UTC  MLh 2.3    54 km from the network centre
+    20:22:57.00 UTC  MLh 1.6    87 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/runs/fp_eqquiet/greece_now_seq013.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     21588         0        1      1         7      0.045 (0.938)       142
+  IMMV     21588         0        3      3        21      0.037 (0.681)       151
+  IPPL     21588         0        2      2        14      0.044 (0.962)       132
+  KNDR     21588         0        1      1         7      0.049 (0.794)       142
+  KNSS     21588         0        1      1         7      0.044 (0.946)       149
+  PFKS     21588         0        3      3        21      0.041 (0.836)       140
+  SIVA     21588         0        5      5        35      0.040 (0.413)       140
+  STIA     21588         0        2      2        14      0.041 (0.964)       179
+  Pd: 126 values sent
+  172704 windows in 1.9 s: 5653x real time per station

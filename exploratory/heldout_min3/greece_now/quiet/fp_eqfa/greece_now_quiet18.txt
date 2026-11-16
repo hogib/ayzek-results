@@ -1,0 +1,62 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-02-13 06:01:02.17 to 12:01:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   10:27:41.93  earthquake detected by IMMV, KNDR, KNSS
+PLOC     #1   10:27:41.93  P times locate it at 35.563N 23.342E +-244 km, origin 10:27:12.71, rms 0.48 s from 3 stations
+PDMAG    #1   10:28:16.58  Pd magnitude M3.4 ± 0.3 (M<4 98%, 4-5.5 2%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   10:28:16.58  located at 34.973N 23.968E, origin 10:27:12.97, rms 0.04 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-02-13 06:29:50.00 to 12:01:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M3.4 earthquake at 34.973N 23.968E, origin 10:27:12.97 UTC
+  alarm      10:27:41.93 UTC by IMMV, KNDR, KNSS
+  Pd magn.   M3.4 34.6 s after the alarm, M3.4 ± 0.3 (M<4 98%, 4-5.5 2%, M>=5.5 0%) final from 8 stations (1 above noise)
+  location   rms 0.04 s from 2 stations, first 34.6 s after the alarm (P and S picks)
+  P loc.     35.563N 23.342E +-244 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 101 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KNDR          43 km   10:27:25.53 UTC (picked)     -16.4 s  after S
+             IMMV          54 km   10:27:28.70 UTC (picked)     -13.2 s  after S
+             CHAN          61 km   10:27:30.68 UTC (predicted)   -11.3 s  after S
+             IPPL          61 km   10:27:30.75 UTC (predicted)   -11.2 s  after S
+             SIVA          77 km   10:27:35.17 UTC (predicted)    -6.8 s  after S
+             KNSS         116 km   10:27:46.30 UTC (predicted)    +4.4 s  before S
+             PFKS         137 km   10:27:52.31 UTC (predicted)   +10.4 s  before S
+             STIA         195 km   10:28:08.71 UTC (predicted)   +26.8 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    78
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:27:41.93 UTC  #1  M3.4, located 34.97N 23.97E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/fp_eqfa/greece_now_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43174         2        7      7        49      0.025 (0.036)        75
+  IMMV     43189         0        2      2        14      0.021 (0.032)        73
+  IPPL     43189         0        3      3        21      0.027 (0.049)        76
+  KNDR     43189         0       14     14        98      0.021 (0.045)        72
+  KNSS     43189         0        8      8        56      0.024 (0.015)        77
+  PFKS     43176         2        5      5        35      0.023 (0.016)        77
+  SIVA     43189         0       28     28       196      0.022 (0.007)        76
+  STIA     43189         0       22     22       154      0.023 (0.011)        73
+  Pd: 623 values sent
+  345484 windows in 3.6 s: 5565x real time per station

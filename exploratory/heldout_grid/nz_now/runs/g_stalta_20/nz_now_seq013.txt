@@ -1,0 +1,44 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 20 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2024-04-02 05:29:49.17 to 08:29:44.90 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-04-02 05:29:49.17 to 08:29:44.90 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm     0
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                4
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                4  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   2          0        2
+    M 2-3                   1          0        1
+    M 4-5                   1          0        1
+
+  Missed AFAD events
+    05:39:45.00 UTC  MLv 4.5    51 km from the network centre
+    05:50:22.00 UTC  MLv 2.4    50 km from the network centre
+    06:08:06.00 UTC  MLv 1.6    51 km from the network centre
+    06:24:42.00 UTC  MLv 1.3    49 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_stalta_20/nz_now_seq013.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      21588         0        0      0         0      0.000 (0.000)         0
+  FOZ      21588         0        0      0         0      0.000 (0.000)         0
+  RPZ      21588         0        0      0         0      0.001 (0.000)         0
+  WHSZ     21588         0        0      0         0      0.001 (0.000)         0
+  WVZ      21588         0        0      0         0      0.000 (0.000)         0
+  Pd: 0 values sent
+  107940 windows in 0.1 s: 104298x real time per station

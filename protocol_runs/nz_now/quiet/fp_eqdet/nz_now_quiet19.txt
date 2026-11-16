@@ -1,0 +1,44 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2025-12-22 05:52:04.20 to 11:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   09:47:37.02  earthquake detected by CVZ, FOZ
+ALARM    #2   10:39:21.08  earthquake detected by FOZ, WVZ
+PLOC     #2   10:39:21.29  P times locate it at -40.199N 167.690E +-817 km, origin 10:38:12.30, rms 0.01 s from 3 stations
+PDMAG    #2   10:39:24.98  Pd magnitude M4.3 ± 0.2 (M<4 2%, 4-5.5 98%, M>=5.5 0%) from 3 stations (3 above noise), windows up to 4 s, distances from the P-time location
+PLOC     #2   10:39:24.98  P times locate it at -43.637N 170.280E +-20 km, origin 10:39:13.95, rms 0.02 s from 3 stations, left out WVZ
+PDMAG    #2   10:39:26.00  Pd magnitude M4.2 ± 0.2 (M<4 7%, 4-5.5 93%, M>=5.5 0%) from 4 stations (3 above noise), windows up to 5 s, distances from the P-time location
+PLOC     #2   10:39:29.19  P times locate it at -43.700N 170.275E +-12 km, origin 10:39:13.33, rms 0.47 s from 4 stations, left out WVZ
+PDMAG    #2   10:39:30.00  Pd magnitude M4.3 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #2   10:39:35.00  Pd magnitude M4.2 ± 0.1 (M<4 2%, 4-5.5 98%, M>=5.5 0%) from 5 stations (5 above noise), windows up to 10 s, distances from the P-time location
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-12-22 06:20:50.00 to 11:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:47:37.02 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #2: detected M4.2 earthquake, not located
+  alarm      10:39:21.08 UTC by FOZ, WVZ; later CVZ, RPZ, WHSZ
+  Pd magn.   M4.3 3.9 s after the alarm, M4.2 ± 0.1 (M<4 2%, 4-5.5 98%, M>=5.5 0%) final from 5 stations (5 above noise)
+  P loc.     -43.700N 170.275E +-12 km from 4 stations, first 0.2 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    30
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/quiet/fp_eqdet/nz_now_quiet19.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        9      9        63      0.034 (0.530)       145
+  FOZ      43189         0       15     15       105      0.034 (0.068)       129
+  RPZ      43189         0        5      5        35      0.036 (0.690)       134
+  WHSZ     43189         0        4      4        28      0.038 (0.071)       152
+  WVZ      43189         0        4      4        28      0.037 (0.055)       141
+  Pd: 259 values sent
+  215945 windows in 4.2 s: 4677x real time per station

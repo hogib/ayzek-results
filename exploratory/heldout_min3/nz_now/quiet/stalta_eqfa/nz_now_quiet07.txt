@@ -1,0 +1,33 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-04-23 19:27:03.49 to 01:27:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   00:45:43.95  earthquake detected by RPZ, WHSZ, WVZ
+PLOC     #1   00:45:43.95  P times locate it at -43.230N 171.182E +-299 km, origin 00:45:33.27, rms 0.01 s from 3 stations
+PLOC     #1   00:45:47.85  P times locate it at -42.346N 173.901E +-151 km, origin 00:44:54.54, rms 1.24 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-04-23 19:55:50.00 to 01:27:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      00:45:43.95 UTC by RPZ, WHSZ, WVZ; later CVZ
+  P loc.     -42.346N 173.901E +-151 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     6
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/nz_now.partial/quiet/stalta_eqfa/nz_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        1      1         7      0.001 (0.000)        89
+  FOZ      43189         0        1      1         7      0.002 (0.000)        78
+  RPZ      43189         0        1      1         7      0.002 (0.000)        89
+  WHSZ     43189         0        4      4        28      0.001 (0.000)        77
+  WVZ      43189         0        3      3        21      0.001 (0.000)        94
+  Pd: 70 values sent
+  215945 windows in 0.9 s: 22568x real time per station

@@ -1,0 +1,66 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:58:22.50  earthquake detected by LKD2, TETR
+PLOC     #1   10:58:23.00  P times locate it at 39.169N 21.012E +-407 km, origin 10:58:06.61, rms 0.00 s from 3 stations
+PLOC     #1   10:58:24.00  P times locate it at 39.128N 21.082E +-415 km, origin 10:58:06.69, rms 0.09 s from 4 stations
+PLOC     #1   10:58:27.00  P times locate it at 39.218N 20.949E +-354 km, origin 10:58:06.41, rms 0.17 s from 5 stations
+PLOC     #1   10:58:28.00  P times locate it at 39.269N 20.902E +-58 km, origin 10:58:05.90, rms 0.36 s from 6 stations
+LOCATE   #1   10:59:11.50  located at 38.269N 23.586E, origin 10:57:33.35, rms 0.27 s from 2 stations
+LOCATE   #1   10:59:15.50  located at 40.910N 19.889E, origin 10:57:33.91, rms 0.14 s from 2 stations, left out TSLK TETR
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 40.910N 19.889E, origin 10:57:33.91 UTC
+  alarm      10:58:22.50 UTC by LKD2, TETR; later EVR, NYDR, PDO, TSLK
+  location   rms 0.14 s from 2 stations, first 49.0 s after the alarm (P and S picks)
+  P loc.     39.269N 20.902E +-58 km from 6 stations, first 0.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 170 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             TETR         210 km   10:58:40.26 UTC (picked)     +17.8 s  before S
+             TSLK         241 km   10:58:54.62 UTC (picked)     +32.1 s  before S
+             LKD2         245 km   10:58:43.92 UTC (predicted)   +21.4 s  before S
+             AMPL         248 km   10:58:44.88 UTC (predicted)   +22.4 s  before S
+             NYDR         254 km   10:58:46.42 UTC (picked)     +23.9 s  before S
+             EVR          276 km   10:58:52.82 UTC (picked)     +30.3 s  before S
+             PDO          280 km   10:58:53.91 UTC (predicted)   +31.4 s  before S
+             PVO          291 km   10:58:57.07 UTC (predicted)   +34.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    12
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:58:22.50 UTC  #1  no magnitude, located 40.91N 19.89E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_eqt_0p4/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0        5      5        35      0.002 (0.001)        44
+  EVR      43189         0        1      1         7      0.002 (0.001)        68
+  LKD2     43171         2        1      1         7      0.002 (0.001)        58
+  NYDR     43189         0        2      2         0      0.001 (0.001)        63
+  PDO      43189         0        2      2        14      0.002 (0.001)        50
+  PVO      43189         0        0      0         0      0.002 (0.001)         0
+  TETR     43189         0        4      4        28      0.001 (0.001)        46
+  TSLK     43189         0        3      3         0      0.003 (0.001)        53
+  Pd: 91 values sent
+  P time from an STA/LTA onset for 11 of 18 triggers (7 from the window start)
+  onset from a FilterPicker pick for 11 of 18 triggers (P-time location and Pd)
+  345494 windows in 2.0 s: 10121x real time per station

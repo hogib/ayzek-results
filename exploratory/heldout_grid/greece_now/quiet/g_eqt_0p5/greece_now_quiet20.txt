@@ -1,0 +1,55 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:08:00.00  earthquake detected by MRTH, PTL
+ALARM    #2   08:49:32.00  earthquake detected by MDRA, MRTH
+ALARM    #3   09:59:21.00  earthquake detected by MDRA, VILL
+ALARM    #4   11:56:16.00  earthquake detected by MDRA, PTL
+ALARM    #5   12:36:15.50  earthquake detected by THIV, VILL
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:08:00.00 UTC by MRTH, PTL
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:49:32.00 UTC by MDRA, MRTH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      09:59:21.00 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      11:56:16.00 UTC by MDRA, PTL
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      12:36:15.50 UTC by THIV, VILL
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    37
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_eqt_0p5/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.002 (0.001)         0
+  KARY     43189         0        0      0         0      0.001 (0.002)         0
+  LKR      43189         0        0      0         0      0.002 (0.001)         0
+  MDRA     43189         0        3      3        21      0.002 (0.003)        53
+  MRTH     43189         0        3      3         0      0.001 (0.001)        43
+  PTL      43189         0        2      2        14      0.002 (0.001)        52
+  THIV     43189         0        1      1         7      0.002 (0.001)        69
+  VILL     43189         0       38     38       266      0.002 (0.001)        38
+  Pd: 308 values sent
+  P time from an STA/LTA onset for 13 of 47 triggers (34 from the window start)
+  onset from a FilterPicker pick for 10 of 47 triggers (P-time location and Pd)
+  345512 windows in 3.1 s: 6398x real time per station

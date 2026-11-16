@@ -1,0 +1,51 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-20 16:25:02.09 to 22:25:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   20:55:19.35  earthquake detected by GAZ, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-20 16:53:50.00 to 22:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:55:19.35 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    70
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                3
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                3  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   3          0        3
+
+  Missed AFAD events
+    17:48:50.00 UTC  ml 1.5   209 km from the network centre
+    20:48:50.00 UTC  ml 1.9   249 km from the network centre
+    21:07:39.00 UTC  ml 1.8   250 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    20:55:19.35 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_8/ko_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43065        12        1      1         0      0.001 (0.000)        37
+  DYBB     43045        14        0      0         0      0.001 (0.000)         0
+  GAZ      43189         0       28     28       196      0.001 (0.000)        31
+  MAZI     43156         3        1      1         0      0.001 (0.003)        26
+  MLTY     43189         0        5      5        35      0.001 (0.001)        32
+  NURH     43189         0        7      7         0      0.001 (0.003)        29
+  SVRC     43189         0       30     30       210      0.001 (0.000)        24
+  Pd: 441 values sent
+  302022 windows in 1.0 s: 19552x real time per station

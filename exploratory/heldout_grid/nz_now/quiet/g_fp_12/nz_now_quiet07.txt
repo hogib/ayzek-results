@@ -1,0 +1,43 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 12/10, Z + picker + Pd magnitude, replay 2023-04-23 19:27:03.49 to 01:27:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   20:10:34.11  earthquake detected by RPZ, WHSZ
+ALARM    #2   21:07:29.28  earthquake detected by CVZ, RPZ
+ALARM    #3   00:45:44.02  earthquake detected by WHSZ, WVZ
+PLOC     #3   00:45:44.76  P times locate it at -43.375N 170.837E +-21 km, origin 00:45:37.28, rms 0.02 s from 3 stations
+PLOC     #3   00:45:52.35  P times locate it at -43.496N 170.721E +-24 km, origin 00:45:36.47, rms 1.42 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-04-23 19:55:50.00 to 01:27:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:10:34.11 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      21:07:29.28 UTC by CVZ, RPZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      00:45:44.02 UTC by WHSZ, WVZ; later CVZ, RPZ
+  P loc.     -43.496N 170.721E +-24 km from 4 stations, first 0.7 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    29
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_fp_12/nz_now_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        6      6        42      0.013 (0.025)        37
+  FOZ      43189         0        3      3        21      0.013 (0.025)        34
+  RPZ      43189         0        6      6        42      0.012 (0.038)        37
+  WHSZ     43189         0       14     14        98      0.013 (0.047)        35
+  WVZ      43189         0        8      8        56      0.013 (0.021)        40
+  Pd: 259 values sent
+  215945 windows in 1.3 s: 15041x real time per station

@@ -1,0 +1,46 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 6 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2024-06-03 03:08:04.44 to 09:08:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:01:45.51  earthquake detected by WHSZ, WVZ
+PLOC     #1   07:01:51.05  P times locate it at -42.084N 170.380E +-363 km, origin 07:01:23.07, rms 0.00 s from 3 stations
+ALARM    #2   08:36:50.86  earthquake detected by RPZ, WVZ
+PLOC     #2   08:36:57.43  P times locate it at -43.474N 169.972E +-364 km, origin 08:36:35.59, rms 0.02 s from 3 stations
+ALARM    #3   08:38:31.55  earthquake detected by RPZ, WHSZ
+PLOC     #3   08:38:39.52  P times locate it at -43.382N 171.475E +-202 km, origin 08:38:16.94, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-06-03 03:36:50.00 to 09:08:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:01:45.51 UTC by WHSZ, WVZ; later FOZ
+  P loc.     -42.084N 170.380E +-363 km from 3 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:36:50.86 UTC by RPZ, WVZ; later CVZ
+  P loc.     -43.474N 169.972E +-364 km from 3 stations, first 6.6 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      08:38:31.55 UTC by RPZ, WHSZ; later FOZ
+  P loc.     -43.382N 171.475E +-202 km from 3 stations, first 8.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    12
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_6/nz_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        5      5        35      0.001 (0.000)        42
+  FOZ      43189         0        4      4        28      0.001 (0.000)        41
+  RPZ      43189         0        3      3        21      0.001 (0.000)        37
+  WHSZ     43189         0        4      4        28      0.001 (0.001)        39
+  WVZ      43189         0        5      5        35      0.001 (0.001)        35
+  Pd: 147 values sent
+  215945 windows in 0.4 s: 44968x real time per station

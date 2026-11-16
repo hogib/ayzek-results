@@ -1,0 +1,56 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-01-17 07:56:03.92 to 13:56:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:48:02.50  earthquake detected by FOZ, WHSZ
+LOCATE   #1   08:48:54.50  located at -43.441N 170.046E, origin 08:47:56.51, rms 0.43 s from 2 stations
+ALARM    #2   10:14:32.50  earthquake detected by CVZ, WVZ
+ALARM    #3   10:57:52.00  earthquake detected by CVZ, WHSZ
+ALARM    #4   13:47:47.00  earthquake detected by FOZ, WHSZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2026-01-17 08:24:50.00 to 13:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at -43.441N 170.046E, origin 08:47:56.51 UTC
+  alarm      08:48:02.50 UTC by FOZ, WHSZ
+  location   rms 0.43 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 18 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             FOZ           21 km   08:48:02.76 UTC (picked)      +0.3 s  before S
+             WHSZ          34 km   08:48:06.62 UTC (picked)      +4.1 s  before S
+             WVZ           69 km   08:48:16.50 UTC (predicted)   +14.0 s  before S
+             RPZ           87 km   08:48:21.44 UTC (predicted)   +18.9 s  before S
+             CVZ          130 km   08:48:33.75 UTC (predicted)   +31.3 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      10:14:32.50 UTC by CVZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      10:57:52.00 UTC by CVZ, WHSZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      13:47:47.00 UTC by FOZ, WHSZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    80
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_phasenet_0p4/nz_now_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        8      8        56      0.002 (0.001)        34
+  FOZ      43189         0       24     24       168      0.002 (0.003)        30
+  RPZ      43189         0        4      4        28      0.001 (0.001)        47
+  WHSZ     43189         0       49     49       343      0.001 (0.001)        38
+  WVZ      43189         0        4      4        28      0.002 (0.002)        37
+  Pd: 623 values sent
+  P time from an STA/LTA onset for 31 of 89 triggers (58 from the window start)
+  onset from a FilterPicker pick for 18 of 89 triggers (P-time location and Pd)
+  215945 windows in 3.1 s: 6467x real time per station

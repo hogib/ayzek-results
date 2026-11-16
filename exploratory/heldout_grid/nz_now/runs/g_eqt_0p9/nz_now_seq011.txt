@@ -1,0 +1,80 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-02-26 08:11:17.16 to 11:11:12.83 UTC at full speed
+ayzek    catalogue: 8 events in the replay span
+ALARM    #1   08:21:34.00  earthquake detected by CVZ, RPZ  (AFAD MLv 5.1 at 08:21:13.00, 21.0 s ago)
+PDMAG    #1   08:21:37.00  Pd magnitude M4.6 ± 0.2 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 4 stations (2 above noise), windows up to 10 s, distances from the P-time location
+PLOC     #1   08:21:37.00  P times locate it at -43.774N 171.102E +-14 km, origin 08:21:17.83, rms 1.39 s from 3 stations
+PDMAG    #1   08:21:37.00  Pd magnitude M4.6 ± 0.2 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 5 stations (2 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   08:21:38.00  Pd magnitude M4.6 ± 0.2 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 4 stations (2 above noise), windows up to 10 s, distances from the P-time location
+PLOC     #1   08:21:38.00  P times locate it at -43.776N 171.013E +-11 km, origin 08:21:17.63, rms 1.45 s from 4 stations
+PDMAG    #1   08:21:38.00  Pd magnitude M4.6 ± 0.2 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 5 stations (3 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   08:22:22.50  Pd magnitude M4.8 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 5 stations (4 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   08:22:22.50  located at -43.429N 171.210E, origin 08:21:11.93, rms 0.08 s from 2 stations
+LOCATE   #1   08:22:26.50  located at -43.497N 171.435E, origin 08:21:11.93, rms 0.93 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-02-26 08:11:17.16 to 11:11:12.83 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.9 earthquake at -43.497N 171.435E, origin 08:21:11.93 UTC
+  alarm      08:21:34.00 UTC by CVZ, RPZ; later FOZ, WVZ
+  Pd magn.   M4.6 3.0 s after the alarm, M4.9 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 5 stations (4 above noise)
+  location   rms 0.93 s from 3 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     -43.776N 171.013E +-11 km from 4 stations, first 3.0 s after the alarm, epicentre 35.1 km off
+  AFAD       MLv 5.1 at 08:21:13.00 UTC: alarm 21.0 s after origin, Pd magnitude -0.2, epicentre 13.1 km off, origin -1.1 s
+  pre-S      1 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 73 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             RPZ           28 km   08:21:22.06 UTC (picked)     -11.9 s  after S
+             WVZ           66 km   08:21:32.04 UTC (predicted)    -2.0 s  after S
+             WHSZ          75 km   08:21:34.47 UTC (predicted)    +0.5 s  before S
+             CVZ           98 km   08:21:42.78 UTC (picked)      +8.8 s  before S
+             FOZ          118 km   08:21:50.62 UTC (picked)     +16.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     7
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        1  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km                7
+    detected                              1   14%
+    detected before S                     0    0%
+    missed                                6   86%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   4          0        4
+    M 2-3                   2          0        2
+    M 5+                    1          1        0
+
+  Correct alarms
+    alarm after origin time             median 21.0 s
+    Pd magnitude error                  mean 0.22 units, bias -0.22, 1 events
+    located                             1 of 1
+    P-time located                      1 of 1, median epicentre error 35.1 km, median 3.0 s after the alarm
+    alarm before the S wave             at 3 of 5 station arrivals, median warning 8.8 s, max 16.6 s
+
+  Missed AFAD events
+    08:26:21.00 UTC  MLv 2.1    55 km from the network centre
+    08:33:28.00 UTC  MLv 1.8    55 km from the network centre
+    08:36:28.00 UTC  MLv 2.3    55 km from the network centre
+    08:43:20.00 UTC  MLv 1.5    55 km from the network centre
+    09:18:30.00 UTC  MLv 1.7    55 km from the network centre
+    09:41:06.00 UTC  MLv 1.5    55 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_eqt_0p9/nz_now_seq011.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      21588         0        1      1         7      0.001 (0.001)        31
+  FOZ      21588         0        1      1         7      0.001 (0.003)        58
+  RPZ      21588         0        8      8        56      0.001 (0.003)        36
+  WHSZ     21588         0        0      0         0      0.001 (0.001)         0
+  WVZ      21588         0        1      1         7      0.001 (0.003)        45
+  Pd: 77 values sent
+  P time from an STA/LTA onset for 8 of 11 triggers (3 from the window start)
+  onset from a FilterPicker pick for 11 of 11 triggers (P-time location and Pd)
+  107940 windows in 0.9 s: 12355x real time per station

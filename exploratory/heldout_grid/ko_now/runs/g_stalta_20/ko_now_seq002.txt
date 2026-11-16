@@ -1,0 +1,49 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 20 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-24 07:31:00.14 to 10:30:58.06 UTC at full speed
+ayzek    catalogue: 8 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 07:31:00.14 to 10:30:58.06 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm     0
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                7
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                7  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   5          0        5
+    M 2-3                   1          0        1
+    M 5+                    1          0        1
+
+  Missed AFAD events
+    07:40:58.00 UTC  mw 5.3    60 km from the network centre
+    07:58:12.00 UTC  ml 1.5   249 km from the network centre
+    07:59:37.00 UTC  ml 2.5    57 km from the network centre
+    08:56:38.00 UTC  ml 1.0    61 km from the network centre
+    09:12:16.00 UTC  ml 1.6   138 km from the network centre
+    09:30:53.00 UTC  ml 1.7    92 km from the network centre
+    09:50:31.00 UTC  ml 1.0   174 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/runs/g_stalta_20/ko_now_seq002.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     21588         0        0      0         0      0.001 (0.000)         0
+  DYBB     21588         0        0      0         0      0.001 (0.000)         0
+  GAZ      21588         0        0      0         0      0.001 (0.000)         0
+  MAZI     21588         0        0      0         0      0.001 (0.000)         0
+  MLTY     21588         0        0      0         0      0.001 (0.000)         0
+  NURH     21588         0        0      0         0      0.001 (0.000)         0
+  SVRC     21588         0        0      0         0      0.001 (0.000)         0
+  Pd: 0 values sent
+  151116 windows in 0.1 s: 75588x real time per station

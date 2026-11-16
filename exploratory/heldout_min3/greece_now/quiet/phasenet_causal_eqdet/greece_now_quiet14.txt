@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-11-19 03:20:02.43 to 09:20:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:03:23.50  earthquake detected by IMMV, PFKS, SIVA
+PLOC     #1   04:03:23.50  P times locate it at 34.964N 25.060E +-177 km, origin 04:03:00.66, rms 0.00 s from 3 stations
+LOCATE   #1   04:03:59.50  located at 34.810N 25.043E, origin 04:02:59.30, rms 0.03 s from 2 stations
+pick     PFKS  picker window at 08:27:37.00 crosses a gap, skipped
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-19 03:48:50.00 to 09:20:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 34.810N 25.043E, origin 04:02:59.30 UTC
+  alarm      04:03:23.50 UTC by IMMV, PFKS, SIVA
+  location   rms 0.03 s from 2 stations, first 36.0 s after the alarm (P and S picks)
+  P loc.     34.964N 25.060E +-177 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 84 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          31 km   04:03:08.64 UTC (picked)     -14.9 s  after S
+             PFKS          47 km   04:03:13.06 UTC (picked)     -10.4 s  after S
+             KNSS          56 km   04:03:15.65 UTC (predicted)    -7.8 s  after S
+             IPPL          80 km   04:03:22.27 UTC (predicted)    -1.2 s  after S
+             STIA         105 km   04:03:29.42 UTC (predicted)    +5.9 s  before S
+             CHAN         120 km   04:03:33.80 UTC (predicted)   +10.3 s  before S
+             IMMV         121 km   04:03:33.88 UTC (predicted)   +10.4 s  before S
+             KNDR         137 km   04:03:38.68 UTC (predicted)   +15.2 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    51
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:03:23.50 UTC  #1  no magnitude, located 34.81N 25.04E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/phasenet_causal_eqdet/greece_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43162         3        6      6        42      0.002 (0.001)        34
+  IMMV     43189         0        3      3        21      0.001 (0.001)        38
+  IPPL     43189         0        7      7        49      0.001 (0.001)        34
+  KNDR     43189         0        9      9        63      0.002 (0.001)        28
+  KNSS     43189         0        1      1         7      0.003 (0.001)        41
+  PFKS     43150         5       16     15       111      0.002 (0.001)        27
+  SIVA     43189         0       14     14        98      0.001 (0.001)        30
+  STIA     43189         0        3      3        21      0.002 (0.001)        36
+  Pd: 412 values sent
+  P time from an STA/LTA onset for 24 of 59 triggers (35 from the window start)
+  onset from a FilterPicker pick for 11 of 59 triggers (P-time location and Pd)
+  345446 windows in 2.0 s: 9775x real time per station

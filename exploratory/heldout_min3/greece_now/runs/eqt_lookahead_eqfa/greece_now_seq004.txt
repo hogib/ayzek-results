@@ -1,0 +1,43 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-04-26 19:50:39.14 to 22:50:36.29 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-04-26 19:50:39.14 to 22:50:36.29 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm     3
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                2
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                2  100%
+
+  By magnitude      AFAD events   detected   missed
+    M 2-3                   1          0        1
+    M 5+                    1          0        1
+
+  Missed AFAD events
+    20:00:36.00 UTC  MLh 5.2    11 km from the network centre
+    21:43:14.00 UTC  MLh 2.5   208 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/runs/eqt_lookahead_eqfa/greece_now_seq004.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      21588         0        0      0         0      0.001 (0.001)         0
+  NISR     21588         0        0      0         0      0.001 (0.000)         0
+  NISR2    21588         0        0      0         0      0.001 (0.001)         0
+  STIA     21588         0        3      3        21      0.001 (0.002)        23
+  THERA    21588         0        0      0         0      0.001 (0.008)         0
+  Pd: 21 values sent
+  P time from an STA/LTA onset for 2 of 3 triggers (1 from the window start)
+  onset from a FilterPicker pick for 2 of 3 triggers (P-time location and Pd)
+  107940 windows in 0.6 s: 18631x real time per station

@@ -1,0 +1,43 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-06-03 03:08:04.44 to 09:08:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:36:53.00  earthquake detected by RPZ, WVZ
+PLOC     #1   08:36:57.00  P times locate it at -43.544N 169.937E +-355 km, origin 08:36:34.09, rms 0.01 s from 3 stations
+PLOC     #1   08:37:03.00  P times locate it at -42.511N 173.753E +-161 km, origin 08:36:05.19, rms 1.07 s from 4 stations
+ALARM    #2   08:38:28.50  earthquake detected by RPZ, WHSZ
+PLOC     #2   08:38:38.00  P times locate it at -41.581N 173.812E +-357 km, origin 08:37:30.61, rms 0.00 s from 3 stations
+PLOC     #2   08:38:40.00  P times locate it at -42.130N 173.240E +-209 km, origin 08:37:43.45, rms 0.50 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-06-03 03:36:50.00 to 09:08:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:36:53.00 UTC by RPZ, WVZ; later CVZ, FOZ
+  P loc.     -42.511N 173.753E +-161 km from 4 stations, first 4.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:38:28.50 UTC by RPZ, WHSZ; later CVZ, FOZ
+  P loc.     -42.130N 173.240E +-209 km from 4 stations, first 9.5 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    23
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/nz_now/quiet/g_instant_0p85/nz_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        4      4        28      0.001 (0.001)        33
+  FOZ      43189         0        3      3        21      0.001 (0.001)        20
+  RPZ      43189         0        9      9        63      0.001 (0.003)        34
+  WHSZ     43189         0       12     12        84      0.001 (0.001)        44
+  WVZ      43189         0        3      3        21      0.001 (0.003)        28
+  Pd: 217 values sent
+  P time from an STA/LTA onset for 19 of 31 triggers (12 from the window start)
+  onset from a FilterPicker pick for 6 of 31 triggers (P-time location and Pd)
+  215945 windows in 1.6 s: 12121x real time per station

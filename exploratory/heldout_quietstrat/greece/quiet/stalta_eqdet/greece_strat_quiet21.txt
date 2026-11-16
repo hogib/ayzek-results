@@ -1,0 +1,114 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-11-12 04:56:03.35 to 10:56:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   05:34:02.36  earthquake detected by KOKK, SOH
+ALARM    #2   06:07:16.53  earthquake detected by KOKK, SOH
+ALARM    #3   06:08:22.24  earthquake detected by PLG, THAS
+ALARM    #4   06:10:09.77  earthquake detected by KAVA, SOH
+PLOC     #4   06:10:10.17  P times locate it at 42.138N 23.591E +-218 km, origin 06:09:44.98, rms 0.00 s from 3 stations
+PLOC     #4   06:10:11.42  P times locate it at 43.908N 22.747E +-253 km, origin 06:09:10.66, rms 0.73 s from 4 stations
+PLOC     #4   06:10:13.39  P times locate it at 43.371N 22.733E +-234 km, origin 06:09:19.47, rms 1.49 s from 5 stations
+PDMAG    #4   06:10:17.60  Pd magnitude M3.3 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 6 stations (5 above noise), windows up to 7 s, distances from the P-time location
+PLOC     #4   06:10:17.60  P times locate it at 40.850N 23.913E +-13 km, origin 06:10:00.77, rms 1.14 s from 5 stations, left out KOKK
+PDMAG    #4   06:10:19.00  Pd magnitude M3.4 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 7 stations (7 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #4   06:10:28.00  Pd magnitude M3.3 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 7 stations (7 above noise), windows up to 10 s, distances from the P-time location
+ALARM    #5   06:59:23.36  earthquake detected by HORT, KOKK
+ALARM    #6   07:17:43.44  earthquake detected by OUR, PLG
+PLOC     #6   07:17:45.33  P times locate it at 40.218N 24.073E +-383 km, origin 07:17:33.68, rms 0.43 s from 3 stations
+ALARM    #7   07:17:59.51  earthquake detected by SOH, THAS
+PLOC     #7   07:17:59.66  P times locate it at 37.708N 24.836E +-277 km, origin 07:16:58.06, rms 0.33 s from 3 stations
+LOCATE   #6   07:18:37.93  located at 40.323N 24.127E, origin 07:17:33.33, rms 0.16 s from 2 stations
+LOCATE   #6   07:18:39.82  located at 40.183N 24.133E, origin 07:17:32.12, rms 0.80 s from 3 stations
+ALARM    #8   07:26:01.60  earthquake detected by OUR, PLG
+ALARM    #9   08:42:51.86  earthquake detected by HORT, SOH
+ALARM    #10  09:33:37.10  earthquake detected by KAVA, OUR
+PLOC     #10  09:33:37.82  P times locate it at 40.401N 24.644E +-290 km, origin 09:33:25.77, rms 0.00 s from 3 stations
+PLOC     #10  09:33:39.74  P times locate it at 39.995N 25.099E +-277 km, origin 09:33:16.54, rms 1.12 s from 4 stations
+PLOC     #10  09:33:44.80  P times locate it at 40.444N 24.412E +-348 km, origin 09:33:27.17, rms 1.25 s from 5 stations
+PLOC     #10  09:33:47.82  P times locate it at 38.566N 26.832E +-243 km, origin 09:32:41.21, rms 1.40 s from 6 stations
+ALARM    #11  10:50:20.00  earthquake detected by OUR, PLG
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-12 05:24:50.00 to 10:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      05:34:02.36 UTC by KOKK, SOH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      06:07:16.53 UTC by KOKK, SOH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      06:08:22.24 UTC by PLG, THAS
+  AFAD       no matching catalogue event
+
+Event #4: detected M3.3 earthquake, not located
+  alarm      06:10:09.77 UTC by KAVA, SOH; later HORT, KOKK, PAIG, PLG
+  Pd magn.   M3.3 7.8 s after the alarm, M3.3 ± 0.1 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 7 stations (7 above noise)
+  P loc.     40.850N 23.913E +-13 km from 5 stations, first 0.4 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      06:59:23.36 UTC by HORT, KOKK
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude) at 40.183N 24.133E, origin 07:17:32.12 UTC
+  alarm      07:17:43.44 UTC by OUR, PLG; later KOKK
+  location   rms 0.80 s from 3 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     40.218N 24.073E +-383 km from 3 stations, first 1.9 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 38 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             OUR           21 km   07:17:37.67 UTC (picked)      -5.8 s  after S
+             PAIG          47 km   07:17:45.99 UTC (predicted)    +2.6 s  before S
+             PLG           62 km   07:17:50.29 UTC (picked)      +6.8 s  before S
+             THAS          68 km   07:17:51.89 UTC (predicted)    +8.5 s  before S
+             KOKK          71 km   07:17:53.86 UTC (picked)     +10.4 s  before S
+             KAVA          96 km   07:17:59.71 UTC (predicted)   +16.3 s  before S
+             SOH           97 km   07:17:59.89 UTC (predicted)   +16.5 s  before S
+             HORT          99 km   07:18:00.52 UTC (predicted)   +17.1 s  before S
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      07:17:59.51 UTC by SOH, THAS; later KAVA
+  P loc.     37.708N 24.836E +-277 km from 3 stations, first 0.2 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      07:26:01.60 UTC by OUR, PLG
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      08:42:51.86 UTC by HORT, SOH
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      09:33:37.10 UTC by KAVA, OUR; later HORT, KOKK, PLG, SOH
+  P loc.     38.566N 26.832E +-243 km from 6 stations, first 0.7 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      10:50:20.00 UTC by OUR, PLG
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          11
+  single-station detections, no alarm    64
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0       10     10        70      0.001 (0.001)        48
+  KAVA     43189         0        4      4         0      0.001 (0.000)        60
+  KOKK     43189         0       11     11        77      0.001 (0.001)        44
+  OUR      43189         0       23     23       161      0.001 (0.001)        46
+  PAIG     43161         3        2      2        14      0.001 (0.001)        54
+  PLG      43189         0       22     22       154      0.001 (0.001)        50
+  SOH      43189         0       21     21       147      0.001 (0.001)        42
+  THAS     43165         2        3      3        21      0.001 (0.001)        60
+  Pd: 644 values sent
+  345460 windows in 1.3 s: 15032x real time per station

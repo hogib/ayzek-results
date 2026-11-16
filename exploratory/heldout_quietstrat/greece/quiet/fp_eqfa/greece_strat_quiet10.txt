@@ -1,0 +1,146 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2023-09-11 03:23:02.14 to 09:23:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   05:14:27.36  earthquake detected by GUR, THAL
+ALARM    #2   05:45:09.05  earthquake detected by LOUT, VLI
+ALARM    #3   05:52:57.23  earthquake detected by GUR, THAL
+ALARM    #4   05:57:07.90  earthquake detected by LOUT, VLI
+ALARM    #5   05:58:45.54  earthquake detected by GUR, THAL
+ALARM    #6   06:12:43.63  earthquake detected by EPID, THAL
+ALARM    #7   07:10:49.42  earthquake detected by LOUT, VLI
+ALARM    #8   07:23:37.57  earthquake detected by ACOR, LOUT
+ALARM    #9   07:28:18.12  earthquake detected by EPID, LOUT
+PDMAG    #9   07:29:12.30  Pd magnitude M2.4 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 8 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #9   07:29:12.30  located at 37.971N 22.977E, origin 07:28:06.86, rms 1.39 s from 2 stations
+ALARM    #10  07:34:23.16  earthquake detected by EPID, VLI
+PLOC     #10  07:34:24.36  P times locate it at 36.658N 22.148E +-204 km, origin 07:34:00.02, rms 0.00 s from 3 stations
+ALARM    #11  08:27:14.24  earthquake detected by EPID, LOUT
+ALARM    #12  08:47:15.43  earthquake detected by EPID, LOUT
+ALARM    #13  09:12:41.01  earthquake detected by ACOR, GUR
+LOCATE   #13  09:13:35.10  located at 37.993N 22.751E, origin 09:12:35.17, rms 0.77 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-11 03:51:50.00 to 09:23:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      05:14:27.36 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      05:45:09.05 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      05:52:57.23 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      05:57:07.90 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:58:45.54 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      06:12:43.63 UTC by EPID, THAL
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      07:10:49.42 UTC by LOUT, VLI
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      07:23:37.57 UTC by ACOR, LOUT
+  AFAD       no matching catalogue event
+
+Event #9: detected M2.4 earthquake at 37.971N 22.977E, origin 07:28:06.86 UTC
+  alarm      07:28:18.12 UTC by EPID, LOUT
+  Pd magn.   M2.4 54.2 s after the alarm, M2.4 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 8 stations (1 above noise)
+  location   rms 1.39 s from 2 stations, first 54.2 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 38 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             LOUT           2 km   07:28:09.68 UTC (picked)      -8.4 s  after S
+             LTK            6 km   07:28:10.16 UTC (predicted)    -8.0 s  after S
+             ACOR          13 km   07:28:11.55 UTC (predicted)    -6.6 s  after S
+             THAL          28 km   07:28:15.45 UTC (predicted)    -2.7 s  after S
+             EPID          42 km   07:28:17.70 UTC (picked)      -0.4 s  after S
+             GUR           56 km   07:28:23.04 UTC (predicted)    +4.9 s  before S
+             VLX           85 km   07:28:31.31 UTC (predicted)   +13.2 s  before S
+             VLI          139 km   07:28:46.78 UTC (predicted)   +28.7 s  before S
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      07:34:23.16 UTC by EPID, VLI; later GUR
+  P loc.     36.658N 22.148E +-204 km from 3 stations, first 1.2 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      08:27:14.24 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      08:47:15.43 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude) at 37.993N 22.751E, origin 09:12:35.17 UTC
+  alarm      09:12:41.01 UTC by ACOR, GUR
+  location   rms 0.77 s from 2 stations, first 54.1 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 18 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             THAL           9 km   09:12:39.01 UTC (predicted)    -2.0 s  after S
+             ACOR          15 km   09:12:39.90 UTC (picked)      -1.1 s  after S
+             LTK           19 km   09:12:41.37 UTC (predicted)    +0.4 s  before S
+             LOUT          20 km   09:12:41.45 UTC (predicted)    +0.4 s  before S
+             GUR           36 km   09:12:46.50 UTC (picked)      +5.5 s  before S
+             EPID          53 km   09:12:50.61 UTC (predicted)    +9.6 s  before S
+             VLX           77 km   09:12:57.24 UTC (predicted)   +16.2 s  before S
+             VLI          143 km   09:13:16.08 UTC (predicted)   +35.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          13
+  single-station detections, no alarm   145
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             13  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    05:14:27.36 UTC  #1  no magnitude, not located
+    05:45:09.05 UTC  #2  no magnitude, not located
+    05:52:57.23 UTC  #3  no magnitude, not located
+    05:57:07.90 UTC  #4  no magnitude, not located
+    05:58:45.54 UTC  #5  no magnitude, not located
+    06:12:43.63 UTC  #6  no magnitude, not located
+    07:10:49.42 UTC  #7  no magnitude, not located
+    07:23:37.57 UTC  #8  no magnitude, not located
+    07:28:18.12 UTC  #9  M2.4, located 37.97N 22.98E
+    07:34:23.16 UTC  #10  no magnitude, not located
+    08:27:14.24 UTC  #11  no magnitude, not located
+    08:47:15.43 UTC  #12  no magnitude, not located
+    09:12:41.01 UTC  #13  no magnitude, located 37.99N 22.75E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqfa/greece_strat_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0       10     10        70      0.019 (0.020)        63
+  EPID     43189         0       41     41       287      0.014 (0.029)        53
+  GUR      43189         0        9      9        63      0.021 (0.023)        62
+  LOUT     43189         0       63     63       441      0.014 (0.016)        52
+  LTK      43189         0        2      2        14      0.024 (0.033)        75
+  THAL     43189         0       29     29       203      0.016 (0.018)        56
+  VLI      43189         0       15     15       105      0.015 (0.019)        51
+  VLX      43189         0        3      3        21      0.023 (0.034)        74
+  Pd: 1204 values sent
+  345512 windows in 4.3 s: 4670x real time per station

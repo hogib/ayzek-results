@@ -1,0 +1,34 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-16 05:21:02.80 to 11:21:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   10:25:03.50  earthquake detected by AKDG, NURH
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-16 05:49:50.00 to 11:21:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:25:03.50 UTC by AKDG, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     9
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_causal_eqfa/ko_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43101         9        2      2         0      0.002 (0.006)        51
+  DYBB     43122         7        0      0         0      0.005 (0.002)         0
+  GAZ      43189         0        6      6        42      0.005 (0.002)       152
+  MAZI     42145        88        0      0         0      0.001 (0.007)         0
+  MLTY     43189         0        2      2        14      0.004 (0.002)       111
+  NURH     43189         0        1      1         0      0.005 (0.002)       174
+  SVRC     43189         0        0      0         0      0.005 (0.002)         0
+  Pd: 56 values sent
+  P time from an STA/LTA onset for 8 of 11 triggers (3 from the window start)
+  onset from a FilterPicker pick for 8 of 11 triggers (P-time location and Pd)
+  301124 windows in 4.5 s: 4420x real time per station

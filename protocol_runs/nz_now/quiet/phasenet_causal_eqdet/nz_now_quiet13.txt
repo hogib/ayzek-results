@@ -1,0 +1,58 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-06-30 17:54:04.27 to 23:54:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   18:59:54.00  earthquake detected by WHSZ, WVZ
+PLOC     #1   18:59:55.50  P times locate it at -41.185N 173.832E +-322 km, origin 18:58:50.96, rms 0.17 s from 3 stations
+PLOC     #1   18:59:56.00  P times locate it at -43.280N 170.680E +-11 km, origin 18:59:41.68, rms 0.02 s from 3 stations, left out WHSZ
+LOCATE   #1   19:00:46.00  located at -41.669N 173.190E, origin 18:59:03.20, rms 0.08 s from 2 stations
+LOCATE   #1   19:00:46.50  located at -41.183N 171.840E, origin 18:59:02.72, rms 0.04 s from 2 stations, left out WVZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-06-30 18:22:50.00 to 23:54:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at -41.183N 171.840E, origin 18:59:02.72 UTC
+  alarm      18:59:54.00 UTC by WHSZ, WVZ; later FOZ, RPZ
+  location   rms 0.04 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     -43.280N 170.680E +-11 km from 3 stations, first 1.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 179 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             WVZ          229 km   19:00:16.06 UTC (picked)     +22.1 s  before S
+             WHSZ         262 km   19:00:17.72 UTC (predicted)   +23.7 s  before S
+             RPZ          289 km   19:00:25.24 UTC (picked)     +31.2 s  before S
+             FOZ          310 km   19:00:31.26 UTC (picked)     +37.3 s  before S
+             CVZ          362 km   19:00:46.25 UTC (predicted)   +52.3 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    14
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    18:59:54.00 UTC  #1  no magnitude, located -41.18N 171.84E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/quiet/phasenet_causal_eqdet/nz_now_quiet13.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        0      0         0      0.006 (0.002)         0
+  FOZ      43189         0        1      1         7      0.006 (0.002)       175
+  RPZ      43189         0        2      2        14      0.004 (0.002)       130
+  WHSZ     43189         0       13     13        91      0.003 (0.002)       114
+  WVZ      43189         0        2      2        14      0.006 (0.002)       176
+  Pd: 126 values sent
+  P time from an STA/LTA onset for 14 of 18 triggers (4 from the window start)
+  onset from a FilterPicker pick for 8 of 18 triggers (P-time location and Pd)
+  215945 windows in 4.9 s: 4085x real time per station

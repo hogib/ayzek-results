@@ -1,0 +1,80 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-05-31 11:19:03.17 to 17:19:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   11:49:36.30  earthquake detected by DRO, PLEV
+PLOC     #1   11:49:37.64  P times locate it at 38.150N 21.225E +-14 km, origin 11:49:28.16, rms 0.02 s from 3 stations
+ALARM    #2   12:41:42.82  earthquake detected by AMT, PLEV
+ALARM    #3   12:55:17.89  earthquake detected by AMT, DRO
+ALARM    #4   12:58:20.59  earthquake detected by AMT, DRO
+ALARM    #5   13:10:05.24  earthquake detected by AXS, LTHK
+ALARM    #6   13:31:48.88  earthquake detected by AMT, DRO
+ALARM    #7   14:11:46.02  earthquake detected by AMT, DRO
+ALARM    #8   15:11:41.39  earthquake detected by AMT, RLS
+ALARM    #9   15:34:39.22  earthquake detected by LTHK, RLS
+ALARM    #10  16:37:30.70  earthquake detected by LTHK, RLS
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-31 11:47:50.00 to 17:19:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      11:49:36.30 UTC by DRO, PLEV; later VLS
+  P loc.     38.150N 21.225E +-14 km from 3 stations, first 1.3 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      12:41:42.82 UTC by AMT, PLEV
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      12:55:17.89 UTC by AMT, DRO
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      12:58:20.59 UTC by AMT, DRO
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      13:10:05.24 UTC by AXS, LTHK
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      13:31:48.88 UTC by AMT, DRO
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      14:11:46.02 UTC by AMT, DRO
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      15:11:41.39 UTC by AMT, RLS
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      15:34:39.22 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      16:37:30.70 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          10
+  single-station detections, no alarm   122
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0       18     18       126      0.001 (0.001)        36
+  AXS      43189         0        4      4        28      0.001 (0.000)        44
+  DRO      43189         0       24     24       168      0.001 (0.001)        43
+  LTHK     43189         0       53     53       371      0.001 (0.001)        37
+  ORTH     43189         0        2      2        14      0.001 (0.001)        49
+  PLEV     43189         0        4      4        28      0.001 (0.001)        35
+  RLS      43189         0       36     36       252      0.001 (0.001)        42
+  VLS      43189         0        3      3        21      0.001 (0.000)        40
+  Pd: 1008 values sent
+  345512 windows in 2.2 s: 8971x real time per station

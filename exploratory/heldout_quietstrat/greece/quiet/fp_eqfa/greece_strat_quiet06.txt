@@ -1,0 +1,86 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2024-08-25 02:29:02.70 to 08:29:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:08:57.11  earthquake detected by NISR2, ZKR
+ALARM    #2   04:38:38.64  earthquake detected by APE, NISR
+ALARM    #3   04:41:20.96  earthquake detected by NISR, ZKR
+ALARM    #4   05:06:52.86  earthquake detected by NISR2, ZKR
+ALARM    #5   05:50:57.91  earthquake detected by APE, STIA
+ALARM    #6   07:18:50.45  earthquake detected by APE, ZKR
+ALARM    #7   07:56:07.30  earthquake detected by APE, NISR
+ALARM    #8   08:15:44.70  earthquake detected by NISR, STIA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-08-25 02:57:50.00 to 08:29:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:08:57.11 UTC by NISR2, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      04:38:38.64 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      04:41:20.96 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      05:06:52.86 UTC by NISR2, ZKR
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:50:57.91 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      07:18:50.45 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      07:56:07.30 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      08:15:44.70 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           8
+  single-station detections, no alarm    99
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              8  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:08:57.11 UTC  #1  no magnitude, not located
+    04:38:38.64 UTC  #2  no magnitude, not located
+    04:41:20.96 UTC  #3  no magnitude, not located
+    05:06:52.86 UTC  #4  no magnitude, not located
+    05:50:57.91 UTC  #5  no magnitude, not located
+    07:18:50.45 UTC  #6  no magnitude, not located
+    07:56:07.30 UTC  #7  no magnitude, not located
+    08:15:44.70 UTC  #8  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqfa/greece_strat_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       28     28       196      0.017 (0.044)        62
+  NISR     43189         0       32     32         0      0.019 (0.265)        57
+  NISR2    43189         0       13     13        91      0.022 (0.043)        78
+  STIA     43157         5       18     17       123      0.026 (0.459)        50
+  THERA    43189         0        2      2        14      0.021 (0.066)        69
+  ZKR      43189         0       22     22       154      0.020 (0.023)        61
+  Pd: 578 values sent
+  259102 windows in 2.8 s: 7021x real time per station

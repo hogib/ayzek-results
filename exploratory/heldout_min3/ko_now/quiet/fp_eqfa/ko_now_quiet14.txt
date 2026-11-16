@@ -1,0 +1,40 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-09-05 00:47:03.06 to 06:47:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-05 01:15:50.00 to 06:47:00.01 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm    52
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    04:52:38.00 UTC  ml 1.8   210 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/fp_eqfa/ko_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       13     13        91      0.018 (0.010)        61
+  CEYT     43189         0        6      6        42      0.019 (0.038)        50
+  GAZ      43189         0       27     27       189      0.018 (0.019)        57
+  KARA     43189         0        1      1         7      0.016 (0.036)        41
+  NURH     43189         0        5      5         0      0.020 (0.009)        61
+  SARI     43189         0        3      3        21      0.017 (0.007)        65
+  Pd: 350 values sent
+  259134 windows in 2.7 s: 7284x real time per station

@@ -1,0 +1,53 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-04-01 10:39:02.26 to 16:39:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   11:09:30.50  earthquake detected by STIA, THERA
+ALARM    #2   11:24:47.50  earthquake detected by STIA, THERA
+ALARM    #3   12:15:19.00  earthquake detected by STIA, THERA
+ALARM    #4   15:48:56.00  earthquake detected by STIA, THERA
+ALARM    #5   16:01:30.00  earthquake detected by STIA, THERA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-04-01 11:07:50.00 to 16:39:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      11:09:30.50 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:24:47.50 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      12:15:19.00 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      15:48:56.00 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      16:01:30.00 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    65
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p6/greece_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        1      1         7      0.001 (0.001)        33
+  NISR     43189         0        9      9         0      0.001 (0.001)        42
+  NISR2    43189         0        0      0         0      0.002 (0.001)         0
+  STIA     43189         0       31     31       217      0.002 (0.001)        34
+  THERA    43189         0       33     33       231      0.001 (0.003)        31
+  ZKR      43189         0        1      1         7      0.001 (0.006)        37
+  Pd: 462 values sent
+  P time from an STA/LTA onset for 46 of 75 triggers (29 from the window start)
+  onset from a FilterPicker pick for 29 of 75 triggers (P-time location and Pd)
+  259134 windows in 2.4 s: 8147x real time per station

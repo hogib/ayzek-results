@@ -1,0 +1,49 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 25/10, Z + picker + Pd magnitude, replay 2023-01-15 18:52:03.87 to 00:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   21:00:06.72  earthquake detected by CVZ, FOZ
+ALARM    #2   22:07:10.74  earthquake detected by CVZ, RPZ
+LOCATE   #2   22:08:04.91  located at -43.564N 170.785E, origin 22:06:54.69, rms 0.06 s from 2 stations
+ALARM    #3   00:44:44.45  earthquake detected by CVZ, RPZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-15 19:20:50.00 to 00:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:00:06.72 UTC by CVZ, FOZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at -43.564N 170.785E, origin 22:06:54.69 UTC
+  alarm      22:07:10.74 UTC by CVZ, RPZ
+  location   rms 0.06 s from 2 stations, first 54.2 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 55 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             RPZ           27 km   22:07:03.07 UTC (picked)      -7.7 s  after S
+             WHSZ          43 km   22:07:07.34 UTC (predicted)    -3.4 s  after S
+             WVZ           55 km   22:07:10.55 UTC (predicted)    -0.2 s  after S
+             FOZ           78 km   22:07:17.22 UTC (predicted)    +6.5 s  before S
+             CVZ           93 km   22:07:21.35 UTC (picked)     +10.6 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      00:44:44.45 UTC by CVZ, RPZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    52
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_fp_25/nz_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0       11     11        77      0.013 (0.032)        50
+  FOZ      43189         0       12     12        84      0.014 (0.020)        51
+  RPZ      43189         0        6      6        42      0.015 (0.169)        45
+  WHSZ     43189         0       26     26       182      0.013 (0.011)        40
+  WVZ      43189         0        3      3        21      0.016 (0.023)        54
+  Pd: 406 values sent
+  215945 windows in 1.9 s: 10378x real time per station

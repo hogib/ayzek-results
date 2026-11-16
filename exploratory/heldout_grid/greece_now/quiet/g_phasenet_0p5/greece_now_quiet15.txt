@@ -1,0 +1,98 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-05 16:34:02.76 to 22:34:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   17:22:28.00  earthquake detected by EPID, VLI
+ALARM    #2   18:02:42.00  earthquake detected by LTK, VLX
+ALARM    #3   18:09:46.00  earthquake detected by EPID, LOUT
+ALARM    #4   18:19:44.50  earthquake detected by THAL, VLI
+ALARM    #5   18:42:17.50  earthquake detected by EPID, THAL
+ALARM    #6   19:08:13.50  earthquake detected by GUR, THAL
+PLOC     #6   19:08:18.00  P times locate it at 39.607N 23.448E +-206 km, origin 19:07:38.22, rms 0.00 s from 3 stations
+ALARM    #7   19:20:16.00  earthquake detected by GUR, THAL
+ALARM    #8   22:04:32.00  earthquake detected by LOUT, LTK
+ALARM    #9   22:08:45.00  earthquake detected by EPID, LOUT
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-05 17:02:50.00 to 22:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:22:28.00 UTC by EPID, VLI
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      18:02:42.00 UTC by LTK, VLX
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      18:09:46.00 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      18:19:44.50 UTC by THAL, VLI
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      18:42:17.50 UTC by EPID, THAL
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      19:08:13.50 UTC by GUR, THAL; later EPID
+  P loc.     39.607N 23.448E +-206 km from 3 stations, first 4.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      19:20:16.00 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      22:04:32.00 UTC by LOUT, LTK
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      22:08:45.00 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           9
+  single-station detections, no alarm   119
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              9  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    17:22:28.00 UTC  #1  no magnitude, not located
+    18:02:42.00 UTC  #2  no magnitude, not located
+    18:09:46.00 UTC  #3  no magnitude, not located
+    18:19:44.50 UTC  #4  no magnitude, not located
+    18:42:17.50 UTC  #5  no magnitude, not located
+    19:08:13.50 UTC  #6  no magnitude, not located
+    19:20:16.00 UTC  #7  no magnitude, not located
+    22:04:32.00 UTC  #8  no magnitude, not located
+    22:08:45.00 UTC  #9  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p5/greece_now_quiet15.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        0      0         0      0.002 (0.001)         0
+  EPID     43189         0       57     57       399      0.001 (0.001)        38
+  GUR      43189         0        7      7        49      0.002 (0.004)        35
+  LOUT     43173         2       50     50       350      0.001 (0.001)        40
+  LTK      43189         0        8      8        56      0.001 (0.001)        44
+  THAL     43189         0        8      8        56      0.001 (0.001)        46
+  VLI      43189         0        5      5        35      0.002 (0.001)        48
+  VLX      43189         0        3      3        21      0.001 (0.001)        45
+  Pd: 966 values sent
+  P time from an STA/LTA onset for 51 of 138 triggers (87 from the window start)
+  onset from a FilterPicker pick for 19 of 138 triggers (P-time location and Pd)
+  345496 windows in 3.8 s: 5264x real time per station

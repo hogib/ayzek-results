@@ -1,0 +1,47 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 10 off 1.5, 1-10 Hz, Z+N+E + picker + Pd magnitude, replay 2026-03-16 21:18:03.76 to 03:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   23:35:41.65  earthquake detected by MWZ, URZ
+PLOC     #1   23:35:50.16  P times locate it at -38.511N 177.134E +-377 km, origin 23:35:34.82, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-03-16 21:46:50.00 to 03:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:35:41.65 UTC by MWZ, URZ; later BKZ
+  P loc.     -38.511N 177.134E +-377 km from 3 stations, first 8.5 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     5
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    23:35:41.65 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/stalta_eqquiet/nz_strat_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        1      1         7      0.004 (0.001)        90
+  KPRZ     43189         0        0      0         0      0.004 (0.001)         0
+  MWZ      43189         0        1      1         7      0.002 (0.001)        88
+  PUZ      43189         0        0      0         0      0.003 (0.001)         0
+  RATZ     43189         0        0      0         0      0.004 (0.001)         0
+  TLZ      43189         0        0      0         0      0.003 (0.001)         0
+  URZ      43189         0        6      6        42      0.003 (0.001)        72
+  Pd: 56 values sent
+  302323 windows in 0.9 s: 21581x real time per station

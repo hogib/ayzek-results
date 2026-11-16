@@ -1,0 +1,70 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2026-10-15 19:31:03.13 to 01:31:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   21:22:44.41  earthquake detected by CEYT, GAZ, KARA
+PLOC     #1   21:22:44.41  P times locate it at 38.418N 36.359E +-194 km, origin 21:22:15.43, rms 0.01 s from 3 stations
+ALARM    #2   00:03:01.14  earthquake detected by GAZ, NURH, SARI
+PLOC     #2   00:03:01.14  P times locate it at 37.800N 36.281E +-42 km, origin 00:02:42.68, rms 0.01 s from 3 stations
+LOCATE   #2   00:03:54.44  located at 37.768N 36.357E, origin 00:02:42.46, rms 1.05 s from 2 stations
+LOCATE   #2   00:03:55.21  located at 37.805N 36.376E, origin 00:02:43.26, rms 0.93 s from 3 stations
+ALARM    #3   01:00:09.16  earthquake detected by BNN, GAZ, SARI
+PLOC     #3   01:00:09.16  P times locate it at 37.419N 33.392E +-61 km, origin 00:59:13.20, rms 1.79 s from 3 stations
+PLOC     #3   01:00:12.20  P times locate it at 37.445N 33.628E +-62 km, origin 00:59:16.16, rms 1.73 s from 4 stations
+LOCATE   #3   01:01:03.42  located at 37.645N 35.694E, origin 00:59:45.38, rms 0.32 s from 2 stations
+LOCATE   #3   01:01:06.41  located at 37.675N 35.811E, origin 00:59:47.15, rms 0.58 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-15 19:59:50.00 to 01:31:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:22:44.41 UTC by CEYT, GAZ, KARA
+  P loc.     38.418N 36.359E +-194 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 37.805N 36.376E, origin 00:02:43.26 UTC
+  alarm      00:03:01.14 UTC by GAZ, NURH, SARI
+  location   rms 0.93 s from 3 stations, first 53.3 s after the alarm (P and S picks)
+  P loc.     37.800N 36.281E +-42 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 62 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          67 km   00:03:03.73 UTC (picked)      +2.6 s  before S
+             NURH          95 km   00:03:09.68 UTC (picked)      +8.5 s  before S
+             GAZ          102 km   00:03:13.09 UTC (picked)     +12.0 s  before S
+             CEYT         104 km   00:03:13.19 UTC (predicted)   +12.1 s  before S
+             BNN          125 km   00:03:19.17 UTC (predicted)   +18.0 s  before S
+             KARA         131 km   00:03:20.88 UTC (predicted)   +19.7 s  before S
+
+Event #3: detected earthquake (no magnitude) at 37.675N 35.811E, origin 00:59:47.15 UTC
+  alarm      01:00:09.16 UTC by BNN, GAZ, SARI; later NURH
+  location   rms 0.58 s from 3 stations, first 54.3 s after the alarm (P and S picks)
+  P loc.     37.445N 33.628E +-62 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 76 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             CEYT          74 km   01:00:08.50 UTC (predicted)    -0.7 s  after S
+             KARA          81 km   01:00:10.50 UTC (predicted)    +1.3 s  before S
+             SARI          97 km   01:00:15.50 UTC (picked)      +6.3 s  before S
+             BNN          131 km   01:00:24.68 UTC (predicted)   +15.5 s  before S
+             GAZ          136 km   01:00:26.82 UTC (picked)     +17.7 s  before S
+             NURH         146 km   01:00:28.37 UTC (picked)     +19.2 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm   103
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/fp_eqdet/ko_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       20     20       140      0.014 (0.030)        45
+  CEYT     43145         4        1      1         7      0.015 (0.039)        45
+  GAZ      43189         0       52     52       364      0.019 (0.006)        56
+  KARA     43189         0        1      1         7      0.013 (0.020)        42
+  NURH     43189         0       29     29         0      0.017 (0.126)        48
+  SARI     43189         0       28     28       196      0.014 (0.019)        41
+  Pd: 714 values sent
+  259090 windows in 4.1 s: 4868x real time per station

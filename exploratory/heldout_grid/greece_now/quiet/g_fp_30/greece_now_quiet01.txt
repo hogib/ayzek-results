@@ -1,0 +1,82 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 30/10, Z + picker + Pd magnitude, replay 2025-08-25 04:50:02.35 to 10:50:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   07:38:26.54  earthquake detected by KNDR, PFKS
+ALARM    #2   08:25:16.18  earthquake detected by CHAN, PFKS
+ALARM    #3   09:16:42.49  earthquake detected by IMMV, PFKS
+ALARM    #4   09:31:54.12  earthquake detected by IPPL, PFKS
+ALARM    #5   09:55:54.82  earthquake detected by CHAN, IPPL
+ALARM    #6   10:04:01.07  earthquake detected by KNDR, PFKS
+ALARM    #7   10:28:48.84  earthquake detected by KNDR, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-08-25 05:18:50.00 to 10:50:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:38:26.54 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:25:16.18 UTC by CHAN, PFKS
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      09:16:42.49 UTC by IMMV, PFKS
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      09:31:54.12 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      09:55:54.82 UTC by CHAN, IPPL
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      10:04:01.07 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      10:28:48.84 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm    53
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              7  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    07:38:26.54 UTC  #1  no magnitude, not located
+    08:25:16.18 UTC  #2  no magnitude, not located
+    09:16:42.49 UTC  #3  no magnitude, not located
+    09:31:54.12 UTC  #4  no magnitude, not located
+    09:55:54.82 UTC  #5  no magnitude, not located
+    10:04:01.07 UTC  #6  no magnitude, not located
+    10:28:48.84 UTC  #7  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_30/greece_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        3      3        21      0.018 (0.039)        37
+  IMMV     43189         0        5      5        35      0.016 (0.129)        45
+  IPPL     43189         0        3      3        21      0.018 (0.028)        45
+  KNDR     43189         0       21     21       147      0.013 (0.033)        43
+  KNSS     43189         0        0      0         0      0.018 (0.013)         0
+  PFKS     43189         0       17     17       119      0.015 (0.074)        43
+  SIVA     43189         0        8      8        56      0.015 (0.031)        47
+  STIA     43189         0       10     10        70      0.017 (0.057)        43
+  Pd: 469 values sent
+  345512 windows in 1.7 s: 11540x real time per station

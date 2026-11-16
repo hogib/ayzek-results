@@ -1,0 +1,81 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-03-17 05:17:03.11 to 11:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:46:29.50  earthquake detected by KOKK, OUR, THAS
+PLOC     #1   07:46:29.50  P times locate it at 40.591N 23.933E +-34 km, origin 07:46:10.20, rms 0.01 s from 3 stations
+PLOC     #1   07:46:31.50  P times locate it at 40.543N 23.838E +-50 km, origin 07:46:10.29, rms 1.56 s from 4 stations
+LOCATE   #1   07:47:12.00  located at 40.580N 23.974E, origin 07:46:10.18, rms 0.13 s from 2 stations
+LOCATE   #1   07:47:18.00  located at 40.576N 24.083E, origin 07:46:10.06, rms 0.67 s from 3 stations
+ALARM    #2   08:01:22.50  earthquake detected by KAVA, OUR, THAS
+PLOC     #2   08:01:22.50  P times locate it at 40.245N 24.159E +-317 km, origin 08:01:02.48, rms 0.01 s from 3 stations
+PLOC     #2   08:01:23.00  P times locate it at 40.413N 24.132E +-13 km, origin 08:01:04.44, rms 1.21 s from 4 stations
+PLOC     #2   08:01:25.00  P times locate it at 40.399N 24.167E +-10 km, origin 08:01:04.57, rms 1.14 s from 5 stations
+LOCATE   #2   08:02:07.00  located at 40.319N 24.144E, origin 08:01:03.00, rms 0.04 s from 2 stations
+LOCATE   #2   08:02:11.00  located at 40.215N 24.164E, origin 08:01:01.85, rms 0.34 s from 3 stations
+LOCATE   #2   08:02:13.50  located at 40.257N 24.169E, origin 08:01:02.81, rms 0.68 s from 4 stations
+ALARM    #3   08:06:06.00  earthquake detected by KAVA, KOKK, THAS
+PLOC     #3   08:06:06.00  P times locate it at 41.397N 21.696E +-203 km, origin 08:05:16.40, rms 0.61 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-03-17 05:45:50.00 to 11:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 40.576N 24.083E, origin 07:46:10.06 UTC
+  alarm      07:46:29.50 UTC by KOKK, OUR, THAS; later KAVA
+  location   rms 0.67 s from 3 stations, first 42.5 s after the alarm (P and S picks)
+  P loc.     40.543N 23.838E +-50 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 67 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KOKK          28 km   07:46:18.28 UTC (picked)     -11.2 s  after S
+             OUR           28 km   07:46:18.36 UTC (picked)     -11.1 s  after S
+             THAS          54 km   07:46:24.84 UTC (picked)      -4.7 s  after S
+             PLG           58 km   07:46:27.01 UTC (predicted)    -2.5 s  after S
+             KAVA          59 km   07:46:27.22 UTC (predicted)    -2.3 s  after S
+             SOH           67 km   07:46:29.43 UTC (predicted)    -0.1 s  after S
+             PAIG          79 km   07:46:32.80 UTC (predicted)    +3.3 s  before S
+             HORT          83 km   07:46:33.95 UTC (predicted)    +4.5 s  before S
+
+Event #2: detected earthquake (no magnitude) at 40.257N 24.169E, origin 08:01:02.81 UTC
+  alarm      08:01:22.50 UTC by KAVA, OUR, THAS; later PAIG, PLG
+  location   rms 0.68 s from 4 stations, first 44.5 s after the alarm (P and S picks)
+  P loc.     40.399N 24.167E +-10 km from 5 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 68 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             OUR           18 km   08:01:07.98 UTC (picked)     -14.5 s  after S
+             PAIG          55 km   08:01:18.79 UTC (predicted)    -3.7 s  after S
+             THAS          61 km   08:01:19.84 UTC (picked)      -2.7 s  after S
+             PLG           63 km   08:01:20.82 UTC (picked)      -1.7 s  after S
+             KOKK          64 km   08:01:21.31 UTC (predicted)    -1.2 s  after S
+             KAVA          87 km   08:01:28.64 UTC (picked)      +6.1 s  before S
+             SOH           93 km   08:01:29.53 UTC (predicted)    +7.0 s  before S
+             HORT          98 km   08:01:30.99 UTC (predicted)    +8.5 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      08:06:06.00 UTC by KAVA, KOKK, THAS
+  P loc.     41.397N 21.696E +-203 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    25
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/eqt_causal_eqdet/greece_now_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0        1      1         7      0.001 (0.001)        40
+  KAVA     43189         0        6      6         0      0.001 (0.003)        37
+  KOKK     43189         0       11     11        77      0.001 (0.001)        41
+  OUR      43189         0        9      9        63      0.001 (0.001)        34
+  PAIG     43189         0        2      2         0      0.001 (0.001)        43
+  PLG      43189         0        5      5        35      0.001 (0.001)        32
+  SOH      43189         0        1      1         7      0.001 (0.001)        26
+  THAS     43189         0        6      6        42      0.001 (0.001)        40
+  Pd: 231 values sent
+  P time from an STA/LTA onset for 24 of 41 triggers (17 from the window start)
+  onset from a FilterPicker pick for 16 of 41 triggers (P-time location and Pd)
+  345512 windows in 1.9 s: 10271x real time per station

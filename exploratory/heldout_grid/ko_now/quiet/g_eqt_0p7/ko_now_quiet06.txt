@@ -1,0 +1,33 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-18 10:50:02.58 to 16:50:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:33:42.00  earthquake detected by NURH, SARI
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-18 11:18:50.00 to 16:50:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:33:42.00 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     4
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_eqt_0p7/ko_now_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.002 (0.001)         0
+  CEYT     43057        13        0      0         0      0.001 (0.001)         0
+  GAZ      43189         0        1      1         7      0.001 (0.001)        59
+  KARA     43189         0        0      0         0      0.002 (0.001)         0
+  NURH     43189         0        4      4         0      0.002 (0.001)        45
+  SARI     43189         0        1      1         7      0.001 (0.001)        55
+  Pd: 14 values sent
+  P time from an STA/LTA onset for 0 of 6 triggers (6 from the window start)
+  onset from a FilterPicker pick for 2 of 6 triggers (P-time location and Pd)
+  259002 windows in 1.9 s: 10439x real time per station

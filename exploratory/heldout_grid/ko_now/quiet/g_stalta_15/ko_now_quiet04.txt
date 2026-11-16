@@ -1,0 +1,43 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 15 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   02:44:50.29  earthquake detected by AKDG, MLTY
+LOCATE   #1   02:45:44.78  located at 38.492N 37.770E, origin 02:44:39.36, rms 0.03 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.492N 37.770E, origin 02:44:39.36 UTC
+  alarm      02:44:50.29 UTC by AKDG, MLTY
+  location   rms 0.03 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 37 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          23 km   02:44:46.41 UTC (picked)      -3.9 s  after S
+             MLTY          61 km   02:44:57.14 UTC (picked)      +6.8 s  before S
+             NURH          65 km   02:44:58.16 UTC (predicted)    +7.9 s  before S
+             SVRC         134 km   02:45:17.85 UTC (predicted)   +27.6 s  before S
+             GAZ          155 km   02:45:23.68 UTC (predicted)   +33.4 s  before S
+             DYBB         215 km   02:45:40.97 UTC (predicted)   +50.7 s  before S
+             MAZI         261 km   02:45:54.03 UTC (predicted)   +63.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     5
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_15/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7        3      3         0      0.001 (0.000)        38
+  DYBB     43042        14        0      0         0      0.001 (0.000)         0
+  GAZ      43189         0        0      0         0      0.001 (0.000)         0
+  MAZI     43189         0        0      0         0      0.001 (0.000)         0
+  MLTY     43189         0        2      2        14      0.001 (0.000)        41
+  NURH     43189         0        0      0         0      0.001 (0.000)         0
+  SVRC     43080        11        2      2        14      0.001 (0.000)        48
+  Pd: 28 values sent
+  301992 windows in 0.4 s: 56724x real time per station

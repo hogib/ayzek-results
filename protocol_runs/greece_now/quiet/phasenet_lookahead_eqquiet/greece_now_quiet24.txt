@@ -1,0 +1,62 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-04-30 21:17:02.62 to 03:17:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   23:28:34.50  earthquake detected by NISR2, THERA
+ALARM    #2   00:30:33.00  earthquake detected by THERA, ZKR
+LOCATE   #2   00:31:25.00  located at 36.031N 26.191E, origin 00:30:15.39, rms 0.47 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-04-30 21:45:50.00 to 03:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:28:34.50 UTC by NISR2, THERA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 36.031N 26.191E, origin 00:30:15.39 UTC
+  alarm      00:30:33.00 UTC by THERA, ZKR
+  location   rms 0.47 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 61 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             THERA         74 km   00:30:37.14 UTC (picked)      +4.1 s  before S
+             STIA          93 km   00:30:42.00 UTC (predicted)    +9.0 s  before S
+             ZKR          102 km   00:30:44.32 UTC (picked)     +11.3 s  before S
+             NISR         106 km   00:30:45.82 UTC (predicted)   +12.8 s  before S
+             NISR2        107 km   00:30:46.10 UTC (predicted)   +13.1 s  before S
+             APE          130 km   00:30:52.73 UTC (predicted)   +19.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    14
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    23:28:34.50 UTC  #1  no magnitude, not located
+    00:30:33.00 UTC  #2  no magnitude, located 36.03N 26.19E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/phasenet_lookahead_eqquiet/greece_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        0      0         0      0.004 (0.007)         0
+  NISR     43189         0        0      0         0      0.004 (0.002)         0
+  NISR2    43189         0        2      2        14      0.006 (0.002)       172
+  STIA     43189         0        0      0         0      0.005 (0.005)         0
+  THERA    43189         0        7      7        49      0.004 (0.006)       105
+  ZKR      43189         0        9      9        63      0.004 (0.006)       147
+  Pd: 126 values sent
+  P time from an STA/LTA onset for 3 of 18 triggers (15 from the window start)
+  onset from a FilterPicker pick for 2 of 18 triggers (P-time location and Pd)
+  259134 windows in 4.7 s: 4272x real time per station

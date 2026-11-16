@@ -1,0 +1,116 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-05 00:47:03.06 to 06:47:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   03:00:00.50  earthquake detected by GAZ, NURH
+ALARM    #2   03:48:55.00  earthquake detected by BNN, GAZ
+ALARM    #3   03:52:13.00  earthquake detected by BNN, CEYT
+ALARM    #4   04:23:59.50  earthquake detected by BNN, NURH
+ALARM    #5   05:14:35.50  earthquake detected by BNN, KARA
+ALARM    #6   05:25:03.50  earthquake detected by BNN, KARA
+ALARM    #7   05:31:50.00  earthquake detected by BNN, KARA
+ALARM    #8   05:36:45.50  earthquake detected by BNN, NURH
+ALARM    #9   06:01:51.50  earthquake detected by BNN, NURH
+ALARM    #10  06:09:21.00  earthquake detected by BNN, SARI
+ALARM    #11  06:18:03.00  earthquake detected by BNN, NURH
+ALARM    #12  06:26:09.00  earthquake detected by KARA, NURH
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-05 01:15:50.00 to 06:47:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      03:00:00.50 UTC by GAZ, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      03:48:55.00 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      03:52:13.00 UTC by BNN, CEYT
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      04:23:59.50 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:14:35.50 UTC by BNN, KARA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      05:25:03.50 UTC by BNN, KARA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      05:31:50.00 UTC by BNN, KARA
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      05:36:45.50 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      06:01:51.50 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      06:09:21.00 UTC by BNN, SARI
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      06:18:03.00 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      06:26:09.00 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          12
+  single-station detections, no alarm    66
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             12  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    04:52:38.00 UTC  ml 1.8   210 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:00:00.50 UTC  #1  no magnitude, not located
+    03:48:55.00 UTC  #2  no magnitude, not located
+    03:52:13.00 UTC  #3  no magnitude, not located
+    04:23:59.50 UTC  #4  no magnitude, not located
+    05:14:35.50 UTC  #5  no magnitude, not located
+    05:25:03.50 UTC  #6  no magnitude, not located
+    05:31:50.00 UTC  #7  no magnitude, not located
+    05:36:45.50 UTC  #8  no magnitude, not located
+    06:01:51.50 UTC  #9  no magnitude, not located
+    06:09:21.00 UTC  #10  no magnitude, not located
+    06:18:03.00 UTC  #11  no magnitude, not located
+    06:26:09.00 UTC  #12  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_learned_0p5/ko_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       38     38       266      0.001 (0.002)        27
+  CEYT     43189         0        4      4        28      0.002 (0.001)        42
+  GAZ      43189         0        2      2        14      0.001 (0.001)        51
+  KARA     43189         0       20     20       140      0.001 (0.003)        34
+  NURH     43189         0       25     25         0      0.001 (0.001)        27
+  SARI     43189         0        4      4        28      0.001 (0.003)        40
+  Pd: 476 values sent
+  P time from an STA/LTA onset for 14 of 93 triggers (79 from the window start)
+  onset from a FilterPicker pick for 13 of 93 triggers (P-time location and Pd)
+  259134 windows in 2.4 s: 8432x real time per station

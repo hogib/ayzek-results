@@ -1,0 +1,75 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-11-26 14:36:52.53 to 17:36:49.37 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+ALARM    #1   14:47:26.00  earthquake detected by BKZ, VRZ
+PDMAG    #1   14:47:26.50  Pd magnitude M4.4 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 6 stations (4 above noise), windows up to 10 s, distances from the P-time location
+PLOC     #1   14:47:26.50  P times locate it at -39.285N 175.417E +-15 km, origin 14:47:05.50, rms 0.02 s from 3 stations
+PDMAG    #1   14:47:26.50  Pd magnitude M4.5 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (5 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   14:48:14.50  Pd magnitude M4.8 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (3 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   14:48:14.50  located at -40.655N 175.105E, origin 14:46:47.06, rms 0.26 s from 2 stations
+PDMAG    #1   14:48:15.00  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (5 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   14:48:15.00  located at -38.802N 174.237E, origin 14:46:48.11, rms 0.02 s from 2 stations, left out VRZ
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2024-11-26 14:36:52.53 to 17:36:49.37 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.6 earthquake at -38.802N 174.237E, origin 14:46:48.11 UTC
+  alarm      14:47:26.00 UTC by BKZ, VRZ; later TSZ
+  Pd magn.   M4.4 0.5 s after the alarm, M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 7 stations (5 above noise)
+  location   rms 0.02 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     -39.285N 175.417E +-15 km from 3 stations, first 0.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 132 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             VRZ           58 km   14:47:36.70 UTC (picked)     +10.7 s  before S
+             HIZ           63 km   14:47:06.22 UTC (predicted)   -19.8 s  after S
+             TLZ          125 km   14:47:23.86 UTC (predicted)    -2.1 s  after S
+             RATZ         133 km   14:47:26.26 UTC (predicted)    +0.3 s  before S
+             KPRZ         135 km   14:47:26.74 UTC (predicted)    +0.7 s  before S
+             BKZ          199 km   14:47:45.10 UTC (picked)     +19.1 s  before S
+             TSZ          204 km   14:47:46.32 UTC (picked)     +20.3 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     0
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                4
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                4  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   2          0        2
+    M 2-3                   1          0        1
+    M 4-5                   1          0        1
+
+  Missed AFAD events
+    14:46:49.00 UTC  MLv 4.9    60 km from the network centre
+    15:07:17.00 UTC  MLv 1.5   111 km from the network centre
+    16:11:53.00 UTC  MLv 2.7    52 km from the network centre
+    17:12:46.00 UTC  MLv 0.8   138 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    14:47:26.00 UTC  #1  M4.6, located -38.80N 174.24E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/runs/g_eqt_0p9/nz_now_seq017.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      21588         0        1      1         7      0.001 (0.001)        42
+  HIZ      21588         0        0      0         0      0.001 (0.001)         0
+  KPRZ     21588         0        0      0         0      0.001 (0.001)         0
+  RATZ     21588         0        0      0         0      0.001 (0.001)         0
+  TLZ      21588         0        0      0         0      0.001 (0.001)         0
+  TSZ      21588         0        1      1         7      0.001 (0.001)        41
+  VRZ      21588         0        1      1         7      0.001 (0.001)        25
+  Pd: 21 values sent
+  P time from an STA/LTA onset for 3 of 3 triggers (0 from the window start)
+  onset from a FilterPicker pick for 3 of 3 triggers (P-time location and Pd)
+  151116 windows in 0.7 s: 14800x real time per station

@@ -1,0 +1,50 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-10-13 04:59:02.76 to 10:59:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:57:48.00  earthquake detected by MWZ, URZ
+PLOC     #1   08:57:53.50  P times locate it at -36.028N 177.111E +-476 km, origin 08:56:56.25, rms 0.00 s from 3 stations
+PLOC     #1   08:57:57.00  P times locate it at -37.657N 176.692E +-124 km, origin 08:57:23.09, rms 1.27 s from 4 stations
+LOCATE   #1   08:58:36.50  located at -38.052N 177.269E, origin 08:57:32.87, rms 0.03 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-10-13 05:27:50.00 to 10:59:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at -38.052N 177.269E, origin 08:57:32.87 UTC
+  alarm      08:57:48.00 UTC by MWZ, URZ; later RATZ, TLZ
+  location   rms 0.03 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     -37.657N 176.692E +-124 km from 4 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 52 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             URZ           27 km   08:57:41.06 UTC (picked)      -6.9 s  after S
+             MWZ           39 km   08:57:44.30 UTC (picked)      -3.7 s  after S
+             BKZ          141 km   08:58:13.28 UTC (predicted)   +25.3 s  before S
+             KPRZ         153 km   08:58:16.76 UTC (predicted)   +28.8 s  before S
+             TLZ          154 km   08:58:17.08 UTC (predicted)   +29.1 s  before S
+             RATZ         159 km   08:58:18.32 UTC (predicted)   +30.3 s  before S
+             KUZ          200 km   08:58:29.95 UTC (predicted)   +42.0 s  before S
+             MKAZ         214 km   08:58:33.96 UTC (predicted)   +46.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     6
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/eqt_causal_eqdet/nz_strat_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        2      2        14      0.001 (0.001)        42
+  KPRZ     43189         0        1      1         7      0.001 (0.001)        49
+  KUZ      43189         0        1      1         7      0.001 (0.001)        38
+  MKAZ     43189         0        0      0         0      0.001 (0.001)         0
+  MWZ      43189         0        3      3        21      0.002 (0.003)        39
+  RATZ     43189         0        1      1         7      0.002 (0.003)        41
+  TLZ      43189         0        1      1         7      0.001 (0.001)        51
+  URZ      43189         0        1      1         7      0.001 (0.001)        44
+  Pd: 70 values sent
+  P time from an STA/LTA onset for 8 of 10 triggers (2 from the window start)
+  onset from a FilterPicker pick for 3 of 10 triggers (P-time location and Pd)
+  345512 windows in 1.2 s: 16317x real time per station

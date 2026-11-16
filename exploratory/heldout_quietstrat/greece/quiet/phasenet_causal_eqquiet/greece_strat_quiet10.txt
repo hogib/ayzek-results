@@ -1,0 +1,54 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-11 03:23:02.14 to 09:23:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:23:47.50  earthquake detected by GUR, VLX
+ALARM    #2   05:53:06.50  earthquake detected by GUR, VLX
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-11 03:51:50.00 to 09:23:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:23:47.50 UTC by GUR, VLX
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      05:53:06.50 UTC by GUR, VLX
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    21
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:23:47.50 UTC  #1  no magnitude, not located
+    05:53:06.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_causal_eqquiet/greece_strat_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        2      2        14      0.001 (0.001)        21
+  EPID     43189         0        2      2        14      0.001 (0.001)        15
+  GUR      43189         0        5      5        35      0.001 (0.001)        19
+  LOUT     43189         0        7      7        49      0.001 (0.001)        17
+  LTK      43189         0        1      1         7      0.001 (0.001)        21
+  THAL     43189         0        2      2        14      0.001 (0.001)        15
+  VLI      43189         0        3      3        21      0.001 (0.001)        14
+  VLX      43189         0        3      3        21      0.000 (0.001)        13
+  Pd: 175 values sent
+  P time from an STA/LTA onset for 15 of 25 triggers (10 from the window start)
+  onset from a FilterPicker pick for 10 of 25 triggers (P-time location and Pd)
+  345512 windows in 0.7 s: 27024x real time per station

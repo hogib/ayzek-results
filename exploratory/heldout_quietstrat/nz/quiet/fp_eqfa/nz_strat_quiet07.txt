@@ -1,0 +1,44 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2024-06-25 19:09:02.81 to 01:09:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   20:12:04.60  earthquake detected by BKZ, TLZ
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-06-25 19:37:50.00 to 01:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:12:04.60 UTC by BKZ, TLZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    26
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    20:12:04.60 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/fp_eqfa/nz_strat_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        6      6        42      0.025 (0.029)        80
+  HIZ      43189         0        2      2        14      0.025 (0.006)        82
+  KPRZ     43189         0       11     11        77      0.024 (0.008)        73
+  RATZ     43189         0        2      2        14      0.025 (0.006)        85
+  TLZ      43189         0        3      3        21      0.023 (0.037)        84
+  VRZ      43189         0        4      4        28      0.022 (0.027)        86
+  Pd: 196 values sent
+  259134 windows in 2.4 s: 8383x real time per station

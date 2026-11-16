@@ -1,0 +1,77 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-03-31 15:55:22.10 to 18:55:18.75 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   16:05:45.00  earthquake detected by EPID, MRTH  (AFAD MLh 4.8 at 16:05:19.00, 26.0 s ago)
+PLOC     #1   16:05:45.50  P times locate it at 37.120N 24.186E +-59 km, origin 16:05:21.25, rms 0.01 s from 3 stations
+PDMAG    #1   16:06:33.50  Pd magnitude M4.7 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (6 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   16:06:33.50  located at 38.753N 22.590E, origin 16:05:17.11, rms 0.26 s from 2 stations
+LOCATE   #1   16:06:34.00  located at 37.030N 24.406E, origin 16:05:18.73, rms 0.68 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-03-31 15:55:22.10 to 18:55:18.75 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.7 earthquake at 37.030N 24.406E, origin 16:05:18.73 UTC
+  alarm      16:05:45.00 UTC by EPID, MRTH; later VLI
+  Pd magn.   M4.7 48.5 s after the alarm, M4.7 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 7 stations (5 above noise)
+  location   rms 0.68 s from 3 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     37.120N 24.186E +-59 km from 3 stations, first 0.5 s after the alarm, epicentre 20.6 km off
+  AFAD       MLh 4.8 at 16:05:19.00 UTC: alarm 26.0 s after origin, Pd magnitude -0.1, epicentre 41.7 km off, origin -0.3 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 0 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             ATH           84 km   16:06:01.50 UTC (predicted)   +16.5 s  before S
+             PTL           89 km   16:06:02.30 UTC (predicted)   +17.3 s  before S
+             EPID          90 km   16:05:55.90 UTC (picked)     +10.9 s  before S
+             KARY          92 km   16:06:02.93 UTC (predicted)   +17.9 s  before S
+             MRTH          96 km   16:05:56.18 UTC (picked)     +11.2 s  before S
+             MDRA         102 km   16:06:04.61 UTC (predicted)   +19.6 s  before S
+             VLI          114 km   16:05:57.88 UTC (picked)     +12.9 s  before S
+             VILL         119 km   16:06:07.82 UTC (predicted)   +22.8 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     2
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        1  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km                3
+    detected                              1   33%
+    detected before S                     1   33%
+    missed                                2   67%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+    M 2-3                   1          0        1
+    M 4-5                   1          1        0
+
+  Correct alarms
+    alarm after origin time             median 26.0 s
+    Pd magnitude error                  mean 0.11 units, bias -0.11, 1 events
+    located                             1 of 1
+    P-time located                      1 of 1, median epicentre error 20.6 km, median 0.5 s after the alarm
+    alarm before the S wave             at 8 of 8 station arrivals, median warning 16.9 s, max 22.8 s
+
+  Missed AFAD events
+    17:56:17.00 UTC  MLh 1.3   201 km from the network centre
+    18:16:13.00 UTC  MLh 2.5   240 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/runs/g_eqt_0p9/greece_now_seq003.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      21588         0        0      0         0      0.001 (0.001)         0
+  EPID     21588         0        1      1         7      0.001 (0.001)        66
+  KARY     21588         0        1      1         7      0.001 (0.001)        28
+  MDRA     21588         0        0      0         0      0.001 (0.001)         0
+  MRTH     21588         0        1      1         0      0.001 (0.001)        64
+  PTL      21534         8        0      0         0      0.001 (0.001)         0
+  VILL     21588         0        1      1         7      0.001 (0.002)        56
+  VLI      21588         0        1      1         7      0.001 (0.001)        57
+  Pd: 28 values sent
+  P time from an STA/LTA onset for 5 of 5 triggers (0 from the window start)
+  onset from a FilterPicker pick for 5 of 5 triggers (P-time location and Pd)
+  172650 windows in 1.1 s: 9574x real time per station

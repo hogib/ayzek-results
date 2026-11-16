@@ -1,0 +1,38 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 12 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   09:59:16.64  earthquake detected by MDRA, VILL
+ALARM    #2   11:34:30.76  earthquake detected by KARY, LKR
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:59:16.64 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:34:30.76 UTC by KARY, LKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    12
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_12/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.001 (0.000)         0
+  KARY     43189         0        1      1         7      0.001 (0.000)        46
+  LKR      43189         0        1      1         7      0.001 (0.000)        49
+  MDRA     43189         0        2      2        14      0.001 (0.000)        25
+  MRTH     43189         0        2      2         0      0.001 (0.000)        26
+  PTL      43189         0        0      0         0      0.000 (0.000)         0
+  THIV     43189         0        8      8        56      0.001 (0.000)        39
+  VILL     43189         0        2      2        14      0.001 (0.000)        48
+  Pd: 98 values sent
+  345512 windows in 0.5 s: 36282x real time per station

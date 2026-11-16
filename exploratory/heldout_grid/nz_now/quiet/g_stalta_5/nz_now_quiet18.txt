@@ -1,0 +1,104 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 5 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-07-11 21:47:03.27 to 03:47:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   22:54:53.77  earthquake detected by KPRZ, KUZ
+ALARM    #2   22:59:18.79  earthquake detected by MKAZ, TLZ
+ALARM    #3   23:10:30.32  earthquake detected by KUZ, TLZ
+ALARM    #4   00:04:26.91  earthquake detected by KPRZ, URZ
+ALARM    #5   00:17:17.15  earthquake detected by TLZ, URZ
+ALARM    #6   00:19:31.86  earthquake detected by HIZ, KUZ
+ALARM    #7   00:49:05.32  earthquake detected by KPRZ, MKAZ
+ALARM    #8   00:52:00.69  earthquake detected by MKAZ, TLZ
+ALARM    #9   01:05:00.40  earthquake detected by KPRZ, MKAZ
+ALARM    #10  01:58:39.57  earthquake detected by MKAZ, TLZ
+ALARM    #11  02:28:15.79  earthquake detected by MKAZ, TLZ
+ALARM    #12  02:41:36.20  earthquake detected by HIZ, TLZ
+PLOC     #12  02:41:39.73  P times locate it at -37.733N 175.292E +-25 km, origin 02:41:20.30, rms 0.01 s from 3 stations
+ALARM    #13  02:56:15.40  earthquake detected by KPRZ, TLZ
+ALARM    #14  03:06:11.75  earthquake detected by TLZ, URZ
+ALARM    #15  03:18:19.51  earthquake detected by KPRZ, TLZ
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2023-07-11 22:15:50.00 to 03:47:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      22:54:53.77 UTC by KPRZ, KUZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:59:18.79 UTC by MKAZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      23:10:30.32 UTC by KUZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      00:04:26.91 UTC by KPRZ, URZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      00:17:17.15 UTC by TLZ, URZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      00:19:31.86 UTC by HIZ, KUZ
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      00:49:05.32 UTC by KPRZ, MKAZ
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      00:52:00.69 UTC by MKAZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      01:05:00.40 UTC by KPRZ, MKAZ
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      01:58:39.57 UTC by MKAZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      02:28:15.79 UTC by MKAZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      02:41:36.20 UTC by HIZ, TLZ; later KUZ
+  P loc.     -37.733N 175.292E +-25 km from 3 stations, first 3.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      02:56:15.40 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude), not located
+  alarm      03:06:11.75 UTC by TLZ, URZ
+  AFAD       no matching catalogue event
+
+Event #15: detected earthquake (no magnitude), not located
+  alarm      03:18:19.51 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          15
+  single-station detections, no alarm   129
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_5/nz_now_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HIZ      43148         4       26     26       182      0.001 (0.001)        45
+  KPRZ     43177         1       36     36       252      0.003 (0.001)        47
+  KUZ      43150         5       14     14        98      0.002 (0.001)        55
+  MKAZ     43102        11       18     18       119      0.001 (0.001)        54
+  RATZ     43189         0        0      0         0      0.001 (0.001)         0
+  TLZ      43189         0       59     59       413      0.001 (0.001)        37
+  URZ      43138         6        8      8        49      0.001 (0.001)        52
+  Pd: 1113 values sent
+  302093 windows in 2.4 s: 8175x real time per station

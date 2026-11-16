@@ -1,0 +1,47 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-04-02 15:17:02.09 to 21:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   19:41:07.50  earthquake detected by PFKS, SIVA
+LOCATE   #1   19:41:59.50  located at 34.685N 24.998E, origin 19:40:57.19, rms 0.08 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-04-02 15:45:50.00 to 21:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 34.685N 24.998E, origin 19:40:57.19 UTC
+  alarm      19:41:07.50 UTC by PFKS, SIVA
+  location   rms 0.08 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 35 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          41 km   19:41:09.10 UTC (picked)      +1.6 s  before S
+             PFKS          59 km   19:41:14.26 UTC (picked)      +6.8 s  before S
+             KNSS          71 km   19:41:17.62 UTC (predicted)   +10.1 s  before S
+             IPPL          88 km   19:41:22.60 UTC (predicted)   +15.1 s  before S
+             STIA         115 km   19:41:30.18 UTC (predicted)   +22.7 s  before S
+             ZKR          121 km   19:41:31.88 UTC (predicted)   +24.4 s  before S
+             CHAN         127 km   19:41:33.60 UTC (predicted)   +26.1 s  before S
+             THERA        192 km   19:41:52.10 UTC (predicted)   +44.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    26
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/phasenet_causal_eqfa/greece_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        2      2        14      0.006 (0.002)       110
+  IPPL     43189         0        1      1         7      0.005 (0.006)       183
+  KNSS     43189         0        0      0         0      0.005 (0.005)         0
+  PFKS     43142         7        9      9        63      0.005 (0.002)       122
+  SIVA     43189         0        3      3        21      0.003 (0.007)       108
+  STIA     43189         0        6      6        42      0.005 (0.002)       123
+  THERA    43189         0        4      4        28      0.004 (0.002)       113
+  ZKR      43189         0        3      3        21      0.004 (0.001)       120
+  Pd: 196 values sent
+  P time from an STA/LTA onset for 23 of 28 triggers (5 from the window start)
+  onset from a FilterPicker pick for 19 of 28 triggers (P-time location and Pd)
+  345465 windows in 4.9 s: 4088x real time per station

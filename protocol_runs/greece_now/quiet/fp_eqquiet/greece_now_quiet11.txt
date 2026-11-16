@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:58:15.69  earthquake detected by TETR, TSLK
+PLOC     #1   10:58:15.90  P times locate it at 38.876N 21.563E +-466 km, origin 10:58:02.12, rms 0.06 s from 3 stations
+PLOC     #1   10:58:16.70  P times locate it at 39.625N 20.540E +-340 km, origin 10:58:00.02, rms 0.17 s from 4 stations
+PLOC     #1   10:58:16.71  P times locate it at 39.639N 20.500E +-335 km, origin 10:57:59.42, rms 0.34 s from 5 stations
+LOCATE   #1   10:59:09.78  located at 41.550N 20.125E, origin 10:57:26.05, rms 1.61 s from 2 stations
+LOCATE   #1   10:59:10.82  located at 38.269N 23.586E, origin 10:57:33.41, rms 0.27 s from 2 stations, left out TSLK
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.269N 23.586E, origin 10:57:33.41 UTC
+  alarm      10:58:15.69 UTC by TETR, TSLK; later AMPL, LKD2, NYDR
+  location   rms 0.27 s from 2 stations, first 54.1 s after the alarm (P and S picks)
+  P loc.     39.639N 20.500E +-335 km from 5 stations, first 0.2 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 148 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             EVR          170 km   10:58:22.15 UTC (predicted)    +6.5 s  before S
+             PVO          184 km   10:58:25.95 UTC (predicted)   +10.3 s  before S
+             PDO          212 km   10:58:34.19 UTC (predicted)   +18.5 s  before S
+             AMPL         219 km   10:58:35.94 UTC (predicted)   +20.3 s  before S
+             TETR         233 km   10:58:40.33 UTC (picked)     +24.6 s  before S
+             NYDR         256 km   10:58:46.46 UTC (picked)     +30.8 s  before S
+             LKD2         261 km   10:58:48.10 UTC (predicted)   +32.4 s  before S
+             TSLK         262 km   10:58:54.78 UTC (picked)     +39.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    42
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:58:15.69 UTC  #1  no magnitude, located 38.27N 23.59E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/fp_eqquiet/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0       42     42       294      0.050 (1.109)       198
+  EVR      43189         0        0      0         0      0.048 (1.254)         0
+  LKD2     43171         2        1      1         7      0.048 (1.089)       139
+  NYDR     43189         0        1      1         0      0.043 (1.080)       171
+  PDO      43189         0        0      0         0      0.044 (1.089)         0
+  PVO      43189         0        1      1         7      0.047 (1.214)       232
+  TETR     43189         0        1      1         7      0.052 (1.088)       147
+  TSLK     43189         0        1      1         0      0.045 (1.096)       127
+  Pd: 315 values sent
+  345494 windows in 11.5 s: 1721x real time per station

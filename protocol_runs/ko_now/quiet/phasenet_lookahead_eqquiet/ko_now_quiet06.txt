@@ -1,0 +1,45 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-18 10:50:02.58 to 16:50:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:33:30.50  earthquake detected by NURH, SARI
+PLOC     #1   15:33:41.50  P times locate it at 38.165N 36.976E +-27 km, origin 15:33:20.21, rms 0.02 s from 3 stations
+ALARM    #2   16:25:55.50  earthquake detected by NURH, SARI
+ALARM    #3   16:43:11.00  earthquake detected by NURH, SARI
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-18 11:18:50.00 to 16:50:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:33:30.50 UTC by NURH, SARI; later GAZ
+  P loc.     38.165N 36.976E +-27 km from 3 stations, first 11.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      16:25:55.50 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      16:43:11.00 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    13
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/phasenet_lookahead_eqquiet/ko_now_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.006 (0.002)         0
+  CEYT     43057        13        0      0         0      0.004 (0.002)         0
+  GAZ      43189         0        3      3        21      0.005 (0.002)       214
+  KARA     43189         0        4      4        28      0.004 (0.002)       184
+  NURH     43189         0        9      9         0      0.006 (0.002)       144
+  SARI     43189         0        4      4        28      0.005 (0.002)       160
+  Pd: 77 values sent
+  P time from an STA/LTA onset for 2 of 20 triggers (18 from the window start)
+  onset from a FilterPicker pick for 1 of 20 triggers (P-time location and Pd)
+  259002 windows in 4.8 s: 4166x real time per station

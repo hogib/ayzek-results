@@ -1,0 +1,35 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 6 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-01-19 06:22:03.46 to 12:22:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:28:18.27  earthquake detected by FOZ, WVZ
+ALARM    #2   12:05:30.74  earthquake detected by RPZ, WVZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-19 06:50:50.00 to 12:22:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:28:18.27 UTC by FOZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      12:05:30.74 UTC by RPZ, WVZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     9
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_6/nz_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        2      2        14      0.001 (0.000)        28
+  FOZ      43189         0        3      3        21      0.000 (0.000)        26
+  RPZ      43189         0        1      1         7      0.001 (0.000)        31
+  WHSZ     43189         0        0      0         0      0.001 (0.000)         0
+  WVZ      43189         0        7      7        49      0.001 (0.000)        26
+  Pd: 91 values sent
+  215945 windows in 0.3 s: 59625x real time per station

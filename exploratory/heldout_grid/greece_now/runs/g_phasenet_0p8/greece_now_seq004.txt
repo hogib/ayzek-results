@@ -1,0 +1,88 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-04-26 19:50:39.14 to 22:50:36.29 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+ALARM    #1   20:00:55.50  earthquake detected by NISR, NISR2  (AFAD MLh 5.2 at 20:00:36.00, 19.5 s ago)
+PLOC     #1   20:00:55.50  P times locate it at 36.317N 26.364E +-367 km, origin 20:00:41.81, rms 0.01 s from 3 stations
+PDMAG    #1   20:00:58.00  Pd magnitude M5.2 ± 0.2 (M<4 0%, 4-5.5 92%, M>=5.5 8%) from 2 stations (2 above noise), windows up to 2 s, distances from the P-time location
+PLOC     #1   20:00:58.00  P times locate it at 36.531N 26.321E +-19 km, origin 20:00:42.17, rms 0.09 s from 4 stations
+PDMAG    #1   20:00:59.00  Pd magnitude M5.2 ± 0.2 (M<4 0%, 4-5.5 94%, M>=5.5 6%) from 3 stations (3 above noise), windows up to 3 s, distances from the P-time location
+PDMAG    #1   20:01:00.00  Pd magnitude M5.1 ± 0.2 (M<4 0%, 4-5.5 99%, M>=5.5 1%) from 3 stations (3 above noise), windows up to 4 s, distances from the P-time location
+PLOC     #1   20:01:00.00  P times locate it at 36.255N 26.319E +-8 km, origin 20:00:40.36, rms 1.29 s from 5 stations
+PDMAG    #1   20:01:00.50  Pd magnitude M5.1 ± 0.2 (M<4 0%, 4-5.5 99%, M>=5.5 1%) from 4 stations (4 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #1   20:01:02.00  Pd magnitude M5.0 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 4 stations (4 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   20:01:05.00  Pd magnitude M4.9 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 4 stations (4 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   20:01:47.50  Pd magnitude M5.2 ± 0.1 (M<4 0%, 4-5.5 98%, M>=5.5 2%) from 4 stations (4 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   20:01:47.50  located at 37.663N 27.304E, origin 20:00:34.89, rms 0.06 s from 2 stations
+PDMAG    #1   20:01:47.50  Pd magnitude M5.0 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 4 stations (4 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   20:01:47.50  located at 37.282N 26.154E, origin 20:00:35.45, rms 0.26 s from 3 stations
+PDMAG    #1   20:01:52.00  Pd magnitude M4.8 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 4 stations (4 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   20:01:52.00  located at 36.260N 26.195E, origin 20:00:41.00, rms 1.58 s from 4 stations, left out THERA
+ALARM    #2   22:38:06.50  earthquake detected by APE, STIA
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-04-26 19:50:39.14 to 22:50:36.29 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.8 earthquake at 36.260N 26.195E, origin 20:00:41.00 UTC
+  alarm      20:00:55.50 UTC by NISR, NISR2, THERA; later APE, STIA
+  Pd magn.   M5.2 2.5 s after the alarm, M4.8 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 4 stations (4 above noise)
+  location   rms 1.58 s from 4 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     36.255N 26.319E +-8 km from 5 stations, first 0.0 s after the alarm, epicentre 9.6 km off
+  AFAD       MLh 5.2 at 20:00:36.00 UTC: alarm 19.5 s after origin, Pd magnitude -0.4, epicentre 18.7 km off, origin +5.0 s
+  pre-S      3 of 3 alarm detections declared before the predicted S
+  S wave     had travelled 0 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             NISR          74 km   20:01:08.72 UTC (picked)     +13.2 s  before S
+             NISR2         76 km   20:01:09.70 UTC (picked)     +14.2 s  before S
+             THERA         82 km   20:01:09.22 UTC (picked)     +13.7 s  before S
+             APE          114 km   20:01:13.88 UTC (picked)     +18.4 s  before S
+             STIA         127 km   20:01:16.60 UTC (picked)     +21.1 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:38:06.50 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    14
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        1   50%
+    false    (no AFAD event)              1   50%
+
+  AFAD events within 250 km                2
+    detected                              1   50%
+    detected before S                     1   50%
+    missed                                1   50%
+
+  By magnitude      AFAD events   detected   missed
+    M 2-3                   1          0        1
+    M 5+                    1          1        0
+
+  Correct alarms
+    alarm after origin time             median 19.5 s
+    Pd magnitude error                  mean 0.35 units, bias -0.35, 1 events
+    located                             1 of 1
+    P-time located                      1 of 1, median epicentre error 9.6 km, median 0.0 s after the alarm
+    alarm before the S wave             at 5 of 5 station arrivals, median warning 14.2 s, max 21.1 s
+
+  Missed AFAD events
+    21:43:14.00 UTC  MLh 2.5   208 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    22:38:06.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/runs/g_phasenet_0p8/greece_now_seq004.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      21588         0        6      6        42      0.001 (0.001)        42
+  NISR     21588         0        7      7         0      0.001 (0.003)        36
+  NISR2    21588         0        1      1         7      0.001 (0.001)        33
+  STIA     21588         0        6      6        42      0.002 (0.001)        45
+  THERA    21588         0        1      1         7      0.001 (0.001)        54
+  Pd: 98 values sent
+  P time from an STA/LTA onset for 12 of 21 triggers (9 from the window start)
+  onset from a FilterPicker pick for 10 of 21 triggers (P-time location and Pd)
+  107940 windows in 1.0 s: 10631x real time per station

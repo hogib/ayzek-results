@@ -1,0 +1,40 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-05-15 08:30:04.11 to 14:30:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   10:20:07.00  earthquake detected by GUR, VLI
+ALARM    #2   11:56:33.00  earthquake detected by LTK, VLI
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:58:50.00 to 14:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:20:07.00 UTC by GUR, VLI
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:56:33.00 UTC by LTK, VLI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    15
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_lookahead_eqquiet/greece_strat_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        0      0         0      0.001 (0.001)         0
+  EPID     43189         0        2      2        14      0.000 (0.001)        22
+  GUR      43189         0        6      6        42      0.001 (0.001)        13
+  LOUT     43189         0        0      0         0      0.001 (0.001)         0
+  LTK      43189         0        5      5        35      0.001 (0.001)        14
+  THAL     43189         0        0      0         0      0.001 (0.001)         0
+  VLI      43189         0        6      6        42      0.001 (0.001)        15
+  VLX      43189         0        0      0         0      0.000 (0.001)         0
+  Pd: 133 values sent
+  P time from an STA/LTA onset for 11 of 19 triggers (8 from the window start)
+  onset from a FilterPicker pick for 7 of 19 triggers (P-time location and Pd)
+  345512 windows in 0.6 s: 32912x real time per station

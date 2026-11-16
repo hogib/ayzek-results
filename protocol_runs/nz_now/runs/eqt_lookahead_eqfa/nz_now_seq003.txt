@@ -1,0 +1,48 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-03 23:04:25.65 to 02:04:22.14 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-03 23:04:25.65 to 02:04:22.14 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm     2
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                3
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                3  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+    M 2-3                   1          0        1
+    M 4-5                   1          0        1
+
+  Missed AFAD events
+    23:14:22.00 UTC  MLv 5.0    13 km from the network centre
+    00:13:22.00 UTC  MLv 2.0    33 km from the network centre
+    01:06:14.00 UTC  MLv 1.9   129 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/runs/eqt_lookahead_eqfa/nz_now_seq003.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      21588         0        2      2        14      0.004 (0.002)       185
+  HIZ      21588         0        0      0         0      0.005 (0.002)         0
+  KPRZ     21588         0        0      0         0      0.005 (0.002)         0
+  RATZ     21588         0        0      0         0      0.005 (0.002)         0
+  TLZ      21588         0        0      0         0      0.006 (0.002)         0
+  TSZ      21588         0        0      0         0      0.005 (0.007)         0
+  URZ      21588         0        0      0         0      0.005 (0.002)         0
+  VRZ      21588         0        0      0         0      0.005 (0.002)         0
+  Pd: 14 values sent
+  P time from an STA/LTA onset for 2 of 2 triggers (0 from the window start)
+  onset from a FilterPicker pick for 2 of 2 triggers (P-time location and Pd)
+  172704 windows in 2.7 s: 3990x real time per station

@@ -1,0 +1,45 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2025-05-31 11:19:03.17 to 17:19:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   16:17:49.17  earthquake detected by DRO, LTHK
+LOCATE   #1   16:18:43.27  located at 37.701N 21.103E, origin 16:17:38.86, rms 0.09 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-31 11:47:50.00 to 17:19:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 37.701N 21.103E, origin 16:17:38.86 UTC
+  alarm      16:17:49.17 UTC by DRO, LTHK
+  location   rms 0.09 s from 2 stations, first 54.1 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 35 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             LTHK          23 km   16:17:46.10 UTC (picked)      -3.1 s  after S
+             ORTH          39 km   16:17:50.50 UTC (predicted)    +1.3 s  before S
+             RLS           51 km   16:17:53.61 UTC (predicted)    +4.4 s  before S
+             AMT           57 km   16:17:55.26 UTC (predicted)    +6.1 s  before S
+             AXS           60 km   16:17:56.25 UTC (predicted)    +7.1 s  before S
+             DRO           60 km   16:17:56.35 UTC (picked)      +7.2 s  before S
+             VLS           70 km   16:17:58.94 UTC (predicted)    +9.8 s  before S
+             PLEV          83 km   16:18:02.88 UTC (predicted)   +13.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    31
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/fp_eqquiet/greece_strat_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0        3      3        21      0.014 (0.099)        48
+  AXS      43189         0        1      1         7      0.014 (0.009)        53
+  DRO      43189         0        7      7        49      0.014 (0.024)        43
+  LTHK     43189         0       17     17       119      0.013 (0.009)        37
+  ORTH     43189         0        0      0         0      0.014 (0.111)         0
+  PLEV     43189         0        0      0         0      0.019 (0.043)         0
+  RLS      43189         0        3      3        21      0.015 (0.018)        42
+  VLS      43189         0        2      2        14      0.017 (0.038)        47
+  Pd: 231 values sent
+  345512 windows in 1.5 s: 13667x real time per station

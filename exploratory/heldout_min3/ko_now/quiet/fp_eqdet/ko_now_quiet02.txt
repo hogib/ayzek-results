@@ -1,0 +1,37 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   05:12:05.87  earthquake detected by BNN, KARA, NURH
+PDMAG    #1   05:12:05.87  Pd magnitude M3.6 ± 0.2 (M<4 98%, 4-5.5 2%, M>=5.5 0%) from 4 stations (3 above noise), windows up to 5 s, distances from the P-time location
+PLOC     #1   05:12:05.87  P times locate it at 37.987N 36.473E +-11 km, origin 05:11:40.59, rms 0.03 s from 3 stations
+PDMAG    #1   05:12:06.50  Pd magnitude M3.8 ± 0.2 (M<4 91%, 4-5.5 9%, M>=5.5 0%) from 5 stations (4 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   05:12:15.50  Pd magnitude M3.7 ± 0.2 (M<4 98%, 4-5.5 2%, M>=5.5 0%) from 5 stations (4 above noise), windows up to 10 s, distances from the P-time location
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M3.7 earthquake, not located
+  alarm      05:12:05.87 UTC by BNN, KARA, NURH
+  Pd magn.   M3.6 at the alarm, M3.7 ± 0.2 (M<4 98%, 4-5.5 2%, M>=5.5 0%) final from 5 stations (4 above noise)
+  P loc.     37.987N 36.473E +-11 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm   182
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/fp_eqdet/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       29     29       203      0.015 (0.040)        53
+  CEYT     43189         0        0      0         0      0.021 (0.007)         0
+  GAZ      43189         0       99     98       693      0.015 (0.016)        47
+  KARA     43189         0       12     12        84      0.016 (0.047)        49
+  NURH     43189         0       32     32         0      0.016 (0.058)        49
+  SARI     43189         0       41     40       287      0.014 (0.025)        49
+  Pd: 1267 values sent
+  259134 windows in 5.6 s: 3522x real time per station

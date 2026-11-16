@@ -1,0 +1,73 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-09 10:10:02.41 to 16:10:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   10:58:34.99  earthquake detected by AXS, DRO
+PLOC     #1   10:58:36.45  P times locate it at 37.884N 21.458E +-345 km, origin 10:58:28.81, rms 0.02 s from 3 stations
+PLOC     #1   10:58:37.23  P times locate it at 39.005N 24.780E +-201 km, origin 10:57:43.85, rms 0.39 s from 4 stations
+ALARM    #2   11:39:39.77  earthquake detected by DRO, LTHK
+LOCATE   #2   11:40:34.26  located at 37.981N 21.328E, origin 11:39:27.51, rms 0.08 s from 2 stations
+ALARM    #3   13:49:25.38  earthquake detected by AXS, ITM
+ALARM    #4   14:42:02.99  earthquake detected by LTHK, VLX
+ALARM    #5   15:14:58.77  earthquake detected by DRO, ITM
+ALARM    #6   15:18:02.82  earthquake detected by LTHK, ORTH
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:38:50.00 to 16:10:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:58:34.99 UTC by AXS, DRO; later AMT, ITM
+  P loc.     39.005N 24.780E +-201 km from 4 stations, first 1.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 37.981N 21.328E, origin 11:39:27.51 UTC
+  alarm      11:39:39.77 UTC by DRO, LTHK
+  location   rms 0.08 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 42 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             RLS           15 km   11:39:32.56 UTC (predicted)    -7.2 s  after S
+             AXS           24 km   11:39:35.02 UTC (predicted)    -4.7 s  after S
+             DRO           34 km   11:39:37.58 UTC (picked)      -2.2 s  after S
+             LTHK          53 km   11:39:42.78 UTC (picked)      +3.0 s  before S
+             ORTH          57 km   11:39:44.12 UTC (predicted)    +4.4 s  before S
+             AMT           60 km   11:39:44.90 UTC (predicted)    +5.1 s  before S
+             ITM          104 km   11:39:57.23 UTC (predicted)   +17.5 s  before S
+             VLX          115 km   11:40:00.41 UTC (predicted)   +20.6 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      13:49:25.38 UTC by AXS, ITM
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      14:42:02.99 UTC by LTHK, VLX
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      15:14:58.77 UTC by DRO, ITM; later AMT
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      15:18:02.82 UTC by LTHK, ORTH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    87
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet13.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0        3      3        21      0.001 (0.000)        39
+  AXS      43189         0       42     42       294      0.001 (0.000)        35
+  DRO      43189         0       26     26       182      0.001 (0.000)        35
+  ITM      43189         0        7      7        49      0.001 (0.000)        39
+  LTHK     43189         0       16     15       109      0.000 (0.000)        38
+  ORTH     43189         0        2      2        14      0.001 (0.000)        37
+  RLS      43189         0        4      4        28      0.000 (0.001)        29
+  VLX      43189         0        2      2        14      0.001 (0.001)        47
+  Pd: 711 values sent
+  345512 windows in 1.9 s: 10715x real time per station

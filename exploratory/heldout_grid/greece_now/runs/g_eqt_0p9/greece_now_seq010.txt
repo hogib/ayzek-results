@@ -1,0 +1,119 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-01-19 14:04:16.72 to 17:04:13.54 UTC at full speed
+ayzek    catalogue: 21 events in the replay span
+ALARM    #1   14:14:32.50  earthquake detected by KARY, PTL  (AFAD MLh 4.8 at 14:14:14.00, 18.5 s ago)
+PLOC     #1   14:14:35.00  P times locate it at 38.258N 24.241E +-390 km, origin 14:14:19.58, rms 0.01 s from 3 stations
+PLOC     #1   14:14:35.50  P times locate it at 38.620N 24.343E +-334 km, origin 14:14:13.80, rms 0.06 s from 4 stations
+PLOC     #1   14:14:36.00  P times locate it at 38.621N 24.340E +-330 km, origin 14:14:13.79, rms 0.07 s from 5 stations
+PLOC     #1   14:14:36.00  P times locate it at 38.582N 24.323E +-149 km, origin 14:14:14.48, rms 0.11 s from 6 stations
+PLOC     #1   14:14:39.00  P times locate it at 38.641N 24.360E +-50 km, origin 14:14:13.40, rms 0.16 s from 7 stations
+PDMAG    #1   14:15:21.00  Pd magnitude M4.8 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (7 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   14:15:21.00  located at 38.571N 24.331E, origin 14:14:14.78, rms 0.06 s from 2 stations
+LOCATE   #1   14:15:23.50  located at 38.578N 24.341E, origin 14:14:14.61, rms 0.12 s from 3 stations
+LOCATE   #1   14:15:24.00  located at 38.555N 24.378E, origin 14:14:14.99, rms 0.42 s from 4 stations
+LOCATE   #1   14:15:24.50  located at 38.561N 24.365E, origin 14:14:14.87, rms 0.49 s from 5 stations
+LOCATE   #1   14:15:24.50  located at 38.567N 24.368E, origin 14:14:14.71, rms 0.46 s from 6 stations
+LOCATE   #1   14:15:27.50  located at 38.591N 24.380E, origin 14:14:14.13, rms 0.51 s from 7 stations
+ALARM    #2   15:33:22.00  earthquake detected by KARY, MRTH  (AFAD MLh 2.6 at 15:33:00.00, 22.0 s ago)
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2024-01-19 14:04:16.72 to 17:04:13.54 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.8 earthquake at 38.591N 24.380E, origin 14:14:14.13 UTC
+  alarm      14:14:32.50 UTC by KARY, PTL; later ATH, LKR, MDRA, THIV, VILL
+  Pd magn.   M4.8 48.5 s after the alarm, M4.8 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 7 stations (7 above noise)
+  location   rms 0.51 s from 7 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     38.641N 24.360E +-50 km from 7 stations, first 2.5 s after the alarm, epicentre 7.4 km off
+  AFAD       MLh 4.8 at 14:14:14.00 UTC: alarm 18.5 s after origin, Pd magnitude +0.1, epicentre 2.3 km off, origin +0.1 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 63 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             KARY          61 km   14:14:32.28 UTC (picked)      -0.2 s  after S
+             MRTH          62 km   14:14:32.21 UTC (predicted)    -0.3 s  after S
+             PTL           73 km   14:14:35.28 UTC (picked)      +2.8 s  before S
+             ATH           87 km   14:14:39.70 UTC (picked)      +7.2 s  before S
+             THIV          95 km   14:14:42.14 UTC (picked)      +9.6 s  before S
+             MDRA          97 km   14:14:41.90 UTC (picked)      +9.4 s  before S
+             VILL         102 km   14:14:45.24 UTC (picked)     +12.7 s  before S
+             LKR          119 km   14:14:48.74 UTC (picked)     +16.2 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:33:22.00 UTC by KARY, MRTH
+  AFAD       MLh 2.6 at 15:33:00.00 UTC: alarm 22.0 s after origin
+  pre-S      1 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 76 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             MRTH          59 km   15:33:17.51 UTC (predicted)    -4.5 s  after S
+             KARY          61 km   15:33:17.36 UTC (picked)      -4.6 s  after S
+             PTL           70 km   15:33:20.43 UTC (predicted)    -1.6 s  after S
+             ATH           84 km   15:33:24.46 UTC (predicted)    +2.5 s  before S
+             THIV          91 km   15:33:26.28 UTC (predicted)    +4.3 s  before S
+             MDRA          93 km   15:33:26.97 UTC (predicted)    +5.0 s  before S
+             VILL          98 km   15:33:28.42 UTC (predicted)    +6.4 s  before S
+             LKR          115 km   15:33:33.04 UTC (predicted)   +11.0 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    10
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        2  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km               21
+    detected                              2   10%
+    detected before S                     1    5%
+    missed                               19   90%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                  10          0       10
+    M 2-3                   9          1        8
+    M 3-4                   1          0        1
+    M 4-5                   1          1        0
+
+  Correct alarms
+    alarm after origin time             median 20.2 s
+    Pd magnitude error                  mean 0.07 units, bias +0.07, 1 events
+    located                             1 of 2
+    P-time located                      1 of 2, median epicentre error 7.4 km, median 2.5 s after the alarm
+    alarm before the S wave             at 11 of 16 station arrivals, median warning 7.2 s, max 16.2 s
+
+  Missed AFAD events
+    14:05:08.00 UTC  MLh 2.7   203 km from the network centre
+    14:12:18.00 UTC  MLh 1.4    71 km from the network centre
+    14:18:50.00 UTC  MLh 2.4    76 km from the network centre
+    14:19:45.00 UTC  MLh 2.1    81 km from the network centre
+    14:24:26.00 UTC  MLh 2.4    69 km from the network centre
+    14:27:19.00 UTC  MLh 1.8    79 km from the network centre
+    14:32:34.00 UTC  MLh 1.3    75 km from the network centre
+    14:33:49.00 UTC  MLh 3.0    76 km from the network centre
+    14:51:49.00 UTC  MLh 1.8   206 km from the network centre
+    14:54:39.00 UTC  MLh 1.9    77 km from the network centre
+    15:03:28.00 UTC  MLh 1.9    77 km from the network centre
+    15:20:19.00 UTC  MLh 1.6    75 km from the network centre
+    15:49:25.00 UTC  MLh 2.0    74 km from the network centre
+    16:23:27.00 UTC  MLh 2.0    74 km from the network centre
+    16:39:29.00 UTC  MLh 1.4    63 km from the network centre
+    16:39:41.00 UTC  MLh 2.3   245 km from the network centre
+    16:40:20.00 UTC  MLh 1.8    79 km from the network centre
+    16:51:28.00 UTC  MLh 2.3    79 km from the network centre
+    16:55:18.00 UTC  MLh 2.3   167 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/runs/g_eqt_0p9/greece_now_seq010.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      21588         0        1      1         7      0.001 (0.001)        50
+  KARY     21588         0        4      4        28      0.001 (0.001)        50
+  LKR      21588         0        2      2        14      0.001 (0.001)        44
+  MDRA     21588         0        2      2        14      0.001 (0.001)        58
+  MRTH     21588         0        6      6         0      0.001 (0.001)        43
+  PTL      21588         0        1      1         7      0.002 (0.001)        62
+  THIV     21588         0        2      2        14      0.001 (0.001)        49
+  VILL     21588         0        1      1         7      0.001 (0.001)        48
+  Pd: 91 values sent
+  P time from an STA/LTA onset for 13 of 19 triggers (6 from the window start)
+  onset from a FilterPicker pick for 13 of 19 triggers (P-time location and Pd)
+  172704 windows in 0.9 s: 11462x real time per station

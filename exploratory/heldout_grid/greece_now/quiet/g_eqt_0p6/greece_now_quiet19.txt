@@ -1,0 +1,40 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-28 02:35:02.35 to 08:35:00.01 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-28 03:03:50.00 to 08:35:00.01 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm    10
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_eqt_0p6/greece_now_quiet19.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.003 (0.001)         0
+  IMMV     43189         0        1      1         7      0.001 (0.001)        42
+  IPPL     43189         0        5      5        35      0.002 (0.001)        40
+  KNDR     43166         2        0      0         0      0.002 (0.001)         0
+  KNSS     43189         0        0      0         0      0.002 (0.001)         0
+  PFKS     43176         2        1      1         7      0.002 (0.001)        40
+  SIVA     43189         0        3      3        21      0.001 (0.003)        30
+  STIA     43059        13        0      0         0      0.001 (0.001)         0
+  Pd: 70 values sent
+  P time from an STA/LTA onset for 9 of 10 triggers (1 from the window start)
+  onset from a FilterPicker pick for 4 of 10 triggers (P-time location and Pd)
+  345346 windows in 2.5 s: 7810x real time per station

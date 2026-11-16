@@ -1,0 +1,54 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-08 19:18:02.66 to 01:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   19:53:38.50  earthquake detected by THERA, ZKR
+ALARM    #2   22:16:17.50  earthquake detected by KNSS, PFKS
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-08 19:46:50.00 to 01:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:53:38.50 UTC by THERA, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:16:17.50 UTC by KNSS, PFKS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    48
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    19:53:38.50 UTC  #1  no magnitude, not located
+    22:16:17.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/phasenet_causal_eqdet/greece_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        5      5        35      0.005 (0.002)       122
+  IPPL     43189         0        1      1         7      0.006 (0.007)        90
+  KNSS     43189         0        5      5        35      0.004 (0.002)       123
+  PFKS     43189         0        5      5        35      0.006 (0.006)       131
+  SIVA     43189         0       15     15       105      0.004 (0.003)        93
+  STIA     43189         0       15     15       105      0.003 (0.002)        90
+  THERA    43189         0        1      1         7      0.003 (0.007)       130
+  ZKR      43189         0        5      5        35      0.003 (0.006)       112
+  Pd: 364 values sent
+  P time from an STA/LTA onset for 21 of 52 triggers (31 from the window start)
+  onset from a FilterPicker pick for 16 of 52 triggers (P-time location and Pd)
+  345512 windows in 4.9 s: 4027x real time per station

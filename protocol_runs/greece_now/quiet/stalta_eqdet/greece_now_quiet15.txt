@@ -1,0 +1,76 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-02-05 16:34:02.76 to 22:34:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   17:54:03.07  earthquake detected by EPID, LOUT
+ALARM    #2   18:38:02.15  earthquake detected by EPID, LOUT
+ALARM    #3   19:08:16.60  earthquake detected by GUR, THAL
+ALARM    #4   19:35:27.45  earthquake detected by EPID, LOUT
+LOCATE   #4   19:36:21.94  located at 37.971N 22.982E, origin 19:35:15.69, rms 0.72 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-05 17:02:50.00 to 22:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:54:03.07 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      18:38:02.15 UTC by EPID, LOUT
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      19:08:16.60 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at 37.971N 22.982E, origin 19:35:15.69 UTC
+  alarm      19:35:27.45 UTC by EPID, LOUT
+  location   rms 0.72 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 40 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             LOUT           2 km   19:35:18.52 UTC (picked)      -8.9 s  after S
+             LTK            6 km   19:35:19.00 UTC (predicted)    -8.4 s  after S
+             ACOR          13 km   19:35:20.45 UTC (predicted)    -7.0 s  after S
+             THAL          29 km   19:35:24.40 UTC (predicted)    -3.0 s  after S
+             EPID          41 km   19:35:27.10 UTC (picked)      -0.3 s  after S
+             GUR           56 km   19:35:31.99 UTC (predicted)    +4.5 s  before S
+             VLX           85 km   19:35:40.22 UTC (predicted)   +12.8 s  before S
+             VLI          139 km   19:35:55.61 UTC (predicted)   +28.2 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    96
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    17:54:03.07 UTC  #1  no magnitude, not located
+    18:38:02.15 UTC  #2  no magnitude, not located
+    19:08:16.60 UTC  #3  no magnitude, not located
+    19:35:27.45 UTC  #4  no magnitude, located 37.97N 22.98E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/stalta_eqdet/greece_now_quiet15.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        1      1         7      0.004 (0.001)       218
+  EPID     43189         0       26     26       182      0.002 (0.001)       118
+  GUR      43189         0        3      3        21      0.003 (0.001)       170
+  LOUT     43173         2       70     70       490      0.005 (0.001)       179
+  LTK      43189         0        1      1         7      0.005 (0.001)       175
+  THAL     43189         0        1      1         7      0.003 (0.001)       157
+  VLI      43189         0        1      1         7      0.004 (0.001)       165
+  VLX      43189         0        1      1         7      0.005 (0.001)       187
+  Pd: 728 values sent
+  345496 windows in 13.8 s: 1438x real time per station

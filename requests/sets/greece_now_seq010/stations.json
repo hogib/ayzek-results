@@ -1,0 +1,1011 @@
+{
+ "set": "greece_now_seq010",
+ "config": {
+  "name": "greece_now_seq010",
+  "networks": [
+   "HL",
+   "HT",
+   "HA",
+   "HP",
+   "HC"
+  ],
+  "start": "2024-01-19T14:04:13.530806",
+  "end": "2024-01-19T17:04:13.530806",
+  "lat": 38.57391,
+  "lon": 24.3631,
+  "radius_km": 150.0,
+  "max_stations": 8,
+  "min_coverage": 0.0,
+  "max_azimuth_offset_deg": null,
+  "stations": [
+   "HA.KARY",
+   "HA.MRTH",
+   "HL.PTL",
+   "HL.ATH",
+   "HA.THIV",
+   "HA.MDRA",
+   "HA.VILL",
+   "HL.LKR"
+  ],
+  "catalog": {
+   "lead_days": 1.0,
+   "radius_km": 400.0,
+   "min_magnitude": null,
+   "start": null,
+   "end": null,
+   "limit": null
+  },
+  "source": "selections/greece_now/sets/greece_now_seq010.toml"
+ },
+ "span": [
+  "2024-01-19T14:04:13.530806",
+  "2024-01-19T17:04:13.530806"
+ ],
+ "services": {
+  "station": "https://eida.gein.noa.gr/fdsnws/station/1/query",
+  "dataselect": "https://eida.gein.noa.gr/fdsnws/dataselect/1/query",
+  "availability": "https://eida.gein.noa.gr/fdsnws/availability/1/query",
+  "event": "https://eida.gein.noa.gr/fdsnws/event/1/query"
+ },
+ "coverage_basis": "fdsnws/availability",
+ "probed_utc": "2026-10-31T08:14:27+00:00",
+ "tool": {
+  "name": "ayzek-heldout",
+  "git_commit": "6fda3e246e53"
+ },
+ "probed": [
+  {
+   "network": "HL",
+   "station": "SKY",
+   "lat": 38.8831,
+   "lon": 24.5482,
+   "elevation_m": 268.0,
+   "distance_km": 37.9,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 2.5,
+    "HHE": 2.5
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "ERTR",
+   "lat": 38.406639,
+   "lon": 23.786496,
+   "elevation_m": 121.0,
+   "distance_km": 53.5,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "KARY",
+   "lat": 38.0321,
+   "lon": 24.437,
+   "elevation_m": 220.0,
+   "distance_km": 60.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "MRTH",
+   "lat": 38.12253,
+   "lon": 23.94087,
+   "elevation_m": 130.0,
+   "distance_km": 62.2,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0,
+   "pd_gain_refused": "response not flat: |R|/sensitivity 0.22 at 0.1 Hz, 0.661 at 0.2 Hz, 0.947 at 0.5 Hz, 1 at 1 Hz, 1.01 at 2 Hz, 1.01 at 5 Hz"
+  },
+  {
+   "network": "HA",
+   "station": "PSAH",
+   "lat": 38.5694,
+   "lon": 23.6473,
+   "elevation_m": 36.0,
+   "distance_km": 62.2,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "MRKA",
+   "lat": 38.70467,
+   "lon": 23.58628,
+   "elevation_m": 466.0,
+   "distance_km": 69.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HL",
+   "station": "PTL",
+   "lat": 38.04945,
+   "lon": 23.864591,
+   "elevation_m": 506.0,
+   "distance_km": 72.8,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 25.0,
+    "HHE": 25.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HT",
+   "station": "AOS2",
+   "lat": 39.1478,
+   "lon": 23.8436,
+   "elevation_m": 185.0,
+   "distance_km": 78.1,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "ALIO",
+   "lat": 38.065695,
+   "lon": 23.672672,
+   "elevation_m": 180.0,
+   "distance_km": 82.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "STFN",
+   "lat": 38.176616,
+   "lon": 23.544045,
+   "elevation_m": 589.0,
+   "distance_km": 84.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "ATHU",
+   "lat": 37.9665,
+   "lon": 23.7845,
+   "elevation_m": 308.0,
+   "distance_km": 84.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HL",
+   "station": "ATH",
+   "lat": 37.97384,
+   "lon": 23.71767,
+   "elevation_m": 93.0,
+   "distance_km": 87.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 8.0,
+    "HHE": 8.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HL",
+   "station": "THVA",
+   "lat": 38.329826,
+   "lon": 23.336006,
+   "elevation_m": 214.0,
+   "distance_km": 93.5,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HL",
+   "station": "VLY",
+   "lat": 37.8524,
+   "lon": 23.7942,
+   "elevation_m": 256.0,
+   "distance_km": 94.4,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "THIV",
+   "lat": 38.29896,
+   "lon": 23.331963,
+   "elevation_m": 325.0,
+   "distance_km": 94.9,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "MDRA",
+   "lat": 38.0606,
+   "lon": 23.4662,
+   "elevation_m": 370.0,
+   "distance_km": 96.9,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "AMPE",
+   "lat": 38.301522,
+   "lon": 23.268776,
+   "elevation_m": 365.0,
+   "distance_km": 100.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "VILL",
+   "lat": 38.1642,
+   "lon": 23.3122,
+   "elevation_m": 650.0,
+   "distance_km": 102.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HL",
+   "station": "THI2",
+   "lat": 38.3727,
+   "lon": 23.21098,
+   "elevation_m": 278.0,
+   "distance_km": 102.8,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "ATAL",
+   "lat": 38.6926,
+   "lon": 23.0213,
+   "elevation_m": 290.0,
+   "distance_km": 117.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HC",
+   "station": "THNO",
+   "lat": 37.6541,
+   "lon": 25.0221,
+   "elevation_m": 273.0,
+   "distance_km": 117.4,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HL",
+   "station": "LKR",
+   "lat": 38.64957,
+   "lon": 22.998812,
+   "elevation_m": 192.0,
+   "distance_km": 118.8,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 8.0,
+    "HHE": 8.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HL",
+   "station": "AIGN",
+   "lat": 37.74806,
+   "lon": 23.44356,
+   "elevation_m": 83.0,
+   "distance_km": 122.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "DOMV",
+   "lat": 38.2569,
+   "lon": 22.9795,
+   "elevation_m": 170.0,
+   "distance_km": 125.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HL",
+   "station": "NEO",
+   "lat": 39.30567,
+   "lon": 23.22189,
+   "elevation_m": 148.0,
+   "distance_km": 127.9,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HT",
+   "station": "ACHL",
+   "lat": 39.00831,
+   "lon": 22.95812,
+   "elevation_m": 5.0,
+   "distance_km": 131.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HT",
+   "station": "XOR",
+   "lat": 39.36598,
+   "lon": 23.19178,
+   "elevation_m": 541.0,
+   "distance_km": 134.2,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "PRDM",
+   "lat": 38.280425,
+   "lon": 22.846994,
+   "elevation_m": 600.0,
+   "distance_km": 136.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HP",
+   "station": "LTK",
+   "lat": 38.0228,
+   "lon": 22.9673,
+   "elevation_m": 408.0,
+   "distance_km": 136.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "LOUT",
+   "lat": 37.9879,
+   "lon": 22.9743,
+   "elevation_m": 307.0,
+   "distance_km": 137.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HL",
+   "station": "MET2",
+   "lat": 37.612669,
+   "lon": 23.329567,
+   "elevation_m": 197.0,
+   "distance_km": 140.0,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 2.0,
+    "HHE": 2.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HT",
+   "station": "SIGR",
+   "lat": 39.2114,
+   "lon": 25.8553,
+   "elevation_m": 90.0,
+   "distance_km": 147.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HT",
+   "station": "CHOS",
+   "lat": 38.3869,
+   "lon": 26.0506,
+   "elevation_m": 854.0,
+   "distance_km": 148.4,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  },
+  {
+   "network": "HA",
+   "station": "AXAR",
+   "lat": 38.7664,
+   "lon": 22.659,
+   "elevation_m": 406.0,
+   "distance_km": 149.5,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": false,
+   "reason": "not in the set's station list"
+  }
+ ],
+ "chosen": [
+  {
+   "network": "HA",
+   "station": "KARY",
+   "lat": 38.0321,
+   "lon": 24.437,
+   "elevation_m": 220.0,
+   "distance_km": 60.6,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "MRTH",
+   "lat": 38.12253,
+   "lon": 23.94087,
+   "elevation_m": 130.0,
+   "distance_km": 62.2,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0,
+   "pd_gain_refused": "response not flat: |R|/sensitivity 0.22 at 0.1 Hz, 0.661 at 0.2 Hz, 0.947 at 0.5 Hz, 1 at 1 Hz, 1.01 at 2 Hz, 1.01 at 5 Hz"
+  },
+  {
+   "network": "HL",
+   "station": "PTL",
+   "lat": 38.04945,
+   "lon": 23.864591,
+   "elevation_m": 506.0,
+   "distance_km": 72.8,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 25.0,
+    "HHE": 25.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HL",
+   "station": "ATH",
+   "lat": 37.97384,
+   "lon": 23.71767,
+   "elevation_m": 93.0,
+   "distance_km": 87.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 8.0,
+    "HHE": 8.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "THIV",
+   "lat": 38.29896,
+   "lon": 23.331963,
+   "elevation_m": 325.0,
+   "distance_km": 94.9,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "MDRA",
+   "lat": 38.0606,
+   "lon": 23.4662,
+   "elevation_m": 370.0,
+   "distance_km": 96.9,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HA",
+   "station": "VILL",
+   "lat": 38.1642,
+   "lon": 23.3122,
+   "elevation_m": 650.0,
+   "distance_km": 102.3,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  },
+  {
+   "network": "HL",
+   "station": "LKR",
+   "lat": 38.64957,
+   "lon": 22.998812,
+   "elevation_m": 192.0,
+   "distance_km": 118.8,
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "azimuth_offset_deg": {
+    "HHN": 8.0,
+    "HHE": 8.0
+   },
+   "ok": true,
+   "reason": "",
+   "coverage": {
+    "HHZ": 1.0,
+    "HHN": 1.0,
+    "HHE": 1.0
+   },
+   "coverage_min": 1.0
+  }
+ ],
+ "gains_refused": [
+  {
+   "network": "HA",
+   "station": "MRTH",
+   "location": "",
+   "channel": "HHZ",
+   "start": "2020-09-08T12:00:00",
+   "reason": "response not flat: |R|/sensitivity 0.22 at 0.1 Hz, 0.661 at 0.2 Hz, 0.947 at 0.5 Hz, 1 at 1 Hz, 1.01 at 2 Hz, 1.01 at 5 Hz"
+  }
+ ],
+ "gains_missing": [
+  "MRTH"
+ ]
+}

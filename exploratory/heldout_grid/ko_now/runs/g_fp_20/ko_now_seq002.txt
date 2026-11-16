@@ -1,0 +1,153 @@
+ayzek    7 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-09-24 07:31:00.14 to 10:30:58.06 UTC at full speed
+ayzek    catalogue: 8 events in the replay span
+ALARM    #1   07:41:16.93  earthquake detected by MLTY, SVRC  (AFAD mw 5.3 at 07:40:58.00, 18.9 s ago)
+PLOC     #1   07:41:19.18  P times locate it at 37.474N 38.807E +-276 km, origin 07:40:58.46, rms 0.01 s from 3 stations
+PLOC     #1   07:41:20.02  P times locate it at 37.449N 38.809E +-57 km, origin 07:40:58.04, rms 0.02 s from 4 stations
+PLOC     #1   07:41:20.10  P times locate it at 37.422N 38.799E +-25 km, origin 07:40:57.61, rms 0.10 s from 5 stations
+PDMAG    #1   07:41:21.16  Pd magnitude M5.4 ± 0.2 (M<4 0%, 4-5.5 63%, M>=5.5 37%) from 3 stations (3 above noise), windows up to 5 s, distances from the P-time location
+PLOC     #1   07:41:21.16  P times locate it at 37.384N 38.807E +-18 km, origin 07:40:57.03, rms 0.21 s from 6 stations
+PLOC     #1   07:41:21.41  P times locate it at 37.395N 38.812E +-11 km, origin 07:40:57.18, rms 0.21 s from 7 stations
+PDMAG    #1   07:41:22.00  Pd magnitude M5.7 ± 0.2 (M<4 0%, 4-5.5 9%, M>=5.5 91%) from 3 stations (3 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #1   07:41:22.50  Pd magnitude M5.7 ± 0.1 (M<4 0%, 4-5.5 9%, M>=5.5 91%) from 4 stations (4 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #1   07:41:27.00  Pd magnitude M5.6 ± 0.1 (M<4 0%, 4-5.5 25%, M>=5.5 75%) from 4 stations (4 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   07:42:11.29  Pd magnitude M5.8 ± 0.1 (M<4 0%, 4-5.5 1%, M>=5.5 99%) from 4 stations (4 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   07:42:11.29  located at 39.355N 38.528E, origin 07:40:56.65, rms 0.08 s from 2 stations
+PDMAG    #1   07:42:14.23  Pd magnitude M5.6 ± 0.1 (M<4 0%, 4-5.5 21%, M>=5.5 79%) from 4 stations (4 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   07:42:14.23  located at 37.308N 38.745E, origin 07:40:56.43, rms 0.09 s from 3 stations
+LOCATE   #1   07:42:14.47  located at 37.341N 38.816E, origin 07:40:57.67, rms 0.87 s from 4 stations
+LOCATE   #1   07:42:15.53  located at 37.341N 38.809E, origin 07:40:57.69, rms 0.80 s from 5 stations
+LOCATE   #1   07:42:15.79  located at 37.371N 38.825E, origin 07:40:58.26, rms 0.80 s from 6 stations
+ALARM    #2   07:46:56.53  earthquake detected by AKDG, MLTY
+ALARM    #3   07:59:55.12  earthquake detected by MLTY, SVRC  (AFAD ml 2.5 at 07:59:37.00, 18.1 s ago)
+LOCATE   #3   08:00:53.36  located at 39.206N 37.748E, origin 07:59:35.64, rms 0.04 s from 2 stations
+ALARM    #4   08:27:31.99  earthquake detected by GAZ, SVRC
+ALARM    #5   09:07:56.36  earthquake detected by GAZ, SVRC
+ALARM    #6   09:30:58.13  earthquake detected by AKDG, MAZI  (AFAD ml 1.7 at 09:30:53.00, 5.1 s ago)
+PLOC     #6   09:31:00.47  P times locate it at 36.945N 39.848E +-151 km, origin 09:30:19.92, rms 0.00 s from 3 stations
+ALARM    #7   10:04:23.67  earthquake detected by NURH, SVRC
+ALARM    #8   10:23:21.66  earthquake detected by DYBB, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 07:31:00.14 to 10:30:58.06 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M5.6 earthquake at 37.371N 38.825E, origin 07:40:58.26 UTC
+  alarm      07:41:16.93 UTC by MLTY, SVRC; later AKDG, DYBB, GAZ, MAZI, NURH
+  Pd magn.   M5.4 4.2 s after the alarm, M5.6 ± 0.1 (M<4 0%, 4-5.5 24%, M>=5.5 76%) final from 4 stations (4 above noise)
+  location   rms 0.80 s from 6 stations, first 54.4 s after the alarm (P and S picks)
+  P loc.     37.395N 38.812E +-11 km from 7 stations, first 2.2 s after the alarm, epicentre 5.7 km off
+  AFAD       mw 5.3 at 07:40:58.00 UTC: alarm 18.9 s after origin, Pd magnitude +0.3, epicentre 6.7 km off, origin +0.3 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 66 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             MLTY         107 km   07:41:29.71 UTC (picked)     +12.8 s  before S
+             SVRC         113 km   07:41:33.25 UTC (picked)     +16.3 s  before S
+             DYBB         127 km   07:41:37.15 UTC (picked)     +20.2 s  before S
+             AKDG         131 km   07:41:35.47 UTC (predicted)   +18.5 s  before S
+             MAZI         139 km   07:41:39.65 UTC (picked)     +22.7 s  before S
+             NURH         140 km   07:41:39.55 UTC (picked)     +22.6 s  before S
+             GAZ          149 km   07:41:40.39 UTC (picked)     +23.5 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      07:46:56.53 UTC by AKDG, MLTY
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude) at 39.206N 37.748E, origin 07:59:35.64 UTC
+  alarm      07:59:55.12 UTC by MLTY, SVRC; later NURH
+  location   rms 0.04 s from 2 stations, first 58.2 s after the alarm (P and S picks)
+  AFAD       ml 2.5 at 07:59:37.00 UTC: alarm 18.1 s after origin, epicentre 218.5 km off, origin -1.4 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 62 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             MLTY         104 km   08:00:08.64 UTC (picked)     +13.5 s  before S
+             SVRC         111 km   08:00:08.97 UTC (predicted)   +13.9 s  before S
+             DYBB         127 km   08:00:13.32 UTC (predicted)   +18.2 s  before S
+             AKDG         128 km   08:00:13.78 UTC (predicted)   +18.7 s  before S
+             NURH         138 km   08:00:15.80 UTC (picked)     +20.7 s  before S
+             MAZI         141 km   08:00:17.32 UTC (predicted)   +22.2 s  before S
+             GAZ          148 km   08:00:19.52 UTC (predicted)   +24.4 s  before S
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      08:27:31.99 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      09:07:56.36 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      09:30:58.13 UTC by AKDG, MAZI; later MLTY, NURH
+  P loc.     36.945N 39.848E +-151 km from 3 stations, first 2.3 s after the alarm, epicentre 236.4 km off
+  AFAD       ml 1.7 at 09:30:53.00 UTC: alarm 5.1 s after origin
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 11 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             AKDG          24 km   09:31:02.23 UTC (picked)      +4.1 s  before S
+             NURH          41 km   09:31:06.33 UTC (picked)      +8.2 s  before S
+             MLTY          62 km   09:31:13.24 UTC (picked)     +15.1 s  before S
+             GAZ          129 km   09:31:30.05 UTC (predicted)   +31.9 s  before S
+             SVRC         138 km   09:31:32.58 UTC (predicted)   +34.5 s  before S
+             DYBB         213 km   09:31:54.01 UTC (predicted)   +55.9 s  before S
+             MAZI         254 km   09:30:35.56 UTC (picked)     -22.6 s  after S
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      10:04:23.67 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      10:23:21.66 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           8
+  single-station detections, no alarm    44
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        3   38%
+    false    (no AFAD event)              5   62%
+
+  AFAD events within 250 km                7
+    detected                              3   43%
+    detected before S                     3   43%
+    missed                                4   57%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   5          1        4
+    M 2-3                   1          1        0
+    M 5+                    1          1        0
+
+  Correct alarms
+    alarm after origin time             median 18.1 s
+    Pd magnitude error                  mean 0.28 units, bias +0.28, 1 events
+    located                             2 of 3
+    P-time located                      2 of 3, median epicentre error 121.0 km, median 2.3 s after the alarm
+    alarm before the S wave             at 20 of 21 station arrivals, median warning 19.4 s, max 55.9 s
+
+  Missed AFAD events
+    07:58:12.00 UTC  ml 1.5   249 km from the network centre
+    08:56:38.00 UTC  ml 1.0    61 km from the network centre
+    09:12:16.00 UTC  ml 1.6   138 km from the network centre
+    09:50:31.00 UTC  ml 1.0   174 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    07:46:56.53 UTC  #2  no magnitude, not located
+    08:27:31.99 UTC  #4  no magnitude, not located
+    09:07:56.36 UTC  #5  no magnitude, not located
+    10:04:23.67 UTC  #7  no magnitude, not located
+    10:23:21.66 UTC  #8  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/runs/g_fp_20/ko_now_seq002.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     21588         0        4      4         0      0.027 (0.020)        83
+  DYBB     21588         0        6      6        42      0.018 (0.009)        50
+  GAZ      21588         0        9      9        63      0.018 (0.029)        67
+  MAZI     21588         0        3      3         0      0.030 (0.030)        76
+  MLTY     21588         0        7      7        49      0.017 (0.021)        53
+  NURH     21588         0        8      8         0      0.021 (0.019)        55
+  SVRC     21588         0       32     32       224      0.014 (0.015)        38
+  Pd: 378 values sent
+  151116 windows in 1.6 s: 6599x real time per station

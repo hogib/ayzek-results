@@ -1,0 +1,52 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 6/15, Z + picker + Pd magnitude, replay 2023-09-08 19:18:02.66 to 01:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   21:14:10.20  earthquake detected by CHAN, STIA
+ALARM    #2   22:16:40.33  earthquake detected by CHAN, PFKS
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-08 19:46:50.00 to 01:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:14:10.20 UTC by CHAN, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      22:16:40.33 UTC by CHAN, PFKS
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    24
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    21:14:10.20 UTC  #1  no magnitude, not located
+    22:16:40.33 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/fp_eqquiet/greece_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        9      9        63      0.066 (0.958)       255
+  IPPL     43189         0        0      0         0      0.059 (0.981)         0
+  KNSS     43189         0        1      1         7      0.062 (1.084)       243
+  PFKS     43189         0        1      1         7      0.062 (1.150)       231
+  SIVA     43189         0        2      2        14      0.067 (1.698)       217
+  STIA     43189         0       13     13        91      0.042 (0.752)       187
+  THERA    43189         0        0      0         0      0.063 (1.355)         0
+  ZKR      43189         0        2      2        14      0.066 (1.462)       271
+  Pd: 196 values sent
+  345512 windows in 6.3 s: 3137x real time per station

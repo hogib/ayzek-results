@@ -1,0 +1,32 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-03-19 18:49:04.17 to 00:49:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   00:16:40.50  earthquake detected by RPZ, WVZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-03-19 19:17:50.00 to 00:49:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      00:16:40.50 UTC by RPZ, WVZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    15
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/quiet/eqt_lookahead_eqquiet/nz_now_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        3      3        21      0.007 (0.002)       152
+  FOZ      43189         0        1      1         7      0.007 (0.002)       149
+  RPZ      43189         0        3      3        21      0.004 (0.002)       140
+  WHSZ     43189         0        5      5        35      0.004 (0.002)       161
+  WVZ      43189         0        5      5        35      0.008 (0.002)       171
+  Pd: 119 values sent
+  P time from an STA/LTA onset for 3 of 17 triggers (14 from the window start)
+  onset from a FilterPicker pick for 2 of 17 triggers (P-time location and Pd)
+  215945 windows in 4.6 s: 4313x real time per station

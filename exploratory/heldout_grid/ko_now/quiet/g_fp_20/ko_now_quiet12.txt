@@ -1,0 +1,50 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-10-28 14:30:02.75 to 20:30:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   15:19:49.80  earthquake detected by NURH, SARI
+PLOC     #1   15:19:50.53  P times locate it at 40.780N 39.367E +-225 km, origin 15:18:48.54, rms 0.00 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-28 14:58:50.00 to 20:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:19:49.80 UTC by NURH, SARI; later BNN
+  P loc.     40.780N 39.367E +-225 km from 3 stations, first 0.7 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    68
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    19:47:25.00 UTC  ml 1.6   162 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    15:19:49.80 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_fp_20/ko_now_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        7      7        49      0.016 (0.008)        55
+  CEYT     43082        11        0      0         0      0.015 (0.041)         0
+  GAZ      43168         2       15     15       105      0.014 (0.022)        45
+  KARA     43189         0        5      5        35      0.011 (0.031)        37
+  NURH     43189         0       13     13         0      0.017 (0.117)        46
+  SARI     43189         0       31     31       217      0.012 (0.033)        33
+  Pd: 406 values sent
+  259006 windows in 1.8 s: 10900x real time per station

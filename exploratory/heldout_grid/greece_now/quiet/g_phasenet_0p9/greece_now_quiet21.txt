@@ -1,0 +1,57 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-03-17 05:17:03.11 to 11:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:46:17.50  earthquake detected by KOKK, OUR
+LOCATE   #1   07:47:09.50  located at 40.580N 23.989E, origin 07:46:10.20, rms 0.13 s from 2 stations
+ALARM    #2   08:01:12.50  earthquake detected by OUR, PAIG
+ALARM    #3   08:06:01.50  earthquake detected by HORT, KOKK
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-03-17 05:45:50.00 to 11:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 40.580N 23.989E, origin 07:46:10.20 UTC
+  alarm      07:46:17.50 UTC by KOKK, OUR
+  location   rms 0.13 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 23 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KOKK          26 km   07:46:18.26 UTC (picked)      +0.8 s  before S
+             OUR           28 km   07:46:18.42 UTC (picked)      +0.9 s  before S
+             PLG           51 km   07:46:25.19 UTC (predicted)    +7.7 s  before S
+             SOH           60 km   07:46:27.50 UTC (predicted)   +10.0 s  before S
+             THAS          62 km   07:46:28.07 UTC (predicted)   +10.6 s  before S
+             KAVA          64 km   07:46:28.71 UTC (predicted)   +11.2 s  before S
+             HORT          75 km   07:46:31.86 UTC (predicted)   +14.4 s  before S
+             PAIG          76 km   07:46:32.20 UTC (predicted)   +14.7 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:01:12.50 UTC by OUR, PAIG
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      08:06:01.50 UTC by HORT, KOKK
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    11
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p9/greece_now_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0        1      1         7      0.002 (0.001)        43
+  KAVA     43189         0        1      1         0      0.002 (0.001)        44
+  KOKK     43189         0        5      5        35      0.001 (0.001)        35
+  OUR      43189         0        8      8        56      0.002 (0.001)        45
+  PAIG     43189         0        1      1         0      0.001 (0.003)        36
+  PLG      43189         0        1      1         7      0.001 (0.001)        69
+  SOH      43189         0        0      0         0      0.001 (0.001)         0
+  THAS     43189         0        0      0         0      0.002 (0.001)         0
+  Pd: 105 values sent
+  P time from an STA/LTA onset for 15 of 17 triggers (2 from the window start)
+  onset from a FilterPicker pick for 14 of 17 triggers (P-time location and Pd)
+  345512 windows in 2.4 s: 8176x real time per station

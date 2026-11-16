@@ -1,0 +1,57 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   00:52:16.50  earthquake detected by MAZI, MLTY
+ALARM    #2   05:22:48.00  earthquake detected by AKDG, NURH
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      00:52:16.50 UTC by MAZI, MLTY
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      05:22:48.00 UTC by AKDG, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    24
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    00:52:16.50 UTC  #1  no magnitude, not located
+    05:22:48.00 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_lookahead_eqquiet/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0        2      2         0      0.005 (0.001)       141
+  DYBB     43189         0        0      0         0      0.004 (0.002)         0
+  GAZ      43189         0        0      0         0      0.004 (0.005)         0
+  MAZI     43189         0        2      2         0      0.004 (0.001)       129
+  MLTY     43189         0        1      1         7      0.004 (0.002)       168
+  NURH     43189         0       18     18         0      0.003 (0.006)        49
+  SVRC     43091         9        6      6        42      0.004 (0.002)       110
+  Pd: 49 values sent
+  P time from an STA/LTA onset for 9 of 29 triggers (20 from the window start)
+  onset from a FilterPicker pick for 8 of 29 triggers (P-time location and Pd)
+  302225 windows in 3.4 s: 5883x real time per station

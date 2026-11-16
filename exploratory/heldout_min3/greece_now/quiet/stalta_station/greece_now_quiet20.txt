@@ -1,0 +1,38 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   11:34:30.41  earthquake detected by KARY, MRTH, PTL
+PLOC     #1   11:34:30.41  P times locate it at 36.168N 24.041E +-552 km, origin 11:33:54.11, rms 0.01 s from 3 stations
+PLOC     #1   11:34:30.49  P times locate it at 39.263N 24.465E +-280 km, origin 11:34:06.39, rms 1.03 s from 4 stations
+PLOC     #1   11:34:31.27  P times locate it at 39.043N 24.256E +-110 km, origin 11:34:10.64, rms 1.09 s from 5 stations
+PLOC     #1   11:34:31.99  P times locate it at 39.040N 24.255E +-96 km, origin 11:34:10.69, rms 1.00 s from 6 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      11:34:30.41 UTC by KARY, MRTH, PTL; later LKR, MDRA, VILL
+  P loc.     39.040N 24.255E +-96 km from 6 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    14
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_station/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        2      2        14      0.002 (0.000)        75
+  KARY     43189         0        3      3        21      0.001 (0.000)        81
+  LKR      43189         0        3      3        21      0.001 (0.001)        77
+  MDRA     43189         0        4      4        28      0.002 (0.000)        87
+  MRTH     43189         0        3      3         0      0.002 (0.000)        88
+  PTL      43189         0        5      5        35      0.001 (0.000)        73
+  THIV     43189         0        0      0         0      0.001 (0.000)         0
+  VILL     43189         0        4      4        28      0.001 (0.001)        78
+  Pd: 147 values sent
+  345512 windows in 1.1 s: 17728x real time per station

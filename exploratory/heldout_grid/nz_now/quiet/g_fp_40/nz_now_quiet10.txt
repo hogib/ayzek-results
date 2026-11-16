@@ -1,0 +1,32 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 40/10, Z + picker + Pd magnitude, replay 2025-11-16 13:24:04.33 to 19:24:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:09:50.06  earthquake detected by DSZ, KHZ
+PLOC     #1   15:10:14.23  P times locate it at -42.020N 172.892E +-20 km, origin 15:09:33.81, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-11-16 13:52:50.00 to 19:24:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:09:50.06 UTC by DSZ, KHZ; later RPZ
+  P loc.     -42.020N 172.892E +-20 km from 3 stations, first 24.2 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    31
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_fp_40/nz_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  DSZ      43189         0       12     12        84      0.011 (0.028)        37
+  KHZ      43189         0       20     20       140      0.009 (0.010)        37
+  RPZ      43188         0        2      2        14      0.012 (0.038)        43
+  WHSZ     43189         0        0      0         0      0.013 (0.024)         0
+  WVZ      43189         0        0      0         0      0.014 (0.033)         0
+  Pd: 238 values sent
+  215944 windows in 1.4 s: 14233x real time per station

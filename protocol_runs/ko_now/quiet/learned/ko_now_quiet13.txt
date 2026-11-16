@@ -1,0 +1,51 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-12 10:23:02.66 to 16:23:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   14:20:56.00  earthquake detected by AKDG, DYBB
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-12 10:51:50.00 to 16:23:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      14:20:56.00 UTC by AKDG, DYBB
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    86
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    11:58:17.00 UTC  ml 1.8   234 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    14:20:56.00 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/learned/ko_now_quiet13.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0       73     73         0     40.554 (113.496)        99
+  DYBB     43189         0        1      1         7     40.328 (111.820)       156
+  GAZ      43189         0        0      0         0     40.488 (112.416)         0
+  MAZI     43189         0        0      0         0     40.508 (109.870)         0
+  MLTY     43189         0        0      0         0     40.638 (115.475)         0
+  NURH     43189         0        9      9         0     40.314 (112.208)        88
+  SVRC     42742        11        5      5        35     40.974 (113.219)        66
+  Pd: 42 values sent
+  P time from an STA/LTA onset for 8 of 88 triggers (80 from the window start)
+  onset from a FilterPicker pick for 5 of 88 triggers (P-time location and Pd)
+  301876 windows in 1766.3 s: 11x real time per station

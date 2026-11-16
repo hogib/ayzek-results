@@ -1,0 +1,106 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-03-11 09:07:02.51 to 15:07:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   11:26:40.12  earthquake detected by DRO, RLS
+ALARM    #2   11:39:19.06  earthquake detected by AMT, RLS
+ALARM    #3   13:13:02.84  earthquake detected by LTHK, RLS
+ALARM    #4   13:14:09.40  earthquake detected by LTHK, RLS
+ALARM    #5   13:28:45.76  earthquake detected by LTHK, RLS
+ALARM    #6   13:34:01.43  earthquake detected by DRO, RLS
+ALARM    #7   13:59:23.19  earthquake detected by LTHK, RLS
+ALARM    #8   14:34:13.92  earthquake detected by RLS, VLS
+ALARM    #9   15:02:35.56  earthquake detected by AMT, DRO
+LOCATE   #9   15:03:30.05  located at 37.522N 21.289E, origin 15:02:23.13, rms 0.85 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-03-11 09:35:50.00 to 15:07:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      11:26:40.12 UTC by DRO, RLS
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:39:19.06 UTC by AMT, RLS
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      13:13:02.84 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      13:14:09.40 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      13:28:45.76 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      13:34:01.43 UTC by DRO, RLS
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      13:59:23.19 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      14:34:13.92 UTC by RLS, VLS
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude) at 37.522N 21.289E, origin 15:02:23.13 UTC
+  alarm      15:02:35.56 UTC by AMT, DRO
+  location   rms 0.85 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 42 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMT           37 km   15:02:33.47 UTC (picked)      -2.1 s  after S
+             LTHK          45 km   15:02:36.30 UTC (predicted)    +0.7 s  before S
+             DRO           60 km   15:02:41.21 UTC (picked)      +5.7 s  before S
+             RLS           61 km   15:02:40.88 UTC (predicted)    +5.3 s  before S
+             ORTH          64 km   15:02:41.57 UTC (predicted)    +6.0 s  before S
+             AXS           75 km   15:02:44.85 UTC (predicted)    +9.3 s  before S
+             VLS           95 km   15:02:50.52 UTC (predicted)   +15.0 s  before S
+             PLEV         100 km   15:02:51.71 UTC (predicted)   +16.2 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           9
+  single-station detections, no alarm   192
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              9  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    11:26:40.12 UTC  #1  no magnitude, not located
+    11:39:19.06 UTC  #2  no magnitude, not located
+    13:13:02.84 UTC  #3  no magnitude, not located
+    13:14:09.40 UTC  #4  no magnitude, not located
+    13:28:45.76 UTC  #5  no magnitude, not located
+    13:34:01.43 UTC  #6  no magnitude, not located
+    13:59:23.19 UTC  #7  no magnitude, not located
+    14:34:13.92 UTC  #8  no magnitude, not located
+    15:02:35.56 UTC  #9  no magnitude, located 37.52N 21.29E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0       12     12        84      0.001 (0.001)        47
+  AXS      43189         0        1      1         7      0.001 (0.001)        39
+  DRO      43189         0       11     11        77      0.001 (0.001)        37
+  LTHK     43189         0       21     21       147      0.001 (0.001)        39
+  ORTH     43189         0        0      0         0      0.001 (0.001)         0
+  PLEV     43189         0        1      1         7      0.001 (0.001)        45
+  RLS      43189         0      167    167      1169      0.001 (0.001)        50
+  VLS      43189         0        1      1         7      0.001 (0.001)        47
+  Pd: 1498 values sent
+  345512 windows in 8.7 s: 2292x real time per station

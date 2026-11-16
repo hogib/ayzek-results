@@ -1,0 +1,64 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 10:10:02.41 to 16:10:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:15:09.50  earthquake detected by DRO, ITM
+LOCATE   #1   15:15:58.00  located at 37.710N 21.543E, origin 15:14:46.15, rms 0.77 s from 2 stations
+ALARM    #2   15:18:05.50  earthquake detected by LTHK, ORTH
+LOCATE   #2   15:18:54.00  located at 37.595N 20.421E, origin 15:17:50.29, rms 0.15 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:38:50.00 to 16:10:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 37.710N 21.543E, origin 15:14:46.15 UTC
+  alarm      15:15:09.50 UTC by DRO, ITM
+  location   rms 0.77 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 81 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMT           25 km   15:14:53.74 UTC (predicted)   -15.8 s  after S
+             DRO           31 km   15:14:55.84 UTC (picked)     -13.7 s  after S
+             RLS           39 km   15:14:57.66 UTC (predicted)   -11.8 s  after S
+             AXS           56 km   15:15:02.39 UTC (predicted)    -7.1 s  after S
+             LTHK          62 km   15:15:04.12 UTC (predicted)    -5.4 s  after S
+             ITM           68 km   15:15:05.32 UTC (picked)      -4.2 s  after S
+             ORTH          76 km   15:15:08.05 UTC (predicted)    -1.4 s  after S
+             VLX           83 km   15:15:10.01 UTC (predicted)    +0.5 s  before S
+
+Event #2: detected earthquake (no magnitude) at 37.595N 20.421E, origin 15:17:50.29 UTC
+  alarm      15:18:05.50 UTC by LTHK, ORTH
+  location   rms 0.15 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 52 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             ORTH          37 km   15:18:01.24 UTC (picked)      -4.3 s  after S
+             LTHK          39 km   15:18:01.80 UTC (picked)      -3.7 s  after S
+             RLS          105 km   15:18:20.41 UTC (predicted)   +14.9 s  before S
+             AXS          107 km   15:18:21.04 UTC (predicted)   +15.5 s  before S
+             AMT          114 km   15:18:22.89 UTC (predicted)   +17.4 s  before S
+             DRO          120 km   15:18:24.69 UTC (predicted)   +19.2 s  before S
+             ITM          141 km   15:18:30.59 UTC (predicted)   +25.1 s  before S
+             VLX          175 km   15:18:40.24 UTC (predicted)   +34.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     6
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_lookahead_eqdet/greece_strat_quiet13.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0        2      2        14      0.001 (0.001)        13
+  AXS      43189         0        0      0         0      0.000 (0.001)         0
+  DRO      43189         0        4      4        28      0.001 (0.001)        13
+  ITM      43189         0        1      1         7      0.001 (0.001)        13
+  LTHK     43189         0        1      1         7      0.001 (0.001)        11
+  ORTH     43189         0        2      2        14      0.001 (0.001)        16
+  RLS      43189         0        0      0         0      0.001 (0.001)         0
+  VLX      43189         0        0      0         0      0.001 (0.001)         0
+  Pd: 70 values sent
+  P time from an STA/LTA onset for 5 of 10 triggers (5 from the window start)
+  onset from a FilterPicker pick for 3 of 10 triggers (P-time location and Pd)
+  345512 windows in 0.6 s: 33074x real time per station

@@ -1,0 +1,56 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   02:44:49.89  earthquake detected by AKDG, GAZ, MLTY
+PLOC     #1   02:44:49.89  P times locate it at 37.802N 35.904E +-134 km, origin 02:44:11.59, rms 0.00 s from 3 stations
+PLOC     #1   02:45:02.09  P times locate it at 34.740N 37.514E +-173 km, origin 02:43:49.78, rms 0.92 s from 3 stations, left out AKDG MLTY
+LOCATE   #1   02:45:44.38  located at 38.472N 37.760E, origin 02:44:39.39, rms 0.01 s from 2 stations
+LOCATE   #1   02:45:45.39  located at 38.508N 37.774E, origin 02:44:39.23, rms 0.17 s from 3 stations
+ALARM    #2   05:12:30.69  earthquake detected by AKDG, MLTY, SVRC
+PLOC     #2   05:12:30.69  P times locate it at 41.454N 41.322E +-284 km, origin 05:11:17.53, rms 1.51 s from 3 stations
+PLOC     #2   05:12:32.69  P times locate it at 35.158N 41.368E +-212 km, origin 05:11:14.57, rms 1.87 s from 4 stations
+PLOC     #2   05:12:37.47  P times locate it at 37.570N 39.276E +-42 km, origin 05:12:05.74, rms 0.69 s from 4 stations, left out MLTY
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.508N 37.774E, origin 02:44:39.23 UTC
+  alarm      02:44:49.89 UTC by AKDG, GAZ, MLTY; later NURH, SVRC
+  location   rms 0.17 s from 3 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     34.740N 37.514E +-173 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 36 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          24 km   02:44:46.30 UTC (picked)      -3.6 s  after S
+             MLTY          62 km   02:44:57.22 UTC (picked)      +7.3 s  before S
+             NURH          67 km   02:44:58.71 UTC (picked)      +8.8 s  before S
+             SVRC         134 km   02:45:17.67 UTC (predicted)   +27.8 s  before S
+             GAZ          157 km   02:45:24.05 UTC (predicted)   +34.2 s  before S
+             DYBB         216 km   02:45:40.89 UTC (predicted)   +51.0 s  before S
+             MAZI         262 km   02:45:54.03 UTC (predicted)   +64.1 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      05:12:30.69 UTC by AKDG, MLTY, SVRC; later GAZ, NURH
+  P loc.     37.570N 39.276E +-42 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm   102
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_eqfa/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7        5      5         0      0.001 (0.001)        58
+  DYBB     43042        14        1      1         7      0.001 (0.000)        57
+  GAZ      43189         0       54     54       378      0.001 (0.000)        28
+  MAZI     43189         0        0      0         0      0.001 (0.003)         0
+  MLTY     43189         0        8      8        56      0.001 (0.000)        49
+  NURH     43189         0       11     11         0      0.001 (0.000)        54
+  SVRC     43080        11       45     45       315      0.001 (0.000)        44
+  Pd: 756 values sent
+  301992 windows in 2.3 s: 8677x real time per station

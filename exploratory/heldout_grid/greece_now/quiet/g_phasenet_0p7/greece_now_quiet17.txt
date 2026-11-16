@@ -1,0 +1,33 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-12-09 14:06:02.69 to 20:06:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   19:12:14.00  earthquake detected by NISR, STIA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-12-09 14:34:50.00 to 20:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:12:14.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    45
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p7/greece_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        4      4        28      0.001 (0.003)        41
+  NISR     43189         0        8      8         0      0.002 (0.001)        40
+  NISR2    43189         0        0      0         0      0.002 (0.003)         0
+  STIA     43189         0       12     12        84      0.002 (0.001)        39
+  THERA    43189         0        5      5        35      0.002 (0.001)        37
+  ZKR      43189         0       18     18       126      0.001 (0.003)        31
+  Pd: 273 values sent
+  P time from an STA/LTA onset for 33 of 47 triggers (14 from the window start)
+  onset from a FilterPicker pick for 18 of 47 triggers (P-time location and Pd)
+  259134 windows in 2.0 s: 9944x real time per station

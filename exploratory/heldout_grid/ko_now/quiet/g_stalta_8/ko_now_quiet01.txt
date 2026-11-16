@@ -1,0 +1,61 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-15 19:31:03.13 to 01:31:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   23:39:09.01  earthquake detected by NURH, SARI
+ALARM    #2   00:03:00.74  earthquake detected by NURH, SARI
+LOCATE   #2   00:03:55.23  located at 38.808N 37.067E, origin 00:02:42.13, rms 1.01 s from 2 stations
+ALARM    #3   01:00:12.31  earthquake detected by NURH, SARI
+LOCATE   #3   01:01:06.80  located at 39.183N 36.917E, origin 00:59:47.65, rms 0.23 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-15 19:59:50.00 to 01:31:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:39:09.01 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 38.808N 37.067E, origin 00:02:42.13 UTC
+  alarm      00:03:00.74 UTC by NURH, SARI
+  location   rms 1.01 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 64 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          72 km   00:03:03.58 UTC (picked)      +2.8 s  before S
+             NURH          99 km   00:03:09.75 UTC (picked)      +9.0 s  before S
+             BNN          106 km   00:03:12.49 UTC (predicted)   +11.8 s  before S
+             GAZ          182 km   00:03:34.31 UTC (predicted)   +33.6 s  before S
+             CEYT         231 km   00:03:48.19 UTC (predicted)   +47.5 s  before S
+             KARA         246 km   00:03:52.57 UTC (predicted)   +51.8 s  before S
+
+Event #3: detected earthquake (no magnitude) at 39.183N 36.917E, origin 00:59:47.65 UTC
+  alarm      01:00:12.31 UTC by NURH, SARI
+  location   rms 0.23 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 86 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          97 km   01:00:15.53 UTC (picked)      +3.2 s  before S
+             BNN          100 km   01:00:16.22 UTC (predicted)    +3.9 s  before S
+             NURH         142 km   01:00:28.28 UTC (picked)     +16.0 s  before S
+             GAZ          225 km   01:00:52.02 UTC (predicted)   +39.7 s  before S
+             CEYT         262 km   01:01:02.67 UTC (predicted)   +50.4 s  before S
+             KARA         269 km   01:01:04.46 UTC (predicted)   +52.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    37
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_8/ko_now_quiet01.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.001 (0.000)         0
+  CEYT     43145         4        0      0         0      0.001 (0.000)         0
+  GAZ      43189         0       21     21       147      0.001 (0.001)        31
+  KARA     43189         0        1      1         7      0.001 (0.000)        44
+  NURH     43189         0       16     16         0      0.001 (0.001)        29
+  SARI     43189         0        5      5        35      0.001 (0.000)        29
+  Pd: 189 values sent
+  259090 windows in 0.9 s: 23027x real time per station

@@ -1,0 +1,57 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:58:33.00  earthquake detected by EVR, TETR
+PLOC     #1   10:58:36.00  P times locate it at 38.852N 21.606E +-22 km, origin 10:58:16.56, rms 0.03 s from 3 stations
+PLOC     #1   10:58:36.50  P times locate it at 39.003N 21.667E +-15 km, origin 10:58:17.62, rms 1.89 s from 4 stations
+ALARM    #2   10:58:44.50  earthquake detected by LKD2, TSLK
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:58:33.00 UTC by EVR, TETR; later NYDR, PDO
+  P loc.     39.003N 21.667E +-15 km from 4 stations, first 3.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      10:58:44.50 UTC by LKD2, TSLK
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     6
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:58:33.00 UTC  #1  no magnitude, not located
+    10:58:44.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/eqt_lookahead_eqdet/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0        2      2        14      0.004 (0.002)       180
+  EVR      43189         0        1      1         7      0.004 (0.002)       146
+  LKD2     43171         2        1      1         7      0.004 (0.002)       141
+  NYDR     43189         0        2      2         0      0.005 (0.003)        88
+  PDO      43189         0        3      3        21      0.004 (0.006)       127
+  PVO      43189         0        0      0         0      0.007 (0.002)         0
+  TETR     43189         0        2      2        14      0.003 (0.002)       110
+  TSLK     43189         0        1      1         0      0.008 (0.002)       138
+  Pd: 63 values sent
+  P time from an STA/LTA onset for 7 of 12 triggers (5 from the window start)
+  onset from a FilterPicker pick for 3 of 12 triggers (P-time location and Pd)
+  345494 windows in 3.5 s: 5680x real time per station

@@ -1,0 +1,102 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 7 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-28 14:30:02.75 to 20:30:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   15:19:49.95  earthquake detected by NURH, SARI
+PLOC     #1   15:19:50.18  P times locate it at 41.080N 39.667E +-253 km, origin 15:18:42.03, rms 0.07 s from 3 stations
+PLOC     #1   15:19:51.18  P times locate it at 37.953N 36.351E +-23 km, origin 15:19:31.90, rms 0.01 s from 3 stations, left out SARI
+PLOC     #1   15:19:57.40  P times locate it at 37.790N 36.728E +-9 km, origin 15:19:37.22, rms 0.34 s from 4 stations, left out BNN
+PLOC     #1   15:19:57.93  P times locate it at 38.068N 36.494E +-8 km, origin 15:19:32.99, rms 1.25 s from 5 stations, left out SARI
+PDMAG    #1   15:19:58.50  Pd magnitude M3.0 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 4 stations (1 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   15:19:58.50  Pd magnitude M3.3 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 4 stations (2 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   15:19:59.00  Pd magnitude M3.3 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 5 stations (2 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   15:20:01.00  Pd magnitude M3.4 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 5 stations (3 above noise), windows up to 10 s, distances from the P-time location
+ALARM    #2   15:56:28.96  earthquake detected by BNN, GAZ
+ALARM    #3   19:15:47.23  earthquake detected by GAZ, KARA
+ALARM    #4   19:18:36.58  earthquake detected by BNN, GAZ
+ALARM    #5   19:47:46.37  earthquake detected by NURH, SARI  (AFAD ml 1.6 at 19:47:25.00, 21.4 s ago)
+LOCATE   #5   19:48:40.86  located at 37.313N 36.257E, origin 19:47:23.26, rms 0.11 s from 2 stations
+ALARM    #6   20:09:37.63  earthquake detected by GAZ, NURH
+PLOC     #6   20:09:40.95  P times locate it at 37.700N 36.841E +-16 km, origin 20:09:26.34, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-28 14:58:50.00 to 20:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M3.3 earthquake, not located
+  alarm      15:19:49.95 UTC by NURH, SARI; later BNN, CEYT, GAZ, KARA
+  Pd magn.   M3.0 8.5 s after the alarm, M3.3 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) final from 5 stations (3 above noise)
+  P loc.     38.068N 36.494E +-8 km from 5 stations, first 0.2 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:56:28.96 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      19:15:47.23 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      19:18:36.58 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude) at 37.313N 36.257E, origin 19:47:23.26 UTC
+  alarm      19:47:46.37 UTC by NURH, SARI
+  location   rms 0.11 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       ml 1.6 at 19:47:25.00 UTC: alarm 21.4 s after origin, epicentre 207.9 km off, origin -1.7 s
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 74 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             SARI         102 km   19:47:58.29 UTC (picked)     +11.9 s  before S
+             NURH         112 km   19:47:59.70 UTC (picked)     +13.3 s  before S
+             BNN          130 km   19:48:02.29 UTC (predicted)   +15.9 s  before S
+             GAZ          201 km   19:48:22.43 UTC (predicted)   +36.1 s  before S
+             CEYT         260 km   19:48:39.17 UTC (predicted)   +52.8 s  before S
+             KARA         277 km   19:48:44.05 UTC (predicted)   +57.7 s  before S
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      20:09:37.63 UTC by GAZ, NURH; later SARI
+  P loc.     37.700N 36.841E +-16 km from 3 stations, first 3.3 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    50
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        1   17%
+    false    (no AFAD event)              5   83%
+
+  AFAD events within 250 km                1
+    detected                              1  100%
+    detected before S                     1  100%
+    missed                                0    0%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          1        0
+
+  Correct alarms
+    alarm after origin time             median 21.4 s
+    located                             1 of 1
+    alarm before the S wave             at 6 of 6 station arrivals, median warning 26.0 s, max 57.7 s
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    15:19:49.95 UTC  #1  M3.3, not located
+    15:56:28.96 UTC  #2  no magnitude, not located
+    19:15:47.23 UTC  #3  no magnitude, not located
+    19:18:36.58 UTC  #4  no magnitude, not located
+    20:09:37.63 UTC  #6  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_7/ko_now_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       13     13        91      0.001 (0.000)        36
+  CEYT     43082        11        1      1         7      0.001 (0.001)        42
+  GAZ      43168         2       28     28       196      0.001 (0.000)        25
+  KARA     43189         0        6      6        42      0.001 (0.000)        40
+  NURH     43189         0       16     16         0      0.001 (0.000)        38
+  SARI     43189         0        3      3        21      0.001 (0.001)        44
+  Pd: 357 values sent
+  259006 windows in 0.9 s: 22446x real time per station

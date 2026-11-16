@@ -1,0 +1,69 @@
+ayzek    7 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 30/10, Z + picker + Pd magnitude, replay 2026-10-20 16:25:02.09 to 22:25:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   17:01:42.01  earthquake detected by GAZ, SVRC
+ALARM    #2   20:17:01.53  earthquake detected by NURH, SVRC
+ALARM    #3   20:33:06.44  earthquake detected by DYBB, SVRC
+ALARM    #4   20:57:11.68  earthquake detected by DYBB, NURH
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-20 16:53:50.00 to 22:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:01:42.01 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      20:17:01.53 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      20:33:06.44 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      20:57:11.68 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    58
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                3
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                3  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   3          0        3
+
+  Missed AFAD events
+    17:48:50.00 UTC  ml 1.5   209 km from the network centre
+    20:48:50.00 UTC  ml 1.9   249 km from the network centre
+    21:07:39.00 UTC  ml 1.8   250 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    17:01:42.01 UTC  #1  no magnitude, not located
+    20:17:01.53 UTC  #2  no magnitude, not located
+    20:33:06.44 UTC  #3  no magnitude, not located
+    20:57:11.68 UTC  #4  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_fp_30/ko_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43065        12        5      5         0      0.016 (0.048)        35
+  DYBB     43045        14        4      4        28      0.015 (0.022)        34
+  GAZ      43189         0        7      7        49      0.014 (0.023)        43
+  MAZI     43156         3        0      0         0      0.012 (0.030)         0
+  MLTY     43189         0        0      0         0      0.014 (0.013)         0
+  NURH     43189         0        9      9         0      0.012 (0.062)        31
+  SVRC     43189         0       41     41       287      0.010 (0.018)        36
+  Pd: 364 values sent
+  302022 windows in 2.2 s: 9121x real time per station

@@ -1,0 +1,74 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-04-30 21:17:02.62 to 03:17:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   23:28:37.00  earthquake detected by NISR2, THERA
+ALARM    #2   00:30:33.50  earthquake detected by THERA, ZKR
+LOCATE   #2   00:31:25.50  located at 36.026N 26.171E, origin 00:30:15.54, rms 0.43 s from 2 stations
+ALARM    #3   01:04:52.00  earthquake detected by NISR, ZKR
+ALARM    #4   03:04:05.50  earthquake detected by NISR, ZKR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-04-30 21:45:50.00 to 03:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      23:28:37.00 UTC by NISR2, THERA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 36.026N 26.171E, origin 00:30:15.54 UTC
+  alarm      00:30:33.50 UTC by THERA, ZKR
+  location   rms 0.43 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 62 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             THERA         73 km   00:30:36.92 UTC (picked)      +3.4 s  before S
+             STIA          92 km   00:30:41.95 UTC (predicted)    +8.5 s  before S
+             ZKR          101 km   00:30:44.34 UTC (picked)     +10.8 s  before S
+             NISR         108 km   00:30:46.48 UTC (predicted)   +13.0 s  before S
+             NISR2        109 km   00:30:46.76 UTC (predicted)   +13.3 s  before S
+             APE          130 km   00:30:52.80 UTC (predicted)   +19.3 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      01:04:52.00 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      03:04:05.50 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    74
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    23:28:37.00 UTC  #1  no magnitude, not located
+    00:30:33.50 UTC  #2  no magnitude, located 36.03N 26.17E
+    01:04:52.00 UTC  #3  no magnitude, not located
+    03:04:05.50 UTC  #4  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_phasenet_0p7/greece_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        1      1         7      0.001 (0.001)        26
+  NISR     43189         0       18     18         0      0.002 (0.001)        57
+  NISR2    43189         0        3      3        21      0.001 (0.003)        48
+  STIA     43189         0        3      3        21      0.002 (0.001)        45
+  THERA    43189         0       11     11        77      0.002 (0.002)        40
+  ZKR      43189         0       46     46       322      0.001 (0.001)        25
+  Pd: 448 values sent
+  P time from an STA/LTA onset for 43 of 82 triggers (39 from the window start)
+  onset from a FilterPicker pick for 18 of 82 triggers (P-time location and Pd)
+  259134 windows in 2.5 s: 8080x real time per station

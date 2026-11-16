@@ -1,0 +1,103 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2023-09-08 19:18:02.66 to 01:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   20:46:29.86  earthquake detected by CHAN, PFKS, STIA
+PLOC     #1   20:46:29.86  P times locate it at 34.470N 22.102E +-220 km, origin 20:45:26.41, rms 0.69 s from 3 stations
+ALARM    #2   21:44:17.62  earthquake detected by CHAN, KNSS, ZKR
+PLOC     #2   21:44:17.62  P times locate it at 38.413N 22.577E +-557 km, origin 21:42:56.04, rms 0.33 s from 3 stations
+LOCATE   #2   21:45:00.37  located at 35.492N 24.176E, origin 21:43:49.38, rms 0.47 s from 2 stations
+ALARM    #3   22:06:05.37  earthquake detected by CHAN, PFKS, STIA
+PLOC     #3   22:06:05.37  P times locate it at 35.550N 25.807E +-43 km, origin 22:05:38.37, rms 0.01 s from 3 stations
+ALARM    #4   22:17:00.45  earthquake detected by CHAN, KNSS, THERA
+PLOC     #4   22:17:00.45  P times locate it at 36.610N 21.799E +-136 km, origin 22:16:02.07, rms 1.29 s from 3 stations
+PDMAG    #4   22:17:04.05  Pd magnitude M4.1 ± 0.1 (M<4 24%, 4-5.5 76%, M>=5.5 0%) from 7 stations (5 above noise), windows up to 10 s, distances from the P-time location
+PLOC     #4   22:17:04.05  P times locate it at 35.586N 24.371E +-15 km, origin 22:16:34.63, rms 0.20 s from 4 stations, left out KNSS
+PDMAG    #4   22:17:05.00  Pd magnitude M4.2 ± 0.1 (M<4 2%, 4-5.5 98%, M>=5.5 0%) from 8 stations (6 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #4   22:17:10.50  Pd magnitude M4.3 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 8 stations (7 above noise), windows up to 10 s, distances from the P-time location
+ALARM    #5   22:42:51.36  earthquake detected by CHAN, SIVA, ZKR
+PLOC     #5   22:42:51.36  P times locate it at 35.302N 25.559E +-346 km, origin 22:42:27.95, rms 0.02 s from 3 stations
+ALARM    #6   00:18:43.62  earthquake detected by CHAN, KNSS, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-08 19:46:50.00 to 01:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:46:29.86 UTC by CHAN, PFKS, STIA
+  P loc.     34.470N 22.102E +-220 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 35.492N 24.176E, origin 21:43:49.38 UTC
+  alarm      21:44:17.62 UTC by CHAN, KNSS, ZKR
+  location   rms 0.47 s from 2 stations, first 42.8 s after the alarm (P and S picks)
+  P loc.     38.413N 22.577E +-557 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 98 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             CHAN          12 km   21:43:53.41 UTC (picked)     -24.2 s  after S
+             IPPL          30 km   21:43:58.54 UTC (predicted)   -19.1 s  after S
+             SIVA          78 km   21:44:11.89 UTC (predicted)    -5.7 s  after S
+             KNSS          93 km   21:44:15.85 UTC (picked)      -1.8 s  after S
+             PFKS         128 km   21:44:26.03 UTC (predicted)    +8.4 s  before S
+             THERA        152 km   21:44:32.94 UTC (predicted)   +15.3 s  before S
+             STIA         177 km   21:44:39.92 UTC (predicted)   +22.3 s  before S
+             ZKR          190 km   21:45:05.97 UTC (picked)     +48.3 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      22:06:05.37 UTC by CHAN, PFKS, STIA
+  P loc.     35.550N 25.807E +-43 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #4: detected M4.3 earthquake, not located
+  alarm      22:17:00.45 UTC by CHAN, KNSS, THERA; later STIA, ZKR
+  Pd magn.   M4.1 3.6 s after the alarm, M4.3 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 8 stations (7 above noise)
+  P loc.     35.586N 24.371E +-15 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      22:42:51.36 UTC by CHAN, SIVA, ZKR
+  P loc.     35.302N 25.559E +-346 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      00:18:43.62 UTC by CHAN, KNSS, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm   246
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              6  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    20:46:29.86 UTC  #1  no magnitude, not located
+    21:44:17.62 UTC  #2  no magnitude, located 35.49N 24.18E
+    22:06:05.37 UTC  #3  no magnitude, not located
+    22:17:00.45 UTC  #4  M4.3, not located
+    22:42:51.36 UTC  #5  no magnitude, not located
+    00:18:43.62 UTC  #6  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/fp_eqdet/greece_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       98     98       686      0.020 (0.009)        66
+  IPPL     43189         0       10     10        70      0.023 (0.055)        69
+  KNSS     43189         0       29     29       203      0.022 (0.015)        72
+  PFKS     43189         0       27     27       189      0.018 (0.011)        68
+  SIVA     43189         0       18     18       126      0.022 (0.026)        73
+  STIA     43189         0      118    118       826      0.019 (0.008)        61
+  THERA    43189         0       11     11        77      0.021 (0.010)        69
+  ZKR      43189         0       22     22       154      0.023 (0.012)        73
+  Pd: 2331 values sent
+  345512 windows in 8.5 s: 2331x real time per station

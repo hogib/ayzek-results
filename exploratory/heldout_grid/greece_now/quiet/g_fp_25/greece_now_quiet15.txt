@@ -1,0 +1,52 @@
+ayzek    8 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 25/10, Z + picker + Pd magnitude, replay 2023-02-05 16:34:02.76 to 22:34:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   18:19:44.56  earthquake detected by THAL, VLI
+ALARM    #2   19:14:08.76  earthquake detected by GUR, THAL
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-05 17:02:50.00 to 22:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      18:19:44.56 UTC by THAL, VLI
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      19:14:08.76 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    63
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    18:19:44.56 UTC  #1  no magnitude, not located
+    19:14:08.76 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_25/greece_now_quiet15.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        0      0         0      0.016 (0.050)         0
+  EPID     43189         0        3      3        21      0.015 (0.045)        51
+  GUR      43189         0       14     14        98      0.015 (0.027)        57
+  LOUT     43173         2       40     40       273      0.011 (0.021)        43
+  LTK      43189         0        2      2        14      0.015 (0.143)        40
+  THAL     43189         0        4      4        28      0.014 (0.171)        49
+  VLI      43189         0        4      4        28      0.014 (0.019)        50
+  VLX      43189         0        0      0         0      0.015 (0.027)         0
+  Pd: 462 values sent
+  345496 windows in 2.5 s: 7901x real time per station

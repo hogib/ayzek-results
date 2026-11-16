@@ -1,0 +1,44 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-01-15 18:52:03.87 to 00:52:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   21:47:17.50  earthquake detected by CVZ, WHSZ
+PLOC     #1   21:47:23.00  P times locate it at -43.835N 170.754E +-27 km, origin 21:47:03.73, rms 0.02 s from 3 stations
+ALARM    #2   23:22:45.50  earthquake detected by WHSZ, WVZ
+ALARM    #3   23:56:19.00  earthquake detected by RPZ, WHSZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-01-15 19:20:50.00 to 00:52:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:47:17.50 UTC by CVZ, WHSZ; later FOZ
+  P loc.     -43.835N 170.754E +-27 km from 3 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      23:22:45.50 UTC by WHSZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      23:56:19.00 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm   113
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/nz_now/quiet/g_instant_0p85/nz_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        7      7        49      0.001 (0.002)        21
+  FOZ      43189         0        3      3        21      0.001 (0.001)        29
+  RPZ      43189         0       22     22       154      0.001 (0.003)        26
+  WHSZ     43189         0       90     90       630      0.001 (0.001)        21
+  WVZ      43189         0        1      1         7      0.001 (0.003)        13
+  Pd: 861 values sent
+  P time from an STA/LTA onset for 53 of 123 triggers (70 from the window start)
+  onset from a FilterPicker pick for 21 of 123 triggers (P-time location and Pd)
+  215945 windows in 2.8 s: 7108x real time per station

@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 03:25:03.66 to 09:25:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   08:42:25.00  earthquake detected by KARY, MRTH
+PLOC     #1   08:42:34.50  P times locate it at 38.101N 24.222E +-72 km, origin 08:42:17.14, rms 0.48 s from 3 stations
+LOCATE   #1   08:43:13.50  located at 37.892N 24.154E, origin 08:42:15.59, rms 0.05 s from 2 stations
+LOCATE   #1   08:43:23.00  located at 38.196N 24.242E, origin 08:42:16.56, rms 0.34 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 03:53:50.00 to 09:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.196N 24.242E, origin 08:42:16.56 UTC
+  alarm      08:42:25.00 UTC by KARY, MRTH; later VILL
+  location   rms 0.34 s from 3 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     38.101N 24.222E +-72 km from 3 stations, first 9.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 28 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KARY          25 km   08:42:24.40 UTC (picked)      -0.6 s  after S
+             MRTH          28 km   08:42:25.14 UTC (picked)      +0.1 s  before S
+             PTL           37 km   08:42:27.45 UTC (predicted)    +2.5 s  before S
+             ATH           52 km   08:42:31.72 UTC (predicted)    +6.7 s  before S
+             MDRA          69 km   08:42:36.62 UTC (predicted)   +11.6 s  before S
+             VILL          81 km   08:42:39.68 UTC (picked)     +14.7 s  before S
+             EPID         118 km   08:42:50.35 UTC (predicted)   +25.4 s  before S
+             VLI          200 km   08:43:13.83 UTC (predicted)   +48.8 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     6
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    08:42:25.00 UTC  #1  no magnitude, located 38.20N 24.24E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_lookahead_eqdet/greece_strat_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.001 (0.001)         0
+  EPID     43189         0        0      0         0      0.001 (0.001)         0
+  KARY     43189         0        2      2        14      0.001 (0.001)        21
+  MDRA     43189         0        0      0         0      0.000 (0.001)         0
+  MRTH     43189         0        1      1         0      0.000 (0.001)        15
+  PTL      42746        60        0      0         0      0.001 (0.001)         0
+  VILL     43189         0        3      3        21      0.001 (0.001)        20
+  VLI      43114         7        3      3        21      0.001 (0.001)        14
+  Pd: 56 values sent
+  P time from an STA/LTA onset for 7 of 9 triggers (2 from the window start)
+  onset from a FilterPicker pick for 8 of 9 triggers (P-time location and Pd)
+  344994 windows in 0.6 s: 33516x real time per station

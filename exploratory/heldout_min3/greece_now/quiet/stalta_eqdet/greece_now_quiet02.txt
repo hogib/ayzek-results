@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-09-04 09:14:02.59 to 15:14:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   10:43:18.35  earthquake detected by CHAN, KNSS, ZKR
+pick     PFKS  picker window at 11:59:38.69 crosses a gap, skipped
+ALARM    #2   11:20:13.31  earthquake detected by IPPL, PFKS, ZKR
+PLOC     #2   11:20:13.31  P times locate it at 38.269N 23.884E +-228 km, origin 11:19:05.69, rms 0.43 s from 3 stations
+ALARM    #3   11:58:52.29  earthquake detected by PFKS, SIVA, ZKR
+PLOC     #3   11:58:52.29  P times locate it at 36.303N 22.401E +-428 km, origin 11:57:51.91, rms 1.60 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-09-04 09:42:50.00 to 15:14:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:43:18.35 UTC by CHAN, KNSS, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:20:13.31 UTC by IPPL, PFKS, ZKR
+  P loc.     38.269N 23.884E +-228 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      11:58:52.29 UTC by PFKS, SIVA, ZKR
+  P loc.     36.303N 22.401E +-428 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm   200
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:43:18.35 UTC  #1  no magnitude, not located
+    11:20:13.31 UTC  #2  no magnitude, not located
+    11:58:52.29 UTC  #3  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqdet/greece_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       17     17       119      0.002 (0.000)       100
+  IPPL     43189         0       39     38       273      0.001 (0.000)        85
+  KNSS     43189         0       29     29       203      0.002 (0.000)        95
+  PFKS     43175         2       33     32       231      0.002 (0.000)        88
+  SIVA     43189         0       12     12        84      0.001 (0.001)        78
+  STIA     43189         0        3      3        21      0.002 (0.001)        81
+  THERA    43189         0        2      2        14      0.001 (0.001)        74
+  ZKR      43189         0      111    111       777      0.001 (0.001)        74
+  Pd: 1722 values sent
+  345498 windows in 8.8 s: 2252x real time per station

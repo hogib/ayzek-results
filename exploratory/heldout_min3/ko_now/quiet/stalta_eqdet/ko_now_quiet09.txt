@@ -1,0 +1,63 @@
+ayzek    7 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   02:11:46.93  earthquake detected by GAZ, MLTY, SVRC
+ALARM    #2   02:19:04.79  earthquake detected by GAZ, MLTY, SVRC
+ALARM    #3   03:25:46.78  earthquake detected by GAZ, MAZI, MLTY
+PLOC     #3   03:25:46.78  P times locate it at 37.996N 37.384E +-65 km, origin 03:25:00.77, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:11:46.93 UTC by GAZ, MLTY, SVRC
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:19:04.79 UTC by GAZ, MLTY, SVRC
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      03:25:46.78 UTC by GAZ, MAZI, MLTY
+  P loc.     37.996N 37.384E +-65 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm   201
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    02:11:46.93 UTC  #1  no magnitude, not located
+    02:19:04.79 UTC  #2  no magnitude, not located
+    03:25:46.78 UTC  #3  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_eqdet/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0       15     15         0      0.002 (0.000)        50
+  DYBB     43189         0        2      2        14      0.001 (0.000)        39
+  GAZ      43189         0      129    129       903      0.001 (0.001)        28
+  MAZI     43189         0        7      7         0      0.001 (0.000)        31
+  MLTY     43189         0       17     17       119      0.001 (0.001)        35
+  NURH     43189         0       11     11         0      0.001 (0.000)        38
+  SVRC     43091         9       70     70       490      0.001 (0.000)        35
+  Pd: 1526 values sent
+  302225 windows in 3.8 s: 5192x real time per station

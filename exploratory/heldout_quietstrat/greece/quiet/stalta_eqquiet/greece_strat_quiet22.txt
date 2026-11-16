@@ -1,0 +1,50 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 10 off 1.5, 1-10 Hz, Z+N+E + picker + Pd magnitude, replay 2025-05-16 08:58:02.32 to 14:58:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   09:50:30.12  earthquake detected by HORT, PAIG
+ALARM    #2   12:21:11.71  earthquake detected by HORT, SOH
+LOCATE   #2   12:22:06.20  located at 40.664N 23.043E, origin 12:21:01.85, rms 0.08 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-16 09:26:50.00 to 14:58:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:50:30.12 UTC by HORT, PAIG
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 40.664N 23.043E, origin 12:21:01.85 UTC
+  alarm      12:21:11.71 UTC by HORT, SOH
+  location   rms 0.08 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 33 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             HORT           9 km   12:21:05.62 UTC (picked)      -6.1 s  after S
+             SOH           32 km   12:21:11.36 UTC (picked)      -0.3 s  after S
+             PLG           47 km   12:21:15.55 UTC (predicted)    +3.8 s  before S
+             KOKK          82 km   12:21:25.56 UTC (predicted)   +13.9 s  before S
+             OUR           87 km   12:21:26.97 UTC (predicted)   +15.3 s  before S
+             PAIG          97 km   12:21:29.76 UTC (predicted)   +18.1 s  before S
+             KAVA         129 km   12:21:38.87 UTC (predicted)   +27.2 s  before S
+             THAS         142 km   12:21:42.42 UTC (predicted)   +30.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     4
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqquiet/greece_strat_quiet22.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0        2      2        14      0.003 (0.001)        54
+  KAVA     43189         0        1      1         0      0.002 (0.001)        52
+  KOKK     43189         0        0      0         0      0.002 (0.001)         0
+  OUR      43189         0        3      2        21      0.002 (0.001)        43
+  PAIG     43189         0        1      1         0      0.003 (0.001)        58
+  PLG      43189         0        0      0         0      0.002 (0.002)         0
+  SOH      43189         0        1      1         7      0.002 (0.002)        55
+  THAS     43189         0        0      0         0      0.002 (0.001)         0
+  Pd: 42 values sent
+  345512 windows in 0.5 s: 39353x real time per station

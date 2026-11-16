@@ -1,0 +1,55 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 10 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   02:16:12.75  earthquake detected by GAZ, SVRC
+ALARM    #2   03:55:15.37  earthquake detected by DYBB, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:16:12.75 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      03:55:15.37 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    39
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    02:16:12.75 UTC  #1  no magnitude, not located
+    03:55:15.37 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_10/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0        1      1         0      0.001 (0.000)        28
+  DYBB     43189         0        1      1         7      0.001 (0.000)        48
+  GAZ      43189         0       16     16       112      0.001 (0.000)        37
+  MAZI     43189         0        1      1         0      0.001 (0.003)        45
+  MLTY     43189         0        1      1         7      0.001 (0.000)        50
+  NURH     43189         0        4      4         0      0.001 (0.000)        35
+  SVRC     43091         9       19     19       133      0.001 (0.000)        32
+  Pd: 259 values sent
+  302225 windows in 0.8 s: 24505x real time per station

@@ -1,0 +1,47 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-02-10 08:30:03.16 to 14:30:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   12:24:11.50  earthquake detected by THIV, VILL
+LOCATE   #1   12:25:00.00  located at 38.382N 23.342E, origin 12:23:59.44, rms 0.19 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-02-10 08:58:50.00 to 14:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.382N 23.342E, origin 12:23:59.44 UTC
+  alarm      12:24:11.50 UTC by THIV, VILL
+  location   rms 0.19 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 41 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             THIV           9 km   12:24:03.00 UTC (picked)      -8.5 s  after S
+             VILL          24 km   12:24:07.08 UTC (picked)      -4.4 s  after S
+             MDRA          37 km   12:24:10.48 UTC (predicted)    -1.0 s  after S
+             LKR           42 km   12:24:11.83 UTC (predicted)    +0.3 s  before S
+             ATH           56 km   12:24:15.69 UTC (predicted)    +4.2 s  before S
+             PTL           59 km   12:24:16.46 UTC (predicted)    +5.0 s  before S
+             MRTH          60 km   12:24:16.74 UTC (predicted)    +5.2 s  before S
+             KARY         103 km   12:24:29.08 UTC (predicted)   +17.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     9
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_lookahead_eqdet/greece_strat_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.001 (0.001)         0
+  KARY     43189         0        0      0         0      0.001 (0.001)         0
+  LKR      43189         0        1      1         7      0.001 (0.001)        11
+  MDRA     43189         0        2      2        14      0.001 (0.001)        30
+  MRTH     43189         0        3      3         0      0.000 (0.001)        11
+  PTL      43189         0        0      0         0      0.001 (0.001)         0
+  THIV     43189         0        1      1         7      0.001 (0.001)        28
+  VILL     43189         0        4      4        28      0.001 (0.001)        18
+  Pd: 56 values sent
+  P time from an STA/LTA onset for 9 of 11 triggers (2 from the window start)
+  onset from a FilterPicker pick for 8 of 11 triggers (P-time location and Pd)
+  345512 windows in 0.7 s: 29146x real time per station

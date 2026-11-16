@@ -1,0 +1,41 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 30/10, Z + picker + Pd magnitude, replay 2026-10-18 10:50:02.58 to 16:50:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:33:30.80  earthquake detected by NURH, SARI
+LOCATE   #1   15:34:24.95  located at 37.948N 36.727E, origin 15:33:19.80, rms 0.03 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-18 11:18:50.00 to 16:50:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 37.948N 36.727E, origin 15:33:19.80 UTC
+  alarm      15:33:30.80 UTC by NURH, SARI
+  location   rms 0.03 s from 2 stations, first 54.2 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 37 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SARI          58 km   15:33:36.53 UTC (picked)      +5.7 s  before S
+             NURH          62 km   15:33:37.79 UTC (picked)      +7.0 s  before S
+             GAZ           96 km   15:33:47.44 UTC (predicted)   +16.6 s  before S
+             BNN          126 km   15:33:56.03 UTC (predicted)   +25.2 s  before S
+             CEYT         135 km   15:33:58.60 UTC (predicted)   +27.8 s  before S
+             KARA         166 km   15:34:07.31 UTC (predicted)   +36.5 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    26
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_fp_30/ko_now_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.015 (0.061)         0
+  CEYT     43057        13        5      5        35      0.013 (0.027)        47
+  GAZ      43189         0       10     10        70      0.013 (0.051)        39
+  KARA     43189         0        0      0         0      0.016 (0.019)         0
+  NURH     43189         0        4      4         0      0.017 (0.016)        44
+  SARI     43189         0        9      9        63      0.011 (0.032)        39
+  Pd: 168 values sent
+  259002 windows in 1.2 s: 16296x real time per station

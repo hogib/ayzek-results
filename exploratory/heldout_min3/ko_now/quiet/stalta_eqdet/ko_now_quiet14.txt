@@ -1,0 +1,51 @@
+ayzek    6 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-05 00:47:03.06 to 06:47:00.01 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   06:09:31.15  earthquake detected by BNN, NURH, SARI
+PLOC     #1   06:09:31.15  P times locate it at 41.510N 34.322E +-306 km, origin 06:08:12.49, rms 1.12 s from 3 stations
+PLOC     #1   06:09:31.85  P times locate it at 38.628N 33.731E +-105 km, origin 06:08:34.83, rms 0.73 s from 3 stations, left out SARI
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-05 01:15:50.00 to 06:47:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      06:09:31.15 UTC by BNN, NURH, SARI; later GAZ
+  P loc.     38.628N 33.731E +-105 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm   167
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    04:52:38.00 UTC  ml 1.8   210 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    06:09:31.15 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_eqdet/ko_now_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       26     26       182      0.001 (0.000)        37
+  CEYT     43189         0        2      2        14      0.001 (0.000)        28
+  GAZ      43189         0      128    128       896      0.001 (0.001)        38
+  KARA     43189         0       17     17       119      0.001 (0.001)        43
+  NURH     43189         0       13     13         0      0.001 (0.000)        45
+  SARI     43189         0        8      8        56      0.001 (0.001)        42
+  Pd: 1267 values sent
+  259134 windows in 5.1 s: 3880x real time per station

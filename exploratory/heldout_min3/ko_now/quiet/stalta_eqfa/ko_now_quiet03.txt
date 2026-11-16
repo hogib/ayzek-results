@@ -1,0 +1,46 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-26 05:44:02.90 to 11:44:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   09:22:31.53  earthquake detected by BNN, GAZ, SARI
+PLOC     #1   09:22:31.53  P times locate it at 36.549N 34.002E +-138 km, origin 09:21:40.95, rms 0.00 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-26 06:12:50.00 to 11:44:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:22:31.53 UTC by BNN, GAZ, SARI
+  P loc.     36.549N 34.002E +-138 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    73
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    09:22:31.53 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_eqfa/ko_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       52     52       364      0.001 (0.001)        43
+  CEYT     43189         0        2      2        14      0.001 (0.000)        68
+  GAZ      43189         0       20     20       140      0.001 (0.000)        50
+  KARA     43189         0        0      0         0      0.002 (0.000)         0
+  NURH     43168         2        5      5         0      0.002 (0.000)        68
+  SARI     43189         0        2      2        14      0.001 (0.001)        60
+  Pd: 532 values sent
+  259113 windows in 2.5 s: 7866x real time per station

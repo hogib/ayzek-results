@@ -1,0 +1,53 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-06-30 17:16:04.40 to 23:16:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   17:46:55.00  earthquake detected by FOZ, WVZ
+ALARM    #2   18:29:46.50  earthquake detected by CVZ, RPZ
+PLOC     #2   18:29:50.50  P times locate it at -43.767N 170.640E +-16 km, origin 18:29:33.57, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-06-30 17:44:50.00 to 23:16:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:46:55.00 UTC by FOZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      18:29:46.50 UTC by CVZ, RPZ; later FOZ
+  P loc.     -43.767N 170.640E +-16 km from 3 stations, first 4.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    43
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    17:46:55.00 UTC  #1  no magnitude, not located
+    18:29:46.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_phasenet_0p4/nz_now_quiet16.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        5      5        35      0.002 (0.003)        34
+  FOZ      43189         0        7      6        49      0.002 (0.001)        43
+  RPZ      43189         0       15     15       105      0.001 (0.001)        33
+  WHSZ     43189         0       10     10        70      0.001 (0.001)        38
+  WVZ      43189         0       11     11        77      0.002 (0.003)        39
+  Pd: 336 values sent
+  P time from an STA/LTA onset for 23 of 48 triggers (25 from the window start)
+  onset from a FilterPicker pick for 6 of 48 triggers (P-time location and Pd)
+  215945 windows in 1.7 s: 11948x real time per station

@@ -1,0 +1,33 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:21:43.00  earthquake detected by KARA, NURH
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:21:43.00 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    18
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/eqt_causal_eqquiet/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        0      0         0      0.005 (0.002)         0
+  CEYT     43189         0        0      0         0      0.003 (0.002)         0
+  GAZ      43189         0        0      0         0      0.004 (0.002)         0
+  KARA     43189         0        3      3        21      0.003 (0.002)       159
+  NURH     43189         0       16     16         0      0.006 (0.002)       128
+  SARI     43189         0        1      1         7      0.005 (0.006)       122
+  Pd: 28 values sent
+  P time from an STA/LTA onset for 9 of 20 triggers (11 from the window start)
+  onset from a FilterPicker pick for 8 of 20 triggers (P-time location and Pd)
+  259134 windows in 5.4 s: 3652x real time per station

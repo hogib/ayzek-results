@@ -1,0 +1,33 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 10 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   05:11:57.99  earthquake detected by NURH, SARI
+PLOC     #1   05:11:59.17  P times locate it at 40.725N 39.667E +-234 km, origin 05:10:54.65, rms 0.05 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      05:11:57.99 UTC by NURH, SARI; later BNN
+  P loc.     40.725N 39.667E +-234 km from 3 stations, first 1.2 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    22
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_10/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        1      1         7      0.001 (0.000)        31
+  CEYT     43189         0        0      0         0      0.001 (0.000)         0
+  GAZ      43189         0       10     10        70      0.001 (0.000)        36
+  KARA     43189         0        2      2        14      0.001 (0.000)        67
+  NURH     43189         0       11     11         0      0.001 (0.000)        40
+  SARI     43189         0        1      1         7      0.001 (0.000)        46
+  Pd: 98 values sent
+  259134 windows in 0.6 s: 33004x real time per station

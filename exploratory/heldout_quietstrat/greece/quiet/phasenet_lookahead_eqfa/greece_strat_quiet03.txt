@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 03:25:03.66 to 09:25:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   08:42:22.50  earthquake detected by KARY, MRTH
+PLOC     #1   08:42:24.00  P times locate it at 38.228N 24.236E +-379 km, origin 08:42:15.98, rms 0.01 s from 3 stations
+LOCATE   #1   08:43:13.00  located at 37.892N 24.154E, origin 08:42:15.58, rms 0.06 s from 2 stations
+LOCATE   #1   08:43:14.50  located at 38.253N 24.256E, origin 08:42:15.60, rms 0.09 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 03:53:50.00 to 09:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.253N 24.256E, origin 08:42:15.60 UTC
+  alarm      08:42:22.50 UTC by KARY, MRTH; later PTL
+  location   rms 0.09 s from 3 stations, first 50.5 s after the alarm (P and S picks)
+  P loc.     38.228N 24.236E +-379 km from 3 stations, first 1.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 22 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             KARY          29 km   08:42:24.40 UTC (picked)      +1.9 s  before S
+             MRTH          31 km   08:42:25.12 UTC (picked)      +2.6 s  before S
+             PTL           41 km   08:42:27.58 UTC (picked)      +5.1 s  before S
+             ATH           56 km   08:42:31.96 UTC (predicted)    +9.5 s  before S
+             MDRA          72 km   08:42:36.45 UTC (predicted)   +14.0 s  before S
+             VILL          83 km   08:42:39.49 UTC (predicted)   +17.0 s  before S
+             EPID         122 km   08:42:50.69 UTC (predicted)   +28.2 s  before S
+             VLI          206 km   08:43:14.55 UTC (predicted)   +52.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     5
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    08:42:22.50 UTC  #1  no magnitude, located 38.25N 24.26E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_lookahead_eqfa/greece_strat_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.000 (0.001)         0
+  EPID     43189         0        1      1         7      0.000 (0.001)        14
+  KARY     43189         0        2      2        14      0.000 (0.001)        14
+  MDRA     43189         0        0      0         0      0.000 (0.001)         0
+  MRTH     43189         0        1      1         0      0.000 (0.001)        13
+  PTL      42746        60        1      1         7      0.000 (0.001)        16
+  VILL     43189         0        2      2        14      0.000 (0.001)        14
+  VLI      43114         7        1      1         7      0.001 (0.001)        14
+  Pd: 49 values sent
+  P time from an STA/LTA onset for 5 of 8 triggers (3 from the window start)
+  onset from a FilterPicker pick for 6 of 8 triggers (P-time location and Pd)
+  344994 windows in 0.6 s: 35435x real time per station

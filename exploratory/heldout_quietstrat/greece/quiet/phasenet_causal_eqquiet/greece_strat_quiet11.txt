@@ -1,0 +1,78 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-02-10 08:30:03.16 to 14:30:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   09:57:46.50  earthquake detected by MDRA, MRTH
+ALARM    #2   11:00:03.00  earthquake detected by MDRA, VILL
+PLOC     #2   11:00:04.50  P times locate it at 38.380N 24.895E +-538 km, origin 10:59:38.66, rms 0.00 s from 3 stations
+PLOC     #2   11:00:06.00  P times locate it at 38.167N 23.498E +-427 km, origin 10:59:58.18, rms 0.51 s from 4 stations
+LOCATE   #2   11:00:54.50  located at 38.122N 23.629E, origin 10:59:57.25, rms 0.15 s from 2 stations
+LOCATE   #2   11:00:57.50  located at 37.921N 23.468E, origin 10:59:57.00, rms 0.26 s from 3 stations
+ALARM    #3   11:15:54.50  earthquake detected by MDRA, VILL
+ALARM    #4   11:32:40.00  earthquake detected by MDRA, VILL
+LOCATE   #4   11:33:31.50  located at 37.957N 23.394E, origin 11:32:34.14, rms 0.14 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-02-10 08:58:50.00 to 14:30:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:57:46.50 UTC by MDRA, MRTH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 37.921N 23.468E, origin 10:59:57.00 UTC
+  alarm      11:00:03.00 UTC by MDRA, VILL; later MRTH, THIV
+  location   rms 0.26 s from 3 stations, first 51.5 s after the alarm (P and S picks)
+  P loc.     38.167N 23.498E +-427 km from 4 stations, first 1.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 18 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             MDRA          16 km   11:00:02.48 UTC (picked)      -0.5 s  after S
+             ATH           23 km   11:00:04.08 UTC (predicted)    +1.1 s  before S
+             VILL          30 km   11:00:05.90 UTC (picked)      +2.9 s  before S
+             PTL           38 km   11:00:08.12 UTC (predicted)    +5.1 s  before S
+             THIV          44 km   11:00:09.81 UTC (predicted)    +6.8 s  before S
+             MRTH          47 km   11:00:10.58 UTC (picked)      +7.6 s  before S
+             KARY          86 km   11:00:21.69 UTC (predicted)   +18.7 s  before S
+             LKR           91 km   11:00:23.10 UTC (predicted)   +20.1 s  before S
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      11:15:54.50 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at 37.957N 23.394E, origin 11:32:34.14 UTC
+  alarm      11:32:40.00 UTC by MDRA, VILL
+  location   rms 0.14 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 18 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             MDRA          13 km   11:32:38.74 UTC (picked)      -1.3 s  after S
+             VILL          24 km   11:32:41.70 UTC (picked)      +1.7 s  before S
+             ATH           28 km   11:32:42.75 UTC (predicted)    +2.8 s  before S
+             THIV          38 km   11:32:45.47 UTC (predicted)    +5.5 s  before S
+             PTL           42 km   11:32:46.61 UTC (predicted)    +6.6 s  before S
+             MRTH          51 km   11:32:49.07 UTC (predicted)    +9.1 s  before S
+             LKR           84 km   11:32:58.41 UTC (predicted)   +18.4 s  before S
+             KARY          92 km   11:33:00.51 UTC (predicted)   +20.5 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    22
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/phasenet_causal_eqquiet/greece_strat_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.001 (0.001)         0
+  KARY     43189         0        1      1         7      0.000 (0.001)        14
+  LKR      43189         0        2      2        14      0.001 (0.001)        14
+  MDRA     43189         0        4      4        28      0.000 (0.001)        14
+  MRTH     43189         0        7      7         0      0.000 (0.001)        13
+  PTL      43189         0        0      0         0      0.001 (0.001)         0
+  THIV     43189         0        9      9        63      0.001 (0.001)        15
+  VILL     43189         0        9      9        63      0.001 (0.001)        16
+  Pd: 175 values sent
+  P time from an STA/LTA onset for 26 of 32 triggers (6 from the window start)
+  onset from a FilterPicker pick for 19 of 32 triggers (P-time location and Pd)
+  345512 windows in 0.8 s: 25741x real time per station

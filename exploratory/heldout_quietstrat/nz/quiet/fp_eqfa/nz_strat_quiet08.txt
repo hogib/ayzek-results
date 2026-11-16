@@ -1,0 +1,50 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-09-27 00:05:02.23 to 06:05:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   00:48:16.91  earthquake detected by HIZ, VRZ
+ALARM    #2   02:58:21.22  earthquake detected by KPRZ, VRZ
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-27 00:33:50.00 to 06:05:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      00:48:16.91 UTC by HIZ, VRZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:58:21.22 UTC by KPRZ, VRZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    38
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    00:48:16.91 UTC  #1  no magnitude, not located
+    02:58:21.22 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/fp_eqfa/nz_strat_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0       10     10        70      0.025 (0.007)        77
+  HIZ      43189         0        6      6        42      0.026 (0.006)        82
+  KPRZ     43189         0        5      5        35      0.025 (0.032)        73
+  RATZ     43189         0        1      1         7      0.023 (0.051)        85
+  TLZ      43189         0        9      9        63      0.028 (0.010)        75
+  VRZ      43189         0       11     11        77      0.025 (0.006)        82
+  Pd: 294 values sent
+  259134 windows in 2.5 s: 8050x real time per station

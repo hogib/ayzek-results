@@ -1,0 +1,66 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 5 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-12-09 14:06:02.69 to 20:06:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   15:03:38.71  earthquake detected by NISR2, ZKR
+ALARM    #2   15:18:36.11  earthquake detected by APE, ZKR
+ALARM    #3   15:45:25.40  earthquake detected by APE, ZKR
+ALARM    #4   15:58:58.58  earthquake detected by STIA, ZKR
+ALARM    #5   16:20:20.92  earthquake detected by APE, ZKR
+ALARM    #6   16:22:36.70  earthquake detected by APE, STIA
+ALARM    #7   17:31:43.19  earthquake detected by STIA, THERA
+ALARM    #8   18:34:11.34  earthquake detected by APE, STIA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-12-09 14:34:50.00 to 20:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:03:38.71 UTC by NISR2, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:18:36.11 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      15:45:25.40 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      15:58:58.58 UTC by STIA, ZKR
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      16:20:20.92 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      16:22:36.70 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      17:31:43.19 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      18:34:11.34 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           8
+  single-station detections, no alarm    70
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_5/greece_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       23     23       161      0.001 (0.000)        36
+  NISR     43189         0       10     10         0      0.001 (0.001)        41
+  NISR2    43189         0        3      3        21      0.001 (0.001)        39
+  STIA     43189         0       22     22       154      0.001 (0.000)        34
+  THERA    43189         0       16     16       112      0.001 (0.000)        36
+  ZKR      43189         0       13     13        91      0.001 (0.000)        37
+  Pd: 539 values sent
+  259134 windows in 1.1 s: 18552x real time per station

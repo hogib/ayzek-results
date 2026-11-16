@@ -1,0 +1,32 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2024-06-03 03:08:04.44 to 09:08:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:36:55.65  earthquake detected by CVZ, RPZ, WVZ
+PLOC     #1   08:36:55.65  P times locate it at -43.529N 169.677E +-367 km, origin 08:36:31.45, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-06-03 03:36:50.00 to 09:08:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:36:55.65 UTC by CVZ, RPZ, WVZ
+  P loc.     -43.529N 169.677E +-367 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    21
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/nz_now.partial/quiet/fp_eqfa/nz_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        6      6        42      0.022 (0.013)        79
+  FOZ      43189         0        5      5        35      0.023 (0.020)        80
+  RPZ      43189         0       10     10        70      0.022 (0.062)        73
+  WHSZ     43189         0        0      0         0      0.022 (0.081)         0
+  WVZ      43189         0        3      3        21      0.025 (0.019)        84
+  Pd: 168 values sent
+  215945 windows in 2.1 s: 9365x real time per station

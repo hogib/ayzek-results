@@ -1,0 +1,378 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-12-02 03:56:02.45 to 09:56:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:40:37.22  earthquake detected by KNDR, SIVA
+LOCATE   #1   04:41:31.71  located at 34.616N 24.618E, origin 04:40:16.22, rms 1.32 s from 2 stations
+ALARM    #2   04:51:38.98  earthquake detected by SIVA, STIA
+ALARM    #3   04:58:26.08  earthquake detected by CHAN, KNDR
+ALARM    #4   05:05:09.03  earthquake detected by KNDR, PFKS
+ALARM    #5   05:06:22.43  earthquake detected by KNDR, PFKS
+ALARM    #6   05:07:03.31  earthquake detected by PFKS, STIA
+ALARM    #7   05:14:33.04  earthquake detected by KNDR, PFKS
+ALARM    #8   05:52:02.06  earthquake detected by PFKS, SIVA
+ALARM    #9   05:53:42.71  earthquake detected by KNDR, PFKS
+ALARM    #10  05:54:28.15  earthquake detected by KNDR, SIVA
+ALARM    #11  05:56:58.00  earthquake detected by IPPL, PFKS
+pick     PFKS  picker window at 05:59:53.71 crosses a gap, skipped
+ALARM    #12  06:01:02.76  earthquake detected by KNDR, PFKS
+ALARM    #13  06:04:51.49  earthquake detected by PFKS, STIA
+ALARM    #14  06:08:01.75  earthquake detected by KNDR, PFKS
+ALARM    #15  06:14:06.28  earthquake detected by IPPL, KNDR
+ALARM    #16  06:21:50.93  earthquake detected by CHAN, KNDR
+ALARM    #17  06:24:31.41  earthquake detected by KNDR, KNSS
+ALARM    #18  06:26:35.16  earthquake detected by KNDR, KNSS
+ALARM    #19  06:29:45.64  earthquake detected by CHAN, PFKS
+ALARM    #20  06:30:52.32  earthquake detected by KNDR, PFKS
+ALARM    #21  06:36:40.50  earthquake detected by PFKS, SIVA
+ALARM    #22  06:39:57.89  earthquake detected by IPPL, STIA
+ALARM    #23  06:42:41.35  earthquake detected by KNDR, PFKS
+ALARM    #24  06:45:40.37  earthquake detected by KNDR, PFKS
+ALARM    #25  06:49:23.03  earthquake detected by PFKS, SIVA
+ALARM    #26  06:50:21.31  earthquake detected by CHAN, PFKS
+ALARM    #27  06:51:30.50  earthquake detected by PFKS, SIVA
+ALARM    #28  06:52:16.03  earthquake detected by KNDR, PFKS
+ALARM    #29  06:53:54.63  earthquake detected by KNDR, PFKS
+pick     PFKS  picker window at 06:59:50.36 crosses a gap, skipped
+ALARM    #30  07:03:03.53  earthquake detected by IPPL, PFKS
+ALARM    #31  07:04:32.52  earthquake detected by IPPL, KNSS
+ALARM    #32  07:06:01.75  earthquake detected by KNDR, PFKS
+ALARM    #33  07:39:54.62  earthquake detected by KNDR, STIA
+ALARM    #34  07:42:26.53  earthquake detected by KNDR, STIA
+ALARM    #35  07:45:32.12  earthquake detected by IMMV, SIVA
+ALARM    #36  07:49:39.99  earthquake detected by KNDR, PFKS
+ALARM    #37  07:51:34.22  earthquake detected by KNDR, STIA
+ALARM    #38  07:54:46.52  earthquake detected by KNDR, STIA
+ALARM    #39  07:58:38.69  earthquake detected by IPPL, STIA
+ALARM    #40  08:02:35.93  earthquake detected by KNDR, STIA
+ALARM    #41  08:10:13.86  earthquake detected by IPPL, KNDR
+PLOC     #41  08:10:19.31  P times locate it at 34.114N 23.850E +-239 km, origin 08:09:49.08, rms 0.01 s from 3 stations
+ALARM    #42  08:15:32.52  earthquake detected by CHAN, PFKS
+ALARM    #43  08:17:55.07  earthquake detected by IMMV, KNSS
+ALARM    #44  08:19:52.91  earthquake detected by CHAN, KNDR
+ALARM    #45  08:24:11.94  earthquake detected by KNDR, STIA
+ALARM    #46  08:30:36.20  earthquake detected by IPPL, KNDR
+ALARM    #47  08:37:40.08  earthquake detected by KNDR, PFKS
+ALARM    #48  08:43:44.60  earthquake detected by KNDR, SIVA
+PLOC     #48  08:43:47.98  P times locate it at 32.605N 21.200E +-258 km, origin 08:42:34.30, rms 1.59 s from 3 stations
+ALARM    #49  09:03:18.19  earthquake detected by KNDR, PFKS
+ALARM    #50  09:26:24.61  earthquake detected by PFKS, SIVA
+ALARM    #51  09:40:43.03  earthquake detected by PFKS, SIVA
+ALARM    #52  09:51:01.99  earthquake detected by KNDR, KNSS
+ALARM    #53  09:52:50.34  earthquake detected by CHAN, KNDR
+PLOC     #53  09:52:55.08  P times locate it at 35.358N 23.859E +-418 km, origin 09:52:45.78, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-12-02 04:24:50.00 to 09:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 34.616N 24.618E, origin 04:40:16.22 UTC
+  alarm      04:40:37.22 UTC by KNDR, SIVA
+  location   rms 1.32 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 73 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          48 km   04:40:31.18 UTC (picked)      -6.0 s  after S
+             IPPL          83 km   04:40:40.01 UTC (predicted)    +2.8 s  before S
+             PFKS          91 km   04:40:42.47 UTC (predicted)    +5.3 s  before S
+             KNSS          92 km   04:40:42.67 UTC (predicted)    +5.5 s  before S
+             IMMV         110 km   04:40:47.88 UTC (predicted)   +10.7 s  before S
+             CHAN         113 km   04:40:48.71 UTC (predicted)   +11.5 s  before S
+             KNDR         114 km   04:40:47.91 UTC (picked)     +10.7 s  before S
+             STIA         149 km   04:40:58.96 UTC (predicted)   +21.7 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      04:51:38.98 UTC by SIVA, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      04:58:26.08 UTC by CHAN, KNDR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      05:05:09.03 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:06:22.43 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      05:07:03.31 UTC by PFKS, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      05:14:33.04 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      05:52:02.06 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      05:53:42.71 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      05:54:28.15 UTC by KNDR, SIVA
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      05:56:58.00 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      06:01:02.76 UTC by KNDR, PFKS; later SIVA
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      06:04:51.49 UTC by PFKS, STIA
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude), not located
+  alarm      06:08:01.75 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #15: detected earthquake (no magnitude), not located
+  alarm      06:14:06.28 UTC by IPPL, KNDR
+  AFAD       no matching catalogue event
+
+Event #16: detected earthquake (no magnitude), not located
+  alarm      06:21:50.93 UTC by CHAN, KNDR
+  AFAD       no matching catalogue event
+
+Event #17: detected earthquake (no magnitude), not located
+  alarm      06:24:31.41 UTC by KNDR, KNSS
+  AFAD       no matching catalogue event
+
+Event #18: detected earthquake (no magnitude), not located
+  alarm      06:26:35.16 UTC by KNDR, KNSS
+  AFAD       no matching catalogue event
+
+Event #19: detected earthquake (no magnitude), not located
+  alarm      06:29:45.64 UTC by CHAN, PFKS
+  AFAD       no matching catalogue event
+
+Event #20: detected earthquake (no magnitude), not located
+  alarm      06:30:52.32 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #21: detected earthquake (no magnitude), not located
+  alarm      06:36:40.50 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #22: detected earthquake (no magnitude), not located
+  alarm      06:39:57.89 UTC by IPPL, STIA
+  AFAD       no matching catalogue event
+
+Event #23: detected earthquake (no magnitude), not located
+  alarm      06:42:41.35 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #24: detected earthquake (no magnitude), not located
+  alarm      06:45:40.37 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #25: detected earthquake (no magnitude), not located
+  alarm      06:49:23.03 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #26: detected earthquake (no magnitude), not located
+  alarm      06:50:21.31 UTC by CHAN, PFKS
+  AFAD       no matching catalogue event
+
+Event #27: detected earthquake (no magnitude), not located
+  alarm      06:51:30.50 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #28: detected earthquake (no magnitude), not located
+  alarm      06:52:16.03 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #29: detected earthquake (no magnitude), not located
+  alarm      06:53:54.63 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #30: detected earthquake (no magnitude), not located
+  alarm      07:03:03.53 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #31: detected earthquake (no magnitude), not located
+  alarm      07:04:32.52 UTC by IPPL, KNSS
+  AFAD       no matching catalogue event
+
+Event #32: detected earthquake (no magnitude), not located
+  alarm      07:06:01.75 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #33: detected earthquake (no magnitude), not located
+  alarm      07:39:54.62 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #34: detected earthquake (no magnitude), not located
+  alarm      07:42:26.53 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #35: detected earthquake (no magnitude), not located
+  alarm      07:45:32.12 UTC by IMMV, SIVA
+  AFAD       no matching catalogue event
+
+Event #36: detected earthquake (no magnitude), not located
+  alarm      07:49:39.99 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #37: detected earthquake (no magnitude), not located
+  alarm      07:51:34.22 UTC by KNDR, STIA; later PFKS
+  AFAD       no matching catalogue event
+
+Event #38: detected earthquake (no magnitude), not located
+  alarm      07:54:46.52 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #39: detected earthquake (no magnitude), not located
+  alarm      07:58:38.69 UTC by IPPL, STIA
+  AFAD       no matching catalogue event
+
+Event #40: detected earthquake (no magnitude), not located
+  alarm      08:02:35.93 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #41: detected earthquake (no magnitude), not located
+  alarm      08:10:13.86 UTC by IPPL, KNDR; later PFKS
+  P loc.     34.114N 23.850E +-239 km from 3 stations, first 5.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #42: detected earthquake (no magnitude), not located
+  alarm      08:15:32.52 UTC by CHAN, PFKS
+  AFAD       no matching catalogue event
+
+Event #43: detected earthquake (no magnitude), not located
+  alarm      08:17:55.07 UTC by IMMV, KNSS
+  AFAD       no matching catalogue event
+
+Event #44: detected earthquake (no magnitude), not located
+  alarm      08:19:52.91 UTC by CHAN, KNDR
+  AFAD       no matching catalogue event
+
+Event #45: detected earthquake (no magnitude), not located
+  alarm      08:24:11.94 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #46: detected earthquake (no magnitude), not located
+  alarm      08:30:36.20 UTC by IPPL, KNDR
+  AFAD       no matching catalogue event
+
+Event #47: detected earthquake (no magnitude), not located
+  alarm      08:37:40.08 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #48: detected earthquake (no magnitude), not located
+  alarm      08:43:44.60 UTC by KNDR, SIVA; later IPPL
+  P loc.     32.605N 21.200E +-258 km from 3 stations, first 3.4 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #49: detected earthquake (no magnitude), not located
+  alarm      09:03:18.19 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #50: detected earthquake (no magnitude), not located
+  alarm      09:26:24.61 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #51: detected earthquake (no magnitude), not located
+  alarm      09:40:43.03 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+Event #52: detected earthquake (no magnitude), not located
+  alarm      09:51:01.99 UTC by KNDR, KNSS
+  AFAD       no matching catalogue event
+
+Event #53: detected earthquake (no magnitude), not located
+  alarm      09:52:50.34 UTC by CHAN, KNDR; later IPPL
+  P loc.     35.358N 23.859E +-418 km from 3 stations, first 4.7 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          53
+  single-station detections, no alarm   175
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             53  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:40:37.22 UTC  #1  no magnitude, located 34.62N 24.62E
+    04:51:38.98 UTC  #2  no magnitude, not located
+    04:58:26.08 UTC  #3  no magnitude, not located
+    05:05:09.03 UTC  #4  no magnitude, not located
+    05:06:22.43 UTC  #5  no magnitude, not located
+    05:07:03.31 UTC  #6  no magnitude, not located
+    05:14:33.04 UTC  #7  no magnitude, not located
+    05:52:02.06 UTC  #8  no magnitude, not located
+    05:53:42.71 UTC  #9  no magnitude, not located
+    05:54:28.15 UTC  #10  no magnitude, not located
+    05:56:58.00 UTC  #11  no magnitude, not located
+    06:01:02.76 UTC  #12  no magnitude, not located
+    06:04:51.49 UTC  #13  no magnitude, not located
+    06:08:01.75 UTC  #14  no magnitude, not located
+    06:14:06.28 UTC  #15  no magnitude, not located
+    06:21:50.93 UTC  #16  no magnitude, not located
+    06:24:31.41 UTC  #17  no magnitude, not located
+    06:26:35.16 UTC  #18  no magnitude, not located
+    06:29:45.64 UTC  #19  no magnitude, not located
+    06:30:52.32 UTC  #20  no magnitude, not located
+    06:36:40.50 UTC  #21  no magnitude, not located
+    06:39:57.89 UTC  #22  no magnitude, not located
+    06:42:41.35 UTC  #23  no magnitude, not located
+    06:45:40.37 UTC  #24  no magnitude, not located
+    06:49:23.03 UTC  #25  no magnitude, not located
+    06:50:21.31 UTC  #26  no magnitude, not located
+    06:51:30.50 UTC  #27  no magnitude, not located
+    06:52:16.03 UTC  #28  no magnitude, not located
+    06:53:54.63 UTC  #29  no magnitude, not located
+    07:03:03.53 UTC  #30  no magnitude, not located
+    07:04:32.52 UTC  #31  no magnitude, not located
+    07:06:01.75 UTC  #32  no magnitude, not located
+    07:39:54.62 UTC  #33  no magnitude, not located
+    07:42:26.53 UTC  #34  no magnitude, not located
+    07:45:32.12 UTC  #35  no magnitude, not located
+    07:49:39.99 UTC  #36  no magnitude, not located
+    07:51:34.22 UTC  #37  no magnitude, not located
+    07:54:46.52 UTC  #38  no magnitude, not located
+    07:58:38.69 UTC  #39  no magnitude, not located
+    08:02:35.93 UTC  #40  no magnitude, not located
+    08:10:13.86 UTC  #41  no magnitude, not located
+    08:15:32.52 UTC  #42  no magnitude, not located
+    08:17:55.07 UTC  #43  no magnitude, not located
+    08:19:52.91 UTC  #44  no magnitude, not located
+    08:24:11.94 UTC  #45  no magnitude, not located
+    08:30:36.20 UTC  #46  no magnitude, not located
+    08:37:40.08 UTC  #47  no magnitude, not located
+    08:43:44.60 UTC  #48  no magnitude, not located
+    09:03:18.19 UTC  #49  no magnitude, not located
+    09:26:24.61 UTC  #50  no magnitude, not located
+    09:40:43.03 UTC  #51  no magnitude, not located
+    09:51:01.99 UTC  #52  no magnitude, not located
+    09:52:50.34 UTC  #53  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/stalta_eqdet/greece_now_quiet05.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       29     29       203      0.005 (0.001)       143
+  IMMV     43189         0        3      3        21      0.004 (0.001)       172
+  IPPL     43189         0       45     45       315      0.004 (0.001)       165
+  KNDR     43189         0       61     61       427      0.004 (0.001)       147
+  KNSS     43189         0       13     12        91      0.003 (0.001)       139
+  PFKS     43099        13       75     73       518      0.004 (0.001)       164
+  SIVA     43189         0       42     42       294      0.004 (0.001)       147
+  STIA     43189         0       25     25       175      0.004 (0.001)       150
+  Pd: 2044 values sent
+  345422 windows in 13.0 s: 1527x real time per station

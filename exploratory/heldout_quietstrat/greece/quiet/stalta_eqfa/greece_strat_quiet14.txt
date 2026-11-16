@@ -1,0 +1,112 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-05-10 09:06:03.40 to 15:06:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   11:24:29.22  earthquake detected by AXS, RLS
+PLOC     #1   11:24:31.48  P times locate it at 38.048N 21.377E +-401 km, origin 11:24:25.93, rms 0.11 s from 3 stations
+LOCATE   #1   11:25:23.71  located at 37.676N 21.221E, origin 11:24:18.07, rms 0.62 s from 2 stations
+LOCATE   #1   11:25:25.97  located at 37.823N 21.012E, origin 11:24:19.18, rms 0.98 s from 3 stations
+ALARM    #2   11:40:48.92  earthquake detected by AMT, DRO
+PLOC     #2   11:40:53.47  P times locate it at 37.664N 21.616E +-144 km, origin 11:40:43.13, rms 0.09 s from 3 stations
+LOCATE   #2   11:41:43.41  located at 37.607N 22.054E, origin 11:40:40.56, rms 0.05 s from 2 stations
+LOCATE   #2   11:41:47.96  located at 37.639N 21.411E, origin 11:40:41.60, rms 0.37 s from 3 stations
+ALARM    #3   13:07:22.19  earthquake detected by AXS, RLS
+LOCATE   #3   13:08:16.68  located at 38.081N 21.131E, origin 13:07:16.85, rms 0.06 s from 2 stations
+ALARM    #4   14:07:37.99  earthquake detected by LTHK, RLS
+ALARM    #5   14:23:50.45  earthquake detected by AMT, LTHK
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-10 09:34:50.00 to 15:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 37.823N 21.012E, origin 11:24:19.18 UTC
+  alarm      11:24:29.22 UTC by AXS, RLS; later DRO
+  location   rms 0.98 s from 3 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     38.048N 21.377E +-401 km from 3 stations, first 2.3 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 34 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             LTHK          20 km   11:24:25.55 UTC (predicted)    -3.7 s  after S
+             ORTH          28 km   11:24:27.65 UTC (predicted)    -1.6 s  after S
+             RLS           47 km   11:24:32.34 UTC (picked)      +3.1 s  before S
+             AXS           52 km   11:24:34.87 UTC (picked)      +5.7 s  before S
+             DRO           63 km   11:24:37.85 UTC (picked)      +8.6 s  before S
+             AMT           69 km   11:24:39.19 UTC (predicted)   +10.0 s  before S
+             ITM          108 km   11:24:50.12 UTC (predicted)   +20.9 s  before S
+             VLX          131 km   11:24:56.59 UTC (predicted)   +27.4 s  before S
+
+Event #2: detected earthquake (no magnitude) at 37.639N 21.411E, origin 11:40:41.60 UTC
+  alarm      11:40:48.92 UTC by AMT, DRO; later ITM
+  location   rms 0.37 s from 3 stations, first 54.5 s after the alarm (P and S picks)
+  P loc.     37.664N 21.616E +-144 km from 3 stations, first 4.5 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 24 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AMT           29 km   11:40:50.01 UTC (picked)      +1.1 s  before S
+             DRO           44 km   11:40:54.81 UTC (picked)      +5.9 s  before S
+             RLS           47 km   11:40:55.20 UTC (predicted)    +6.3 s  before S
+             LTHK          51 km   11:40:56.50 UTC (predicted)    +7.6 s  before S
+             AXS           62 km   11:40:59.54 UTC (predicted)   +10.6 s  before S
+             ORTH          67 km   11:41:01.00 UTC (predicted)   +12.1 s  before S
+             ITM           68 km   11:41:01.76 UTC (picked)     +12.8 s  before S
+             VLX           90 km   11:41:07.61 UTC (predicted)   +18.7 s  before S
+
+Event #3: detected earthquake (no magnitude) at 38.081N 21.131E, origin 13:07:16.85 UTC
+  alarm      13:07:22.19 UTC by AXS, RLS
+  location   rms 0.06 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 16 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AXS           25 km   13:07:24.62 UTC (picked)      +2.4 s  before S
+             RLS           29 km   13:07:25.68 UTC (picked)      +3.5 s  before S
+             ORTH          46 km   13:07:30.26 UTC (predicted)    +8.1 s  before S
+             LTHK          49 km   13:07:31.05 UTC (predicted)    +8.9 s  before S
+             DRO           53 km   13:07:32.19 UTC (predicted)   +10.0 s  before S
+             AMT           79 km   13:07:39.71 UTC (predicted)   +17.5 s  before S
+             ITM          122 km   13:07:51.91 UTC (predicted)   +29.7 s  before S
+             VLX          135 km   13:07:55.61 UTC (predicted)   +33.4 s  before S
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      14:07:37.99 UTC by LTHK, RLS
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      14:23:50.45 UTC by AMT, LTHK
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    50
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              5  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    11:24:29.22 UTC  #1  no magnitude, located 37.82N 21.01E
+    11:40:48.92 UTC  #2  no magnitude, located 37.64N 21.41E
+    13:07:22.19 UTC  #3  no magnitude, located 38.08N 21.13E
+    14:07:37.99 UTC  #4  no magnitude, not located
+    14:23:50.45 UTC  #5  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqfa/greece_strat_quiet14.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMT      43189         0        7      7        49      0.000 (0.001)        32
+  AXS      43189         0        2      2        14      0.001 (0.001)        37
+  DRO      43189         0        9      9        63      0.001 (0.001)        35
+  ITM      43189         0        5      5        35      0.001 (0.001)        38
+  LTHK     43189         0       19     19       133      0.001 (0.001)        28
+  ORTH     43189         0        0      0         0      0.001 (0.001)         0
+  RLS      43189         0       18     17       126      0.001 (0.001)        28
+  VLX      43189         0        2      2        14      0.001 (0.001)        27
+  Pd: 434 values sent
+  345512 windows in 0.7 s: 27513x real time per station

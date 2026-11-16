@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-09 09:45:03.12 to 15:45:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:58:17.00  earthquake detected by LKD2, TSLK
+PLOC     #1   10:58:18.00  P times locate it at 39.241N 17.770E +-573 km, origin 10:57:33.01, rms 0.01 s from 3 stations
+PLOC     #1   10:58:21.00  P times locate it at 38.921N 20.834E +-431 km, origin 10:58:11.65, rms 0.07 s from 4 stations
+LOCATE   #1   10:59:08.50  located at 36.259N 21.617E, origin 10:57:27.24, rms 1.99 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-09 10:13:50.00 to 15:45:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 36.259N 21.617E, origin 10:57:27.24 UTC
+  alarm      10:58:17.00 UTC by LKD2, TSLK; later NYDR, PDO
+  location   rms 1.99 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  P loc.     38.921N 20.834E +-431 km from 4 stations, first 1.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 174 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             PVO          262 km   10:58:42.21 UTC (predicted)   +25.2 s  before S
+             PDO          263 km   10:58:42.42 UTC (predicted)   +25.4 s  before S
+             NYDR         285 km   10:58:46.30 UTC (picked)     +29.3 s  before S
+             LKD2         294 km   10:58:51.21 UTC (predicted)   +34.2 s  before S
+             EVR          296 km   10:58:51.86 UTC (predicted)   +34.9 s  before S
+             TSLK         298 km   10:58:54.66 UTC (picked)     +37.7 s  before S
+             AMPL         298 km   10:58:52.51 UTC (predicted)   +35.5 s  before S
+             TETR         344 km   10:59:05.68 UTC (predicted)   +48.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     5
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:58:17.00 UTC  #1  no magnitude, located 36.26N 21.62E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/phasenet_lookahead_eqfa/greece_now_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AMPL     43189         0        0      0         0      0.004 (0.006)         0
+  EVR      43189         0        1      1         7      0.004 (0.002)       164
+  LKD2     43171         2        2      2        14      0.005 (0.002)       149
+  NYDR     43189         0        2      2         0      0.004 (0.002)       130
+  PDO      43189         0        1      1         7      0.005 (0.007)       188
+  PVO      43189         0        1      1         7      0.006 (0.002)       143
+  TETR     43189         0        1      1         7      0.003 (0.007)       162
+  TSLK     43189         0        1      1         0      0.007 (0.002)       162
+  Pd: 42 values sent
+  P time from an STA/LTA onset for 2 of 9 triggers (7 from the window start)
+  onset from a FilterPicker pick for 5 of 9 triggers (P-time location and Pd)
+  345494 windows in 3.7 s: 5338x real time per station

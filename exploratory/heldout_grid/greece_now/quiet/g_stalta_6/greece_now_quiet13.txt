@@ -1,0 +1,124 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 6 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-04-03 09:54:02.17 to 15:54:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   10:44:39.00  earthquake detected by IPPL, STIA
+ALARM    #2   11:15:19.16  earthquake detected by IPPL, PFKS
+ALARM    #3   11:53:51.74  earthquake detected by KNDR, PFKS
+ALARM    #4   11:56:17.37  earthquake detected by CHAN, SIVA
+ALARM    #5   12:21:09.82  earthquake detected by KNSS, STIA
+ALARM    #6   12:34:33.65  earthquake detected by IPPL, PFKS
+ALARM    #7   12:47:17.72  earthquake detected by KNDR, PFKS
+ALARM    #8   12:48:01.30  earthquake detected by PFKS, STIA
+ALARM    #9   13:15:40.27  earthquake detected by IPPL, STIA
+ALARM    #10  13:27:44.52  earthquake detected by CHAN, STIA
+ALARM    #11  14:10:41.71  earthquake detected by KNDR, STIA
+ALARM    #12  14:20:00.13  earthquake detected by PFKS, STIA
+ALARM    #13  14:22:51.68  earthquake detected by KNDR, STIA
+ALARM    #14  15:22:19.58  earthquake detected by IMMV, STIA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-04-03 10:22:50.00 to 15:54:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      10:44:39.00 UTC by IPPL, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:15:19.16 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      11:53:51.74 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      11:56:17.37 UTC by CHAN, SIVA
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      12:21:09.82 UTC by KNSS, STIA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      12:34:33.65 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      12:47:17.72 UTC by KNDR, PFKS
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      12:48:01.30 UTC by PFKS, STIA
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      13:15:40.27 UTC by IPPL, STIA
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      13:27:44.52 UTC by CHAN, STIA
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      14:10:41.71 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      14:20:00.13 UTC by PFKS, STIA
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      14:22:51.68 UTC by KNDR, STIA
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude), not located
+  alarm      15:22:19.58 UTC by IMMV, STIA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          14
+  single-station detections, no alarm   126
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             14  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    10:44:39.00 UTC  #1  no magnitude, not located
+    11:15:19.16 UTC  #2  no magnitude, not located
+    11:53:51.74 UTC  #3  no magnitude, not located
+    11:56:17.37 UTC  #4  no magnitude, not located
+    12:21:09.82 UTC  #5  no magnitude, not located
+    12:34:33.65 UTC  #6  no magnitude, not located
+    12:47:17.72 UTC  #7  no magnitude, not located
+    12:48:01.30 UTC  #8  no magnitude, not located
+    13:15:40.27 UTC  #9  no magnitude, not located
+    13:27:44.52 UTC  #10  no magnitude, not located
+    14:10:41.71 UTC  #11  no magnitude, not located
+    14:20:00.13 UTC  #12  no magnitude, not located
+    14:22:51.68 UTC  #13  no magnitude, not located
+    15:22:19.58 UTC  #14  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_6/greece_now_quiet13.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43150         6       11     11        77      0.001 (0.000)        31
+  IMMV     43189         0        2      2        14      0.001 (0.001)        40
+  IPPL     43189         0       44     44       308      0.001 (0.001)        29
+  KNDR     43189         0       14     14        98      0.001 (0.000)        45
+  KNSS     43189         0       10     10        70      0.001 (0.001)        41
+  PFKS     43146         6       25     25       175      0.001 (0.000)        33
+  SIVA     43189         0        6      6        42      0.001 (0.001)        41
+  STIA     43189         0       43     43       301      0.001 (0.001)        30
+  Pd: 1085 values sent
+  345430 windows in 1.5 s: 12973x real time per station

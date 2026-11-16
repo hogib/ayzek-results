@@ -1,0 +1,48 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-12-08 13:29:02.30 to 19:29:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   15:06:32.92  earthquake detected by KNDR, PFKS, STIA
+PLOC     #1   15:06:32.92  P times locate it at 36.265N 25.363E +-128 km, origin 15:06:00.48, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-12-08 13:57:50.00 to 19:29:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:06:32.92 UTC by KNDR, PFKS, STIA
+  P loc.     36.265N 25.363E +-128 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    97
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    15:06:32.92 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqdet/greece_now_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43175         3        3      3        21      0.001 (0.000)        76
+  IMMV     43189         0        0      0         0      0.002 (0.001)         0
+  IPPL     43189         0       12     12        84      0.002 (0.000)        71
+  KNDR     43189         0       47     47       329      0.002 (0.000)        79
+  KNSS     43189         0        4      4        28      0.001 (0.000)        78
+  PFKS     43152         4       22     22       147      0.001 (0.001)        69
+  SIVA     43189         0        6      6        42      0.001 (0.000)        77
+  STIA     43189         0       15     15       105      0.001 (0.000)        77
+  Pd: 756 values sent
+  345461 windows in 4.2 s: 4690x real time per station

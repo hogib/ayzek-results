@@ -1,0 +1,51 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-16 17:18:02.11 to 23:18:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   18:19:23.03  earthquake detected by GAZ, NURH
+ALARM    #2   18:21:48.24  earthquake detected by GAZ, KARA
+ALARM    #3   18:30:15.72  earthquake detected by GAZ, KARA
+ALARM    #4   18:54:41.59  earthquake detected by NURH, SARI
+ALARM    #5   20:51:01.01  earthquake detected by NURH, SARI
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-16 17:46:50.00 to 23:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      18:19:23.03 UTC by GAZ, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      18:21:48.24 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      18:30:15.72 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      18:54:41.59 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      20:51:01.01 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    40
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_8/ko_now_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        3      3        21      0.001 (0.000)        30
+  CEYT     43168         2        0      0         0      0.001 (0.000)         0
+  GAZ      43189         0       20     19       139      0.000 (0.000)        28
+  KARA     43189         0        6      6        42      0.001 (0.000)        36
+  NURH     43189         0       14     14         0      0.001 (0.000)        30
+  SARI     43189         0        7      7        49      0.001 (0.000)        38
+  Pd: 251 values sent
+  259113 windows in 0.7 s: 27992x real time per station

@@ -1,0 +1,138 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/10, Z + picker + Pd magnitude, replay 2023-12-09 14:06:02.69 to 20:06:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   14:56:23.72  earthquake detected by NISR, ZKR
+ALARM    #2   15:01:31.57  earthquake detected by NISR, STIA
+ALARM    #3   15:23:14.84  earthquake detected by NISR, STIA
+ALARM    #4   15:47:15.05  earthquake detected by NISR2, ZKR
+ALARM    #5   16:21:10.98  earthquake detected by APE, STIA
+ALARM    #6   16:25:42.49  earthquake detected by APE, STIA
+ALARM    #7   16:33:20.84  earthquake detected by APE, ZKR
+ALARM    #8   16:34:05.46  earthquake detected by APE, STIA
+ALARM    #9   16:34:42.92  earthquake detected by NISR, STIA
+LOCATE   #9   16:35:37.22  located at 36.711N 26.881E, origin 16:34:13.32, rms 0.92 s from 2 stations
+ALARM    #10  16:36:59.20  earthquake detected by NISR, STIA
+ALARM    #11  16:48:05.71  earthquake detected by APE, STIA
+ALARM    #12  16:50:52.97  earthquake detected by NISR, STIA
+ALARM    #13  18:23:44.49  earthquake detected by NISR, ZKR
+ALARM    #14  18:28:19.68  earthquake detected by APE, ZKR
+PLOC     #14  18:28:31.44  P times locate it at 35.441N 24.370E +-111 km, origin 18:27:44.52, rms 0.01 s from 3 stations
+LOCATE   #14  18:29:25.77  located at 34.272N 23.577E, origin 18:27:20.91, rms 1.05 s from 2 stations, left out ZKR
+ALARM    #15  18:31:50.16  earthquake detected by APE, NISR
+ALARM    #16  18:34:50.84  earthquake detected by NISR, STIA
+ALARM    #17  19:33:22.34  earthquake detected by APE, ZKR
+ALARM    #18  19:49:27.77  earthquake detected by NISR, ZKR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-12-09 14:34:50.00 to 20:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      14:56:23.72 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      15:01:31.57 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      15:23:14.84 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      15:47:15.05 UTC by NISR2, ZKR
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      16:21:10.98 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      16:25:42.49 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      16:33:20.84 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      16:34:05.46 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude) at 36.711N 26.881E, origin 16:34:13.32 UTC
+  alarm      16:34:42.92 UTC by NISR, STIA
+  location   rms 0.92 s from 2 stations, first 54.3 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 103 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             NISR          25 km   16:34:20.36 UTC (picked)     -22.6 s  after S
+             NISR2         30 km   16:34:22.48 UTC (predicted)   -20.4 s  after S
+             APE          127 km   16:34:49.80 UTC (predicted)    +6.9 s  before S
+             THERA        131 km   16:34:50.94 UTC (predicted)    +8.0 s  before S
+             STIA         182 km   16:35:06.14 UTC (picked)     +23.2 s  before S
+             ZKR          187 km   16:35:06.92 UTC (predicted)   +24.0 s  before S
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      16:36:59.20 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      16:48:05.71 UTC by APE, STIA
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      16:50:52.97 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      18:23:44.49 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+Event #14: detected earthquake (no magnitude) at 34.272N 23.577E, origin 18:27:20.91 UTC
+  alarm      18:28:19.68 UTC by APE, ZKR; later NISR
+  location   rms 1.05 s from 2 stations, first 66.1 s after the alarm (P and S picks)
+  P loc.     35.441N 24.370E +-111 km from 3 stations, first 11.8 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 205 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             STIA         252 km   18:28:32.95 UTC (predicted)   +13.3 s  before S
+             ZKR          259 km   18:28:39.94 UTC (picked)     +20.3 s  before S
+             THERA        290 km   18:28:43.74 UTC (predicted)   +24.1 s  before S
+             APE          358 km   18:29:03.90 UTC (picked)     +44.2 s  before S
+             NISR         414 km   18:29:18.45 UTC (picked)     +58.8 s  before S
+             NISR2        415 km   18:29:19.41 UTC (predicted)   +59.7 s  before S
+
+Event #15: detected earthquake (no magnitude), not located
+  alarm      18:31:50.16 UTC by APE, NISR
+  AFAD       no matching catalogue event
+
+Event #16: detected earthquake (no magnitude), not located
+  alarm      18:34:50.84 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #17: detected earthquake (no magnitude), not located
+  alarm      19:33:22.34 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #18: detected earthquake (no magnitude), not located
+  alarm      19:49:27.77 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          18
+  single-station detections, no alarm   117
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_fp_15/greece_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0       39     38       273      0.017 (0.027)        53
+  NISR     43189         0       60     60         0      0.015 (0.046)        45
+  NISR2    43189         0        7      7        49      0.020 (0.020)        64
+  STIA     43189         0       26     26       182      0.017 (0.023)        60
+  THERA    43189         0        6      6        42      0.013 (0.094)        43
+  ZKR      43189         0       18     18       126      0.018 (0.026)        62
+  Pd: 672 values sent
+  259134 windows in 3.5 s: 5688x real time per station

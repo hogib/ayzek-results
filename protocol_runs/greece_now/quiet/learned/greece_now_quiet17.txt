@@ -1,0 +1,33 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-12-09 14:06:02.69 to 20:06:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   18:43:29.50  earthquake detected by NISR, ZKR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-12-09 14:34:50.00 to 20:06:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      18:43:29.50 UTC by NISR, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm   126
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/learned/greece_now_quiet17.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        0      0         0     95.258 (170.168)         0
+  NISR     43189         0      124    123         0     95.786 (172.221)       212
+  NISR2    43189         0        0      0         0     94.207 (172.116)         0
+  STIA     43189         0        1      1         7     95.643 (171.949)       269
+  THERA    43189         0        3      3        21     96.173 (174.600)       253
+  ZKR      43189         0        1      1         7     93.935 (169.119)       253
+  Pd: 35 values sent
+  P time from an STA/LTA onset for 31 of 129 triggers (98 from the window start)
+  onset from a FilterPicker pick for 21 of 129 triggers (P-time location and Pd)
+  259134 windows in 4182.2 s: 5x real time per station

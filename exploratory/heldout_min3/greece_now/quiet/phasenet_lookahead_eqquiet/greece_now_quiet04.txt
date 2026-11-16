@@ -1,0 +1,64 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-04-04 04:17:02.52 to 10:17:00.01 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+ALARM    #1   08:21:44.00  earthquake detected by STIA, THERA, ZKR
+PLOC     #1   08:21:44.00  P times locate it at 35.731N 25.328E +-236 km, origin 08:21:25.40, rms 0.51 s from 3 stations
+PLOC     #1   08:21:44.50  P times locate it at 35.827N 25.629E +-22 km, origin 08:21:27.10, rms 0.49 s from 4 stations
+LOCATE   #1   08:22:36.00  located at 36.041N 26.306E, origin 08:21:26.43, rms 0.06 s from 2 stations
+LOCATE   #1   08:22:36.50  located at 35.843N 25.852E, origin 08:21:29.83, rms 0.90 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2024-04-04 04:45:50.00 to 10:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 35.843N 25.852E, origin 08:21:29.83 UTC
+  alarm      08:21:44.00 UTC by STIA, THERA, ZKR; later PFKS
+  location   rms 0.90 s from 3 stations, first 52.0 s after the alarm (P and S picks)
+  P loc.     35.827N 25.629E +-22 km from 4 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 49 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             THERA         67 km   08:21:50.36 UTC (picked)      +6.4 s  before S
+             STIA          74 km   08:21:51.30 UTC (predicted)    +7.3 s  before S
+             KNSS          85 km   08:21:54.37 UTC (predicted)   +10.4 s  before S
+             ZKR           87 km   08:21:56.04 UTC (picked)     +12.0 s  before S
+             PFKS          95 km   08:21:57.74 UTC (picked)     +13.7 s  before S
+             SIVA         132 km   08:22:07.51 UTC (predicted)   +23.5 s  before S
+             IPPL         137 km   08:22:09.09 UTC (predicted)   +25.1 s  before S
+             CHAN         167 km   08:22:17.71 UTC (predicted)   +33.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    34
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    08:21:44.00 UTC  #1  no magnitude, located 35.84N 25.85E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/phasenet_lookahead_eqquiet/greece_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        2      2        14      0.002 (0.001)        48
+  IPPL     43189         0        8      8        56      0.002 (0.001)        44
+  KNSS     43189         0        2      2        14      0.003 (0.001)        43
+  PFKS     43158         4       11     11        77      0.002 (0.001)        49
+  SIVA     43189         0        8      8        56      0.001 (0.001)        47
+  STIA     43189         0        6      6        42      0.002 (0.001)        51
+  THERA    43189         0        2      2        14      0.002 (0.001)        51
+  ZKR      43189         0        4      4        28      0.002 (0.004)        45
+  Pd: 301 values sent
+  P time from an STA/LTA onset for 13 of 43 triggers (30 from the window start)
+  onset from a FilterPicker pick for 10 of 43 triggers (P-time location and Pd)
+  345481 windows in 2.5 s: 8001x real time per station

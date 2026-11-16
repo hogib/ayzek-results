@@ -1,0 +1,56 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-08-31 20:17:02.10 to 02:17:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   01:27:37.51  earthquake detected by MWZ, URZ
+LOCATE   #1   01:28:32.00  located at -38.557N 176.724E, origin 01:27:24.73, rms 0.14 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-08-31 20:45:50.00 to 02:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at -38.557N 176.724E, origin 01:27:24.73 UTC
+  alarm      01:27:37.51 UTC by MWZ, URZ
+  location   rms 0.14 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 44 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             URZ           47 km   01:27:38.60 UTC (picked)      +1.1 s  before S
+             BKZ           71 km   01:27:45.11 UTC (predicted)    +7.6 s  before S
+             MWZ           74 km   01:27:46.04 UTC (picked)      +8.5 s  before S
+             KPRZ          85 km   01:27:49.28 UTC (predicted)   +11.8 s  before S
+             RATZ          90 km   01:27:50.46 UTC (predicted)   +13.0 s  before S
+             TLZ          106 km   01:27:55.25 UTC (predicted)   +17.7 s  before S
+             PUZ          144 km   01:28:06.03 UTC (predicted)   +28.5 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    24
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    01:27:37.51 UTC  #1  no magnitude, located -38.56N 176.72E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/stalta_eqfa/nz_strat_quiet05.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        1      1         7      0.001 (0.001)       104
+  KPRZ     43189         0        4      4        28      0.002 (0.001)        87
+  MWZ      43189         0        3      3        21      0.002 (0.001)       100
+  PUZ      43189         0        0      0         0      0.001 (0.001)         0
+  RATZ     43189         0        0      0         0      0.001 (0.001)         0
+  TLZ      43189         0       15     15       105      0.002 (0.001)        62
+  URZ      43189         0        3      3        21      0.002 (0.001)        93
+  Pd: 182 values sent
+  302323 windows in 1.4 s: 14367x real time per station

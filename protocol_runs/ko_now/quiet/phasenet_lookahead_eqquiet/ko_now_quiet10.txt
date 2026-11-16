@@ -1,0 +1,70 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-20 16:25:02.09 to 22:25:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   21:18:33.50  earthquake detected by DYBB, NURH
+ALARM    #2   22:04:42.50  earthquake detected by AKDG, MLTY
+LOCATE   #2   22:05:34.50  located at 38.187N 38.135E, origin 22:04:37.17, rms 0.00 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-20 16:53:50.00 to 22:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      21:18:33.50 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 38.187N 38.135E, origin 22:04:37.17 UTC
+  alarm      22:04:42.50 UTC by AKDG, MLTY
+  location   rms 0.00 s from 2 stations, first 52.0 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 16 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          24 km   22:04:44.66 UTC (picked)      +2.2 s  before S
+             MLTY          31 km   22:04:46.38 UTC (picked)      +3.9 s  before S
+             NURH          66 km   22:04:56.19 UTC (predicted)   +13.7 s  before S
+             SVRC         104 km   22:05:07.12 UTC (predicted)   +24.6 s  before S
+             GAZ          139 km   22:05:17.05 UTC (predicted)   +34.6 s  before S
+             DYBB         177 km   22:05:27.92 UTC (predicted)   +45.4 s  before S
+             MAZI         219 km   22:05:39.67 UTC (predicted)   +57.2 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    22
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                3
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                3  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   3          0        3
+
+  Missed AFAD events
+    17:48:50.00 UTC  ml 1.5   209 km from the network centre
+    20:48:50.00 UTC  ml 1.9   249 km from the network centre
+    21:07:39.00 UTC  ml 1.8   250 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    21:18:33.50 UTC  #1  no magnitude, not located
+    22:04:42.50 UTC  #2  no magnitude, located 38.19N 38.14E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/phasenet_lookahead_eqquiet/ko_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43065        12        7      7         0      0.004 (0.001)       138
+  DYBB     43045        14        1      1         7      0.003 (0.006)       171
+  GAZ      43189         0        1      1         7      0.003 (0.002)       183
+  MAZI     43156         3        1      1         0      0.005 (0.001)        61
+  MLTY     43189         0        4      4        28      0.004 (0.002)       123
+  NURH     43189         0        9      9         0      0.004 (0.002)       121
+  SVRC     43189         0        3      3        21      0.004 (0.002)       116
+  Pd: 63 values sent
+  P time from an STA/LTA onset for 8 of 26 triggers (18 from the window start)
+  onset from a FilterPicker pick for 10 of 26 triggers (P-time location and Pd)
+  302022 windows in 4.5 s: 4404x real time per station

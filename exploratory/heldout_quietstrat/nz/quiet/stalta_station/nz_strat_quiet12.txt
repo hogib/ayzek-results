@@ -1,0 +1,43 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-10-13 04:59:02.76 to 10:59:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   08:57:38.62  earthquake detected by MKAZ, URZ
+PLOC     #1   08:57:45.18  P times locate it at -36.573N 176.872E +-119 km, origin 08:57:07.11, rms 0.01 s from 3 stations
+PLOC     #1   08:57:51.49  P times locate it at -36.690N 176.796E +-73 km, origin 08:57:09.00, rms 0.41 s from 4 stations, left out BKZ
+ALARM    #2   09:00:18.56  earthquake detected by MKAZ, URZ
+PLOC     #2   09:00:31.43  P times locate it at -36.752N 176.700E +-95 km, origin 08:59:49.91, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-10-13 05:27:50.00 to 10:59:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      08:57:38.62 UTC by MKAZ, URZ; later BKZ, RATZ, TLZ
+  P loc.     -36.690N 176.796E +-73 km from 4 stations, first 6.6 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      09:00:18.56 UTC by MKAZ, URZ; later RATZ
+  P loc.     -36.752N 176.700E +-95 km from 3 stations, first 12.9 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    56
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/stalta_station/nz_strat_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        1      1         7      0.002 (0.001)        88
+  KPRZ     43189         0       50     50       350      0.002 (0.001)        76
+  KUZ      43189         0        0      0         0      0.001 (0.001)         0
+  MKAZ     43189         0        2      2        14      0.002 (0.001)        82
+  MWZ      43189         0        1      1         7      0.002 (0.001)        85
+  RATZ     43189         0        2      2        14      0.001 (0.001)        73
+  TLZ      43189         0        5      5        35      0.001 (0.001)        80
+  URZ      43189         0        3      3        21      0.002 (0.001)        81
+  Pd: 448 values sent
+  345512 windows in 4.3 s: 4635x real time per station

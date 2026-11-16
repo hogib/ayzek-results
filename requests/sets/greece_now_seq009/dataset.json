@@ -1,0 +1,837 @@
+{
+ "schema": 1,
+ "set": "greece_now_seq009",
+ "config": {
+  "name": "greece_now_seq009",
+  "networks": [
+   "HL",
+   "HT",
+   "HA",
+   "HP",
+   "HC"
+  ],
+  "start": "2024-01-16T05:10:51.821791",
+  "end": "2024-01-16T08:10:51.821791",
+  "lat": 37.28439,
+  "lon": 22.96555,
+  "radius_km": 150.0,
+  "max_stations": 8,
+  "min_coverage": 0.0,
+  "max_azimuth_offset_deg": null,
+  "stations": [
+   "HA.EPID",
+   "HP.VLX",
+   "HL.VLI",
+   "HA.ACOR",
+   "HA.LOUT",
+   "HP.LTK",
+   "HA.THAL",
+   "HP.GUR"
+  ],
+  "catalog": {
+   "lead_days": 1.0,
+   "radius_km": 400.0,
+   "min_magnitude": null,
+   "start": null,
+   "end": null,
+   "limit": null
+  },
+  "source": "selections/greece_now/sets/greece_now_seq009.toml"
+ },
+ "networks": [
+  "HL",
+  "HT",
+  "HA",
+  "HP",
+  "HC"
+ ],
+ "services": {
+  "station": "https://eida.gein.noa.gr/fdsnws/station/1/query",
+  "dataselect": "https://eida.gein.noa.gr/fdsnws/dataselect/1/query",
+  "availability": "https://eida.gein.noa.gr/fdsnws/availability/1/query",
+  "event": "https://eida.gein.noa.gr/fdsnws/event/1/query"
+ },
+ "span": [
+  "2024-01-16T05:10:51.821791",
+  "2024-01-16T08:10:51.821791"
+ ],
+ "centre": [
+  37.28439,
+  22.96555
+ ],
+ "radius_km": 150.0,
+ "max_stations": 8,
+ "coverage_basis": "fdsnws/availability",
+ "stations_requested": [
+  {
+   "network": "HT",
+   "station": "KRND",
+   "distance_km": 19.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "EPID",
+   "distance_km": 39.1,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HL",
+   "station": "MET2",
+   "distance_km": 48.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HP",
+   "station": "VLX",
+   "distance_km": 52.7,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HL",
+   "station": "VLI",
+   "distance_km": 63.0,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HL",
+   "station": "AIGN",
+   "distance_km": 66.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "ACOR",
+   "distance_km": 67.9,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HA",
+   "station": "LOUT",
+   "distance_km": 78.2,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HP",
+   "station": "LTK",
+   "distance_km": 82.1,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HC",
+   "station": "KTRS",
+   "distance_km": 83.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "THAL",
+   "distance_km": 87.7,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HP",
+   "station": "GUR",
+   "distance_km": 90.9,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 0.9999
+  },
+  {
+   "network": "HL",
+   "station": "ITM",
+   "distance_km": 92.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "VLY",
+   "distance_km": 96.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "MDRA",
+   "distance_km": 96.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "ELIN",
+   "distance_km": 99.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "ATH",
+   "distance_km": 101.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "VILL",
+   "distance_km": 102.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "ATHU",
+   "distance_km": 104.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "ALIO",
+   "distance_km": 106.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "DOMV",
+   "distance_km": 108.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "KLV",
+   "distance_km": 110.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "PRDM",
+   "distance_km": 111.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "STFN",
+   "distance_km": 111.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HP",
+   "station": "AMT",
+   "distance_km": 114.4,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "KTHA",
+   "distance_km": 114.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HC",
+   "station": "KTHR",
+   "distance_km": 115.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "AMPE",
+   "distance_km": 116.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "PTL",
+   "distance_km": 116.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HP",
+   "station": "PYL",
+   "distance_km": 116.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "THIV",
+   "distance_km": 117.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "LALA",
+   "distance_km": 119.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "THVA",
+   "distance_km": 120.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "THI2",
+   "distance_km": 122.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "ANTK",
+   "distance_km": 123.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "MRTH",
+   "distance_km": 125.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "MRTH",
+   "distance_km": 126.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HP",
+   "station": "DSF",
+   "distance_km": 131.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HP",
+   "station": "DRO",
+   "distance_km": 133.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "SERI",
+   "distance_km": 135.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "LAKA",
+   "distance_km": 137.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "KALE",
+   "distance_km": 142.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HL",
+   "station": "MHLO",
+   "distance_km": 143.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HA",
+   "station": "ERTR",
+   "distance_km": 144.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "HP",
+   "station": "SERG",
+   "distance_km": 148.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  }
+ ],
+ "pd_gains_refused": [],
+ "pd_gains_missing": [],
+ "stations_chosen": [
+  "HA.EPID",
+  "HP.VLX",
+  "HL.VLI",
+  "HA.ACOR",
+  "HA.LOUT",
+  "HP.LTK",
+  "HA.THAL",
+  "HP.GUR"
+ ],
+ "stations": [
+  {
+   "network": "HA",
+   "station": "EPID",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.6144,
+   "lon": 23.1189,
+   "elevation_m": 444.0,
+   "distance_km": 39.1,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "EPID.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 3955712,
+   "megabytes": 3.96,
+   "missing_components": []
+  },
+  {
+   "network": "HP",
+   "station": "VLX",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.3703,
+   "lon": 22.3793,
+   "elevation_m": 1035.0,
+   "distance_km": 52.7,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "VLX.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 5134848,
+   "megabytes": 5.13,
+   "missing_components": []
+  },
+  {
+   "network": "HL",
+   "station": "VLI",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 36.71803,
+   "lon": 22.94686,
+   "elevation_m": 220.0,
+   "distance_km": 63.0,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "VLI.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 3947520,
+   "megabytes": 3.95,
+   "missing_components": []
+  },
+  {
+   "network": "HA",
+   "station": "ACOR",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.8902,
+   "lon": 22.8692,
+   "elevation_m": 437.0,
+   "distance_km": 67.9,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "ACOR.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 3292160,
+   "megabytes": 3.29,
+   "missing_components": []
+  },
+  {
+   "network": "HA",
+   "station": "LOUT",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.9879,
+   "lon": 22.9743,
+   "elevation_m": 307.0,
+   "distance_km": 78.2,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "LOUT.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 3779072,
+   "megabytes": 3.78,
+   "missing_components": []
+  },
+  {
+   "network": "HP",
+   "station": "LTK",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 38.0228,
+   "lon": 22.9673,
+   "elevation_m": 408.0,
+   "distance_km": 82.1,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "LTK.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 2915840,
+   "megabytes": 2.92,
+   "missing_components": []
+  },
+  {
+   "network": "HA",
+   "station": "THAL",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 38.0357,
+   "lon": 22.6634,
+   "elevation_m": 196.0,
+   "distance_km": 87.7,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "THAL.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 3655680,
+   "megabytes": 3.66,
+   "missing_components": []
+  },
+  {
+   "network": "HP",
+   "station": "GUR",
+   "location": "",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": 37.9363,
+   "lon": 22.3423,
+   "elevation_m": 1087.0,
+   "distance_km": 90.9,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "GUR.mseed",
+   "seconds_per_component": {
+    "HHZ": 10800.0,
+    "HHN": 10800.0,
+    "HHE": 10800.0
+   },
+   "bytes": 5071872,
+   "megabytes": 5.07,
+   "missing_components": []
+  }
+ ],
+ "request_failures": [],
+ "retrieved_utc": "2026-10-31T08:13:51+00:00",
+ "tool": {
+  "name": "ayzek-heldout",
+  "git_commit": "6fda3e246e53"
+ },
+ "citation": [
+  "Aristotle University of Thessaloniki (1981). Hellenic Unified Seismological Network [Dataset]. International Federation of Digital Seismograph Networks. doi:10.7914/SN/HT",
+  "National Observatory of Athens, Institute of Geodynamics, Athens (1975). Hellenic Unified Seismological Network [Dataset]. International Federation of Digital Seismograph Networks. doi:10.7914/SN/HL",
+  "National and Kapodistrian University of Athens (2008). International Federation of Digital Seismograph Networks. doi:10.7914/SN/HA",
+  "Technological Educational Institute of Crete (2006). International Federation of Digital Seismograph Networks. doi:10.7914/SN/HC",
+  "University of Patras, Geology Department (2000). International Federation of Digital Seismograph Networks. doi:10.7914/SN/HP"
+ ],
+ "licence": [
+  "CC BY 4.0 (NOA EIDA node: content shared from its services)"
+ ],
+ "files": {
+  "EPID.mseed": {
+   "sha256": "a3ec576c3a0f9071169c38f9c5f6ac752c172baa401d5aca5ed7763047a9e568",
+   "bytes": 3955712
+  },
+  "VLX.mseed": {
+   "sha256": "10f16a34bc16c511eabc6d11dc229a23bd2705aa048af911c11b66804fa42e30",
+   "bytes": 5134848
+  },
+  "VLI.mseed": {
+   "sha256": "127bbe39077659e3063aa32cf8a5c47693093c641e1661863ce3ad885a2e6b1c",
+   "bytes": 3947520
+  },
+  "ACOR.mseed": {
+   "sha256": "e723d044de6f9fbaf361d527e0af4d4a656b6b678890c24ae858623ad3e001f2",
+   "bytes": 3292160
+  },
+  "LOUT.mseed": {
+   "sha256": "a6ed19bf11b93908a8805021d0806476875c5cc9423d5604aa73372cad65f2c2",
+   "bytes": 3779072
+  },
+  "LTK.mseed": {
+   "sha256": "74ebda723785f739ba48569c4450cb37aac6ad28aee53766414f2306ea28fa9e",
+   "bytes": 2915840
+  },
+  "THAL.mseed": {
+   "sha256": "eb6fcc90e1ce68a1bcf2c2083052c053ffef9eb21a903d026eeab646cfd424d4",
+   "bytes": 3655680
+  },
+  "GUR.mseed": {
+   "sha256": "23b667f8254abef8975407f0faa02eaff983d99240010c41c02d3d9e43c15e20",
+   "bytes": 5071872
+  },
+  "stationxml/HA.ACOR.xml": {
+   "sha256": "3de9d1fa072da5304a1d9026d4b891beff56f74bca854354f8c66780176a6b00",
+   "bytes": 89767
+  },
+  "stationxml/HA.EPID.xml": {
+   "sha256": "808c0e0ccd0fe867142546240590b29fc6bcc0b115a0a8512434ae10880d8690",
+   "bytes": 215531
+  },
+  "stationxml/HA.LOUT.xml": {
+   "sha256": "e8ddc9ba96b1094a76595a84497aacea3ce8fcc1f205fca30908326f6a700acb",
+   "bytes": 215543
+  },
+  "stationxml/HA.THAL.xml": {
+   "sha256": "fc14cb3a3897218880c542a7feb3c532fefbfd657fbcb0d4a18e5e49548b1707",
+   "bytes": 215565
+  },
+  "stationxml/HL.VLI.xml": {
+   "sha256": "2e708e9accedc156a7cd786a936b004ad9b80c0ddc8a3caea95ccce9d13b46fa",
+   "bytes": 73523
+  },
+  "stationxml/HP.GUR.xml": {
+   "sha256": "8f532022003a0369e04d2507ac544bda6a32d757b0169c58a6ded530a886a710",
+   "bytes": 63280
+  },
+  "stationxml/HP.LTK.xml": {
+   "sha256": "6eafe21a28873e030cc762a523918c11e14317c7a20bac6b06c03794ff310546",
+   "bytes": 215512
+  },
+  "stationxml/HP.VLX.xml": {
+   "sha256": "c33e84bdf6951ca69febaf5898cf45529898dcfee2c6e4563163f01ecad87a83",
+   "bytes": 63169
+  },
+  "stations.csv": {
+   "sha256": "77c3d7413cfa78b199042544fe7e17e4026dd26d61df6dd291428bd9e619aea1",
+   "bytes": 220
+  },
+  "pd_gain.csv": {
+   "sha256": "ff3b258be4f6d515c296ba6937992275c22797372aa84a13d529d629e28fb54f",
+   "bytes": 327
+  },
+  "catalog.csv": {
+   "sha256": "14e112a50b019d74e8db141fd80ce94844bfc81a843505297e2c05a8dc1d635f",
+   "bytes": 5011
+  }
+ },
+ "catalog": {
+  "file": "catalog.csv",
+  "agency": "NOA (National Observatory of Athens, Institute of Geodynamics)",
+  "service": "https://eida.gein.noa.gr/fdsnws/event/1/query",
+  "request": "https://eida.gein.noa.gr/fdsnws/event/1/query?starttime=2024-01-15T05%3A10%3A51&endtime=2024-01-16T08%3A10%3A51&latitude=37.2844&longitude=22.9656&maxradius=3.5973&orderby=time-asc",
+  "window": [
+   "2024-01-15T05:10:51.821791",
+   "2024-01-16T08:10:51.821791"
+  ],
+  "centre": [
+   37.28439,
+   22.96555
+  ],
+  "radius_km": 400.0,
+  "min_magnitude": null,
+  "limit": null,
+  "events": 59,
+  "skipped": [],
+  "magnitude_types": [
+   "MLh"
+  ],
+  "retrieved_utc": "2026-10-31T08:14:08+00:00",
+  "citation": "NOA Institute of Geodynamics, FDSNWS-event at eida.gein.noa.gr",
+  "canary": {
+   "window": [
+    "2022-01-15T18:08:00",
+    "2022-01-16T01:08:00"
+   ],
+   "centre": [
+    38.5,
+    23.5
+   ],
+   "radius_km": 950.0,
+   "min_events": 5,
+   "events": 14,
+   "request": "https://eida.gein.noa.gr/fdsnws/event/1/query?starttime=2022-01-15T18%3A08%3A00&endtime=2022-01-16T01%3A08%3A00&latitude=38.5&longitude=23.5&maxradius=8.5435&orderby=time-asc"
+  }
+ }
+}

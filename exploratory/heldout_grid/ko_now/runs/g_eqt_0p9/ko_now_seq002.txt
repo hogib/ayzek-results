@@ -1,0 +1,84 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-24 07:31:00.14 to 10:30:58.06 UTC at full speed
+ayzek    catalogue: 8 events in the replay span
+ALARM    #1   07:41:28.00  earthquake detected by AKDG, GAZ  (AFAD mw 5.3 at 07:40:58.00, 30.0 s ago)
+ALARM    #2   09:31:06.00  earthquake detected by AKDG, MAZI  (AFAD ml 1.7 at 09:30:53.00, 13.0 s ago)
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-24 07:31:00.14 to 10:30:58.06 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:41:28.00 UTC by AKDG, GAZ
+  AFAD       mw 5.3 at 07:40:58.00 UTC: alarm 30.0 s after origin
+  pre-S      2 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 105 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             MLTY         107 km   07:41:28.65 UTC (predicted)    +0.7 s  before S
+             SVRC         113 km   07:41:30.38 UTC (predicted)    +2.4 s  before S
+             DYBB         127 km   07:41:34.22 UTC (predicted)    +6.2 s  before S
+             AKDG         131 km   07:41:35.47 UTC (predicted)    +7.5 s  before S
+             MAZI         139 km   07:41:37.89 UTC (predicted)    +9.9 s  before S
+             NURH         140 km   07:41:38.03 UTC (predicted)   +10.0 s  before S
+             GAZ          149 km   07:41:40.38 UTC (picked)     +12.4 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      09:31:06.00 UTC by AKDG, MAZI
+  AFAD       ml 1.7 at 09:30:53.00 UTC: alarm 13.0 s after origin
+  pre-S      1 of 2 alarm detections declared before the predicted S
+  S wave     had travelled 43 km from the epicentre when the alarm sounded (AFAD hypocentre)
+  warning               distance   S wave arrives            warning
+             AKDG          24 km   09:31:02.30 UTC (picked)      -3.7 s  after S
+             NURH          41 km   09:31:05.40 UTC (predicted)    -0.6 s  after S
+             MLTY          62 km   09:31:11.20 UTC (predicted)    +5.2 s  before S
+             GAZ          129 km   09:31:30.05 UTC (predicted)   +24.1 s  before S
+             SVRC         138 km   09:31:32.58 UTC (predicted)   +26.6 s  before S
+             DYBB         213 km   09:31:54.01 UTC (predicted)   +48.0 s  before S
+             MAZI         254 km   09:30:35.30 UTC (picked)     -30.7 s  after S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm     4
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        2  100%
+    false    (no AFAD event)              0    0%
+
+  AFAD events within 250 km                7
+    detected                              2   29%
+    detected before S                     1   14%
+    missed                                5   71%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   5          1        4
+    M 2-3                   1          0        1
+    M 5+                    1          1        0
+
+  Correct alarms
+    alarm after origin time             median 21.5 s
+    located                             0 of 2
+    alarm before the S wave             at 11 of 14 station arrivals, median warning 9.9 s, max 48.0 s
+
+  Missed AFAD events
+    07:58:12.00 UTC  ml 1.5   249 km from the network centre
+    07:59:37.00 UTC  ml 2.5    57 km from the network centre
+    08:56:38.00 UTC  ml 1.0    61 km from the network centre
+    09:12:16.00 UTC  ml 1.6   138 km from the network centre
+    09:50:31.00 UTC  ml 1.0   174 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/runs/g_eqt_0p9/ko_now_seq002.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     21588         0        2      2         0      0.001 (0.003)        38
+  DYBB     21588         0        0      0         0      0.001 (0.001)         0
+  GAZ      21588         0        3      3        21      0.001 (0.001)        45
+  MAZI     21588         0        2      2         0      0.001 (0.001)        28
+  MLTY     21588         0        1      1         7      0.002 (0.004)        41
+  NURH     21588         0        0      0         0      0.001 (0.001)         0
+  SVRC     21588         0        0      0         0      0.002 (0.003)         0
+  Pd: 28 values sent
+  P time from an STA/LTA onset for 7 of 8 triggers (1 from the window start)
+  onset from a FilterPicker pick for 8 of 8 triggers (P-time location and Pd)
+  151116 windows in 0.8 s: 13177x real time per station

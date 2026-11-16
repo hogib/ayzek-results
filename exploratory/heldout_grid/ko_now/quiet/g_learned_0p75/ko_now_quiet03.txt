@@ -1,0 +1,58 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-26 05:44:02.90 to 11:44:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   07:31:22.00  earthquake detected by BNN, NURH
+ALARM    #2   08:34:59.50  earthquake detected by BNN, NURH
+ALARM    #3   10:02:44.50  earthquake detected by KARA, NURH
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-26 06:12:50.00 to 11:44:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:31:22.00 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:34:59.50 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      10:02:44.50 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    95
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    07:31:22.00 UTC  #1  no magnitude, not located
+    08:34:59.50 UTC  #2  no magnitude, not located
+    10:02:44.50 UTC  #3  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_learned_0p75/ko_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       69     69       483      0.001 (0.001)        27
+  CEYT     43189         0        3      3        21      0.001 (0.001)        34
+  GAZ      43189         0        4      4        28      0.001 (0.001)        33
+  KARA     43189         0        6      6        42      0.001 (0.003)        29
+  NURH     43168         2       18     18         0      0.001 (0.001)        28
+  SARI     43189         0        3      3        21      0.001 (0.001)        42
+  Pd: 595 values sent
+  P time from an STA/LTA onset for 40 of 103 triggers (63 from the window start)
+  onset from a FilterPicker pick for 31 of 103 triggers (P-time location and Pd)
+  259113 windows in 3.1 s: 6451x real time per station

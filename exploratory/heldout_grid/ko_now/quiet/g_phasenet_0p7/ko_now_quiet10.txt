@@ -1,0 +1,127 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-20 16:25:02.09 to 22:25:00.01 UTC at full speed
+ayzek    catalogue: 4 events in the replay span
+ALARM    #1   16:55:59.00  earthquake detected by GAZ, SVRC
+ALARM    #2   17:43:04.00  earthquake detected by GAZ, SVRC
+ALARM    #3   19:26:13.00  earthquake detected by MAZI, SVRC
+ALARM    #4   19:40:59.50  earthquake detected by GAZ, MAZI
+ALARM    #5   19:47:24.50  earthquake detected by MAZI, SVRC
+ALARM    #6   20:28:30.50  earthquake detected by GAZ, SVRC
+ALARM    #7   20:34:36.50  earthquake detected by AKDG, MAZI
+ALARM    #8   20:35:47.00  earthquake detected by MAZI, NURH
+ALARM    #9   20:57:08.00  earthquake detected by NURH, SVRC
+PLOC     #9   20:57:08.50  P times locate it at 37.935N 39.048E +-12 km, origin 20:56:43.63, rms 0.02 s from 3 stations
+ALARM    #10  21:18:34.00  earthquake detected by DYBB, NURH
+ALARM    #11  21:57:56.00  earthquake detected by NURH, SVRC
+ALARM    #12  22:04:47.50  earthquake detected by AKDG, MLTY
+ALARM    #13  22:17:07.50  earthquake detected by NURH, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-20 16:53:50.00 to 22:25:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      16:55:59.00 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      17:43:04.00 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      19:26:13.00 UTC by MAZI, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      19:40:59.50 UTC by GAZ, MAZI
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      19:47:24.50 UTC by MAZI, SVRC
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      20:28:30.50 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      20:34:36.50 UTC by AKDG, MAZI
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      20:35:47.00 UTC by MAZI, NURH
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      20:57:08.00 UTC by NURH, SVRC; later MAZI
+  P loc.     37.935N 39.048E +-12 km from 3 stations, first 0.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      21:18:34.00 UTC by DYBB, NURH
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      21:57:56.00 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      22:04:47.50 UTC by AKDG, MLTY
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      22:17:07.50 UTC by NURH, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          13
+  single-station detections, no alarm    71
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)             13  100%
+
+  AFAD events within 250 km                3
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                3  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   3          0        3
+
+  Missed AFAD events
+    17:48:50.00 UTC  ml 1.5   209 km from the network centre
+    20:48:50.00 UTC  ml 1.9   249 km from the network centre
+    21:07:39.00 UTC  ml 1.8   250 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    16:55:59.00 UTC  #1  no magnitude, not located
+    17:43:04.00 UTC  #2  no magnitude, not located
+    19:26:13.00 UTC  #3  no magnitude, not located
+    19:40:59.50 UTC  #4  no magnitude, not located
+    19:47:24.50 UTC  #5  no magnitude, not located
+    20:28:30.50 UTC  #6  no magnitude, not located
+    20:34:36.50 UTC  #7  no magnitude, not located
+    20:35:47.00 UTC  #8  no magnitude, not located
+    20:57:08.00 UTC  #9  no magnitude, not located
+    21:18:34.00 UTC  #10  no magnitude, not located
+    21:57:56.00 UTC  #11  no magnitude, not located
+    22:04:47.50 UTC  #12  no magnitude, not located
+    22:17:07.50 UTC  #13  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_phasenet_0p7/ko_now_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43065        12        8      8         0      0.002 (0.001)        45
+  DYBB     43045        14        2      2        14      0.001 (0.001)        41
+  GAZ      43189         0        8      8        56      0.001 (0.001)        43
+  MAZI     43156         3       29     29         0      0.001 (0.001)        47
+  MLTY     43189         0        6      6        42      0.001 (0.001)        44
+  NURH     43189         0       11     11         0      0.002 (0.001)        42
+  SVRC     43189         0       34     34       238      0.001 (0.001)        49
+  Pd: 350 values sent
+  P time from an STA/LTA onset for 50 of 98 triggers (48 from the window start)
+  onset from a FilterPicker pick for 40 of 98 triggers (P-time location and Pd)
+  302022 windows in 3.4 s: 5784x real time per station

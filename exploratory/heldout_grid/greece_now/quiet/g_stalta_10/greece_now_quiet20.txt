@@ -1,0 +1,41 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 10 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   09:59:16.61  earthquake detected by MDRA, VILL
+ALARM    #2   11:34:29.64  earthquake detected by KARY, PTL
+PLOC     #2   11:34:30.41  P times locate it at 37.518N 24.156E +-420 km, origin 11:34:18.71, rms 0.05 s from 3 stations
+PLOC     #2   11:34:30.49  P times locate it at 39.353N 24.535E +-272 km, origin 11:34:04.72, rms 0.86 s from 4 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      09:59:16.61 UTC by MDRA, VILL
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      11:34:29.64 UTC by KARY, PTL; later LKR, MRTH
+  P loc.     39.353N 24.535E +-272 km from 4 stations, first 0.8 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    36
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_10/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        1      1         7      0.001 (0.000)        30
+  KARY     43189         0        1      1         7      0.001 (0.000)        34
+  LKR      43189         0        3      3        21      0.001 (0.000)        39
+  MDRA     43189         0        2      2        14      0.001 (0.000)        37
+  MRTH     43189         0        3      3         0      0.001 (0.000)        36
+  PTL      43189         0        1      1         7      0.001 (0.000)        47
+  THIV     43189         0       29     29       203      0.001 (0.000)        26
+  VILL     43189         0        2      2        14      0.000 (0.000)        36
+  Pd: 273 values sent
+  345512 windows in 1.0 s: 20600x real time per station

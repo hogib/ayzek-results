@@ -1,0 +1,91 @@
+{
+ "argv": [
+  "logs/grid_run.py",
+  "--jobs",
+  "20"
+ ],
+ "exploratory": true,
+ "grid": {
+  "learned": {
+   "base": "learned",
+   "option": "--threshold",
+   "values": [
+    "0.4",
+    "0.5",
+    "0.6",
+    "0.7",
+    "0.75",
+    "0.8",
+    "0.85",
+    "0.9"
+   ]
+  },
+  "stalta": {
+   "base": "stalta_eqfa",
+   "option": "--stalta-on",
+   "values": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "10",
+    "12",
+    "15",
+    "20"
+   ]
+  },
+  "phasenet": {
+   "base": "phasenet_causal_eqfa",
+   "option": "--threshold",
+   "values": [
+    "0.3",
+    "0.4",
+    "0.5",
+    "0.6",
+    "0.7",
+    "0.8",
+    "0.9"
+   ]
+  },
+  "eqt": {
+   "base": "eqt_causal_eqfa",
+   "option": "--threshold",
+   "values": [
+    "0.3",
+    "0.4",
+    "0.5",
+    "0.6",
+    "0.7",
+    "0.8",
+    "0.9"
+   ]
+  },
+  "fp": {
+   "base": "fp_eqfa",
+   "option": "--fp-thresholds",
+   "values": [
+    "10,10",
+    "12,10",
+    "15,10",
+    "20,10",
+    "25,10",
+    "30,10",
+    "40,10"
+   ]
+  }
+ },
+ "code_commit": "f05436a",
+ "python": "3.14.9",
+ "binary_sha256": "a40e7d23a1dfca7a4a2baf38b4b93c11056241d34d61aa046d703279a1da6899",
+ "frozen_settings_sha256": "79d243646cd4bd141d26199a17bc4f02d83b8cfab8e30806f7d766cf4501c7d6",
+ "grid_settings_sha256": "0ae3ac5cb85f443288e78514ea2592dd164b80fb14342a823759ec9239877f4c",
+ "started_utc": "2026-11-15T14:14:37Z",
+ "nets": [
+  "ko_now",
+  "nz_now",
+  "greece_now"
+ ],
+ "finished_utc": "2026-11-15T14:18:36Z",
+ "files": 1976
+}

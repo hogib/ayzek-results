@@ -1,0 +1,48 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-02-05 16:34:02.76 to 22:34:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   22:04:33.50  earthquake detected by LOUT, LTK
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-02-05 17:02:50.00 to 22:34:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      22:04:33.50 UTC by LOUT, LTK
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    16
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    22:04:33.50 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/greece_now/quiet/g_instant_0p88/greece_now_quiet15.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        0      0         0      0.001 (0.001)         0
+  EPID     43189         0        2      2        14      0.001 (0.003)        38
+  GUR      43189         0        0      0         0      0.001 (0.003)         0
+  LOUT     43173         2        3      3        21      0.001 (0.001)        41
+  LTK      43189         0        2      2        14      0.001 (0.002)        35
+  THAL     43189         0        6      6        42      0.001 (0.001)        42
+  VLI      43189         0        2      2        14      0.001 (0.001)        35
+  VLX      43189         0        3      3        21      0.001 (0.001)        42
+  Pd: 126 values sent
+  P time from an STA/LTA onset for 13 of 18 triggers (5 from the window start)
+  onset from a FilterPicker pick for 5 of 18 triggers (P-time location and Pd)
+  345496 windows in 1.8 s: 10849x real time per station

@@ -1,0 +1,818 @@
+{
+ "schema": 1,
+ "set": "nz_strat_quiet11",
+ "config": {
+  "name": "nz_strat_quiet11",
+  "networks": [
+   "NZ"
+  ],
+  "start": "2025-05-25T23:11:00",
+  "end": "2025-05-26T05:11:00",
+  "lat": -38.20077,
+  "lon": 176.13955,
+  "radius_km": 176.0,
+  "max_stations": 8,
+  "min_coverage": 0.0,
+  "max_azimuth_offset_deg": null,
+  "stations": [
+   "NZ.BKZ",
+   "NZ.KPRZ",
+   "NZ.KUZ",
+   "NZ.MKAZ",
+   "NZ.MWZ",
+   "NZ.RATZ",
+   "NZ.TLZ",
+   "NZ.URZ"
+  ],
+  "catalog": {
+   "lead_days": 1.0,
+   "radius_km": 400.0,
+   "min_magnitude": null,
+   "start": null,
+   "end": null,
+   "limit": null
+  },
+  "source": "/home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout_quietstrat/nz_strat/sets/nz_strat_quiet11.toml"
+ },
+ "networks": [
+  "NZ"
+ ],
+ "services": {
+  "station": "https://service.geonet.org.nz/fdsnws/station/1/query",
+  "dataselect": "https://service.geonet.org.nz/fdsnws/dataselect/1/query",
+  "availability": "none; day listing of https://geonet-open-data.s3-ap-southeast-2.amazonaws.com",
+  "event": "https://service.geonet.org.nz/fdsnws/event/1/query"
+ },
+ "span": [
+  "2025-05-25T23:11:00",
+  "2025-05-26T05:11:00"
+ ],
+ "centre": [
+  -38.20077,
+  176.13955
+ ],
+ "radius_km": 176.0,
+ "max_stations": 8,
+ "coverage_basis": "day files in the open-data bucket (upper bound)",
+ "stations_requested": [
+  {
+   "network": "NZ",
+   "station": "UTU",
+   "distance_km": 5.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KARZ",
+   "distance_km": 22.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "OMRZ",
+   "distance_km": 22.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "HNCZ",
+   "distance_km": 24.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "LIRZ",
+   "distance_km": 30.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "TGRZ",
+   "distance_km": 53.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "OPRZ",
+   "distance_km": 53.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "WHTZ",
+   "distance_km": 54.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "TLZ",
+   "distance_km": 54.4,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "PKTZ",
+   "distance_km": 60.0,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "WATZ",
+   "distance_km": 66.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "OAHZ",
+   "distance_km": 72.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KPRZ",
+   "distance_km": 73.3,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "TOZ",
+   "distance_km": 76.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "HATZ",
+   "distance_km": 76.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "RATZ",
+   "distance_km": 80.6,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "URZ",
+   "distance_km": 85.1,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "RTZ",
+   "distance_km": 86.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "MNMZ",
+   "distance_km": 95.0,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "NTVZ",
+   "distance_km": 107.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KRVZ",
+   "distance_km": 108.4,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "TMVZ",
+   "distance_km": 108.5,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "ETVZ",
+   "distance_km": 110.4,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "BKZ",
+   "distance_km": 111.6,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "WTVZ",
+   "distance_km": 112.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "TWVZ",
+   "distance_km": 114.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "OTVZ",
+   "distance_km": 114.7,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "HIZ",
+   "distance_km": 117.2,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "NGZ",
+   "distance_km": 118.0,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "MWZ",
+   "distance_km": 122.1,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "COVZ",
+   "distance_km": 122.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "FWVZ",
+   "distance_km": 127.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "MAVZ",
+   "distance_km": 128.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "WHVZ",
+   "distance_km": 129.4,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "TRVZ",
+   "distance_km": 132.4,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "MTVZ",
+   "distance_km": 143.8,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "PNUZ",
+   "distance_km": 144.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "MKAZ",
+   "distance_km": 149.3,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  },
+  {
+   "network": "NZ",
+   "station": "HAZ",
+   "distance_km": 152.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KRBZ",
+   "distance_km": 157.3,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "VRZ",
+   "distance_km": 157.9,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KNZ",
+   "distance_km": 161.6,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KBAZ",
+   "distance_km": 165.1,
+   "ok": false,
+   "reason": "not in the set's station list",
+   "coverage_min": null
+  },
+  {
+   "network": "NZ",
+   "station": "KUZ",
+   "distance_km": 166.0,
+   "ok": true,
+   "reason": "",
+   "coverage_min": 1.0
+  }
+ ],
+ "pd_gains_refused": [],
+ "pd_gains_missing": [],
+ "stations_chosen": [
+  "NZ.TLZ",
+  "NZ.KPRZ",
+  "NZ.RATZ",
+  "NZ.URZ",
+  "NZ.BKZ",
+  "NZ.MWZ",
+  "NZ.MKAZ",
+  "NZ.KUZ"
+ ],
+ "stations": [
+  {
+   "network": "NZ",
+   "station": "TLZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -38.3294,
+   "lon": 175.538,
+   "elevation_m": 660.0,
+   "distance_km": 54.4,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "TLZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.0,
+    "HHN": 21600.0,
+    "HHE": 21600.0
+   },
+   "bytes": 8503296,
+   "megabytes": 8.5,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "KPRZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -38.801994,
+   "lon": 175.792935,
+   "elevation_m": 593.0,
+   "distance_km": 73.3,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "KPRZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 10604032,
+   "megabytes": 10.6,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "RATZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -38.866498038,
+   "lon": 175.772175968,
+   "elevation_m": 653.0,
+   "distance_km": 80.6,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "RATZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.0,
+    "HHN": 21600.0,
+    "HHE": 21600.0
+   },
+   "bytes": 8494592,
+   "megabytes": 8.49,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "URZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HH1",
+    "HH2"
+   ],
+   "lat": -38.259249093,
+   "lon": 177.110894471,
+   "elevation_m": 95.0,
+   "distance_km": 85.1,
+   "azimuth_offset_deg": {
+    "HH1": 144.0,
+    "HH2": 144.0
+   },
+   "rotated_to_ne": true,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "URZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 4835328,
+   "megabytes": 4.84,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "BKZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -39.165665643,
+   "lon": 176.492543736,
+   "elevation_m": 706.0,
+   "distance_km": 111.6,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "BKZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 5758464,
+   "megabytes": 5.76,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "MWZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -38.334001396,
+   "lon": 177.527779304,
+   "elevation_m": 573.0,
+   "distance_km": 122.1,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "MWZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.0,
+    "HHN": 21600.0,
+    "HHE": 21600.0
+   },
+   "bytes": 5683200,
+   "megabytes": 5.68,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "MKAZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -37.10413,
+   "lon": 175.16117,
+   "elevation_m": 140.0,
+   "distance_km": 149.3,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "MKAZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 5260288,
+   "megabytes": 5.26,
+   "missing_components": []
+  },
+  {
+   "network": "NZ",
+   "station": "KUZ",
+   "location": "10",
+   "channels": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "lat": -36.745228533,
+   "lon": 175.720872942,
+   "elevation_m": 76.0,
+   "distance_km": 166.0,
+   "azimuth_offset_deg": {
+    "HHN": 0.0,
+    "HHE": 0.0
+   },
+   "rotated_to_ne": false,
+   "channels_written": [
+    "HHZ",
+    "HHN",
+    "HHE"
+   ],
+   "file": "KUZ.mseed",
+   "seconds_per_component": {
+    "HHZ": 21600.01,
+    "HHN": 21600.01,
+    "HHE": 21600.01
+   },
+   "bytes": 5576192,
+   "megabytes": 5.58,
+   "missing_components": []
+  }
+ ],
+ "request_failures": [],
+ "retrieved_utc": "2026-11-15T22:44:13+00:00",
+ "tool": {
+  "name": "ayzek-heldout",
+  "git_commit": "0954ff79df22"
+ },
+ "citation": [
+  "GNS Science (2021). GeoNet Aotearoa New Zealand Seismic Digital Waveform Dataset [Dataset]. doi:10.21420/G19Y-9D40. We acknowledge the New Zealand GeoNet programme and its sponsors NHC, Earth Sciences NZ, LINZ, NEMA and MBIE for providing data used in this study."
+ ],
+ "licence": [
+  "CC BY 3.0 NZ (GeoNet data policy)"
+ ],
+ "files": {
+  "TLZ.mseed": {
+   "sha256": "84b72533bd5101a8a0c81c477d4bb43c5ad153943f7de45f3510bbf5db6569a1",
+   "bytes": 8503296
+  },
+  "KPRZ.mseed": {
+   "sha256": "0c59bd3315fda622f6fe11da8b7abfd137f497e5c2c6175d81589872801e554e",
+   "bytes": 10604032
+  },
+  "RATZ.mseed": {
+   "sha256": "8aa9753a331de0a12a706651b57155db5aa9869970a3724fc56fa52fadaea529",
+   "bytes": 8494592
+  },
+  "URZ.mseed": {
+   "sha256": "116b4da5ba2610dff2649a32dd55edac18ab334ace962cc95cdba86b42e847ae",
+   "bytes": 4835328
+  },
+  "BKZ.mseed": {
+   "sha256": "f353d15be6e842f7dcc6310450d46a3c7556c60154c8e926a365fe376269c80f",
+   "bytes": 5758464
+  },
+  "MWZ.mseed": {
+   "sha256": "a9422265893c8dac0830b1f963cc39b29b770c6feec73348a778e4a17ceb8786",
+   "bytes": 5683200
+  },
+  "MKAZ.mseed": {
+   "sha256": "37e6e4e1597d974045a9774bfa3c013df1d52aae3ea88ba046a2e45ae8e9759c",
+   "bytes": 5260288
+  },
+  "KUZ.mseed": {
+   "sha256": "7318aaa1c02ceda29ec27858c602d89f43ad3a296d2da053463becae55d14741",
+   "bytes": 5576192
+  },
+  "stationxml/NZ.BKZ.xml": {
+   "sha256": "182628c0bb30595527c8d3f20f8449af7d2d11c4429fe4ba783ed4564c6ee12b",
+   "bytes": 164504
+  },
+  "stationxml/NZ.KPRZ.xml": {
+   "sha256": "6cdf71bc003fca8d45a038c7bdf39cc823e0784a6ab04676b4e7ec1ef26e4948",
+   "bytes": 165402
+  },
+  "stationxml/NZ.KUZ.xml": {
+   "sha256": "278609d853cb9497373836829d1fd4dec8da9a445aab05cfecdef1e1eca02294",
+   "bytes": 165410
+  },
+  "stationxml/NZ.MKAZ.xml": {
+   "sha256": "fa36626a8d0c92c6fe8ef45b08f961b31c7bc1e6dd875e303931fd205e8278ce",
+   "bytes": 165438
+  },
+  "stationxml/NZ.MWZ.xml": {
+   "sha256": "a91fda2640df06e463872b0363a8f1d2c2bce1c20cccb42251fc6924548a8f5e",
+   "bytes": 37021
+  },
+  "stationxml/NZ.RATZ.xml": {
+   "sha256": "9a34c9eb40e1b5d9378d6780a7da1584a853a9efff35ce33f7e7029d2d1db63d",
+   "bytes": 32757
+  },
+  "stationxml/NZ.TLZ.xml": {
+   "sha256": "f726dacbb52e3f7b3cebcb53c4440129a0e8f33b3bab84f70d9e7e0fa02c04f4",
+   "bytes": 36986
+  },
+  "stationxml/NZ.URZ.xml": {
+   "sha256": "c3932647b09ff4bbbdd84f6a94a343f87afbf5a604c9c92a6d6dbde6b88f05f1",
+   "bytes": 165438
+  },
+  "stations.csv": {
+   "sha256": "a5924707ef494f619a7f25f3dec56343a1f3b6b8a741b298b457dc57aa3d4c8c",
+   "bytes": 254
+  },
+  "pd_gain.csv": {
+   "sha256": "9f5c9a507104c330978210d60e8a1171861e8eb1aeef6b444a9690ebd78483aa",
+   "bytes": 313
+  },
+  "catalog.csv": {
+   "sha256": "ea37e687e30afc4add63e539dbff2271d79d2978ccd2b0318e3fa4f13febd131",
+   "bytes": 3995
+  }
+ },
+ "catalog": {
+  "file": "catalog.csv",
+  "agency": "GeoNet (Earth Sciences New Zealand)",
+  "service": "https://service.geonet.org.nz/fdsnws/event/1/query",
+  "request": "https://service.geonet.org.nz/fdsnws/event/1/query?starttime=2025-05-24T23%3A11%3A00&endtime=2025-05-26T05%3A11%3A00&latitude=-38.2008&longitude=176.14&maxradius=3.5973&orderby=time-asc",
+  "window": [
+   "2025-05-24T23:11:00",
+   "2025-05-26T05:11:00"
+  ],
+  "centre": [
+   -38.20077,
+   176.13955
+  ],
+  "radius_km": 400.0,
+  "min_magnitude": null,
+  "limit": null,
+  "events": 50,
+  "skipped": [],
+  "magnitude_types": [
+   "M",
+   "MLv"
+  ],
+  "retrieved_utc": "2026-11-15T22:44:44+00:00",
+  "citation": "GNS Science (1970). GeoNet Aotearoa New Zealand Earthquake Catalogue [Dataset]. doi:10.21420/0S8P-TZ38",
+  "canary": {
+   "window": [
+    "2022-01-27T05:19:00",
+    "2022-01-27T12:19:00"
+   ],
+   "centre": [
+    -41.0,
+    174.0
+   ],
+   "radius_km": 1300.0,
+   "min_events": 20,
+   "events": 51,
+   "request": "https://service.geonet.org.nz/fdsnws/event/1/query?starttime=2022-01-27T05%3A19%3A00&endtime=2022-01-27T12%3A19%3A00&latitude=-41&longitude=174&maxradius=11.6912&orderby=time-asc"
+  }
+ }
+}

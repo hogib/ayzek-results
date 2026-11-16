@@ -1,0 +1,62 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   05:22:42.50  earthquake detected by AKDG, NURH
+LOCATE   #1   05:23:33.00  located at 38.116N 37.923E, origin 05:22:33.45, rms 0.04 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 38.116N 37.923E, origin 05:22:33.45 UTC
+  alarm      05:22:42.50 UTC by AKDG, NURH
+  location   rms 0.04 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 30 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             AKDG          28 km   05:22:41.90 UTC (picked)      -0.6 s  after S
+             NURH          46 km   05:22:46.80 UTC (picked)      +4.3 s  before S
+             MLTY          51 km   05:22:48.22 UTC (predicted)    +5.7 s  before S
+             GAZ          122 km   05:23:08.51 UTC (predicted)   +26.0 s  before S
+             SVRC         124 km   05:23:09.06 UTC (predicted)   +26.6 s  before S
+             DYBB         195 km   05:23:29.21 UTC (predicted)   +46.7 s  before S
+             MAZI         233 km   05:23:40.20 UTC (predicted)   +57.7 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     6
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    05:22:42.50 UTC  #1  no magnitude, located 38.12N 37.92E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/phasenet_lookahead_eqfa/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0        3      3         0      0.003 (0.002)        74
+  DYBB     43189         0        0      0         0      0.004 (0.006)         0
+  GAZ      43189         0        0      0         0      0.004 (0.007)         0
+  MAZI     43189         0        0      0         0      0.004 (0.007)         0
+  MLTY     43189         0        0      0         0      0.003 (0.002)         0
+  NURH     43189         0        3      3         0      0.006 (0.002)       153
+  SVRC     43091         9        2      2        14      0.003 (0.007)       123
+  Pd: 14 values sent
+  P time from an STA/LTA onset for 2 of 8 triggers (6 from the window start)
+  onset from a FilterPicker pick for 5 of 8 triggers (P-time location and Pd)
+  302225 windows in 3.6 s: 5559x real time per station

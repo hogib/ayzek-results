@@ -1,0 +1,35 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+pick     DYBB  picker window at 01:11:30.65 crosses a gap, skipped
+ALARM    #1   05:12:32.75  earthquake detected by AKDG, DYBB, NURH
+PLOC     #1   05:12:32.75  P times locate it at 37.145N 39.480E +-134 km, origin 05:11:59.01, rms 0.01 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      05:12:32.75 UTC by AKDG, DYBB, NURH
+  P loc.     37.145N 39.480E +-134 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    15
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/stalta_station/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7        5      5         0      0.001 (0.000)        36
+  DYBB     43042        14        6      5        40      0.001 (0.000)        43
+  GAZ      43189         0        2      2        14      0.001 (0.000)        37
+  MAZI     43189         0        0      0         0      0.001 (0.000)         0
+  MLTY     43189         0        2      2        14      0.001 (0.000)        39
+  NURH     43189         0        3      3         0      0.001 (0.000)        27
+  SVRC     43080        11        2      2        14      0.001 (0.000)        39
+  Pd: 82 values sent
+  301992 windows in 0.5 s: 40206x real time per station

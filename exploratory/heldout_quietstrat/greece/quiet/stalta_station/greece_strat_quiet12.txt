@@ -1,0 +1,46 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-05-11 01:11:03.16 to 07:11:00.01 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+ALARM    #1   05:57:26.82  earthquake detected by PTL, VILL
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-11 01:39:50.00 to 07:11:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      05:57:26.82 UTC by PTL, VILL
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     7
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    05:57:26.82 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_station/greece_strat_quiet12.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        0      0         0      0.001 (0.000)         0
+  KARY     43189         0        0      0         0      0.001 (0.000)         0
+  LKR      43189         0        0      0         0      0.001 (0.000)         0
+  MDRA     43189         0        0      0         0      0.001 (0.000)         0
+  MRTH     43189         0        2      2         0      0.001 (0.000)        44
+  PTL      43189         0        6      6        42      0.001 (0.000)        38
+  THIV     43189         0        0      0         0      0.001 (0.000)         0
+  VILL     43189         0        1      1         7      0.001 (0.000)        41
+  Pd: 49 values sent
+  345512 windows in 0.5 s: 38496x real time per station

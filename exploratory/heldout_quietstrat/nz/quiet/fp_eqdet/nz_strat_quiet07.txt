@@ -1,0 +1,68 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2024-06-25 19:09:02.81 to 01:09:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   20:12:02.52  earthquake detected by BKZ, TLZ
+ALARM    #2   20:41:26.43  earthquake detected by HIZ, RATZ
+ALARM    #3   20:59:19.90  earthquake detected by KPRZ, VRZ
+ALARM    #4   22:24:29.75  earthquake detected by KPRZ, RATZ
+ALARM    #5   00:50:34.68  earthquake detected by KPRZ, RATZ
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-06-25 19:37:50.00 to 01:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      20:12:02.52 UTC by BKZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      20:41:26.43 UTC by HIZ, RATZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      20:59:19.90 UTC by KPRZ, VRZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      22:24:29.75 UTC by KPRZ, RATZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      00:50:34.68 UTC by KPRZ, RATZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    82
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              5  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    20:12:02.52 UTC  #1  no magnitude, not located
+    20:41:26.43 UTC  #2  no magnitude, not located
+    20:59:19.90 UTC  #3  no magnitude, not located
+    22:24:29.75 UTC  #4  no magnitude, not located
+    00:50:34.68 UTC  #5  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/fp_eqdet/nz_strat_quiet07.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0       10     10        70      0.019 (0.030)        67
+  HIZ      43189         0       11     11        77      0.023 (0.007)        74
+  KPRZ     43189         0       36     36       252      0.021 (0.008)        61
+  RATZ     43189         0       10     10        70      0.021 (0.028)        70
+  TLZ      43189         0       14     13        98      0.019 (0.030)        69
+  VRZ      43189         0       12     12        84      0.024 (0.007)        77
+  Pd: 651 values sent
+  259134 windows in 3.6 s: 5498x real time per station

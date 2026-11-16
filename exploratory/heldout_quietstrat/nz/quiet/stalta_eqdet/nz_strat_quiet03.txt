@@ -1,0 +1,70 @@
+ayzek    8 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2025-10-22 22:17:02.29 to 04:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   22:50:16.75  earthquake detected by KPRZ, TLZ
+ALARM    #2   23:05:25.72  earthquake detected by TLZ, TSZ
+ALARM    #3   23:30:26.73  earthquake detected by TLZ, TSZ
+ALARM    #4   23:35:36.01  earthquake detected by BKZ, TSZ
+LOCATE   #4   23:36:30.50  located at -39.607N 176.227E, origin 23:35:22.07, rms 1.56 s from 2 stations
+ALARM    #5   00:44:56.41  earthquake detected by BKZ, TLZ
+ALARM    #6   01:25:47.11  earthquake detected by TSZ, VRZ
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-10-22 22:45:50.00 to 04:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      22:50:16.75 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      23:05:25.72 UTC by TLZ, TSZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      23:30:26.73 UTC by TLZ, TSZ
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at -39.607N 176.227E, origin 23:35:22.07 UTC
+  alarm      23:35:36.01 UTC by BKZ, TSZ
+  location   rms 1.56 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 48 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             BKZ           54 km   23:35:35.90 UTC (picked)      -0.1 s  after S
+             TSZ           55 km   23:35:37.21 UTC (picked)      +1.2 s  before S
+             RATZ          91 km   23:35:48.28 UTC (predicted)   +12.3 s  before S
+             KPRZ          97 km   23:35:49.94 UTC (predicted)   +13.9 s  before S
+             VRZ          137 km   23:36:01.37 UTC (predicted)   +25.4 s  before S
+             TLZ          154 km   23:36:06.18 UTC (predicted)   +30.2 s  before S
+             URZ          168 km   23:36:10.23 UTC (predicted)   +34.2 s  before S
+             HIZ          170 km   23:36:10.66 UTC (predicted)   +34.7 s  before S
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      00:44:56.41 UTC by BKZ, TLZ
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      01:25:47.11 UTC by TSZ, VRZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           6
+  single-station detections, no alarm    68
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/stalta_eqdet/nz_strat_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0       11     11        77      0.002 (0.001)        66
+  HIZ      43189         0        0      0         0      0.002 (0.001)         0
+  KPRZ     43189         0        8      8        56      0.001 (0.001)        68
+  RATZ     43189         0        0      0         0      0.002 (0.001)         0
+  TLZ      43189         0       28     28       196      0.002 (0.001)        71
+  TSZ      43189         0       27     27       189      0.002 (0.001)        71
+  URZ      43189         0        1      1         7      0.001 (0.001)        72
+  VRZ      43189         0        5      5        35      0.001 (0.001)        65
+  Pd: 560 values sent
+  345512 windows in 2.4 s: 8294x real time per station

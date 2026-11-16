@@ -1,0 +1,55 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-28 02:35:02.35 to 08:35:00.01 UTC at full speed
+ayzek    catalogue: 6 events in the replay span
+ALARM    #1   03:47:55.50  earthquake detected by IPPL, STIA
+pick     PFKS  picker window at 04:59:17.50 crosses a gap, skipped
+ALARM    #2   06:24:03.50  earthquake detected by PFKS, SIVA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-28 03:03:50.00 to 08:35:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      03:47:55.50 UTC by IPPL, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      06:24:03.50 UTC by PFKS, SIVA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    64
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:47:55.50 UTC  #1  no magnitude, not located
+    06:24:03.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/phasenet_causal_eqquiet/greece_now_quiet19.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        2      2        14      0.005 (0.002)       106
+  IMMV     43189         0        1      1         7      0.003 (0.002)        63
+  IPPL     43189         0       20     20       140      0.005 (0.002)       105
+  KNDR     43166         2        3      3        21      0.004 (0.006)        96
+  KNSS     43189         0        2      2        14      0.004 (0.007)       113
+  PFKS     43176         2       18     17       126      0.004 (0.002)       106
+  SIVA     43189         0       16     16       112      0.003 (0.002)        99
+  STIA     43059        13        6      6        42      0.003 (0.007)        97
+  Pd: 476 values sent
+  P time from an STA/LTA onset for 22 of 68 triggers (46 from the window start)
+  onset from a FilterPicker pick for 12 of 68 triggers (P-time location and Pd)
+  345346 windows in 5.7 s: 3482x real time per station

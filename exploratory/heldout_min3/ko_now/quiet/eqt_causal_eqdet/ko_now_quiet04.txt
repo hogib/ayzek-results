@@ -1,0 +1,36 @@
+ayzek    7 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-10-17 00:04:03.54 to 06:04:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   02:26:34.50  earthquake detected by AKDG, GAZ, NURH
+PLOC     #1   02:26:34.50  P times locate it at 35.989N 34.824E +-267 km, origin 02:25:24.42, rms 0.08 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-10-17 00:32:50.00 to 06:04:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      02:26:34.50 UTC by AKDG, GAZ, NURH
+  P loc.     35.989N 34.824E +-267 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    40
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/ko_now.partial/quiet/eqt_causal_eqdet/ko_now_quiet04.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43114         7        8      8         0      0.002 (0.001)        51
+  DYBB     43042        14        1      1         7      0.002 (0.001)        49
+  GAZ      43189         0        2      2        14      0.002 (0.001)        59
+  MAZI     43189         0        0      0         0      0.002 (0.001)         0
+  MLTY     43189         0        3      3        21      0.002 (0.001)        56
+  NURH     43189         0       26     26         0      0.001 (0.003)        26
+  SVRC     43080        11        6      6        42      0.001 (0.001)        43
+  Pd: 84 values sent
+  P time from an STA/LTA onset for 31 of 46 triggers (15 from the window start)
+  onset from a FilterPicker pick for 19 of 46 triggers (P-time location and Pd)
+  301992 windows in 2.3 s: 8501x real time per station

@@ -1,0 +1,52 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-08-25 02:29:02.70 to 08:29:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:18:44.00  earthquake detected by NISR, STIA
+ALARM    #2   08:20:16.50  earthquake detected by STIA, THERA
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-08-25 02:57:50.00 to 08:29:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:18:44.00 UTC by NISR, STIA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      08:20:16.50 UTC by STIA, THERA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    94
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:18:44.00 UTC  #1  no magnitude, not located
+    08:20:16.50 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/learned/greece_strat_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        0      0         0     38.355 (70.613)         0
+  NISR     43189         0        3      3         0     42.433 (69.616)        86
+  NISR2    43189         0        0      0         0     42.104 (71.830)         0
+  STIA     43157         5       82     82       574     40.767 (69.676)        84
+  THERA    43189         0        1      1         7     42.261 (67.805)        29
+  ZKR      43189         0       12     12        84     34.896 (65.963)        65
+  Pd: 665 values sent
+  P time from an STA/LTA onset for 20 of 98 triggers (78 from the window start)
+  onset from a FilterPicker pick for 10 of 98 triggers (P-time location and Pd)
+  259102 windows in 1857.6 s: 11x real time per station

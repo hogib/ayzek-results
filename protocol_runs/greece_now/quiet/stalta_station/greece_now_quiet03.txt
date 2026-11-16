@@ -1,0 +1,69 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-09-08 19:18:02.66 to 01:18:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   22:16:57.74  earthquake detected by IPPL, THERA
+PDMAG    #1   22:16:59.00  Pd magnitude M4.0 ± 0.3 (M<4 52%, 4-5.5 48%, M>=5.5 0%) from 2 stations (1 above noise), windows up to 3 s, distances from the P-time location
+PLOC     #1   22:16:59.00  P times locate it at 35.746N 24.997E +-14 km, origin 22:16:44.04, rms 0.03 s from 3 stations
+PDMAG    #1   22:16:59.00  Pd magnitude M4.0 ± 0.3 (M<4 52%, 4-5.5 48%, M>=5.5 0%) from 3 stations (1 above noise), windows up to 3 s, distances from the P-time location
+PDMAG    #1   22:16:59.00  Pd magnitude M4.3 ± 0.2 (M<4 12%, 4-5.5 88%, M>=5.5 0%) from 4 stations (2 above noise), windows up to 3 s, distances from the P-time location
+PDMAG    #1   22:17:00.00  Pd magnitude M4.3 ± 0.2 (M<4 3%, 4-5.5 97%, M>=5.5 0%) from 5 stations (3 above noise), windows up to 4 s, distances from the P-time location
+PDMAG    #1   22:17:00.50  Pd magnitude M4.3 ± 0.2 (M<4 3%, 4-5.5 97%, M>=5.5 0%) from 6 stations (3 above noise), windows up to 4 s, distances from the P-time location
+PDMAG    #1   22:17:00.53  Pd magnitude M4.5 ± 0.2 (M<4 2%, 4-5.5 98%, M>=5.5 0%) from 5 stations (2 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #1   22:17:02.00  Pd magnitude M4.4 ± 0.2 (M<4 2%, 4-5.5 98%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 5 s, distances from the P-time location
+PDMAG    #1   22:17:02.50  Pd magnitude M4.5 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 6 stations (3 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   22:17:04.19  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (4 above noise), windows up to 7 s, distances from the P-time location
+PLOC     #1   22:17:04.19  P times locate it at 35.723N 25.052E +-10 km, origin 22:16:43.94, rms 0.57 s from 4 stations, left out KNSS
+PDMAG    #1   22:17:05.50  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 8 stations (6 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   22:17:05.65  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 7 stations (5 above noise), windows up to 10 s, distances from the P-time location
+PLOC     #1   22:17:05.65  P times locate it at 35.745N 24.989E +-9 km, origin 22:16:44.08, rms 1.25 s from 5 stations, left out KNSS
+PDMAG    #1   22:17:07.00  Pd magnitude M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 8 stations (5 above noise), windows up to 10 s, distances from the P-time location
+ALARM    #2   01:05:01.24  earthquake detected by IPPL, SIVA
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-08 19:46:50.00 to 01:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.6 earthquake, not located
+  alarm      22:16:57.74 UTC by IPPL, THERA; later KNSS, PFKS, STIA, ZKR
+  Pd magn.   M4.0 1.3 s after the alarm, M4.6 ± 0.1 (M<4 0%, 4-5.5 100%, M>=5.5 0%) final from 8 stations (6 above noise)
+  P loc.     35.745N 24.989E +-9 km from 5 stations, first 1.3 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      01:05:01.24 UTC by IPPL, SIVA
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    10
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              2  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    22:16:57.74 UTC  #1  M4.6, not located
+    01:05:01.24 UTC  #2  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/greece_now/quiet/stalta_station/greece_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        0      0         0      0.004 (0.001)         0
+  IPPL     43189         0        5      5        35      0.005 (0.001)       196
+  KNSS     43189         0        1      1         7      0.005 (0.001)       216
+  PFKS     43189         0        1      1         7      0.003 (0.001)       216
+  SIVA     43189         0        4      4        28      0.005 (0.001)       187
+  STIA     43189         0        4      4        28      0.005 (0.001)       218
+  THERA    43189         0        1      1         7      0.004 (0.001)       216
+  ZKR      43189         0        2      2        14      0.004 (0.001)       205
+  Pd: 126 values sent
+  345512 windows in 2.7 s: 7340x real time per station

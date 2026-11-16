@@ -1,0 +1,59 @@
+ayzek    5 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2024-07-31 14:02:02.53 to 20:02:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   15:23:02.00  earthquake detected by FOZ, WVZ
+PLOC     #1   15:23:07.00  P times locate it at -43.453N 170.834E +-16 km, origin 15:22:46.15, rms 0.02 s from 3 stations
+ALARM    #2   19:26:59.00  earthquake detected by WHSZ, WVZ
+ALARM    #3   19:40:23.00  earthquake detected by RPZ, WHSZ
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2024-07-31 14:30:50.00 to 20:02:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      15:23:02.00 UTC by FOZ, WVZ; later CVZ
+  P loc.     -43.453N 170.834E +-16 km from 3 stations, first 5.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      19:26:59.00 UTC by WHSZ, WVZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      19:40:23.00 UTC by RPZ, WHSZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm   108
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              3  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    15:23:02.00 UTC  #1  no magnitude, not located
+    19:26:59.00 UTC  #2  no magnitude, not located
+    19:40:23.00 UTC  #3  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_instant/nz_now/quiet/g_instant_0p85/nz_now_quiet24.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        2      2        14      0.002 (0.001)        56
+  FOZ      43189         0        2      2        14      0.001 (0.001)        49
+  RPZ      43189         0        1      1         7      0.001 (0.001)        35
+  WHSZ     43189         0      109    109       763      0.001 (0.001)        27
+  WVZ      43189         0        3      3        21      0.001 (0.001)        37
+  Pd: 819 values sent
+  P time from an STA/LTA onset for 14 of 117 triggers (103 from the window start)
+  onset from a FilterPicker pick for 6 of 117 triggers (P-time location and Pd)
+  215945 windows in 4.2 s: 4777x real time per station

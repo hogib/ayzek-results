@@ -1,0 +1,39 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 8 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-05-15 07:36:02.09 to 13:36:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   11:34:30.01  earthquake detected by KARY, MRTH, PTL
+PLOC     #1   11:34:30.01  P times locate it at 37.768N 24.156E +-397 km, origin 11:34:22.58, rms 0.04 s from 3 stations
+PLOC     #1   11:34:30.45  P times locate it at 39.278N 24.475E +-279 km, origin 11:34:06.10, rms 0.74 s from 4 stations
+PLOC     #1   11:34:31.77  P times locate it at 39.108N 24.316E +-136 km, origin 11:34:09.41, rms 0.79 s from 5 stations
+PLOC     #1   11:34:31.84  P times locate it at 39.207N 24.443E +-178 km, origin 11:34:07.36, rms 0.91 s from 6 stations
+PLOC     #1   11:34:31.99  P times locate it at 39.162N 24.392E +-135 km, origin 11:34:08.29, rms 0.88 s from 7 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-05-15 08:04:50.00 to 13:36:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      11:34:30.01 UTC by KARY, MRTH, PTL; later LKR, MDRA, THIV, VILL
+  P loc.     39.162N 24.392E +-135 km from 7 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm    56
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/greece_now.partial/quiet/stalta_eqfa/greece_now_quiet20.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ATH      43189         0        2      2        14      0.002 (0.000)        77
+  KARY     43189         0        3      3        21      0.003 (0.000)        77
+  LKR      43189         0        5      5        35      0.002 (0.000)        75
+  MDRA     43189         0        4      4        28      0.002 (0.000)        71
+  MRTH     43189         0        4      4         0      0.002 (0.000)        73
+  PTL      43189         0        2      2        14      0.001 (0.000)        69
+  THIV     43189         0       43     43       301      0.002 (0.000)        65
+  VILL     43189         0        4      4        28      0.002 (0.000)        80
+  Pd: 441 values sent
+  345512 windows in 3.4 s: 5918x real time per station

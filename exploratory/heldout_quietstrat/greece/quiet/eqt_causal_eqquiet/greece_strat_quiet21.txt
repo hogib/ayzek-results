@@ -1,0 +1,62 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-11-12 04:56:03.35 to 10:56:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   07:17:52.00  earthquake detected by OUR, THAS
+ALARM    #2   07:18:05.50  earthquake detected by KAVA, PLG
+LOCATE   #1   07:18:43.50  located at 40.369N 24.074E, origin 07:17:34.03, rms 0.65 s from 2 stations
+ALARM    #3   10:12:59.50  earthquake detected by OUR, THAS
+ALARM    #4   10:19:22.50  earthquake detected by KAVA, PLG
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-11-12 05:24:50.00 to 10:56:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude) at 40.369N 24.074E, origin 07:17:34.03 UTC
+  alarm      07:17:52.00 UTC by OUR, THAS
+  location   rms 0.65 s from 2 stations, first 51.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 62 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             OUR            9 km   07:17:37.78 UTC (picked)     -14.2 s  after S
+             KOKK          50 km   07:17:48.67 UTC (predicted)    -3.3 s  after S
+             PLG           53 km   07:17:49.54 UTC (predicted)    -2.5 s  after S
+             PAIG          59 km   07:17:51.07 UTC (predicted)    -0.9 s  after S
+             THAS          61 km   07:17:50.82 UTC (picked)      -1.2 s  after S
+             SOH           79 km   07:17:56.70 UTC (predicted)    +4.7 s  before S
+             KAVA          79 km   07:17:56.77 UTC (predicted)    +4.8 s  before S
+             HORT          86 km   07:17:58.83 UTC (predicted)    +6.8 s  before S
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      07:18:05.50 UTC by KAVA, PLG
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      10:12:59.50 UTC by OUR, THAS
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      10:19:22.50 UTC by KAVA, PLG; later KOKK
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    12
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_causal_eqquiet/greece_strat_quiet21.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HORT     43189         0        0      0         0      0.001 (0.001)         0
+  KAVA     43189         0        2      2         0      0.000 (0.001)        13
+  KOKK     43189         0        1      1         7      0.000 (0.001)        13
+  OUR      43189         0       11     11        77      0.001 (0.001)        14
+  PAIG     43161         3        0      0         0      0.001 (0.001)         0
+  PLG      43189         0        6      6        42      0.000 (0.001)        13
+  SOH      43189         0        0      0         0      0.001 (0.001)         0
+  THAS     43165         2        2      2        14      0.000 (0.001)        14
+  Pd: 140 values sent
+  P time from an STA/LTA onset for 13 of 22 triggers (9 from the window start)
+  onset from a FilterPicker pick for 12 of 22 triggers (P-time location and Pd)
+  345460 windows in 0.8 s: 26446x real time per station

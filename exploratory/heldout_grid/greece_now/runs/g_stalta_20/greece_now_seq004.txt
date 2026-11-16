@@ -1,0 +1,41 @@
+ayzek    5 stations, scalar backend, STA/LTA 0.5/10 s on 20 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-04-26 19:50:39.14 to 22:50:36.29 UTC at full speed
+ayzek    catalogue: 5 events in the replay span
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2023-04-26 19:50:39.14 to 22:50:36.29 UTC
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           0
+  single-station detections, no alarm     0
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0     -
+    false    (no AFAD event)              0     -
+
+  AFAD events within 250 km                2
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                2  100%
+
+  By magnitude      AFAD events   detected   missed
+    M 2-3                   1          0        1
+    M 5+                    1          0        1
+
+  Missed AFAD events
+    20:00:36.00 UTC  MLh 5.2    11 km from the network centre
+    21:43:14.00 UTC  MLh 2.5   208 km from the network centre
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/runs/g_stalta_20/greece_now_seq004.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      21588         0        0      0         0      0.001 (0.000)         0
+  NISR     21588         0        0      0         0      0.001 (0.000)         0
+  NISR2    21588         0        0      0         0      0.001 (0.000)         0
+  STIA     21588         0        0      0         0      0.001 (0.000)         0
+  THERA    21588         0        0      0         0      0.001 (0.000)         0
+  Pd: 0 values sent
+  107940 windows in 0.1 s: 78292x real time per station

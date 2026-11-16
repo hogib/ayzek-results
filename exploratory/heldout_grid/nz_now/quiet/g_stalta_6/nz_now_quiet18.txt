@@ -1,0 +1,37 @@
+ayzek    7 stations, scalar backend, STA/LTA 0.5/10 s on 6 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2023-07-11 21:47:03.27 to 03:47:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:05:00.41  earthquake detected by KPRZ, MKAZ
+ALARM    #2   02:56:15.45  earthquake detected by KPRZ, TLZ
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2023-07-11 22:15:50.00 to 03:47:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:05:00.41 UTC by KPRZ, MKAZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:56:15.45 UTC by KPRZ, TLZ
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    47
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/nz_now/quiet/g_stalta_6/nz_now_quiet18.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  HIZ      43148         4        1      1         7      0.001 (0.000)        43
+  KPRZ     43177         1       25     25       175      0.001 (0.000)        27
+  KUZ      43150         5        2      2        14      0.001 (0.000)        42
+  MKAZ     43102        11        2      2        14      0.001 (0.000)        35
+  RATZ     43189         0        0      0         0      0.001 (0.000)         0
+  TLZ      43189         0       20     20       140      0.001 (0.001)        25
+  URZ      43138         6        1      1         0      0.001 (0.000)        40
+  Pd: 350 values sent
+  302093 windows in 0.8 s: 23547x real time per station

@@ -1,0 +1,80 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2025-05-25 23:11:03.09 to 05:11:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   01:40:37.50  earthquake detected by KUZ, MKAZ
+ALARM    #2   02:21:32.50  earthquake detected by MWZ, URZ
+ALARM    #3   03:20:39.50  earthquake detected by BKZ, URZ
+PLOC     #3   03:20:41.50  P times locate it at -38.411N 173.944E +-199 km, origin 03:19:46.06, rms 1.00 s from 3 stations
+ALARM    #4   04:49:43.00  earthquake detected by MWZ, URZ
+LOCATE   #4   04:50:33.50  located at -39.187N 176.389E, origin 04:49:17.22, rms 0.01 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2025-05-25 23:39:50.00 to 05:11:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:40:37.50 UTC by KUZ, MKAZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      02:21:32.50 UTC by MWZ, URZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      03:20:39.50 UTC by BKZ, URZ; later MWZ
+  P loc.     -38.411N 173.944E +-199 km from 3 stations, first 2.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at -39.187N 176.389E, origin 04:49:17.22 UTC
+  alarm      04:49:43.00 UTC by MWZ, URZ
+  location   rms 0.01 s from 2 stations, first 50.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 90 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             BKZ            9 km   04:49:21.10 UTC (predicted)   -21.9 s  after S
+             RATZ          64 km   04:49:35.75 UTC (predicted)    -7.2 s  after S
+             KPRZ          67 km   04:49:36.56 UTC (predicted)    -6.4 s  after S
+             TLZ          121 km   04:49:51.78 UTC (predicted)    +8.8 s  before S
+             URZ          121 km   04:49:51.80 UTC (picked)      +8.8 s  before S
+             MWZ          137 km   04:49:56.42 UTC (picked)     +13.4 s  before S
+             MKAZ         255 km   04:50:30.20 UTC (predicted)   +47.2 s  before S
+             KUZ          278 km   04:50:36.62 UTC (predicted)   +53.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    26
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    01:40:37.50 UTC  #1  no magnitude, not located
+    02:21:32.50 UTC  #2  no magnitude, not located
+    03:20:39.50 UTC  #3  no magnitude, not located
+    04:49:43.00 UTC  #4  no magnitude, located -39.19N 176.39E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/nz/quiet/phasenet_causal_eqdet/nz_strat_quiet11.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      43189         0        4      4        28      0.001 (0.001)        51
+  KPRZ     43189         0        3      3        21      0.002 (0.003)        51
+  KUZ      43189         0        3      3        21      0.001 (0.001)        47
+  MKAZ     43189         0        1      1         7      0.001 (0.001)        47
+  MWZ      43189         0        3      3        21      0.002 (0.002)        39
+  RATZ     43189         0        0      0         0      0.002 (0.001)         0
+  TLZ      43189         0       14     13        98      0.002 (0.001)        37
+  URZ      43189         0        7      7        49      0.001 (0.003)        52
+  Pd: 245 values sent
+  P time from an STA/LTA onset for 24 of 35 triggers (11 from the window start)
+  onset from a FilterPicker pick for 17 of 35 triggers (P-time location and Pd)
+  345512 windows in 1.7 s: 11524x real time per station

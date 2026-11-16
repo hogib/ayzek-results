@@ -1,0 +1,90 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   00:08:12.50  earthquake detected by GAZ, KARA
+ALARM    #2   01:14:22.00  earthquake detected by KARA, SARI
+ALARM    #3   01:21:39.00  earthquake detected by KARA, NURH
+ALARM    #4   02:01:57.00  earthquake detected by CEYT, GAZ
+ALARM    #5   02:37:34.00  earthquake detected by BNN, CEYT
+PLOC     #5   02:37:46.50  P times locate it at 39.049N 33.244E +-105 km, origin 02:36:39.18, rms 0.57 s from 3 stations
+ALARM    #6   03:13:48.00  earthquake detected by BNN, CEYT
+ALARM    #7   04:19:34.00  earthquake detected by KARA, NURH
+ALARM    #8   04:23:27.00  earthquake detected by KARA, NURH
+ALARM    #9   04:32:18.00  earthquake detected by KARA, SARI
+ALARM    #10  04:48:48.50  earthquake detected by KARA, SARI
+ALARM    #11  04:59:33.50  earthquake detected by BNN, SARI
+ALARM    #12  05:07:41.00  earthquake detected by KARA, SARI
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      00:08:12.50 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      01:14:22.00 UTC by KARA, SARI
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      01:21:39.00 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      02:01:57.00 UTC by CEYT, GAZ
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      02:37:34.00 UTC by BNN, CEYT; later NURH
+  P loc.     39.049N 33.244E +-105 km from 3 stations, first 12.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      03:13:48.00 UTC by BNN, CEYT
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      04:19:34.00 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      04:23:27.00 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      04:32:18.00 UTC by KARA, SARI
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      04:48:48.50 UTC by KARA, SARI
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      04:59:33.50 UTC by BNN, SARI
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      05:07:41.00 UTC by KARA, SARI
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          12
+  single-station detections, no alarm    93
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_phasenet_0p5/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0        7      7        49      0.002 (0.001)        55
+  CEYT     43189         0       15     15       105      0.001 (0.001)        43
+  GAZ      43189         0       23     23       161      0.002 (0.001)        51
+  KARA     43189         0       28     28       196      0.001 (0.001)        40
+  NURH     43189         0       27     27         0      0.002 (0.001)        51
+  SARI     43189         0       18     18       126      0.002 (0.001)        51
+  Pd: 637 values sent
+  P time from an STA/LTA onset for 54 of 118 triggers (64 from the window start)
+  onset from a FilterPicker pick for 24 of 118 triggers (P-time location and Pd)
+  259134 windows in 3.3 s: 6027x real time per station

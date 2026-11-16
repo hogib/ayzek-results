@@ -1,0 +1,54 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2026-04-02 15:17:02.09 to 21:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   19:36:26.00  earthquake detected by PFKS, THERA
+PLOC     #1   19:36:26.50  P times locate it at 35.756N 25.896E +-75 km, origin 19:36:06.73, rms 0.03 s from 3 stations
+ALARM    #2   19:41:11.50  earthquake detected by PFKS, SIVA
+LOCATE   #2   19:42:00.00  located at 34.690N 24.998E, origin 19:40:57.30, rms 0.08 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-04-02 15:45:50.00 to 21:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      19:36:26.00 UTC by PFKS, THERA; later KNSS
+  P loc.     35.756N 25.896E +-75 km from 3 stations, first 0.5 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude) at 34.690N 24.998E, origin 19:40:57.30 UTC
+  alarm      19:41:11.50 UTC by PFKS, SIVA
+  location   rms 0.08 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 49 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          40 km   19:41:09.10 UTC (picked)      -2.4 s  after S
+             PFKS          58 km   19:41:14.28 UTC (picked)      +2.8 s  before S
+             KNSS          70 km   19:41:17.57 UTC (predicted)    +6.1 s  before S
+             IPPL          88 km   19:41:22.57 UTC (predicted)   +11.1 s  before S
+             STIA         115 km   19:41:30.20 UTC (predicted)   +18.7 s  before S
+             ZKR          121 km   19:41:31.92 UTC (predicted)   +20.4 s  before S
+             CHAN         127 km   19:41:33.60 UTC (predicted)   +22.1 s  before S
+             THERA        191 km   19:41:52.05 UTC (predicted)   +40.6 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           2
+  single-station detections, no alarm    30
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_learned_0p7/greece_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0       21     21       147      0.001 (0.001)        39
+  IPPL     43189         0        0      0         0      0.001 (0.001)         0
+  KNSS     43189         0        5      5        35      0.001 (0.001)        43
+  PFKS     43142         7        5      5        35      0.003 (0.003)        39
+  SIVA     43189         0        1      1         7      0.001 (0.001)        31
+  STIA     43189         0        0      0         0      0.001 (0.001)         0
+  THERA    43189         0        2      2        14      0.001 (0.001)        43
+  ZKR      43189         0        1      1         7      0.001 (0.003)        58
+  Pd: 245 values sent
+  P time from an STA/LTA onset for 14 of 35 triggers (21 from the window start)
+  onset from a FilterPicker pick for 10 of 35 triggers (P-time location and Pd)
+  345465 windows in 2.2 s: 8974x real time per station

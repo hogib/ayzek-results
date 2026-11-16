@@ -1,0 +1,63 @@
+ayzek    8 stations, scalar backend, STA/LTA 0.5/10 s on 7 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-04-02 15:17:02.09 to 21:17:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   18:24:09.68  earthquake detected by PFKS, ZKR
+ALARM    #2   18:39:24.13  earthquake detected by IPPL, PFKS
+ALARM    #3   19:36:20.42  earthquake detected by STIA, THERA
+PLOC     #3   19:36:21.66  P times locate it at 35.752N 26.370E +-211 km, origin 19:36:02.72, rms 0.02 s from 3 stations
+PLOC     #3   19:36:23.87  P times locate it at 35.779N 26.585E +-178 km, origin 19:36:00.50, rms 0.35 s from 4 stations
+ALARM    #4   19:41:07.30  earthquake detected by PFKS, SIVA
+LOCATE   #4   19:42:01.79  located at 34.715N 24.998E, origin 19:40:57.66, rms 0.05 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2026-04-02 15:45:50.00 to 21:17:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      18:24:09.68 UTC by PFKS, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      18:39:24.13 UTC by IPPL, PFKS
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      19:36:20.42 UTC by STIA, THERA; later KNSS, PFKS
+  P loc.     35.779N 26.585E +-178 km from 4 stations, first 1.2 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude) at 34.715N 24.998E, origin 19:40:57.66 UTC
+  alarm      19:41:07.30 UTC by PFKS, SIVA
+  location   rms 0.05 s from 2 stations, first 54.5 s after the alarm (P and S picks)
+  AFAD       no matching catalogue event
+  S wave     had travelled 32 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             SIVA          38 km   19:41:08.76 UTC (picked)      +1.5 s  before S
+             PFKS          57 km   19:41:14.15 UTC (picked)      +6.8 s  before S
+             KNSS          68 km   19:41:17.17 UTC (predicted)    +9.9 s  before S
+             IPPL          86 km   19:41:22.28 UTC (predicted)   +15.0 s  before S
+             STIA         113 km   19:41:30.18 UTC (predicted)   +22.9 s  before S
+             ZKR          120 km   19:41:31.98 UTC (predicted)   +24.7 s  before S
+             CHAN         125 km   19:41:33.38 UTC (predicted)   +26.1 s  before S
+             THERA        189 km   19:41:51.64 UTC (predicted)   +44.3 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm    42
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/greece_now/quiet/g_stalta_7/greece_now_quiet23.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CHAN     43189         0        9      9        63      0.001 (0.000)        55
+  IPPL     43189         0        2      2        14      0.001 (0.000)        55
+  KNSS     43189         0        3      3        21      0.001 (0.000)        35
+  PFKS     43142         7       12     12        84      0.001 (0.001)        42
+  SIVA     43189         0        1      1         7      0.001 (0.000)        43
+  STIA     43189         0       19     19       133      0.001 (0.001)        37
+  THERA    43189         0        2      2        14      0.001 (0.000)        38
+  ZKR      43189         0        4      4        28      0.001 (0.001)        55
+  Pd: 364 values sent
+  345465 windows in 0.9 s: 21226x real time per station

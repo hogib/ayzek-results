@@ -1,0 +1,88 @@
+ayzek    8 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-09-11 03:23:02.14 to 09:23:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:23:52.50  earthquake detected by GUR, VLX
+ALARM    #2   04:24:04.50  earthquake detected by ACOR, THAL
+PLOC     #2   04:24:08.50  P times locate it at 37.308N 19.733E +-268 km, origin 04:23:11.77, rms 1.03 s from 3 stations
+ALARM    #3   08:18:49.50  earthquake detected by LTK, THAL
+ALARM    #4   08:19:41.50  earthquake detected by GUR, THAL
+ALARM    #5   08:28:40.00  earthquake detected by LTK, THAL
+PLOC     #5   08:28:43.00  P times locate it at 38.098N 22.803E +-101 km, origin 08:28:27.99, rms 1.30 s from 3 stations
+LOCATE   #5   08:29:28.50  located at 38.244N 22.665E, origin 08:28:24.37, rms 0.06 s from 2 stations
+
+------------------------------------------------------------------------------
+REPORT  8 stations, 2023-09-11 03:51:50.00 to 09:23:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:23:52.50 UTC by GUR, VLX
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      04:24:04.50 UTC by ACOR, THAL; later LTK
+  P loc.     37.308N 19.733E +-268 km from 3 stations, first 4.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      08:18:49.50 UTC by LTK, THAL
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      08:19:41.50 UTC by GUR, THAL
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude) at 38.244N 22.665E, origin 08:28:24.37 UTC
+  alarm      08:28:40.00 UTC by LTK, THAL; later GUR
+  location   rms 0.06 s from 2 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     38.098N 22.803E +-101 km from 3 stations, first 3.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 54 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             THAL          23 km   08:28:31.56 UTC (picked)      -8.4 s  after S
+             LTK           36 km   08:28:35.10 UTC (picked)      -4.9 s  after S
+             LOUT          39 km   08:28:35.95 UTC (predicted)    -4.0 s  after S
+             ACOR          43 km   08:28:37.05 UTC (predicted)    -2.9 s  after S
+             GUR           44 km   08:28:37.38 UTC (predicted)    -2.6 s  after S
+             EPID          81 km   08:28:47.56 UTC (predicted)    +7.6 s  before S
+             VLX          100 km   08:28:53.19 UTC (predicted)   +13.2 s  before S
+             VLI          172 km   08:29:13.46 UTC (predicted)   +33.5 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           5
+  single-station detections, no alarm    13
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              5  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:23:52.50 UTC  #1  no magnitude, not located
+    04:24:04.50 UTC  #2  no magnitude, not located
+    08:18:49.50 UTC  #3  no magnitude, not located
+    08:19:41.50 UTC  #4  no magnitude, not located
+    08:28:40.00 UTC  #5  no magnitude, located 38.24N 22.67E
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/eqt_causal_eqdet/greece_strat_quiet10.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  ACOR     43189         0        1      1         7      0.001 (0.001)        20
+  EPID     43189         0        0      0         0      0.001 (0.001)         0
+  GUR      43189         0       11     11        77      0.001 (0.001)        15
+  LOUT     43189         0        1      1         7      0.001 (0.001)        14
+  LTK      43189         0        3      3        21      0.001 (0.001)        17
+  THAL     43189         0        7      7        49      0.001 (0.001)        16
+  VLI      43189         0        1      1         7      0.001 (0.001)        36
+  VLX      43189         0        1      1         7      0.001 (0.001)        15
+  Pd: 175 values sent
+  P time from an STA/LTA onset for 12 of 25 triggers (13 from the window start)
+  onset from a FilterPicker pick for 4 of 25 triggers (P-time location and Pd)
+  345512 windows in 0.8 s: 26311x real time per station

@@ -1,0 +1,62 @@
+ayzek    6 stations, scalar backend, STA/LTA 1/10 s on 4 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2024-08-25 02:29:02.70 to 08:29:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   04:25:59.34  earthquake detected by APE, ZKR
+ALARM    #2   07:56:06.13  earthquake detected by APE, ZKR
+ALARM    #3   08:15:11.55  earthquake detected by APE, ZKR
+ALARM    #4   08:20:17.84  earthquake detected by THERA, ZKR
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2024-08-25 02:57:50.00 to 08:29:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      04:25:59.34 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      07:56:06.13 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      08:15:11.55 UTC by APE, ZKR
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      08:20:17.84 UTC by THERA, ZKR
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           4
+  single-station detections, no alarm   141
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              4  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    04:25:59.34 UTC  #1  no magnitude, not located
+    07:56:06.13 UTC  #2  no magnitude, not located
+    08:15:11.55 UTC  #3  no magnitude, not located
+    08:20:17.84 UTC  #4  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_quietstrat/greece/quiet/stalta_eqdet/greece_strat_quiet06.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  APE      43189         0        4      4        28      0.001 (0.001)        39
+  NISR     43189         0        0      0         0      0.001 (0.001)         0
+  NISR2    43189         0        0      0         0      0.001 (0.000)         0
+  STIA     43157         5        3      3        21      0.001 (0.001)        42
+  THERA    43189         0        1      1         7      0.001 (0.001)        29
+  ZKR      43189         0      142    141       994      0.001 (0.001)        20
+  Pd: 1050 values sent
+  259102 windows in 3.0 s: 6614x real time per station

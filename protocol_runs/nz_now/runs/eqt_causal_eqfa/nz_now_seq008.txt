@@ -1,0 +1,75 @@
+ayzek    6 stations, scalar backend, 3-seed 6 s detector + STA/LTA anchor + picker + Pd magnitude, replay 2023-10-15 03:05:22.45 to 06:05:20.45 UTC at full speed
+ayzek    catalogue: 3 events in the replay span
+ALARM    #1   03:15:52.50  earthquake detected by HIZ, VRZ
+PLOC     #1   03:15:56.50  P times locate it at -38.914N 175.459E +-15 km, origin 03:15:36.29, rms 0.03 s from 3 stations
+PDMAG    #1   03:15:56.50  Pd magnitude M3.2 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 6 stations (1 above noise), windows up to 7 s, distances from the P-time location
+PDMAG    #1   03:15:58.50  Pd magnitude M3.5 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 5 stations (1 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   03:15:58.50  Pd magnitude M3.4 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 6 stations (1 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   03:15:58.50  Pd magnitude M3.3 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 6 stations (1 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   03:16:02.50  Pd magnitude M3.2 ± 0.2 (M<4 100%, 4-5.5 0%, M>=5.5 0%) from 6 stations (1 above noise), windows up to 10 s, distances from the P-time location
+PDMAG    #1   03:16:41.00  Pd magnitude M4.5 ± 0.2 (M<4 0%, 4-5.5 100%, M>=5.5 0%) from 6 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   03:16:41.00  located at -38.649N 172.672E, origin 03:15:15.63, rms 0.05 s from 2 stations
+PDMAG    #1   03:16:45.00  Pd magnitude M4.0 ± 0.2 (M<4 51%, 4-5.5 49%, M>=5.5 0%) from 6 stations (1 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   03:16:45.00  located at -37.540N 175.320E, origin 03:15:16.88, rms 0.26 s from 2 stations, left out HIZ
+PDMAG    #1   03:16:47.00  Pd magnitude M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) from 6 stations (2 above noise), windows up to 10 s, distances from the location
+LOCATE   #1   03:16:47.00  located at -40.173N 174.387E, origin 03:15:16.51, rms 0.88 s from 3 stations, left out VRZ
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2023-10-15 03:05:22.45 to 06:05:20.45 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected M4.3 earthquake at -40.173N 174.387E, origin 03:15:16.51 UTC
+  alarm      03:15:52.50 UTC by HIZ, VRZ; later BKZ, RATZ
+  Pd magn.   M3.2 4.0 s after the alarm, M4.3 ± 0.1 (M<4 1%, 4-5.5 99%, M>=5.5 0%) final from 6 stations (2 above noise)
+  location   rms 0.88 s from 3 stations, first 48.5 s after the alarm (P and S picks)
+  P loc.     -38.914N 175.459E +-15 km from 3 stations, first 4.0 s after the alarm
+  AFAD       no matching catalogue event
+  S wave     had travelled 126 km from the epicentre when the alarm sounded (ayzek location)
+  warning               distance   S wave arrives            warning
+             VRZ          121 km   03:16:09.42 UTC (picked)     +16.9 s  before S
+             RATZ         188 km   03:16:11.36 UTC (picked)     +18.9 s  before S
+             HIZ          189 km   03:16:10.16 UTC (picked)     +17.7 s  before S
+             KPRZ         194 km   03:16:12.14 UTC (predicted)   +19.6 s  before S
+             BKZ          212 km   03:16:16.08 UTC (picked)     +23.6 s  before S
+             TLZ          228 km   03:16:21.64 UTC (predicted)   +29.1 s  before S
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm     1
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                2
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                2  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+    M 4-5                   1          0        1
+
+  Missed AFAD events
+    03:15:20.00 UTC  MLv 4.6    49 km from the network centre
+    04:48:42.00 UTC  MLv 1.7    83 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    03:15:52.50 UTC  #1  M4.3, located -40.17N 174.39E
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/nz_now/runs/eqt_causal_eqfa/nz_now_seq008.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BKZ      21588         0        3      3        21      0.004 (0.002)       138
+  HIZ      21588         0        1      1         7      0.004 (0.002)       172
+  KPRZ     21588         0        0      0         0      0.005 (0.002)         0
+  RATZ     21588         0        1      1         7      0.005 (0.002)       195
+  TLZ      21588         0        0      0         0      0.005 (0.002)         0
+  VRZ      21588         0        1      1         7      0.005 (0.002)       163
+  Pd: 42 values sent
+  P time from an STA/LTA onset for 4 of 6 triggers (2 from the window start)
+  onset from a FilterPicker pick for 4 of 6 triggers (P-time location and Pd)
+  129528 windows in 2.0 s: 5359x real time per station

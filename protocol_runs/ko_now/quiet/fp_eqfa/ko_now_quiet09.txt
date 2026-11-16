@@ -1,0 +1,85 @@
+ayzek    7 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-09-15 00:09:03.00 to 06:09:00.01 UTC at full speed
+ayzek    catalogue: 1 events in the replay span
+ALARM    #1   01:59:52.40  earthquake detected by AKDG, GAZ
+ALARM    #2   03:30:12.97  earthquake detected by MAZI, NURH
+ALARM    #3   04:05:28.13  earthquake detected by GAZ, SVRC
+ALARM    #4   04:39:02.41  earthquake detected by AKDG, SVRC
+ALARM    #5   05:43:30.52  earthquake detected by MAZI, NURH
+ALARM    #6   05:52:24.33  earthquake detected by DYBB, SVRC
+ALARM    #7   05:57:28.19  earthquake detected by GAZ, SVRC
+
+------------------------------------------------------------------------------
+REPORT  7 stations, 2026-09-15 00:37:50.00 to 06:09:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:59:52.40 UTC by AKDG, GAZ
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      03:30:12.97 UTC by MAZI, NURH
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      04:05:28.13 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      04:39:02.41 UTC by AKDG, SVRC
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      05:43:30.52 UTC by MAZI, NURH
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      05:52:24.33 UTC by DYBB, SVRC
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      05:57:28.19 UTC by GAZ, SVRC
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           7
+  single-station detections, no alarm    82
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              7  100%
+
+  AFAD events within 250 km                1
+    detected                              0    0%
+    detected before S                     0    0%
+    missed                                1  100%
+
+  By magnitude      AFAD events   detected   missed
+    M < 2                   1          0        1
+
+  Missed AFAD events
+    00:41:22.00 UTC  ml 1.4   214 km from the network centre
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    01:59:52.40 UTC  #1  no magnitude, not located
+    03:30:12.97 UTC  #2  no magnitude, not located
+    04:05:28.13 UTC  #3  no magnitude, not located
+    04:39:02.41 UTC  #4  no magnitude, not located
+    05:43:30.52 UTC  #5  no magnitude, not located
+    05:52:24.33 UTC  #6  no magnitude, not located
+    05:57:28.19 UTC  #7  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/fp_eqfa/ko_now_quiet09.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  AKDG     43189         0        5      5         0      0.050 (0.904)       200
+  DYBB     43189         0        3      3        21      0.047 (0.485)       147
+  GAZ      43189         0       20     20       140      0.031 (0.025)        91
+  MAZI     43189         0        5      5         0      0.043 (0.851)       180
+  MLTY     43189         0        2      2        14      0.044 (0.080)       178
+  NURH     43189         0        9      9         0      0.046 (0.711)       169
+  SVRC     43091         9       52     52       364      0.038 (0.075)       136
+  Pd: 539 values sent
+  302225 windows in 9.5 s: 2088x real time per station

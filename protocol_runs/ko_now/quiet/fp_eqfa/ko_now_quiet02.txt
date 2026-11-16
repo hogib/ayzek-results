@@ -1,0 +1,41 @@
+ayzek    6 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 20/10, Z + picker + Pd magnitude, replay 2026-09-29 23:15:03.30 to 05:15:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   01:03:30.89  earthquake detected by GAZ, KARA
+ALARM    #2   03:17:52.78  earthquake detected by BNN, GAZ
+ALARM    #3   04:23:44.78  earthquake detected by BNN, NURH
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-09-29 23:43:50.00 to 05:15:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      01:03:30.89 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      03:17:52.78 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      04:23:44.78 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           3
+  single-station detections, no alarm    59
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/oguzb/Projects/Codings/ayzek/ayzek_code/data/runs/heldout/ko_now/quiet/fp_eqfa/ko_now_quiet02.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       10     10        70      0.034 (0.298)       129
+  CEYT     43189         0        0      0         0      0.033 (0.601)         0
+  GAZ      43189         0       19     19       133      0.028 (0.092)        82
+  KARA     43189         0        3      3        21      0.030 (0.208)       100
+  NURH     43189         0       17     17         0      0.028 (0.209)       117
+  SARI     43189         0       16     15       112      0.037 (0.582)       131
+  Pd: 336 values sent
+  259134 windows in 4.3 s: 4674x real time per station

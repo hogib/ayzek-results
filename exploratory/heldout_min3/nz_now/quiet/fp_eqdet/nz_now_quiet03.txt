@@ -1,0 +1,45 @@
+ayzek    5 stations, scalar backend, FilterPicker5 6/10/0.4 s, thresholds 15/8, Z + picker + Pd magnitude, replay 2025-11-20 03:12:03.83 to 09:12:00.01 UTC at full speed
+ayzek    catalogue: 2 events in the replay span
+ALARM    #1   07:09:01.42  earthquake detected by FOZ, RPZ, WVZ
+PLOC     #1   07:09:01.42  P times locate it at -43.410N 170.235E +-16 km, origin 07:08:48.62, rms 0.02 s from 3 stations
+
+------------------------------------------------------------------------------
+REPORT  5 stations, 2025-11-20 03:40:50.00 to 09:12:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      07:09:01.42 UTC by FOZ, RPZ, WVZ
+  P loc.     -43.410N 170.235E +-16 km from 3 stations, first 0.0 s after the alarm
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                           1
+  single-station detections, no alarm   102
+
+  Alarms compared with the AFAD catalogue
+    correct  (match an AFAD event)        0    0%
+    false    (no AFAD event)              1  100%
+
+  AFAD events within 250 km                0
+    detected                              0     -
+    detected before S                     0     -
+    missed                                0     -
+
+  By magnitude      AFAD events   detected   missed
+
+  False alarms (no AFAD event; small uncatalogued earthquakes are possible)
+    07:09:01.42 UTC  #1  no magnitude, not located
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_min3/nz_now.partial/quiet/fp_eqdet/nz_now_quiet03.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  CVZ      43189         0        9      9        63      0.017 (0.018)        63
+  FOZ      43189         0       41     40       287      0.018 (0.025)        61
+  RPZ      43189         0       27     26       189      0.018 (0.026)        63
+  WHSZ     43189         0       28     28       196      0.020 (0.028)        63
+  WVZ      43189         0        8      8        56      0.019 (0.011)        65
+  Pd: 791 values sent
+  215945 windows in 3.7 s: 5409x real time per station

@@ -1,0 +1,96 @@
+ayzek    6 stations, scalar backend, STA/LTA 0.5/10 s on 6 off 1.5, 1-10 Hz, Z + picker + Pd magnitude, replay 2026-10-16 17:18:02.11 to 23:18:00.01 UTC at full speed
+ayzek    catalogue: 0 events in the replay span
+ALARM    #1   17:56:27.98  earthquake detected by KARA, NURH
+ALARM    #2   17:58:15.60  earthquake detected by GAZ, KARA
+ALARM    #3   18:19:06.07  earthquake detected by NURH, SARI
+PLOC     #3   18:19:17.86  P times locate it at 37.979N 36.518E +-12 km, origin 18:18:52.51, rms 0.02 s from 3 stations
+PLOC     #3   18:19:21.37  P times locate it at 40.567N 36.072E +-128 km, origin 18:18:15.06, rms 0.94 s from 3 stations, left out SARI
+ALARM    #4   18:21:48.22  earthquake detected by GAZ, KARA
+ALARM    #5   18:25:47.51  earthquake detected by GAZ, KARA
+ALARM    #6   18:30:15.71  earthquake detected by GAZ, KARA
+ALARM    #7   18:41:24.57  earthquake detected by GAZ, KARA
+ALARM    #8   18:54:36.36  earthquake detected by GAZ, NURH
+PLOC     #8   18:54:41.39  P times locate it at 37.480N 36.801E +-25 km, origin 18:54:23.24, rms 0.01 s from 3 stations
+ALARM    #9   20:01:26.05  earthquake detected by NURH, SARI
+ALARM    #10  20:34:05.77  earthquake detected by GAZ, KARA
+ALARM    #11  20:51:00.26  earthquake detected by NURH, SARI
+ALARM    #12  21:23:15.95  earthquake detected by BNN, GAZ
+ALARM    #13  23:03:15.14  earthquake detected by BNN, NURH
+
+------------------------------------------------------------------------------
+REPORT  6 stations, 2026-10-16 17:46:50.00 to 23:18:00.01 UTC
+------------------------------------------------------------------------------
+
+Event #1: detected earthquake (no magnitude), not located
+  alarm      17:56:27.98 UTC by KARA, NURH
+  AFAD       no matching catalogue event
+
+Event #2: detected earthquake (no magnitude), not located
+  alarm      17:58:15.60 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #3: detected earthquake (no magnitude), not located
+  alarm      18:19:06.07 UTC by NURH, SARI; later GAZ, KARA
+  P loc.     40.567N 36.072E +-128 km from 3 stations, first 11.8 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #4: detected earthquake (no magnitude), not located
+  alarm      18:21:48.22 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #5: detected earthquake (no magnitude), not located
+  alarm      18:25:47.51 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #6: detected earthquake (no magnitude), not located
+  alarm      18:30:15.71 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #7: detected earthquake (no magnitude), not located
+  alarm      18:41:24.57 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #8: detected earthquake (no magnitude), not located
+  alarm      18:54:36.36 UTC by GAZ, NURH; later SARI
+  P loc.     37.480N 36.801E +-25 km from 3 stations, first 5.0 s after the alarm
+  AFAD       no matching catalogue event
+
+Event #9: detected earthquake (no magnitude), not located
+  alarm      20:01:26.05 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #10: detected earthquake (no magnitude), not located
+  alarm      20:34:05.77 UTC by GAZ, KARA
+  AFAD       no matching catalogue event
+
+Event #11: detected earthquake (no magnitude), not located
+  alarm      20:51:00.26 UTC by NURH, SARI
+  AFAD       no matching catalogue event
+
+Event #12: detected earthquake (no magnitude), not located
+  alarm      21:23:15.95 UTC by BNN, GAZ
+  AFAD       no matching catalogue event
+
+Event #13: detected earthquake (no magnitude), not located
+  alarm      23:03:15.14 UTC by BNN, NURH
+  AFAD       no matching catalogue event
+
+------------------------------------------------------------------------------
+SUMMARY
+------------------------------------------------------------------------------
+  Alarms raised                          13
+  single-station detections, no alarm    79
+  (no catalogue given: correct, false and missed alarms not evaluated)
+------------------------------------------------------------------------------
+Recording written to /home/server/Projeler/oguz/ayzek_runs/ayzek_code/data/runs/heldout_grid/ko_now/quiet/g_stalta_6/ko_now_quiet08.rec
+
+Station processing (scalar backend)
+         windows  with gap triggers  picks Pd values    ms/window (p99)   ms/pick
+  BNN      43189         0       11     11        77      0.001 (0.000)        35
+  CEYT     43168         2        0      0         0      0.001 (0.001)         0
+  GAZ      43189         0       49     48       342      0.001 (0.001)        22
+  KARA     43189         0       17     17       119      0.001 (0.001)        33
+  NURH     43189         0       21     21         0      0.000 (0.001)        19
+  SARI     43189         0       13     13        91      0.001 (0.000)        29
+  Pd: 629 values sent
+  259113 windows in 1.2 s: 15989x real time per station

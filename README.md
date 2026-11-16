@@ -20,6 +20,7 @@ data used in the study.
 | `requests/sets/` | Per fetched set: `dataset.json` (services, stations, channels, windows, the canary check, what arrived, SHA-256 of each file), `stations.json`, `stations.csv`, `catalog.csv`, `pd_gain.csv` | 8 MB |
 | `protocol_runs/` | Outputs of `tools/run_heldout.py` for the three tests of the protocol (`greece_now`, `nz_now`, `ko_now`) | 151 MB |
 | `exploratory/` | Outputs of the analyses made after the tests, outside the protocol | 215 MB |
+| `scripts_as_run/` | The working copies of the scripts that made the exploratory runs | 0.1 MB |
 | `release/` | Files attached to the pipeline's GitHub releases | 109 MB |
 
 ### `requests/sets/`
@@ -51,7 +52,15 @@ Every file here comes from an analysis made after the tests were scored. None is
 part of the protocol. Most folders carry a `provenance.json`, `grid.json` or `manifest.json` with
 the command and, where recorded, the commit and input hashes.
 
-| Folder | Tool in the pipeline's repository |
+The runs were started from working copies of the scripts, kept in
+`scripts_as_run/` as they were run; the provenance files name them under `logs/`.
+Where a provenance file records `script_sha256` (`heldout_min3`, `heldout_iasp91`,
+`heldout_globalcat`, `heldout_quietscan`, and the two `selection.json` of
+`heldout_quietstrat`), it is the SHA-256 of the copy here. The table names the
+versions later committed to the repositories, which differ in places from the
+working copies.
+
+| Folder | Committed tool |
 |---|---|
 | `heldout_grid/`, `heldout_instant/` | `tools/heldout_grid.py`, `tools/heldout_grid_matched.py`, `tools/heldout_grid_summary.py` |
 | `plateau_seeds/` | `tools/plateau_seeds.py` (development replays only; with the model files of the three seeds) |
@@ -76,6 +85,15 @@ the command and, where recorded, the commit and input hashes.
 The binary is the static x86-64 build that ran the tests. Its SHA-256 is the one in
 each `protocol_runs/<test>/manifest.json`. The three `*_ko.tar.gz` files are the
 public KOERI datasets of the development replays.
+
+## The transformer detector
+
+The protocol registers one further detector, labelled `transformer`
+(`docs/protocol-heldout.md`: "its own paper"). The manuscript does not report it.
+The summaries, outcome tables, manifests and command logs are kept as the runs
+wrote them, so they carry its results. Its own report folders
+(`runs/transformer/`, `quiet/transformer/`), its per-set outcome files and its
+model file in `plateau_seeds/` are not included.
 
 ## What is left out
 
